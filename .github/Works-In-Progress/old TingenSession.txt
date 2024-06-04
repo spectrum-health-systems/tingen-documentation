@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+TingenDataRoot     = @"C:\TingenData",
+
+
+TingenDataRoot",   $@"{tingenDataRoot}" },
+                { "AvatarSystemCode", $@"{tingenDataRoot}\{avatarSystemCode}" },
+                { "RawDataRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\RawData" },
+                { "MessageRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Message" },
+                { "PublicRoot",       $@"{tingenDataRoot}\Public"},
+                { "RemoteRoot",       $@"{tingenDataRoot}\Remote" },
+                { "SessionRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Session\{date}" },
+                { "Admin",            $@"{tingenDataRoot}\{avatarSystemCode}\Admin" },
+                { "Alert",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Alert" },
+                { "Archive",          $@"{tingenDataRoot}\{avatarSystemCode}\Archive" },
+                { "Config",           $@"{tingenDataRoot}\{avatarSystemCode}\Config" },
+                { "Debug",            $@"{tingenDataRoot}\{avatarSystemCode}\Debug" },
+                { "Error",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Error" },
+                { "Export",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Export" },
+                { "Extension",        $@"{tingenDataRoot}\{avatarSystemCode}\Extension" },
+                { "Import",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Import" },
+                { "Log",              $@"{tingenDataRoot}\{avatarSystemCode}\Log" },
+                { "Report",           $@"{tingenDataRoot}\{avatarSystemCode}\Report" },
+                { "Template",         $@"{tingenDataRoot}\{avatarSystemCode}\Template" },
+                { "Temporary",        $@"{tingenDataRoot}\{avatarSystemCode}\Temporary" },
+                { "Warning",          $@"{tingenDataRoot}\{avatarSystemCode}\Message\Warning" },
+                { "PublicAlert",      $@"{tingenDataRoot}\Public\Alert" },
+                { "PublicError",      $@"{tingenDataRoot}\Public\Error" },
+                { "PublicExport",     $@"{tingenDataRoot}\Public\Export" },
+                { "PublicReport",     $@"{tingenDataRoot}\Public\Report" },
+                { "PublicWarning",    $@"{tingenDataRoot}\Public\Warning" },
+                { "RemoteAlert",      $@"{tingenDataRoot}\Remote\Alert" },
+                { "RemoteError",      $@"{tingenDataRoot}\Remote\Error" },
+                { "RemoteExport",     $@"{tingenDataRoot}\Remote\Export" },
+                { "RemoteReport",     $@"{tingenDataRoot}\Remote\Report" },
+                { "RemoteWarning",    $@"{tingenDataRoot}\Remote\Warning" }
