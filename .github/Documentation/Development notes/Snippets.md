@@ -46,6 +46,7 @@
 ///    - Define the assembly name here so it can be used to write log files throughout the class.
 ///   </para>
 /// </remarks>
+public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
 
@@ -60,6 +61,24 @@
 /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 ```
 
+```csharp
+/* Trace log info for this method. */
+Dictionary<string, string> traceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
+```
+
+```csharp
+LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+```
+
+
+
+```csharp
+LogEvent.Trace(2, Asm, traceInfo);
+```
+
+```csharp
+LogEvent.Trace(2, Asm, tnSession.TraceInfo);
+```
 
 ## Development notes footer
 
