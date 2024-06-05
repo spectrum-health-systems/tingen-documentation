@@ -27,26 +27,11 @@ if (traceLevel != 0) and (traceLevel <= traceLogMode)
     Do work to workOptionObject
 }
 
+        ///   - Modules/Commands/Actions have their own modes, which can be set in the module's configuration file.<br/>
+
 returnOptionObject = workOptionObject.Clone()
 
 Session\YYMMDD\UserId\HHMM\trace\fffffff_calledClass-lineNumber.trace
-
-
-
-
-
-
-/* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
-
-/*
-
-Development notes
-
-- Remove the Primeval calls, potentially replace with Tracelogs.
-- If logs aren't written, remove the Asm property.
-
-*/
-
 
 
 
