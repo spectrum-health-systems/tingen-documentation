@@ -70,14 +70,12 @@ Dictionary<string, string> traceInfo = LogInfo.TraceLog(Asm, tnSession.Config, t
 LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
 
-
-
 ```csharp
-LogEvent.Trace(2, Asm, traceInfo);
+// LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name); /* Debugging only */
 ```
 
 ```csharp
-LogEvent.Trace(2, Asm, tnSession.TraceInfo);
+LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 ```
 
 ## Development notes footer
@@ -85,6 +83,7 @@ LogEvent.Trace(2, Asm, tnSession.TraceInfo);
 ```csharp
 /*
 
+-----------------
 Development notes
 -----------------
 

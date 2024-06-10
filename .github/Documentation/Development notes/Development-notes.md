@@ -7,7 +7,12 @@
 -  Verify "disabled" works (OO is returned correctly)
 - trace logs
 
-if can't trace or other log, primeval
+Notes in remarks when tracelogs can't be used
+
+
+Commander/lieutenant/archive aren't specific to Tengen
+
+Live/Primeval/public/remote/uat are
 
 review which primeval logs can be trace logs
 
@@ -34,30 +39,24 @@ returnOptionObject = workOptionObject.Clone()
 Session\YYMMDD\UserId\HHMM\trace\fffffff_calledClass-lineNumber.trace
 
 
-
         ///  <para>
-        ///   The only difference between the development and production versions of this class is the value of <c>configFilePath</c>:
+        ///   - Tingen uses the following hardcoded variables, which are set in <see cref="TingenSession.BuildStaticVars()"/>"<br/>
         ///   <list type="table">
         ///    <item>
-        ///     <term>Development</term>
-        ///     <description>C:\Tingen\UAT\Configs\Tingen.config</description>
+        ///     <term>tnVersion</term>
+        ///     <description>The current version of Tingen, in <b>YY.MM.y.z</b> format.</description>
         ///    </item>
         ///    <item>
-        ///     <term>Production</term>
-        ///     <description>C:\Tingen\LIVE\Configs\Tingen.config</description>
-        ///    </item>
-        ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   Tingen has the following modes:
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>Enabled</term>
-        ///     <description>Work is done, and a modified sentOptionObject is returned to Avatar</description>
+        ///     <term>tnDataRoot</term>
+        ///     <description>The Tingen data root, set to <b>C:\TingenData\</b>.</description>
         ///    </item>
         ///    <item>
-        ///     <term>Disabled</term>
-        ///     <description><i>No work</i> is done, and the <i>unmodified</i> sentOptionObject is returned to Avatar</description>
+        ///     <term>avSystemCode</term>
+        ///     <description>The Avatar System Code, which should match your Avatar environment.</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>tnConfigFileName</term>
+        ///     <description>The name of the Tingen configuration file, <b>Tingen.config</b>.</description>
         ///    </item>
         ///   </list>
         ///  </para>
