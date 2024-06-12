@@ -53,29 +53,31 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 ## Debugging
 
-```csharp
-/* Can't do any logging here. Sorry! */
-```
-
-```csharp
-/* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-```
-
-```csharp
-/* Trace log info for this method. */
-Dictionary<string, string> traceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
-```
+### Primeval
 
 ```csharp
 LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
 
-```csharp
-// LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name); /* Debugging only */
-```
+### Trace
+
+When calling a Trace log event from a method that has the Tingen Session object:
 
 ```csharp
 LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+```
+
+When calling a Trace log event from a method that has the `traceInfo` object:
+
+```csharp
+LogEvent.Trace(1, AssemblyName,  traceInfo);
+```
+
+You can also add content to a Trace log:
+
+```csharp
+LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo, "Content goes here");
+LogEvent.Trace(1, AssemblyName,  traceInfo, "Content goes here");
 ```
 
 ## Development notes footer
