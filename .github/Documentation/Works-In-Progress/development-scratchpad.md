@@ -15,3 +15,15 @@
 - Only write to Remote\?
 
 - Runaway processes/diskspace
+
+
+## Session data
+
+- Time elapsed
+
+
+## Open Incident
+
+* Messages in config file
+* Flags for:
+  * Create a remote session for opening forms
