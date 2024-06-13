@@ -37,47 +37,22 @@ If the full name cannot be used:
 * The `ACTION` component is 15 characters, or less
 * The `OPTION` component is 3 characters, or less
 
-```text
+`MODULE-COMMAND-ACTION-OPTION`
+
 12345678901234567890123456789012345678901234567890
-       14     |       15      |       15      | 3
-MODULE________-COMMAND________-ACTION_________-OPT
-Admin         -Service        -Status         -Upd
-ProgressNote  -VerifyLocation -GroupIndividualNote
-Testing       -DataDump       -SessionInformation
-Testing       -ErrorCode      -ErrorCode1
-QuickMedOrder -vfyAmount      -Dose`
-```text
-```
+OpenIncident-Verify-OriginalAuthorIsSubmitting
+OpenIncident-Verify-OriginalAuthorIsOpening
 
-MODULE-COMMAND-ACTION-OPTION
+* Module: Admin
+  * Admin-Service-Update-Mode
+  * Admin-Service-Update-CurrentSettings
+  * Admin-Service-Update-All
 
-Current  
-12345678901234567890123456789012345678901234567890
+* Module: Open Incident
+  * OpenIncident-Verify-OriginalAuthorIsSubmitting
+  * OpenIncident-Verify-OriginalAuthorIsOpening
 
-- Module: Admin
-  - Admin-Service-Update-Mode
-  - Admin-Service-Update-CurrentSettings
-  - Admin-Service-Update-All
-
-- Module: Open Incident
-- OpenIncident-Verify-AuthorIsViewing
-
-- Module: Testing
-  - Testing-NtstWebService-UserMgmt-DoesUserExist
-
-
-FormComponent-SaveValue-FieldId
-
-MOD   CMD     ACT    OPT
-Admin-Service-Status-Update
-
-The `COMMAND` can consist of a *command prefix*, which is 3 characters, leaving 9 characters for the rest of the command.
-
-```
-123
-   123456789
-PreCommand__
-```
+* Module: Testing
 
 
 ## Scr
