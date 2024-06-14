@@ -23,3 +23,7 @@
 - Verify framework
 - Reset framework
 - Reset config
+
+## Current settings file
+
+- Formatting is off

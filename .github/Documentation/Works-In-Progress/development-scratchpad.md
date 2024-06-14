@@ -24,6 +24,10 @@
 
 ## Open Incident
 
-* Messages in config file
-* Flags for:
-  * Create a remote session for opening forms
+* Module enable/disable
+* Module whitelist/blacklist
+
+* In config:
+  * Messages
+  * Error codes
+  * true/false create remote session details for opening forms
