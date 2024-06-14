@@ -18,5 +18,5 @@ This is all of the documentation related to the following Tingen projects:
 
 # Glossary
 
-[Glossary]()
+[Glossary](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md)
 
