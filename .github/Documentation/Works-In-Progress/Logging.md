@@ -1,19 +1,21 @@
-# Logging
+<div align="center">
+    <h1>
+        LOGGING
+    </h1>
+</div>
 
-## Trace logs
+<br>
+<br>
 
-If a trace log cannot be used, add this comment:
-
-```csharp
-/* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-```
+# Trace logs
 
 If trace logs can be used, you'll need the following:
 
 1. The Assembly header
 2. The trace log call
+3. (optional) Message
 
-### Assembly header
+## Assembly header
 
 The following should be at the top of every class that generates logs:
 
@@ -27,19 +29,32 @@ The following should be at the top of every class that generates logs:
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
-### Trace log call
+## Trace log call
 
-Two ways to call:
+- `LogEvent.Trace(1, AssemblyName, traceInfo);`
+- `LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);`
+- `LogEvent.Trace(1, AssemblyName, traceInfo, message);`
+- `LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo, message);`
 
-1. `LogEvent.Trace(1, AssemblyName, traceInfo);`
+## Trace log levels
 
-2. `LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);`
+- `0` Temporary trace logs, can be removed.
+- `1` First line of all methods
+- `2`
+- `3`
+- `4`
+- `5`
+- `6`
+- `7`
+- `8`
+- `9`
+- 
+# Primeval logs
 
-### Level 1
+Simple logs that need little information to create, and are located in "TingenData\Primeval\
 
-`LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);`
+- `LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);`
+- `LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, message);`
 
-- First line of all methods
-
-
-## Primeval
+- `LogEvent.Primeval(AssemblyName);`
+- `LogEvent.Primeval(AssemblyName, message);`
