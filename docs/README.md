@@ -10,5 +10,3 @@
  # About
 
 About the Tingen Documentation.
-
-test
