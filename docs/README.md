@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="TingenDocumentation.png"> 
+  <img src="TingenDocumentation_small.png"> 
 
  </div>
 
@@ -9,3 +9,4 @@
 
  # About
 
+About the Tingen Documentation.
