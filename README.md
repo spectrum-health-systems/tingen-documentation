@@ -10,13 +10,4 @@
 
 # About this documentation
 
-This is all of the documentation related to the following Tingen projects:
-
-* [Tingen](https://github.com/spectrum-health-systems/Tingen)
-* [Tingen-Development](https://github.com/spectrum-health-systems/Tingen_development)
-* [Outpost31](https://github.com/spectrum-health-systems/Outpost31)
-
-# Glossary
-
-[Glossary](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md)
-
+The official, current documentation for Tingen can be found [here](https://spectrum-health-systems.github.io/Tingen-Documentation/).

@@ -1,5 +1,3 @@
-
-
 <!--
 
 This is a standing document that is referenced in the source code for Tingen, Tingen_development, and Outpost31.
@@ -35,24 +33,19 @@ See <see cref="GetVersion()"/> to add doubles.
 <i>Module</i>
 
 <see cref="member"/>
-<!-- or -->
 <see cref="member">Link text</see>
-<!-- or -->
 <see href="link">Link Text</see>
-<!-- or -->
+
 <see langword="keyword"/>
 
-
 <seealso cref="member"/>
-<!-- or -->
 <seealso href="link">Link Text</seealso>
-
 
 -->
 
 <div align="center">
 
-  ![logo](./.github/images/logos/TingenDocumentation_README.png)
+  <img src="TingenDocumentation_small.png"> 
 
   <h1>
   TINGEN / OUTPOST31 GLOSSARY
