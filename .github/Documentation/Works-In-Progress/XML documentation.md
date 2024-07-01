@@ -34,3 +34,14 @@
 ///   </list>
 ///  </para>
 ```
+
+
+## Class description
+
+* Overview of class.
+* <paramref>, not <href>
+
+## Method description
+
+* Overview of method
+* <paramref> and <href>
