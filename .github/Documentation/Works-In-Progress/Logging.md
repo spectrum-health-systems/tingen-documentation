@@ -22,9 +22,8 @@ The following should be at the top of every class that generates logs:
 ```csharp
 /// <summary>Assembly name for log files.</summary>
 /// <remarks>
-///   <para>
-///    - Define the assembly name here so it can be used to write log files throughout the class.
-///   </para>
+///     <b>About this property</b><br/>
+///     The assembly name is defined here so it can be used to write log files throughout the class.
 /// </remarks>
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```

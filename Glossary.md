@@ -115,3 +115,8 @@ Information about configuring Tingen goes here.
 # Outpost31
 
 Information about Outpost31 goes here.
+
+
+# Modules
+
+## Open Indicent Module
