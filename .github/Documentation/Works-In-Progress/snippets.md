@@ -25,4 +25,5 @@ _Documentation updated ------
 // u240624.0843_code
 // u240624.0843_documentation
 
-
+At the end of each header, add an empty anchor with a chosen name — e.g. <a name="foo"></a>.
+At the start of the document, list the headers with a link to their anchors — e.g. [Foo](#foo).

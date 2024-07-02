@@ -8,6 +8,5 @@
 
 </div>
 
-# About this documentation
-
-The official, current documentation for Tingen can be found [here](https://spectrum-health-systems.github.io/Tingen-Documentation/).
+* Introduction
+* 
