@@ -2,9 +2,9 @@
 
 <div align="center">
 
-  ![logo](./.github/images/logos/TingenDocumentation_README.png)
+  ![logo](./.github/images/logos/TingenDocumentation_ORIGINAL.png)
 
-  ![BranchWarning](https://img.shields.io/badge/Release-24.6-red?style=for-the-badge)
+  ![BranchWarning](https://img.shields.io/badge/Release-24.7-orange?style=for-the-badge)
 
 </div>
 
