@@ -1,6 +1,6 @@
 # Folder information
 
-## Tingen/XMLDoc
+## Tingen\XMLDoc
 
 This folder contains the following XML documentation for the Tingen project:
 
@@ -13,5 +13,5 @@ This folder contains the following XML documentation for the Tingen project:
     * `<seealso>` - A reference to another member
     * `<exception>` - A description of an exception that can be thrown by a method.
 
-* **generated/Tingen.xml**
+* **generated/Tingen.xml**  
   This document contains XML documentation that is generated when building Tingen, and is used to generate API documentation via Sandcastle.
