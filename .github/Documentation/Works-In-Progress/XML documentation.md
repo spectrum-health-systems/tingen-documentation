@@ -45,3 +45,13 @@
 
 * Overview of method
 * <paramref> and <href>
+
+# External XML documentation
+
+External XML file tags
+  * `<remarks>` - Additional information about the member.
+  * `<example>` - An example of how to use the member.
+  * `<code>` - A code element.
+  * `<see>` - A reference to another member.
+  * `<seealso>` - A reference to another member
+  * `<exception>` - A description of an exception that can be thrown by a method.

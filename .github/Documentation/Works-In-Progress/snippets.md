@@ -22,6 +22,14 @@ _Documentation updated ------
 
 
 
+
+ <b>More information</b><br/>
+    ///         <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</a><br/>
+    ///         <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-paramater">Script Parameter</a><br/>
+    ///         <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</a>
+
+
+
 // u240624.0843_code
 // u240624.0843_documentation
 

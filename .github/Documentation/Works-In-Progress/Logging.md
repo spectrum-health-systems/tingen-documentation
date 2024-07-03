@@ -20,11 +20,8 @@ If trace logs can be used, you'll need the following:
 The following should be at the top of every class that generates logs:
 
 ```csharp
-/// <summary>Assembly name for log files.</summary>
-/// <remarks>
-///     <b>About this property</b><br/>
-///     The assembly name is defined here so it can be used to write log files throughout the class.
-/// </remarks>
+/// <summary>Assembly name for logging purposes.</summary>
+/// <include file='XMLDoc/Outpost31_doc.xml' path='Doc/Sec[@name="outpost31"]/AssemblyName/*'/>
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
