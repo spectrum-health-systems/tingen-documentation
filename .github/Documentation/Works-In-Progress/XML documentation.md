@@ -1,5 +1,23 @@
 # XML comments
 
+## External XML documentation files
+
+Naming convention: `%namespace%_doc.xml`
+
+Header:
+
+```html
+<!--
+    u240709.0842_documentation
+-->
+```
+
+Include statement:
+
+` /// <include file='XMLDoc/Tingen_doc.xml' path='Doc/Sec[@name="tingen"]/Tingen/*'/>`
+
+
+
 ## Bullet list
 
 ``` csharp

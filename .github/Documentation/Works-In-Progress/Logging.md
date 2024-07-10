@@ -21,7 +21,7 @@ The following should be at the top of every class that generates logs:
 
 ```csharp
 /// <summary>Assembly name for logging purposes.</summary>
-/// <include file='XMLDoc/Outpost31_doc.xml' path='Doc/Sec[@name="outpost31"]/AssemblyName/*'/>
+/// <include file='XMLDoc/Tingen_doc.xml' path='Doc/Sec[@name="tingen"]/AssemblyName/*'/>
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
