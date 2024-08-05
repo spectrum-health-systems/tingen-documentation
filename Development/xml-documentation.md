@@ -13,6 +13,7 @@
 </div>
 
 - [About Tingen XML documentation](#about-tingen-xml-documentation)
+  - [What should be documented](#what-should-be-documented)
 - [Source code XML documentation](#source-code-xml-documentation)
   - [Source code documentation structure](#source-code-documentation-structure)
   - [Example of source code XML documentation](#example-of-source-code-xml-documentation)
@@ -21,10 +22,23 @@
   - [Source code documentation structure](#source-code-documentation-structure-1)
   - [Example of source code XML documentation](#example-of-source-code-xml-documentation-1)
   - [Referencing external XML documentation in the source code](#referencing-external-xml-documentation-in-the-source-code)
+- [XML tag examples](#xml-tag-examples)
+  - [Lists](#lists)
+    - [Bullet list](#bullet-list)
+    - [Numbered list](#numbered-list)
+- [Tables](#tables)
 
 # About Tingen XML documentation
 
 Tingen projects use both *source code* and *external XML* documentation.
+
+## What should be documented
+
+The following source code components should be commented:
+
+- Classes
+- Properties
+- Methods
 
 # Source code XML documentation
 
@@ -53,7 +67,11 @@ Source code XML documentation should follow these guidelines:
 
 The following XML documentation tags are stored in external files, in order to keep the source code cleaner/more readable:
 
+- `<code>`
+- `<example>`
+- `<exception>`
 - `<remarks>`
+- `<see>`
 - `<seealso>`
 - `<value>`
 
@@ -126,4 +144,62 @@ For example:
 /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
 /// <returns>The finalized OptionObject to myAvatar.</returns>
 /// <include file='XMLDoc/Tingen_doc.xml' path='Doc/Sec[@name="tingen"]/RunScript/*'/>
+```
+
+# XML tag examples
+
+## Lists
+
+### Bullet list
+
+Bulleted lists should follow these guidelines:
+
+- All items (including tags) should fit on a single line
+- Item text should not exceed 120 characters
+- Items should not end, or contain, periods
+- Proper indenting should be used
+
+```xml
+<para>
+    An introduction:
+    <list type="bullet">
+      <item>Bullet 1</item>
+      <item>Bullet 1</item>
+      <item>Bullet 1</item>
+    </list>
+</para>
+```
+
+### Numbered list
+
+TBA
+
+# Tables
+
+Tables should follow these guidelines:
+
+- An optional `listheader` may be used
+- All items (including tags) should fit on a single line
+- Item text should not exceed 120 characters
+- Items should not end, or contain, periods
+- Proper indenting should be used
+
+```xml
+<para>
+    An introduction:
+    <list type="table">
+        <listheader>
+            <term>Term header</term>
+            <description>Description header</description>
+        </listheader>
+        <item>
+            <term>Term 1</term>
+            <description>Description 1</description>
+        </item>
+        <item>
+            <term>Term 2</term>
+            <description>Description 3</description>
+        </item>
+    </list>
+</para>
 ```

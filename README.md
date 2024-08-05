@@ -11,15 +11,20 @@
 </div>
 
 ### TABLE OF CONTENTS
-- [About](#about)
-- [API Documentation](#api-documentation)
+- [About Tingen documentation](#about-tingen-documentation)
+- [The Tingen Manual](#the-tingen-manual)
+- [API documentation](#api-documentation)
 - [Development documentation](#development-documentation)
 
-# About
+# About Tingen documentation
 
 This is where all of the documentation for Tingen-related projects is stored.
 
-# API Documentation
+# The Tingen Manual
+
+Will go here.
+
+# API documentation
 
 Check [this](./docs/README.md) out.
 
