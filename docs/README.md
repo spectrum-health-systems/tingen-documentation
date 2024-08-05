@@ -1,3 +1,3 @@
-https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/html/N_Tingen_development.htm
+README
 
-read
+[Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
