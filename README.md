@@ -17,7 +17,7 @@
 
   ### CONTENTS
   [About](#about)<br>
-  [API documentation](#api-documentation)<br>
+  [API Documentation](#api-documentation)<br>
   <br>
 
 </td>
@@ -26,9 +26,9 @@
 
 # About
 
+This is where all of the documentation for Tingen-related projects is stored.
 
-
-## API documentation
+## API Documentation
 
 API documentation is available for the following Tingen-related projects:
 
