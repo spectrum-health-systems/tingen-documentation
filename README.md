@@ -13,7 +13,7 @@
 ### TABLE OF CONTENTS
 - [About](#about)
 - [API Documentation](#api-documentation)
-- [Development documentation](#development-documentation)
+- [Tingen projects development documentation](#tingen-projects-development-documentation)
 
 # About
 
@@ -23,12 +23,11 @@ This is where all of the documentation for Tingen-related projects is stored.
 
 API documentation is available for the following Tingen-related projects:
 
-* [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
+- [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
+- [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
+- [DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/DevDeploy/index.html) (soon)
 
-* [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
+# Tingen projects development documentation
 
-* [DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/DevDeploy/index.html) (soon)
-
-# Development documentation
-
-* [Tingen development workflows](Development/tingen-development-workflows.md)
+- [Development workflows](Development/development-workflows.md)
+- [XML documentation](Development/xml-documentation.md)

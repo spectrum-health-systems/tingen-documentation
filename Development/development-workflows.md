@@ -20,18 +20,21 @@
     - [Throughout daily development](#throughout-daily-development)
   - [Monthly](#monthly)
     - [When monthly development begins](#when-monthly-development-begins)
-- [Development components](#development-components)
+- [Development workflow components](#development-workflow-components)
   - [Update file headers](#update-file-headers)
   - [Update tnBuild value](#update-tnbuild-value)
   - [Update AssemblyInfo.cs files](#update-assemblyinfocs-files)
   - [Update Sandcastle help file versions](#update-sandcastle-help-file-versions)
   - [Update API documentation](#update-api-documentation)
+  - [Commit changes to the repository](#commit-changes-to-the-repository)
 
 # About Tingen development workflows
 
 # Development
 
 ## Daily
+
+**Daily development** is the development that takes place during a single day.
 
 ### When daily development begins
 
@@ -41,8 +44,11 @@
 ### Throughout daily development
 
 - [Update the API documentation](#update-the-api-documentation)
+- [Commit changes to the repository](#committing-changes-to-the-repository)
 
 ## Monthly
+
+**Monthly development** takes place at the beginning of the month.
 
 ### When monthly development begins
 
@@ -58,7 +64,7 @@
 
 <br>
 
-# Development components
+# Development workflow components
 
 These are the development components that are referenced in this document.  
 
@@ -100,7 +106,9 @@ Update the Sandcastle "Help file version" in the following Sandcastle profiles:
    - Tingen
    - Outpost31
 
-4. Commit changes for the following repositories:
+## Commit changes to the repository
 
-   - Tingen
-   - Outpost31
+Commit changes for the following repositories:
+
+- Tingen
+- Outpost31
