@@ -20,6 +20,10 @@
 
 This is where all of the documentation for Tingen-related projects is stored.
 
+To start, you may be interested in:
+
+- [The Tingen Glossary](Glossary.md)
+
 # The Tingen Manual
 
 Will go here.
