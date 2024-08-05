@@ -4,16 +4,16 @@
 
 <div align="center">
 
-  ![logo](../.github/images/logos/TingenDocumentation_232x308.png)
+  ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    Tingen Development
+    Tingen development workflows
   </h1>
 
 </div>
 
 ### TABLE OF CONTENTS
-- [About](#about)
+- [About Tingen development workflows](#about-tingen-development-workflows)
 - [Development](#development)
   - [Daily](#daily)
     - [When daily development begins](#when-daily-development-begins)
@@ -27,7 +27,7 @@
   - [Update Sandcastle help file versions](#update-sandcastle-help-file-versions)
   - [Update API documentation](#update-api-documentation)
 
-# About
+# About Tingen development workflows
 
 # Development
 

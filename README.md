@@ -13,6 +13,7 @@
 ### TABLE OF CONTENTS
 - [About](#about)
 - [API Documentation](#api-documentation)
+- [Development documentation](#development-documentation)
 
 # About
 
@@ -27,3 +28,7 @@ API documentation is available for the following Tingen-related projects:
 * [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
 
 * [DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/DevDeploy/index.html) (soon)
+
+# Development documentation
+
+* [Tingen development workflows](Development/tingen-development-workflows.md)
