@@ -12,11 +12,6 @@
 
 </div>
 
-<!-- The HTML indentations have to stay this way to work. -->
-<table>
-<tr>
-<td>
-
 ### TABLE OF CONTENTS
 - [About](#about)
 - [Development](#development)
@@ -31,12 +26,6 @@
   - [Update AssemblyInfo.cs files](#update-assemblyinfocs-files)
   - [Update Sandcastle help file versions](#update-sandcastle-help-file-versions)
   - [Update API documentation](#update-api-documentation)
-
-</td>
-</tr>
-</table>
-
-***
 
 # About
 
