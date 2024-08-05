@@ -2,6 +2,16 @@
   u240805_work-in-progress
 -->
 
+<div align="center">
+
+  ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
+
+  <h1>
+    API documentation
+  </h1>
+
+</div>
+
 # API documentation
 
 This is the API documentation for Tingen-related projects.
