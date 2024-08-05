@@ -1,4 +1,6 @@
-<!-- u240805 -->
+<!--
+  u240805_work-in-progress
+-->
 
 <div align="center">
 
@@ -12,4 +14,10 @@
 
 ## API documentation
 
-* [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/html/N_Tingen_development.htm)
+API documentation is available for the following Tingen-related projects:
+
+* [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
+
+* [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
+
+* [DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/DevDeploy/index.html)(soon)
