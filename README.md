@@ -10,25 +10,15 @@
 
 </div>
 
-<!-- The HTML indentations have to stay this way to work. -->
-<table>
-<tr>
-<td>
-
-  ### CONTENTS
-  [About](#about)<br>
-  [API Documentation](#api-documentation)<br>
-  <br>
-
-</td>
-</tr>
-</table>
+### TABLE OF CONTENTS
+- [About](#about)
+- [API Documentation](#api-documentation)
 
 # About
 
 This is where all of the documentation for Tingen-related projects is stored.
 
-## API Documentation
+# API Documentation
 
 API documentation is available for the following Tingen-related projects:
 
