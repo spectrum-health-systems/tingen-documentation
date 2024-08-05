@@ -42,3 +42,5 @@
 
    * Tingen_development/Properties/AssemblyInfo.cs
    * TOutpost31/Properties/AssemblyInfo.cs
+
+5. Update the "Help file version" in Sandcastle.
