@@ -16,8 +16,9 @@
 <td>
 
   ### CONTENTS
-  [ABOUT](#about)<br>
+  [About](#about)<br>
   [API documentation](#api-documentation)<br>
+  <br>
 
 </td>
 </tr>
