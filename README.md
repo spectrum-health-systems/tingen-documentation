@@ -12,4 +12,4 @@
 
 ## API documentation
 
-* [Tingen](/API/Tingen/index.html)
+* [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/html/N_Tingen_development.htm)
