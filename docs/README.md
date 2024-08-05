@@ -12,8 +12,6 @@
 
 </div>
 
-# API documentation
-
 This is the API documentation for Tingen-related projects.
 
 * [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
