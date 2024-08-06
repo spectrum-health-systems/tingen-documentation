@@ -1,46 +1,5 @@
 <!--
-
-This is a standing document that is referenced in the source code for Tingen, Tingen_development, and Outpost31.
-
-Entries in this document should follow this format:
-
-# Main header - generally not referenced in source code
-
-%Description%
-
-## Sub-entry level 1 - always referenced in source code
-
-### Sub-entry level 2 - not referenced in source code
-
-#### Sub-entry level 3 - not referenced in source code
-
-Only the `#` entry is referenced in the source code, and should remain static (so name it correctly the first time!).
-
-The %Description% should give a good overview, and explain why the user should be looking at sub entries.
-
----
-
-Source code should contain the following XML comments:
-
-- More information about <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>.
-
-<paramref name="ReturnOptionObject"/>
-
-See <see cref="GetVersion()"/> to add doubles.
-
-<seealso cref="GetVersion()"/>
-
-<i>Module</i>
-
-<see cref="member"/>
-<see cref="member">Link text</see>
-<see href="link">Link Text</see>
-
-<see langword="keyword"/>
-
-<seealso cref="member"/>
-<seealso href="link">Link Text</seealso>
-
+  u240805_work-in-progress
 -->
 
 <div align="center">
@@ -56,10 +15,20 @@ See <see cref="GetVersion()"/> to add doubles.
 </div>
 
 - [Tingen](#tingen)
+  - [Tingen Configuration](#tingen-configuration)
+  - [Tingen Modes](#tingen-modes)
 - [Outpost31](#outpost31)
 - [Logging](#logging)
+  - [Trace logs](#trace-logs)
+  - [Primeval logs](#primeval-logs)
 - [Modules](#modules)
+  - [Module Modes](#module-modes)
+  - [Open Indicent Module](#open-indicent-module)
 - [Avatar](#avatar)
+  - [Avatar System Codes](#avatar-system-codes)
+  - [Avatar Script Parameter](#avatar-script-parameter)
+  - [Avatar OptionObject](#avatar-optionobject)
+    - [OptionObject error codes](#optionobject-error-codes)
 
 # Tingen
 
@@ -67,11 +36,11 @@ See <see cref="GetVersion()"/> to add doubles.
 
 Perhaps surprisingly, Tingen doesn’t actually do any work, it just accepts data sent from Avatar, and passes it along to [Outpost31](#outpost31).
 
-## Tingen Configuration <!-- omit from toc -->
+## Tingen Configuration
 
 Information about configuring Tingen goes here.
 
-## Tingen Modes <!-- omit from toc -->
+## Tingen Modes
 
 Tingen operates in one of the following *modes*:
 
@@ -86,7 +55,7 @@ When Tigen is called via a ScriptLink event, a [Script Parameter](URL) is passed
 
 # Logging
 
-## Trace logs <!-- omit from toc -->
+## Trace logs
 
 Trace logs calls include a *log level* parameter.
 
@@ -94,13 +63,13 @@ If the log level of the call is *less than or equal* to the TraceLogLevel, the l
 
 This allows you to place log calls throughout the code, and then control the amount of logging that is done when Tingen is executed.
 
-## Primeval logs <!-- omit from toc -->
+## Primeval logs
 
 TBD
 
 # Modules
 
-## Module Modes <!-- omit from toc -->
+## Module Modes
 
 Tingen modules operate in one of the following *modes*:
 
@@ -111,22 +80,22 @@ Tingen modules operate in one of the following *modes*:
 
 Disabling a module only affects that specific module, other modules/components of Tingen will function according to their specific mode.
 
-## Open Indicent Module <!-- omit from toc -->
+## Open Indicent Module
 
 # Avatar
 
-## Avatar System Codes <!-- omit from toc -->
+## Avatar System Codes
 
 Information about the Avatar System Code goes here.
 
-## Avatar Script Parameter <!-- omit from toc -->
+## Avatar Script Parameter
 
 Information about the Avatar Script Parameter goes here.
 
-## Avatar OptionObject <!-- omit from toc -->
+## Avatar OptionObject
 
 Information about Avatar OptionObjects go here.
 
-### OptionObject error codes <!-- omit from toc -->
+### OptionObject error codes
 
 Information about OptionObject error messages go here.

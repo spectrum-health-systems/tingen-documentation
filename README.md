@@ -12,17 +12,25 @@
 
 ### TABLE OF CONTENTS
 - [About Tingen documentation](#about-tingen-documentation)
+- [The Tingen Glosary](#the-tingen-glosary)
 - [The Tingen Manual](#the-tingen-manual)
 - [Source code documentation](#source-code-documentation)
 - [Development documentation](#development-documentation)
 
 # About Tingen documentation
 
-This is where all of the documentation for Tingen-related projects is stored.
+This repository contains all of the documentation for Tingen projects.
 
-To start, you may be interested in:
+Since this repository only contains a `main` branch:
 
-- [The Tingen Glossary](Glossary.md)
+- This he documentation is always current, therefore...
+- There may be incomplete and/or missing documentation
+
+Also, since API documentation is generated using development versions of source code, it may be different than the stable release source code.
+
+# The Tingen Glosary
+
+The [Tingen Glossary](Glossary.md) is a living document that contains important keywords and terminology related to Tingen projects.
 
 # The Tingen Manual
 
@@ -34,5 +42,4 @@ This is where the Tingen Manual will go.
 
 # Development documentation
 
-- [Development workflows](Development/development-workflows.md)
-- [XML documentation](Development/xml-documentation.md)
+- [Development documentation](./Development/README.md)

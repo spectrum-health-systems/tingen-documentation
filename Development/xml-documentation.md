@@ -12,14 +12,24 @@
 
 </div>
 
+### CONTENTS
 - [About Tingen XML documentation](#about-tingen-xml-documentation)
 - [Source code XML documentation](#source-code-xml-documentation)
 - [External XML documentation](#external-xml-documentation)
+- [The Tingen Glossary](#the-tingen-glossary)
 - [XML tag examples](#xml-tag-examples)
+  - [See](#see)
+  - [SeeAlso](#seealso)
+
+<br>
 
 # About Tingen XML documentation
 
-Tingen projects use both *source code* and *external XML* documentation.
+Tingen projects use both *source code* and *external* XML documentation.
+
+**Source code XML documentation** should provide all *required* information about a component.
+
+**External XML documentation** should provide *non-essential but helpful* detailed information, examples, and other resources for a component.
 
 ## What should be documented <!-- omit in toc -->
 
@@ -49,6 +59,7 @@ Source code XML documentation should follow these guidelines:
 ```csharp
 /// <summary>Builds the remote paths object.</summary>
 /// <param name="tnDataRoot">The Tingen data root.</param>
+/// <remarks>These paths are important to the functionality of things.</remarks>
 /// <returns>A collection of remote paths.</returns>
 ```
 
@@ -59,10 +70,11 @@ The following XML documentation tags are stored in external files, in order to k
 - `<code>`
 - `<example>`
 - `<exception>`
-- `<remarks>`
 - `<see>`
-- `<seealso>`
+- [`<seealso>`](#seealso)
 - `<value>`
+
+If a `<remarks>` entry is longer than a single line, it should contained in an external file, not the source code.
 
 ## External files <!-- omit in toc -->
 
@@ -75,7 +87,7 @@ For example, XML documentation for the `Outpost31.Logger` namespace is located i
 Source code XML documentation should follow these guidelines:
 
 - An HTML comment at the top of the file indicating the last changed date
-- XML documentation tags should be propery indented
+- XML documentation tags should be properly indented
 - Comments (not including tags) should not exceed 120 characters
 
 ## Example of source code XML documentation <!-- omit in toc -->
@@ -135,6 +147,65 @@ For example:
 /// <include file='XMLDoc/Tingen_doc.xml' path='Doc/Sec[@name="tingen"]/RunScript/*'/>
 ```
 
+# The Tingen Glossary
+
+The [Tingen Glossary](../Glossary.md) is a permanent, living document that contains important keywords and terminology related to Tingen projects.
+
+The idea is that you can always reference the glossary, and use it to reference topics that may change over time. For that reason, glossary terminology is kept as simpld and static as possible, in order to maintain compatibility with XML documentation, no matter when it was written.
+
+And the glossary is ***always*** located here: http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md
+
+## Glossary format <!-- omit in toc -->
+
+The glossary format looks like this:
+
+```md
+# Topic header
+
+A short description of the `topic header` goes here. 
+
+The `topic header` is rarely referenced in XML documentation.
+
+## Topic sub-header 1
+
+The `topic sub-header 1` is generally what the XML documentation will reference, and should therefore have a detailed description of what it is/what it does.
+
+You can also reference other topics here.
+```
+
+For example:
+
+```md
+# Tingen
+
+**Tingen** is a custom web service for Avatar, and is called via a ScriptLink event on a form.  
+
+Perhaps surprisingly, Tingen doesn’t actually do any work, it just accepts data sent from Avatar, and passes it along to [Outpost31](#outpost31).
+
+## Tingen Modes
+
+Tingen operates in one of the following *modes*:
+
+| Mode | Description |
+| ---- | ----------- |
+| `enabled` | Tingen functions normally. |
+| `disabled` | Tingen is disabled, and doesn't do anything. |
+```
+
+## Referencing the glossary in XML documentation <!-- omit in toc -->
+
+You can reference the glossary in XML comments - either in the source code, or external file - by using the following syntax:
+
+```csharp
+/// <a href="http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#%TerminologyAnchor%">%Terminology%</a>
+```
+
+For example:
+
+```csharp
+/// <a href="http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">Configuring Tingen</a>
+```
+
 # XML tag examples
 
 ## Lists <!-- omit in toc -->
@@ -192,3 +263,35 @@ Tables should follow these guidelines:
     </list>
 </para>
 ```
+
+## See
+
+```csharp
+Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
+```
+
+## SeeAlso
+
+```csharp
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
+```
+
+<!-- 
+
+<paramref name="ReturnOptionObject"/>
+
+See <see cref="GetVersion()"/> to add doubles.
+
+<seealso cref="GetVersion()"/>
+
+<i>Module</i>
+
+<see cref="member"/>
+<see cref="member">Link text</see>
+<see href="link">Link Text</see>
+<see langword="keyword"/>
+
+<seealso cref="member"/>
+
+<seealso href="link">Link Text</seealso>
+ -->

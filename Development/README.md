@@ -12,7 +12,8 @@
 
 </div>
 
-This is a bunch of development documentation
+This is a bunch of development documentation.
 
-- [Development workflows](Development/development-workflows.md)
-- [XML documentation](Development/xml-documentation.md)
+- [Testing the Tingen development branch](development-testing.md)
+- [Overview of development workflows](Development/development-workflows.md)
+- [XML documentation guidelines](Development/xml-documentation.md)

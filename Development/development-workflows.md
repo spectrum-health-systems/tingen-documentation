@@ -17,6 +17,7 @@
 - [Development](#development)
   - [Daily](#daily)
   - [Monthly](#monthly)
+- [Creating a new stable release](#creating-a-new-stable-release)
 - [Development workflow components](#development-workflow-components)
 
 # About Tingen development workflows
@@ -50,6 +51,10 @@ This document details the development workflows for Tingen projects.
 3. [Update the tnBuild value](#update-the-tnbuild-value)
 4. [Update the AssemblyInfo.cs files](#update-the-assemblyinfocs-files)
 5. [Update the Sandcastle help file versions](#update-the-sandcastle-help-file-versions)
+
+# Creating a new stable release
+<!-- add details -->
+Change the system code in RunScript().
 
 <br>
 
