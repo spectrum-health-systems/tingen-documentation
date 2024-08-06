@@ -1,6 +1,21 @@
-# Tingen Development Testing
+<!--
+  u240805_work-in-progress
+-->
 
-## Tingen mode
+<div align="center">
+
+  ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
+
+  <h1>
+    Tingen development testing
+  </h1>
+
+</div>
+
+- [Tingen mode](#tingen-mode)
+- [Open Incident Form](#open-incident-form)
+
+# Tingen mode
 
 * [ ] Set the Tingen Mode to "disabled"
   * [ ] Verify mode file is updated
@@ -14,7 +29,7 @@
   * [ ] Verify mode file is updated
   * [ ] Verify current settings file is updated
 
-## Open Incident Form
+# Open Incident Form
 
 * [ ] Set the Open Incident Module Mode to "disabled"
   * [ ] Open an existing incident that was created by another staff member

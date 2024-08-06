@@ -13,26 +13,15 @@
 </div>
 
 - [About Tingen XML documentation](#about-tingen-xml-documentation)
-  - [What should be documented](#what-should-be-documented)
 - [Source code XML documentation](#source-code-xml-documentation)
-  - [Source code documentation structure](#source-code-documentation-structure)
-  - [Example of source code XML documentation](#example-of-source-code-xml-documentation)
 - [External XML documentation](#external-xml-documentation)
-  - [External files](#external-files)
-  - [Source code documentation structure](#source-code-documentation-structure-1)
-  - [Example of source code XML documentation](#example-of-source-code-xml-documentation-1)
-  - [Referencing external XML documentation in the source code](#referencing-external-xml-documentation-in-the-source-code)
 - [XML tag examples](#xml-tag-examples)
-  - [Lists](#lists)
-    - [Bullet list](#bullet-list)
-    - [Numbered list](#numbered-list)
-- [Tables](#tables)
 
 # About Tingen XML documentation
 
 Tingen projects use both *source code* and *external XML* documentation.
 
-## What should be documented
+## What should be documented <!-- omit in toc -->
 
 The following source code components should be commented:
 
@@ -48,14 +37,14 @@ The following XML documentation tags are used directly in the *source code*, sin
 - `<param>`
 - `<returns>`
 
-## Source code documentation structure
+## Source code documentation structure <!-- omit in toc -->
 
 Source code XML documentation should follow these guidelines:
 
 - Comments (including tags) should fit on a single line
 - Comments (not including tags) should not exceed 120 characters
 
-## Example of source code XML documentation
+## Example of source code XML documentation <!-- omit in toc -->
 
 ```csharp
 /// <summary>Builds the remote paths object.</summary>
@@ -75,13 +64,13 @@ The following XML documentation tags are stored in external files, in order to k
 - `<seealso>`
 - `<value>`
 
-## External files
+## External files <!-- omit in toc -->
 
 Each *namespace* has it's own external XML documentation file containing the external XML documentation for all *classes* in the namespace. The file is located in the project's `XMLDoc\` folder with the syntax of `%namespace%_doc.xml`
 
 For example, XML documentation for the `Outpost31.Logger` namespace is located in the `Outpost31\XMLDoc\Logger_doc.xml` file, and contains all of the external XML documentation for all of the classes in the `Outpost31.Logger` namespace.
 
-## Source code documentation structure
+## Source code documentation structure <!-- omit in toc -->
 
 Source code XML documentation should follow these guidelines:
 
@@ -89,7 +78,7 @@ Source code XML documentation should follow these guidelines:
 - XML documentation tags should be propery indented
 - Comments (not including tags) should not exceed 120 characters
 
-## Example of source code XML documentation
+## Example of source code XML documentation <!-- omit in toc -->
 
 ```xml
 <!--
@@ -128,7 +117,7 @@ Source code XML documentation should follow these guidelines:
 </Doc>
 ```
 
-## Referencing external XML documentation in the source code
+## Referencing external XML documentation in the source code <!-- omit in toc -->
 
 To reference external XML documentation in the source code, add the following line at the end of the source code XML documentation:
 
@@ -148,9 +137,9 @@ For example:
 
 # XML tag examples
 
-## Lists
+## Lists <!-- omit in toc -->
 
-### Bullet list
+### Bullet list <!-- omit in toc -->
 
 Bulleted lists should follow these guidelines:
 
@@ -170,11 +159,11 @@ Bulleted lists should follow these guidelines:
 </para>
 ```
 
-### Numbered list
+### Numbered list <!-- omit in toc -->
 
 TBA
 
-# Tables
+## Tables <!-- omit in toc -->
 
 Tables should follow these guidelines:
 

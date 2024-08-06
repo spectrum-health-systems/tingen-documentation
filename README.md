@@ -13,7 +13,7 @@
 ### TABLE OF CONTENTS
 - [About Tingen documentation](#about-tingen-documentation)
 - [The Tingen Manual](#the-tingen-manual)
-- [API documentation](#api-documentation)
+- [Source code documentation](#source-code-documentation)
 - [Development documentation](#development-documentation)
 
 # About Tingen documentation
@@ -26,11 +26,11 @@ To start, you may be interested in:
 
 # The Tingen Manual
 
-Will go here.
+This is where the Tingen Manual will go.
 
-# API documentation
+# Source code documentation
 
-Check [this](./docs/README.md) out.
+- [API documentation](./docs/README.md)
 
 # Development documentation
 

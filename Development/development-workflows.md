@@ -16,19 +16,12 @@
 - [About Tingen development workflows](#about-tingen-development-workflows)
 - [Development](#development)
   - [Daily](#daily)
-    - [When daily development begins](#when-daily-development-begins)
-    - [Throughout daily development](#throughout-daily-development)
   - [Monthly](#monthly)
-    - [When monthly development begins](#when-monthly-development-begins)
 - [Development workflow components](#development-workflow-components)
-  - [Update file headers](#update-file-headers)
-  - [Update tnBuild value](#update-tnbuild-value)
-  - [Update AssemblyInfo.cs files](#update-assemblyinfocs-files)
-  - [Update Sandcastle help file versions](#update-sandcastle-help-file-versions)
-  - [Update API documentation](#update-api-documentation)
-  - [Commit changes to the repository](#commit-changes-to-the-repository)
 
 # About Tingen development workflows
+
+This document details the development workflows for Tingen projects.
 
 # Development
 
@@ -36,12 +29,12 @@
 
 **Daily development** is the development that takes place during a single day.
 
-### When daily development begins
+### When daily development begins <!-- omit in toc -->
 
 1. [Update file headers](#update-file-headers)
 2. [Update the tnBuild value](#update-the-tnbuild-value)
 
-### Throughout daily development
+### Throughout daily development <!-- omit in toc -->
 
 - [Update the API documentation](#update-the-api-documentation)
 - [Commit changes to the repository](#committing-changes-to-the-repository)
@@ -50,7 +43,7 @@
 
 **Monthly development** takes place at the beginning of the month.
 
-### When monthly development begins
+### When monthly development begins <!-- omit in toc -->
 
 1. Update the AutoHotKey script
 2. [Update file headers](#update-file-headers)
@@ -70,32 +63,32 @@ These are the development components that are referenced in this document.
 
 They are stored here for easy updating.
 
-## Update file headers
+## Update file headers <!-- omit in toc -->
 
 Update the following file headers with the current build version:
 
 - Tingen_development.asmx.cs
 - WelcomeToOutpost31.cs
 
-## Update tnBuild value
+## Update tnBuild value <!-- omit in toc -->
 
 Update the `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()`
 
-## Update AssemblyInfo.cs files
+## Update AssemblyInfo.cs files <!-- omit in toc -->
 
 Update the following AssemblyInfo.cs files with the current version number:
 
 - Tingen_development/Properties/AssemblyInfo.cs
 - TOutpost31/Properties/AssemblyInfo.cs
 
-## Update Sandcastle help file versions
+## Update Sandcastle help file versions <!-- omit in toc -->
 
 Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
 - Tingen
 - Outpost31
 
-## Update API documentation
+## Update API documentation <!-- omit in toc -->
 
 1. Clean the Tingen solution
 
@@ -106,7 +99,7 @@ Update the Sandcastle "Help file version" in the following Sandcastle profiles:
    - Tingen
    - Outpost31
 
-## Commit changes to the repository
+## Commit changes to the repository <!-- omit in toc -->
 
 Commit changes for the following repositories:
 
