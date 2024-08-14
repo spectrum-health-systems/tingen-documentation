@@ -23,9 +23,9 @@ This repository contains all of the documentation for Tingen projects.
 
 All documentation is modified using the `main` branch.
 
-The good news is that means this documentation is **always current**.
+The **good news** is that means this documentation is *always current*.
 
-The bad news is it may also be **incomplete**! Incomplete documentation is (generally) noted.
+The **bad news** is it may also be *incomplete*! Incomplete documentation is (generally) noted.
 
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
