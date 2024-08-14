@@ -21,12 +21,11 @@
 
 This repository contains all of the documentation for Tingen projects.
 
-Since this repository only contains a `main` branch:
+All documentation is modified using the `main` branch. The good news is that means this documentation is **always current**. The bad news is it may also be **incomplete**! Incomplete documentation is (generally) noted.
 
-- This he documentation is always current, therefore...
-- There may be incomplete and/or missing documentation
+Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
-Also, since API documentation is generated using development versions of source code, it may be different than the stable release source code.
+When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposed.
 
 # The Tingen Glosary
 
