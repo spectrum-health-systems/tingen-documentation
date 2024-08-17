@@ -33,11 +33,11 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 */
 ```
 
-
+## Assemnly Name
 
 ```csharp
 /// <summary>Assembly name for logging purposes.</summary>
-/// <remarks> The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
+/// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/AssemblyName/*'/>
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
