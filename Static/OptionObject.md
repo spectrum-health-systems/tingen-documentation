@@ -1,3 +1,3 @@
 # OptionObject error codes
 
-Placeholder
+## Error codes
