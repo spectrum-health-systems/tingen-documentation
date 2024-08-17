@@ -1,0 +1,3 @@
+# OptionObject error codes
+
+Placeholder

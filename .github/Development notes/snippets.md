@@ -46,3 +46,9 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
     u240817.1021_documentation
 -->
 ```
+
+## XML documentation links to webpages
+
+```csharp
+<see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
+```
