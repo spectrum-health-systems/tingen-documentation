@@ -1,3 +1,11 @@
-# OptionObject error codes
+THE OPTION OBJECT HEADER
 
-## Error codes
+# What is an OptionObject?
+
+# The SentOptionObject
+
+# The WorkOptionObject
+
+# The ReturnOptionObject
+
+# Error codes
