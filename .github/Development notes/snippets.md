@@ -58,3 +58,16 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 ```csharp
 <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
 ```
+
+
+
+
+
+
+
+
+
+***
+
+
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/ScriptLink.md">Tingen Documentation: ScriptLink</seealso>
