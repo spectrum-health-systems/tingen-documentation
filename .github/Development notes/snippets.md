@@ -45,8 +45,7 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 <!--
     u240818.0906_documentation
 
-    Namespace
-        Outpost31.Core.Avatar
+    XML Documentation for the Outpost31.Core.Avatar namespace
 
     Classes
         AvatarData.cs
