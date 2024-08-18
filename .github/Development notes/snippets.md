@@ -43,7 +43,14 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 ```html
 <!--
-    u240817.1021_documentation
+    u240818.0906_documentation
+
+    Namespace
+        Outpost31.Core.Avatar
+
+    Classes
+        AvatarData.cs
+        ReturnObject.cs
 -->
 ```
 
