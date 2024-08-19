@@ -1,5 +1,6 @@
 <!--
-  u240814_work-in-progress
+  u240819
+  [work-in-progress]
 -->
 
 <div align="center">
@@ -12,7 +13,6 @@
 
 ### TABLE OF CONTENTS
 - [About Tingen documentation](#about-tingen-documentation)
-- [The Tingen Glosary](#the-tingen-glosary)
 - [The Tingen Manual](#the-tingen-manual)
 - [Source code documentation](#source-code-documentation)
 - [Development documentation](#development-documentation)
@@ -30,10 +30,6 @@ The **bad news** is it may also be *incomplete*! Incomplete documentation is (ge
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
 When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposed.
-
-# The Tingen Glosary
-
-The [Tingen Glossary](Glossary.md) is a living document that contains important keywords and terminology related to Tingen projects.
 
 # The Tingen Manual
 
