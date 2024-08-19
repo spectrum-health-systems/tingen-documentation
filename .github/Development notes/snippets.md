@@ -43,13 +43,21 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 ```html
 <!--
-    u240818.0906_documentation
+    u240819.0949_documentation [WORK-IN-PROGRESS]
 
-    XML Documentation for the Outpost31.Core.Avatar namespace
+    This document contains common XML Documentation that is used throughout the
+    Outpost31 project.
 
-    Classes
-        AvatarData.cs
-        ReturnObject.cs
+    Properties
+        AssemblyName        string
+        Mode                string
+        ReturnOptionObject  OptionObject
+        SentOptionObject    OptionObject
+        SentScriptParameter string
+        SystemCode          string
+        TraceDelay          int
+        TraceLevel          int
+        WorkOptionObject    OptionObject
 -->
 ```
 
