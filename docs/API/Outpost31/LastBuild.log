@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.2.18.0" projectFile="V:\GitHub\Spectrum Health Systems\Outpost31\.github\Sandcastle\Outpost31-jad.shfbproj" started="8/20/2024 12:26:16 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.2.18.0" projectFile="V:\GitHub\Spectrum Health Systems\Outpost31\.github\Sandcastle\Outpost31-jad.shfbproj" started="8/20/2024 12:37:54 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -42,14 +42,14 @@ Generating shared content files (en-US, English (United States))...
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0095
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-c0ddcf94-d5ec-479c-98c8-d81f16ad9798.proj]
-Build started 8/20/2024 12:26:17 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-7df24a76-5668-4f77-9b43-3a901a8df3c1.proj]
+Build started 8/20/2024 12:37:55 PM.
 
-Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-c0ddcf94-d5ec-479c-98c8-d81f16ad9798.proj&quot; on node 1 (default targets).
+Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-7df24a76-5668-4f77-9b43-3a901a8df3c1.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -60,25 +60,25 @@ GenerateRefInfo:
   Wrote information on 15 namespaces, 28 types, and 168 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-c0ddcf94-d5ec-479c-98c8-d81f16ad9798.proj&quot; (default targets).
-    Last step completed in 00:00:00.7168
+Done Building Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-7df24a76-5668-4f77-9b43-3a901a8df3c1.proj&quot; (default targets).
+    Last step completed in 00:00:01.2727
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0300
+    Last step completed in 00:00:00.0430
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
     Unique name M_Outpost31_Core_Logger_TraceLog_Create_1 generated for M:Outpost31.Core.Logger.TraceLog.Create(System.Int32,System.String,Outpost31.Core.Logger.TraceLog,System.String,System.String,System.Int32,System.String)
-    Last step completed in 00:00:00.0305
+    Last step completed in 00:00:00.0505
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0285
+    Last step completed in 00:00:00.0465
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0295
+    Last step completed in 00:00:00.0260
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -92,11 +92,11 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0160
+    Last step completed in 00:00:00.0385
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.3190
+    Last step completed in 00:00:00.1620
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -107,7 +107,7 @@ Merging custom build component configurations
 W:\Caches\Sandcastle\BuildAssembler.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0125
+    Last step completed in 00:00:00.0435
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -251,7 +251,7 @@ CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 o
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:04.9594
+</plugIn>    Last step completed in 00:00:06.6841
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -287,26 +287,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; W:\Caches\Sandcastle\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; W:\Caches\Sandcastle\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; W:\Caches\Sandcastle\Output\Website\Web.Config
-    Last step completed in 00:00:00.1428
+    Last step completed in 00:00:00.0890
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0782
+    Last step completed in 00:00:00.1060
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 404 files for the website content
-    Last step completed in 00:00:00.4105
+    Last step completed in 00:00:00.4171
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0381
+    Last step completed in 00:00:00.0510
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 8/20/2024 12:26:24 PM.  Total time: 00:00:07.5489
+Build completed successfully at 8/20/2024 12:38:04 PM.  Total time: 00:00:09.7197
 
 </buildStep>
 </shfbBuild>
