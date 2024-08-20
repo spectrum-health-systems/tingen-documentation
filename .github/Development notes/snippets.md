@@ -37,7 +37,7 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 
 ```csharp
 /// <summary>Assembly name for logging purposes.</summary>
-/// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/AssemblyName/*'/>
+/// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/AssemblyName/*'/>
 public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
