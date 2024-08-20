@@ -43,7 +43,7 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 ```html
 <!--
-    u240819.0949_documentation [WORK-IN-PROGRESS]
+    u240819_documentation [WORK-IN-PROGRESS]
 
     This document contains common XML Documentation that is used throughout the
     Outpost31 project.
