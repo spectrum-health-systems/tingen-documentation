@@ -33,7 +33,7 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 */
 ```
 
-## Assemnly Name
+## Assembly Name
 
 ```csharp
 /// <summary>Assembly name for logging purposes.</summary>
@@ -65,13 +65,10 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 ```csharp
 <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
-```
 
+<paramref name="name"/>
 
-
-
-
-
+<see cref="ReturnOptionObject"/>
 
 
 
