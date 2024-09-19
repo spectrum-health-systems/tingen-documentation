@@ -7,18 +7,15 @@
   ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    Tingen API documentation workflow
+    Tingen development environments
   </h1>
 
 </div>
 
-# Update API documentation
+Tingen is developed using Visual Studio 2022.
 
-1. Clean the Tingen solution
+The following projects are needed:
 
-2. Rebuild the Tingen solution
-
-3. Build the following Sandcastle projects:
-
-   - Tingen
-   - Outpost31
+- Tingen_development.sln
+- Outpost31.sln
+- ScriptLinkStandard.sln

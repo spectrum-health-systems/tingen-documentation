@@ -7,18 +7,10 @@
   ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    Tingen API documentation workflow
+    Tingen source code
   </h1>
 
 </div>
 
-# Update API documentation
 
-1. Clean the Tingen solution
-
-2. Rebuild the Tingen solution
-
-3. Build the following Sandcastle projects:
-
-   - Tingen
-   - Outpost31
+- [XML documentation guidelines](https://github.com/APrettyCoolProgram/APrettyCoolProgram/blob/main/development%20guidelines/XML%20Documentation.md)
