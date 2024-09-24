@@ -1,7 +1,5 @@
-<!--
-  u240819
-  [work-in-progress]
--->
+<!-- u240924_documentation -->
+<!-- Work in progress -->
 
 <div align="center">
 
@@ -12,14 +10,22 @@
 </div>
 
 ### TABLE OF CONTENTS
-- [About Tingen documentation](#about-tingen-documentation)
+- [About Tingen Documentation](#about-tingen-documentation)
 - [The Tingen Manual](#the-tingen-manual)
 - [Source code documentation](#source-code-documentation)
 - [Development documentation](#development-documentation)
 
-# About Tingen documentation
+# About Tingen Documentation
 
-This repository contains all of the documentation for Tingen projects.
+This repository contains documentation for the following:
+
+* (Tingen_development)[https://github.com/spectrum-health-systems/Tingen-Development]
+* (Outpost31)[https://github.com/spectrum-health-systems/Outpost31]
+* (Tingen)[https://github.com/spectrum-health-systems/Tingen]
+* (Tingen Community Release)[https://github.com/spectrum-health-systems/Tingen-CommunityRelease]
+* (Tingen DevDeploy)[https://github.com/spectrum-health-systems/Tingen-DevDeploy]
+
+
 
 All documentation is modified using the `main` branch.
 
