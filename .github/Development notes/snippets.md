@@ -4,10 +4,21 @@
  More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
 ```
 
+## Logging
+
+### Can't Trace Log, use Primeval Log
+
 ```csharp
-/* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+/* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+* need to create a logfile here, use a Primeval Log.
 */
 ```
+
+```csharp
+LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+```
+
+## Development Notes
 
 ```csharp
 /* [DN01] */
@@ -32,6 +43,18 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 
 */
 ```
+
+```csharp
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+None.
+
+*/
+```
+
 
 ## Assembly Name
 

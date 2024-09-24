@@ -5,6 +5,6 @@
 
 # To omit a heading
 
-Add `<!-- omit in toc -->` to the end of the heading:
+Add `<!-- omit in toc -->` to the end of the heading (no space between):
 
-`## When daily development begins <!-- omit in toc -->`
+`## When daily development begins<!-- omit in toc -->`

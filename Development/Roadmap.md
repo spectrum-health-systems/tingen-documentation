@@ -31,3 +31,10 @@
 ## Current settings file
 
 - Formatting is off
+
+## Todo
+
+- Update Sandcastle
+- Move Tingen_development to Tingen
+- Move to .NET 8
+- Update nuget security vulnerabilities
