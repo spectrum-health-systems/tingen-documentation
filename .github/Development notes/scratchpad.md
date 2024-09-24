@@ -11,3 +11,14 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 <param name="tnSession">The TingenSession object for this session.</param>
 
 /* Not sure what this is 240806 */
+
+
+# Colors
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+
+## Release
+
+* Development: `firebrick`
+* Stable: `firebrick`
+* Community: `firebrick`
