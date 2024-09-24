@@ -18,4 +18,9 @@ This is the API documentation for Tingen-related projects.
 
 * [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
 
-* [DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/DevDeploy/index.html) (soon)
+<!--
+API documentation for the following should be added:
+
+- Tingen DevDeploy
+
+-->
