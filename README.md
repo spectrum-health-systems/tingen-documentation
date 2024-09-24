@@ -5,7 +5,7 @@
 
   ![logo](./.github/Images/Logos/TingenDocumentation-464x616.png)
 
-  ![BranchWarning](https://img.shields.io/badge/Release-24.8-mediumseagreen?style=for-the-badge)
+  ![BranchWarning](https://img.shields.io/badge/Release-24.8-seagreen?style=for-the-badge)
 
 </div>
 

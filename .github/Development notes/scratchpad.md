@@ -20,5 +20,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
 ## Release
 
 * Development: `firebrick`
-* Stable: `firebrick`
+* Stable: `mediumseagreen`
 * Community: `firebrick`
