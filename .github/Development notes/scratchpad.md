@@ -20,5 +20,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
 ## Release
 
 * Development: `firebrick`
-* Stable: `mediumseagreen`
+* Stable: `seagreen`
 * Community: `firebrick`
+
+## Framework
+
+* .NET 4.8: `darkslateblue`
+* .NET `slateblue`
