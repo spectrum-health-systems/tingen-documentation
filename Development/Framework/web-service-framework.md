@@ -8,21 +8,34 @@
     Tingen Web Service Framework
   </h1>
 
-</div>
+![BranchWarning](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.9-white?style=for-the-badge)
 
-> This document is based on Tingen 24.9
+</div>
 
 # Folder structure
 
 The Tingen Framework consists of two directories:
 
-* C:\Tingen  
+* **C:\Tingen**  
   This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
   
   This directory does not contain any actual data, it’s just the code that runs the web service.
 
-* C:\TingenData  
-  This directory contains the data that Tingen needs/uses to do what it does. Some examples of the data you will find here are:
+* **C:\TingenData**  
+  This directory contains the data that Tingen needs/uses to do what it does.
+
+## C:\Tingen
+
+## C:\TingenData
+
+
+
+
+
+
+
+
+
 
   * Configuration files
   * Import data that Tingen needs to function
