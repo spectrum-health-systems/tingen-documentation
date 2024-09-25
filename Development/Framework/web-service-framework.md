@@ -14,8 +14,25 @@
 
 # Folder structure
 
+The Tingen Framework consists of two directories:
+
+* **C:\Tingen**  
+  This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
+  
+  This directory does not contain any actual data, it’s just the code that runs the web service.
+
+* **C:\TingenData**  
+  This directory contains the data that Tingen needs/uses to do what it does.
+
+<!--
+  Since the folder structure diagram is pretty long, we'll start it minimized
+  and allow readers to expand it.
+
+  Leave this as-is, it doesn't need backticks to show code.
+-->
+
 <details>
-  <summary>Click to expand diagram</summary>
+  <summary>Click to expand the folder structure diagram</summary>
 
     .
     ├── Tingen
@@ -95,15 +112,7 @@
 
 
 
-The Tingen Framework consists of two directories:
 
-* **C:\Tingen**  
-  This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
-  
-  This directory does not contain any actual data, it’s just the code that runs the web service.
-
-* **C:\TingenData**  
-  This directory contains the data that Tingen needs/uses to do what it does.
 
 ## C:\Tingen
 
