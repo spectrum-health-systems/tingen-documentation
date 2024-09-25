@@ -6,10 +6,8 @@
 
   <h1>
     The Tingen Documentation Project
-  </h1>
-  <h2>
     API Documentation
-  </h2>
+  </h1>
 
 </div>
 
