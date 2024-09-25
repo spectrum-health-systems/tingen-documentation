@@ -22,7 +22,7 @@
 -->
 
 <details>
-  <summary>Click to expand the folder structure diagram</summary>
+  <summary>[Click to expand the folder structure diagram]</summary>
 
     .
     ├── Tingen
