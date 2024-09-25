@@ -8,8 +8,6 @@
 
 </div>
 
-# About the Tingen Documentation Project
-
 This repository contains:
 
 * The Tingen [Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md)
