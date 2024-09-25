@@ -19,13 +19,11 @@
 
 This repository contains documentation for the following:
 
-* (Tingen_development)[https://github.com/spectrum-health-systems/Tingen-Development]
-* (Outpost31)[https://github.com/spectrum-health-systems/Outpost31]
-* (Tingen)[https://github.com/spectrum-health-systems/Tingen]
-* (Tingen Community Release)[https://github.com/spectrum-health-systems/Tingen-CommunityRelease]
-* (Tingen DevDeploy)[https://github.com/spectrum-health-systems/Tingen-DevDeploy]
-
-
+* [Tingen_development](https://github.com/spectrum-health-systems/Tingen-Development)
+* [Outpost31](https://github.com/spectrum-health-systems/Outpost31)
+* [Tingen](https://github.com/spectrum-health-systems/Tingen)
+* [Tingen Community Release](https://github.com/spectrum-health-systems/Tingen-CommunityRelease)
+* [Tingen DevDeploy](https://github.com/spectrum-health-systems/Tingen-DevDeploy)
 
 All documentation is modified using the `main` branch.
 
