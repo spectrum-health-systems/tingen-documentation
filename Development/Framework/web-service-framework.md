@@ -16,6 +16,7 @@
 
 <details>
   <summary>Click to expand diagram</summary>
+
 ```
 .
 ├── Tingen
@@ -84,6 +85,7 @@
 │   │   │   ├── Logs
 │   │   ├── Temporary
 ```
+
 </details>
 
 
