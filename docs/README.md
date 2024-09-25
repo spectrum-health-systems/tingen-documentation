@@ -5,7 +5,7 @@
   ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    The Tingen Documentation Project
+    The Tingen Documentation Project<br>
     API Documentation
   </h1>
 
