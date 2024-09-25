@@ -14,7 +14,7 @@
 
 # Folder structure
 
-```
+
 .
 ├── Tingen
 │   ├── Archive
@@ -81,7 +81,6 @@
 │   │   │   ├── Debugging
 │   │   │   ├── Logs
 │   │   ├── Temporary
-```
 
 
 
