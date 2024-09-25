@@ -1,12 +1,15 @@
-<!-- u240925_documentation -->
+<!-- u240925 -->
 
 <div align="center">
 
   ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    The Tingen Documentation Project: API documentation
+    The Tingen Documentation Project
   </h1>
+  <h2>
+    API Documentation
+  </h2>
 
 </div>
 
