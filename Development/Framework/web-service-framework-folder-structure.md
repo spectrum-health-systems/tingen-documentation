@@ -114,13 +114,37 @@ The web service that is used by the ***UAT*** environment.
 
 This directory contains the data that Tingen needs/uses to do what it does.
 
-## TingenData\\Commander\\
+### TingenData\\Commander\\
 
-## TingenData\\DevDeploy\\
+Tingen Commander data (not currently used)
 
-# Tingen\
+### TingenData\\DevDeploy\\
 
-## Tingen\Archive
+Tingen DevDeploy data.
+
+### TingenData\\Lieutenant\\
+
+Tingen Lieutenant data (depreciated)
+
+### TingenData\\LIVE\\
+
+Tingen data created buy the LIVE web service
+
+### TingenData\\Primeval\\
+
+Primeval logs
+
+### TingenData\\Public\\
+
+Public data
+
+### TingenData\\Remote\\
+
+Remote data
+
+### TingenData\\UAT\\
+
+Tingen data created buy the UAT web service
 
 test
 
