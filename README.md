@@ -8,13 +8,17 @@
 
 </div>
 
-# What's here
+# Tingen Documentation
 
-The [Tingen Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md) contains all of the information, details, and stuff of you'll need to use Tingen in your environments
+Here be:
 
-If you are interested in how Tingen is developed, there is a whole bunch of [development documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development/README.md) to take a look at.
+* The [Tingen Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md)  
+  Contains all of the information, details, and stuff of you'll need to use Tingen in your environments
 
-There is also [API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md) for your perusal.
+* [Development documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development/README.md)  
+  If you are interested in how Tingen is developed, there is a whole bunch of  to take a look at.
+
+* [API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md)
 
 # Documentation snapshots
 
