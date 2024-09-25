@@ -13,3 +13,8 @@
 </div>
 
 Documentation related to the Tingen development workflows.
+
+- Development workflows
+  - [Daily](./Workflow/Daily.md)
+  - [Monthly](./Workflow/Monthly.md)
+  - [API documentation](./Workflow/API-documentation.md)
