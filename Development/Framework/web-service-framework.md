@@ -1,19 +1,35 @@
-⦁	The Tingen Framework
-2.1 Overview
-Tingen is hosted on an IIS-based web server, and the Tingen Framework consists of two directories:
-⦁	C:\Tingen
-This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
+<!-- u240925 -->
 
-This directory does not contain any actual data, it’s just the code that runs the web service.
+<div align="center">
 
-⦁	C:\TingenData
-This directory contains the data that Tingen needs/uses to do what it does. Some examples of the data you will find here are:
+  ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
-⦁	Configuration files
-⦁	Import data that Tingen needs to function
-⦁	Messages (alerts/errors/warnings)
-⦁	Debugging information
-⦁	And more!
+  <h1>
+    Tingen Web Service Framework
+  </h1>
+
+</div>
+
+> This document is based on Tingen 24.9
+
+# Folder structure
+
+The Tingen Framework consists of two directories:
+
+* C:\Tingen  
+  This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
+  
+  This directory does not contain any actual data, it’s just the code that runs the web service.
+
+* C:\TingenData  
+  This directory contains the data that Tingen needs/uses to do what it does. Some examples of the data you will find here are:
+
+  * Configuration files
+  * Import data that Tingen needs to function
+  * Messages (alerts/errors/warnings)
+  * Debugging information
+
+
 The web service (C:\Tingen) and the data (C:\TingenData) are separated for security reasons. Aside from a handful of specific files that Tingen imports, the Tingen web service does not read data from C:\TingenData, it only writes data.
 
 
