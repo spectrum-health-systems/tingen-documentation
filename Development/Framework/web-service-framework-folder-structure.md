@@ -96,11 +96,14 @@
   
   This directory does not contain any actual data, it’s just the code that runs the web service.
 
-## Tingen\\Archive\\
+  * Tingen\\Archive\\  
+    What
 
-## Tingen\\LIVE\\
+  * Tingen\\LIVE\\  
+    What
 
-## Tingen\\UAT\\
+  * Tingen\\UAT\\  
+    What
 
 # TingenData\\  
   This directory contains the data that Tingen needs/uses to do what it does.
