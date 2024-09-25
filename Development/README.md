@@ -10,7 +10,7 @@
 
 This repository contains information about:
 
-* The Tingen [Development environment](./Environment/README.md)  
+* The Tingen [Development environment](./Environment)  
   Information and details about the environment setup used to develop Tingen.
 
 * [Tingen framework](./Framework/README.md)  
