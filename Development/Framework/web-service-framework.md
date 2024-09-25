@@ -12,8 +12,7 @@
 
 </div>
 
-***
-
+# Folder structure
 
 <!--
   Since the folder structure diagram is pretty long, we'll start it minimized
@@ -94,11 +93,6 @@
 
 </details>
 
-
-***
-
-
-# Folder structure
 
 The Tingen Framework consists of two directories:
 
