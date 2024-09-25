@@ -40,3 +40,4 @@
 - Update nuget security vulnerabilities
 - Standardize all images (e.g., no "_README.png")
 - Move to RarelySimple
+- Remove c:\TingenData\Lieutenant
