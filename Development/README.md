@@ -13,21 +13,14 @@ This repository contains information about:
 * The Tingen [Development environment](./Environment)  
   Information and details about the environment setup used to develop Tingen.
 
-* [Tingen framework](./Framework/README.md)  
+* [Tingen framework](./Framework)  
   Information and details about the Tingen framework.
 
-* The [Source code](./SourceCode/README.md)  
+* The [Source code](./SourceCode)  
   Information and details about the Tingen/Outpost31 source code.
 
-* [Testing](./Testing/README.md)  
+* [Testing](./Testing)  
   Information and details about the testing Tingen.
   
-* [Workflow](./Workflows/README.md)  
+* [Workflow](./Workflows)  
   Information and details about the Workflows
-
-
-If you're not interested in how Tigen
-
-
-
-- 
