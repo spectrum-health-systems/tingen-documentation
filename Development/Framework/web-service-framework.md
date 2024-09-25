@@ -17,74 +17,74 @@
 <details>
   <summary>Click to expand diagram</summary>
 
-```
-.
-├── Tingen
-│   ├── Archive
-│   ├── LIVE
-│   │   ├── bin
-│   ├── UAT
-│   │   ├── bin  
-├── TingenData
-│   ├── Commander
-│   ├── DevDeploy
-│   │   ├── Logs
-│   │   ├── Staging
-│   ├── LIVE
-│   │   ├── Config
-│   │   ├── Exports
-│   │   │   ├── Reports
-│   │   ├── Extensions
-│   │   ├── Imports
-│   │   │   ├── FromAvatar
-│   │   │   ├── Templates
-│   │   ├── Messages
-│   │   │   ├── Alerts
-│   │   │   ├── Errors
-│   │   │   ├── Warnings
-│   │   ├── Security
-│   │   ├── Sessions
-│   │   ├── Support
-│   │   │   ├── Admin
-│   │   │   ├── Archive
-│   │   │   ├── Debugging
-│   │   │   ├── Logs
-│   │   ├── Temporary
-│   ├── Primeval
-│   ├── Public
-│   │   ├── Alerts
-│   │   ├── Errors
-│   │   ├── Errors
-│   │   ├── Reports
-│   │   ├── Warnings
-│   ├── Remote
-│   │   ├── Alerts
-│   │   ├── Errors
-│   │   ├── Errors
-│   │   ├── Reports
-│   │   ├── Sessions
-│   │   ├── Warnings
-│   ├── UAT
-│   │   ├── Config
-│   │   ├── Exports
-│   │   │   ├── Reports
-│   │   ├── Extensions
-│   │   ├── Imports
-│   │   │   ├── FromAvatar
-│   │   │   ├── Templates
-│   │   ├── Messages
-│   │   │   ├── Alerts
-│   │   │   ├── Errors
-│   │   │   ├── Warnings
-│   │   ├── Security
-│   │   ├── Sessions
-│   │   ├── Support
-│   │   │   ├── Admin
-│   │   │   ├── Archive
-│   │   │   ├── Debugging
-│   │   │   ├── Logs
-│   │   ├── Temporary
-```
+    ```
+    .
+    ├── Tingen
+    │   ├── Archive
+    │   ├── LIVE
+    │   │   ├── bin
+    │   ├── UAT
+    │   │   ├── bin  
+    ├── TingenData
+    │   ├── Commander
+    │   ├── DevDeploy
+    │   │   ├── Logs
+    │   │   ├── Staging
+    │   ├── LIVE
+    │   │   ├── Config
+    │   │   ├── Exports
+    │   │   │   ├── Reports
+    │   │   ├── Extensions
+    │   │   ├── Imports
+    │   │   │   ├── FromAvatar
+    │   │   │   ├── Templates
+    │   │   ├── Messages
+    │   │   │   ├── Alerts
+    │   │   │   ├── Errors
+    │   │   │   ├── Warnings
+    │   │   ├── Security
+    │   │   ├── Sessions
+    │   │   ├── Support
+    │   │   │   ├── Admin
+    │   │   │   ├── Archive
+    │   │   │   ├── Debugging
+    │   │   │   ├── Logs
+    │   │   ├── Temporary
+    │   ├── Primeval
+    │   ├── Public
+    │   │   ├── Alerts
+    │   │   ├── Errors
+    │   │   ├── Errors
+    │   │   ├── Reports
+    │   │   ├── Warnings
+    │   ├── Remote
+    │   │   ├── Alerts
+    │   │   ├── Errors
+    │   │   ├── Errors
+    │   │   ├── Reports
+    │   │   ├── Sessions
+    │   │   ├── Warnings
+    │   ├── UAT
+    │   │   ├── Config
+    │   │   ├── Exports
+    │   │   │   ├── Reports
+    │   │   ├── Extensions
+    │   │   ├── Imports
+    │   │   │   ├── FromAvatar
+    │   │   │   ├── Templates
+    │   │   ├── Messages
+    │   │   │   ├── Alerts
+    │   │   │   ├── Errors
+    │   │   │   ├── Warnings
+    │   │   ├── Security
+    │   │   ├── Sessions
+    │   │   ├── Support
+    │   │   │   ├── Admin
+    │   │   │   ├── Archive
+    │   │   │   ├── Debugging
+    │   │   │   ├── Logs
+    │   │   ├── Temporary
+    ```
 
 </details>
 
