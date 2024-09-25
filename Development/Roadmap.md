@@ -39,3 +39,4 @@
 - Move to .NET 8
 - Update nuget security vulnerabilities
 - Standardize all images (e.g., no "_README.png")
+- Move to RarelySimple

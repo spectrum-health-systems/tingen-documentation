@@ -1,17 +1,26 @@
-<!--
-  u240924_work-in-progress
--->
+<!-- u240925 -->
 
 <div align="center">
 
   ![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
 
-  <h1>
-    Tingen Development documentation: Environments
-  </h1>
-
 </div>
 
-Documentation related to the Tingen development environment.
+# Tingen development environment
 
-- [Visual Studio 2022 setup](./Environment/Visual-Studio.md)
+## Recommended software
+
+* [Visual Studio 2022](https://visualstudio.microsoft.com/)
+* [Visual Studio Code](https://visualstudio.microsoft.com/)
+* [Sandcastle](https://github.com/EWSoftware/SHFB)
+* [GitHub Desktop](https://github.com/apps/desktop)
+
+## Required software/packages
+
+* [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard)
+
+## Required projects
+
+* [Tingen_development](https://github.com/spectrum-health-systems/Tingen-Development)
+* [Outpost31](https://github.com/spectrum-health-systems/Outpost31)
+* [Third-Party](https://github.com/spectrum-health-systems/Tingen-ThirdParty)
