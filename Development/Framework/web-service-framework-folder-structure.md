@@ -98,15 +98,15 @@
 * Contains the required Tingen Web service code
 * Does not contain any actual data
 
-## Tingen\\Archive\\
+### Tingen\\Archive\\
 
 Archived snapshots of previous Tingen deployments.
 
-## Tingen\\LIVE\\
+### Tingen\\LIVE\\
 
 The web service that is used by the ***LIVE*** environment.
 
-## Tingen\\UAT\\
+### Tingen\\UAT\\
 
 The web service that is used by the ***UAT*** environment.
 
