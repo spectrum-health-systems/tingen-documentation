@@ -103,20 +103,19 @@ The Tingen Framework consists of two directories:
 
 </details>
 
+# C:\Tingen
 
+```text
+.
+├── Tingen
+│   ├── Archive
+│   ├── LIVE
+│   │   ├── bin
+│   ├── UAT
+│   │   ├── bin 
+```
 
-
-
-
-
-
-
-
-
-
-## C:\Tingen
-
-## C:\TingenData
+# C:\TingenData
 
 
 
