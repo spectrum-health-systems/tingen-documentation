@@ -91,22 +91,28 @@
 
 </details>
 
+> Each of these folders has a `README.md` file with additional details.
+
 # Tingen\\  
 
 * Contains the required Tingen Web service code
 * Does not contain any actual data
 
-## Tingen\\Archive\\  
-    What
+## Tingen\\Archive\\
 
-  * Tingen\\LIVE\\  
-    What
+Archived snapshots of previous Tingen deployments.
 
-  * Tingen\\UAT\\  
-    What
+## Tingen\\LIVE\\
+
+The web service that is used by the ***LIVE*** environment.
+
+## Tingen\\UAT\\
+
+The web service that is used by the ***UAT*** environment.
 
 # TingenData\\  
-  This directory contains the data that Tingen needs/uses to do what it does.
+
+This directory contains the data that Tingen needs/uses to do what it does.
 
 ## TingenData\\Commander\\
 
