@@ -14,11 +14,13 @@
 
 # Folder structure
 
-
-.<br>
-├── Tingen<br>
-│   ├── Archive<br>
-│   ├── LIVE<br>
+<details>
+  <summary>Click to expand diagram</summary>
+```
+.
+├── Tingen
+│   ├── Archive
+│   ├── LIVE
 │   │   ├── bin
 │   ├── UAT
 │   │   ├── bin  
@@ -81,6 +83,8 @@
 │   │   │   ├── Debugging
 │   │   │   ├── Logs
 │   │   ├── Temporary
+```
+</details>
 
 
 
