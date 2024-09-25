@@ -1,4 +1,4 @@
-<!-- u240924_documentation -->
+<!-- u240925_documentation -->
 <!-- Work in progress -->
 
 <div align="center">
@@ -9,23 +9,19 @@
 
 </div>
 
-### TABLE OF CONTENTS
-- [About Tingen Documentation](#about-tingen-documentation)
-- [The Tingen Manual](#the-tingen-manual)
-- [Source code documentation](#source-code-documentation)
-- [Development documentation](#development-documentation)
+# About the Tingen Documentation Project
 
-# About Tingen Documentation
+This repository contains:
 
-This repository contains documentation for the following:
+* The Tingen [Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md)
 
-* [Tingen_development](https://github.com/spectrum-health-systems/Tingen-Development)
-* [Outpost31](https://github.com/spectrum-health-systems/Outpost31)
-* [Tingen](https://github.com/spectrum-health-systems/Tingen)
-* [Tingen Community Release](https://github.com/spectrum-health-systems/Tingen-CommunityRelease)
-* [Tingen DevDeploy](https://github.com/spectrum-health-systems/Tingen-DevDeploy)
+* [Development documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development/README.md) for various Tingen-related projects
 
-All documentation is modified using the `main` branch.
+* Tingen/Outpost31 [API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md)
+
+## A note about the API documentation.
+
+API documentation is modified using the `development` branches of Tingen and Outpost31.
 
 The **good news** is that means this documentation is *always current*.
 
@@ -33,7 +29,7 @@ The **bad news** is it may also be *incomplete*! Incomplete documentation is (ge
 
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
-When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposed.
+When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposes.
 
 # The Tingen Manual
 
