@@ -1,11 +1,10 @@
 <!-- u240925_documentation -->
-<!-- Work in progress -->
 
 <div align="center">
 
   ![logo](./.github/Images/Logos/TingenDocumentation-464x616.png)
 
-  ![BranchWarning](https://img.shields.io/badge/Release-24.8-seagreen?style=for-the-badge)
+  ![BranchWarning](https://img.shields.io/badge/Release-24.9-seagreen?style=for-the-badge)
 
 </div>
 
@@ -19,7 +18,7 @@ This repository contains:
 
 * Tingen/Outpost31 [API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md)
 
-## A note about the API documentation.
+## A note about the API documentation
 
 API documentation is modified using the `development` branches of Tingen and Outpost31.
 
@@ -29,16 +28,6 @@ The **bad news** is it may also be *incomplete*! Incomplete documentation is (ge
 
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
+## Documentation snapshots
+
 When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposes.
-
-# The Tingen Manual
-
-This is where the Tingen Manual will go.
-
-# Source code documentation
-
-- [API documentation](./docs/README.md)
-
-# Development documentation
-
-- [Development documentation](./Development/README.md)
