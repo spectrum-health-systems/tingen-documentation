@@ -8,8 +8,6 @@
 
 </div>
 
-***
-
 # The Tingen Manual
 
 The Tingen [Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md) contains all of the information, details, and stuff of you'll need to use Tingen in your environments
