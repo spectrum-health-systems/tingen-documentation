@@ -5,14 +5,12 @@
   ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
   <h1>
-    Tingen Web Service Framework
+    Tingen Web Service Framework: Folder Structure
   </h1>
 
 ![BranchWarning](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.9-white?style=for-the-badge)
 
 </div>
-
-# Folder structure
 
 <!--
   Since the folder structure diagram is pretty long, we'll start it minimized
@@ -93,21 +91,27 @@
 
 </details>
 
-## Tingen\\  
+# Tingen\\  
   This directory contains the actual Tingen Web service code, which is called from a ScriptLink event in Avatar.
   
   This directory does not contain any actual data, it’s just the code that runs the web service.
 
-### Tingen\\Archive\\
+## Tingen\\Archive\\
 
+## Tingen\\LIVE\\
 
-## TingenData\\  
+## Tingen\\UAT\\
+
+# TingenData\\  
   This directory contains the data that Tingen needs/uses to do what it does.
 
+## TingenData\\Commander\\
 
-## Tingen\
+## TingenData\\DevDeploy\\
 
-### Tingen\Archive
+# Tingen\
+
+## Tingen\Archive
 
 test
 
