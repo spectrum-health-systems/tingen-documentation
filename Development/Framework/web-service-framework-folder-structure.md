@@ -112,7 +112,10 @@ The web service that is used by the ***UAT*** environment.
 
 # TingenData\\  
 
-This directory contains the data that Tingen needs/uses to do what it does.
+* Contains data required by Tingen (and related projects)
+* Contains data created by Tingen (and related projects)
+* Data may contain client-specific information
+* Should be locked down/hardened
 
 ### TingenData\\Commander\\
 
@@ -158,32 +161,6 @@ test
 │   ├── UAT
 │   │   ├── bin 
 ```
-
-# C:\TingenData
-
-
-
-
-
-
-
-
-
-
-  * Configuration files
-  * Import data that Tingen needs to function
-  * Messages (alerts/errors/warnings)
-  * Debugging information
-
-
-The web service (C:\Tingen) and the data (C:\TingenData) are separated for security reasons. Aside from a handful of specific files that Tingen imports, the Tingen web service does not read data from C:\TingenData, it only writes data.
-
-
-
-
-
-
-
 
 
 2.2 C:\Tingen structure
