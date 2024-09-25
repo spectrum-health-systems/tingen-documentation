@@ -17,7 +17,6 @@
 <details>
   <summary>Click to expand diagram</summary>
 
-    ```
     .
     ├── Tingen
     │   ├── Archive
@@ -84,7 +83,6 @@
     │   │   │   ├── Debugging
     │   │   │   ├── Logs
     │   │   ├── Temporary
-    ```
 
 </details>
 
