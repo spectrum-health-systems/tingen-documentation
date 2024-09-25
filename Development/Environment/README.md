@@ -15,10 +15,6 @@
 * [Sandcastle](https://github.com/EWSoftware/SHFB)
 * [GitHub Desktop](https://github.com/apps/desktop)
 
-## Required software/packages
-
-* [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard)
-
 ## Required projects
 
 * [Tingen_development](https://github.com/spectrum-health-systems/Tingen-Development)
