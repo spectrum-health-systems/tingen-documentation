@@ -12,6 +12,16 @@
 
 </div>
 
+These steps should be taken on the first development day of a new month.
+
+# 1. Archive branches
+
+Archive the `development` branches:
+
+* Tingen-Documentation (`YY.DD.##-development+final`)
+* Tingen-Development (`YY.DD.##-development+final`)
+* Outpost31 (`YY.DD.##-development+final`)
+
 # 1. Update the AutoHotKey script
 
 # 2. Update file headers
