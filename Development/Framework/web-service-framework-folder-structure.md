@@ -8,7 +8,7 @@
     Tingen Web Service Framework: Folder Structure
   </h1>
 
-![BranchWarning](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.9-white?style=for-the-badge)
+![BASEDONBRANCH](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.10-white?style=for-the-badge)
 
 </div>
 
