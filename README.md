@@ -4,8 +4,6 @@
 
   ![logo](./.github/Images/Logos/TingenDocumentation-464x616.png)
 
-  ![RELEASEVERSION](https://img.shields.io/badge/release-24.10-seagreen?style=flat-square)
-
 </div>
 
 # Tingen Documentation
