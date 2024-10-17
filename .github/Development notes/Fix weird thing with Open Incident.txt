@@ -1,6 +1,0 @@
-* Fix weird thing with Open Incidents showing the "All Status"
-* Finalize name of status files
-* Move messages for status updates to config
-* Move FieldIds to hardcode
-
-* Export all the session stuff as a JSON, import into Commander
