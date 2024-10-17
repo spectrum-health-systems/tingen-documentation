@@ -20,6 +20,8 @@ Here be:
 
 * **[API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md)**
 
+You can also review the Tingen Documentation [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/50/views/3) and [Changelog](https://github.com/orgs/spectrum-health-systems/projects/50/views/4)
+
 # Documentation snapshots
 
 When a new stable version of Tingen is released, the documentation for that version is moved to a separate branch for historical purposes.
