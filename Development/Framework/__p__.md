@@ -8,7 +8,7 @@
     Tingen Web Service Framework
   </h1>
 
-![BASEDONBRANCH](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.10-white?style=for-the-badge)
+![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.10-white?style=for-the-badge)
 
 </div>
 
