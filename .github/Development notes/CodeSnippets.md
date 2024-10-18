@@ -54,8 +54,8 @@ None.
 ## Assembly Name
 
 ```csharp
-/// <summary>Assembly name for logging purposes.</summary>
-/// <remarks>The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
+/// <summary>The executing assembly name.</summary>
+/// <remarks>This is defined here so it can be used to write log files throughout the class.</remarks>
 ```
 
 ```html

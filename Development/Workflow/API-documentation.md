@@ -22,3 +22,5 @@
 
    - Tingen
    - Outpost31
+
+Files will be built in `Tingen-Documentation\docs\API\`
