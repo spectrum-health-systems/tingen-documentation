@@ -1,17 +1,13 @@
-# Development snippets
+# Code snippets
 
-```csharp
- More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
-```
+## `see href`
 
 ## Logging
 
-### Can't Trace Log, use Primeval Log
-
 ```csharp
 /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
-* need to create a logfile here, use a Primeval Log.
-*/
+ * need to create a logfile here, use a Primeval Log.
+ */
 ```
 
 ```csharp
@@ -55,44 +51,15 @@ None.
 */
 ```
 
-
 ## Assembly Name
 
 ```csharp
 /// <summary>Assembly name for logging purposes.</summary>
-/// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/AssemblyName/*'/>
-public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+/// <remarks>The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
 ```
 
 ```html
-<!--
-    u240820_documentation [WORK-IN-PROGRESS]
-
-    Namespace
-        Outpost31.Core.Avatar
-
-    Classes
-        Outpost31.Core.Avatar.AvatarData.cs
-        Outpost31.Core.Avatar.ReturnObject.cs
--->
-
-<!--
-    u240819_documentation [WORK-IN-PROGRESS]
-
-    This document contains common XML Documentation that is used throughout the
-    Outpost31 project.
-
-    Properties
-        AssemblyName        string
-        Mode                string
-        ReturnOptionObject  OptionObject
-        SentOptionObject    OptionObject
-        SentScriptParameter string
-        SystemCode          string
-        TraceDelay          int
-        TraceLevel          int
-        WorkOptionObject    OptionObject
--->
+<!-- u240820 -->
 ```
 
 ## XML documentation links to webpages
@@ -106,6 +73,7 @@ public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly(
 
 <see cref="Outpost31.Core.Avatar.ReturnObject.Finalize(Session.TingenSession, string, string)"/>
 
+ More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
 ```
 
 ***
