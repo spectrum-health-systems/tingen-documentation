@@ -13,6 +13,16 @@
 ```csharp
 LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
+```csharp
+/* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+*
+* You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
+* when Primeval log directory is being refreshed.
+*
+* So, no logging for you!
+*/
+```
+
 
 ## Development Notes
 
