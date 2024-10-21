@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.2.18.0" projectFile="D:\GitHub\Spectrum Health Systems\Outpost31\.github\Sandcastle\Outpost31-jad.shfbproj" started="10/18/2024 1:04:38 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.2.18.0" projectFile="D:\GitHub\Spectrum Health Systems\Outpost31\.github\Sandcastle\Outpost31-jad.shfbproj" started="10/21/2024 10:39:17 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -38,18 +38,18 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0060
+    Last step completed in 00:00:00.0050
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0110
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-297f34f6-8b9b-477d-871f-3eb6c8b32278.proj]
-Build started 10/18/2024 1:04:42 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-e67b8f4f-83b4-412e-85e9-8616dc3346d3.proj]
+Build started 10/21/2024 10:39:21 AM.
 
-Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-297f34f6-8b9b-477d-871f-3eb6c8b32278.proj&quot; on node 1 (default targets).
+Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-e67b8f4f-83b4-412e-85e9-8616dc3346d3.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -60,25 +60,25 @@ GenerateRefInfo:
   Wrote information on 15 namespaces, 28 types, and 166 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-297f34f6-8b9b-477d-871f-3eb6c8b32278.proj&quot; (default targets).
-    Last step completed in 00:00:00.7310
+Done Building Project &quot;W:\Caches\Sandcastle\GenerateRefInfo-e67b8f4f-83b4-412e-85e9-8616dc3346d3.proj&quot; (default targets).
+    Last step completed in 00:00:00.6732
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0485
+    Last step completed in 00:00:00.0490
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
     Unique name M_Outpost31_Core_Logger_TraceLog_Create_1 generated for M:Outpost31.Core.Logger.TraceLog.Create(System.Int32,System.String,Outpost31.Core.Logger.TraceLog,System.String,System.String,System.Int32,System.String)
-    Last step completed in 00:00:00.0320
+    Last step completed in 00:00:00.0310
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0320
+    Last step completed in 00:00:00.0270
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0405
+    Last step completed in 00:00:00.0400
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -87,27 +87,27 @@ No additional content to copy
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0207
+    Last step completed in 00:00:00.0190
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.2492
+    Last step completed in 00:00:00.2387
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0075
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 W:\Caches\Sandcastle\BuildAssembler.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0122
+    Last step completed in 00:00:00.0130
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -125,9 +125,6 @@ SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Outpost31.Core.Avatar.A
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Outpost31.Core.Avatar.AvatarData.SentOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Outpost31.Core.Avatar.AvatarData.WorkOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Configuration.ConfigSettings.Load(System.String,System.String)] Missing &lt;param name=&quot;configFileName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Framework.Maintenance.VerifyDirectories(System.Collections.Generic.List{System.String})] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Framework.Maintenance.VerifyDirectories(System.Collections.Generic.List{System.String})] Missing &lt;param name=&quot;directoryPaths&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Framework.Refresh.RefreshOnUnknown(Outpost31.Core.Session.TingenSession)] Missing &lt;param name=&quot;tnSession&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Primeval(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;assemblyName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Primeval(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Primeval(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;fromPath&quot;/&gt; documentation
@@ -207,12 +204,12 @@ SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Module.OpenIn
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening(Outpost31.Core.Session.TingenSession)] Missing &lt;param name=&quot;tnSession&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting(Outpost31.Core.Session.TingenSession)] Missing &lt;param name=&quot;tnSession&quot;/&gt; documentation
 Processed 256 topic(s)
-91 warning(s)
+88 warning(s)
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:04.2338
+</plugIn>    Last step completed in 00:00:04.0338
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -248,26 +245,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; W:\Caches\Sandcastle\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; W:\Caches\Sandcastle\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; W:\Caches\Sandcastle\Output\Website\Web.Config
-    Last step completed in 00:00:00.1515
+    Last step completed in 00:00:00.1180
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.1310
+    Last step completed in 00:00:00.1289
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 402 files for the website content
-    Last step completed in 00:00:00.2245
+    Last step completed in 00:00:00.3145
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0615
+    Last step completed in 00:00:00.0550
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 10/18/2024 1:04:48 PM.  Total time: 00:00:09.4339
+Build completed successfully at 10/21/2024 10:39:26 AM.  Total time: 00:00:09.1645
 
 </buildStep>
 </shfbBuild>
