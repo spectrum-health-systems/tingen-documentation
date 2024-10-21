@@ -17,6 +17,7 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ## Development Notes
 
 ```csharp
+/* [DN--] */
 /* [DN01] */
 ```
 
@@ -25,6 +26,11 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 =================
 DEVELOPMENT NOTES
 =================
+
+-----------------
+[DN--] 240817
+-----------------
+General note.
 
 -----------------
 [DN01] 240817
@@ -56,6 +62,7 @@ None.
 ```csharp
 /// <summary>The executing assembly name.</summary>
 /// <remarks>This is defined here so it can be used to write log files throughout the class.</remarks>
+public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
 ```html
