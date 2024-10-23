@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.9.12.0" projectFile="D:\Development\GitHub\Spectrum Health Systems\Tingen-Development\.github\Sandcastle\Tingen_development-jad.shfbproj" started="10/23/2024 12:08:05 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.9.12.0" projectFile="D:\Development\GitHub\Spectrum Health Systems\Tingen-Development\.github\Sandcastle\Tingen_development-jad.shfbproj" started="10/23/2024 12:33:59 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -38,10 +38,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-5ef340c1-e53f-4329-bdc2-2f444e822d5d.proj]
-Build started 10/23/2024 12:08:05 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-81fddc4c-c68c-4e89-85d8-839777b3c639.proj]
+Build started 10/23/2024 12:34:00 PM.
 
-Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-5ef340c1-e53f-4329-bdc2-2f444e822d5d.proj&quot; on node 1 (default targets).
+Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-81fddc4c-c68c-4e89-85d8-839777b3c639.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -52,27 +52,27 @@ GenerateRefInfo:
   Using framework redirect &#39;System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
   Using framework redirect &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
   Using framework redirect &#39;System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
-  Wrote information on 1 namespaces, 1 types, and 7 members
+  Wrote information on 1 namespaces, 1 types, and 6 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-5ef340c1-e53f-4329-bdc2-2f444e822d5d.proj&quot; (default targets).
-    Last step completed in 00:00:00.6431
+Done Building Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-81fddc4c-c68c-4e89-85d8-839777b3c639.proj&quot; (default targets).
+    Last step completed in 00:00:00.6404
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0120
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0095
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0115
+    Last step completed in 00:00:00.0095
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0065
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -86,22 +86,22 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0086
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.0812
+    Last step completed in 00:00:00.0814
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\Caches\Sandcastle\BuildAssembler.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0120
+    Last step completed in 00:00:00.0115
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -110,14 +110,17 @@ Loading TOC info and adding unique IDs to parent nodes
 </plugIn>Loading configuration...
 Processing topics...
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Tingen_development.Tingen_development.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Tingen_development.Tingen_development.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;P:Outpost31.Core.Avatar.AvatarData.SentOptionObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Tingen_development.Tingen_development.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;P:Outpost31.Core.Avatar.AvatarData.SentScriptParameter&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Tingen_development.Tingen_development.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-Processed 11 topic(s)
-2 warning(s)
+Processed 10 topic(s)
+4 warning(s)
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
+SaveComponent: Waiting for the document writer task to finish (5 Website API file(s) remaining)...
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:02.9334
+</plugIn>    Last step completed in 00:00:02.8105
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -153,18 +156,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; D:\Caches\Sandcastle\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; D:\Caches\Sandcastle\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; D:\Caches\Sandcastle\Output\Website\Web.Config
-    Last step completed in 00:00:00.0165
+    Last step completed in 00:00:00.0185
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0215
+    Last step completed in 00:00:00.0205
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 74 files for the website content
-    Last step completed in 00:00:00.0390
+Copied 71 files for the website content
+    Last step completed in 00:00:00.0381
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
@@ -172,7 +175,7 @@ Removing intermediate files...
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 10/23/2024 12:08:09 PM.  Total time: 00:00:04.2080
+Build completed successfully at 10/23/2024 12:34:03 PM.  Total time: 00:00:04.0988
 
 </buildStep>
 </shfbBuild>
