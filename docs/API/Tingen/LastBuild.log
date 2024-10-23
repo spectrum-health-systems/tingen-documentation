@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.9.12.0" projectFile="D:\Development\GitHub\Spectrum Health Systems\Tingen-Development\.github\Sandcastle\Tingen_development-jad.shfbproj" started="10/23/2024 11:40:32 AM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.9.12.0" projectFile="D:\Development\GitHub\Spectrum Health Systems\Tingen-Development\.github\Sandcastle\Tingen_development-jad.shfbproj" started="10/23/2024 11:54:20 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -34,14 +34,14 @@ Generating shared content files (en-US, English (United States))...
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0015
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-28a1931c-0a24-46a3-9910-4624b97fd23d.proj]
-Build started 10/23/2024 11:40:32 AM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-152b95d3-1d5b-402f-add9-cc9db3502172.proj]
+Build started 10/23/2024 11:54:21 AM.
 
-Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-28a1931c-0a24-46a3-9910-4624b97fd23d.proj&quot; on node 1 (default targets).
+Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-152b95d3-1d5b-402f-add9-cc9db3502172.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -55,8 +55,8 @@ GenerateRefInfo:
   Wrote information on 1 namespaces, 1 types, and 6 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-28a1931c-0a24-46a3-9910-4624b97fd23d.proj&quot; (default targets).
-    Last step completed in 00:00:00.6323
+Done Building Project &quot;D:\Caches\Sandcastle\GenerateRefInfo-152b95d3-1d5b-402f-add9-cc9db3502172.proj&quot; (default targets).
+    Last step completed in 00:00:00.8026
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
@@ -64,15 +64,15 @@ Applying document model to reflection output...
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0095
+    Last step completed in 00:00:00.0097
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0090
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0031
+    Last step completed in 00:00:00.0027
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -90,18 +90,18 @@ Generating conceptual content intermediate TOC file...
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.0732
+    Last step completed in 00:00:00.0822
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0015
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\Caches\Sandcastle\BuildAssembler.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0119
+    Last step completed in 00:00:00.0115
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -117,7 +117,7 @@ CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 o
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:02.6794
+</plugIn>    Last step completed in 00:00:02.9997
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -153,18 +153,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; D:\Caches\Sandcastle\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; D:\Caches\Sandcastle\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; D:\Caches\Sandcastle\Output\Website\Web.Config
-    Last step completed in 00:00:00.0235
+    Last step completed in 00:00:00.0240
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0141
+    Last step completed in 00:00:00.0165
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 71 files for the website content
-    Last step completed in 00:00:00.0375
+    Last step completed in 00:00:00.0400
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
@@ -172,7 +172,7 @@ Removing intermediate files...
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 10/23/2024 11:40:35 AM.  Total time: 00:00:03.9253
+Build completed successfully at 10/23/2024 11:54:25 AM.  Total time: 00:00:04.4795
 
 </buildStep>
 </shfbBuild>
