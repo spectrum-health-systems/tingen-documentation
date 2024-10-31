@@ -5,8 +5,8 @@
 ## Logging
 
 ```csharp
-/* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
- * need to create a logfile here, use a Primeval Log.
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+ * need to create a log file here, use a Primeval Log.
  */
 ```
 
@@ -14,7 +14,7 @@
 LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
 ```csharp
-/* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
 *
 * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
 * when Primeval log directory is being refreshed.
@@ -22,7 +22,6 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 * So, no logging for you!
 */
 ```
-
 
 ## Development Notes
 
@@ -62,16 +61,14 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 DEVELOPMENT NOTES
 =================
 
-None.
-
 */
 ```
 
 ## Assembly Name
 
 ```csharp
-/// <summary>The executing assembly name.</summary>
-/// <remarks>This is defined here so it can be used to write log files throughout the class.</remarks>
+/// <summary>The executing Assembly name.</summary>
+/// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
 public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
