@@ -144,3 +144,10 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
                             <description><b>OpenForm</b> - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events) (error code <c>"6"</c>)</description>
                         </item>
                     </list>    
+
+
+# Old doc stuff
+
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: The Tingen Session</seealso>
