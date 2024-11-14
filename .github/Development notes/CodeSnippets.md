@@ -15,13 +15,31 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
 ```csharp
 /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
-*
-* You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
-* when Primeval log directory is being refreshed.
-*
-* So, no logging for you!
-*/
+ *
+ * You can't put a Primeval Log here either, since that may result in an infinite loop/stack overflow
+ * when Primeval log directory is being refreshed.
+ *
+ * So, no logging for you!
+ */
 ```
+
+```csharp
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
+ * 
+ * Use a Primeval Log here at your own risk!
+ */
+```
+
+```csharp
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
+ *
+ * Creating a Primeval log here is not recommended. If you need to debug this method, you'll need to
+ * insert some of the logic above to avoid infinite loops/stack overflows.
+ */
+```
+
+
+
 
 ## Development Notes
 
@@ -77,6 +95,11 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 ```
 
 ## XML documentation links to webpages
+
+
+```csharp
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+```
 
 ```csharp
 <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
