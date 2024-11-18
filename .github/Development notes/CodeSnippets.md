@@ -59,9 +59,7 @@ DEVELOPMENT NOTES
 -----------------
 General note.
 
------------------
-[DN01] 240817
------------------
+
 As of v24.8, the TingenMode must be either "enabled" or "disabled".
 
 If the TingenMode is "enable" or "disable" (which I've done when testing, so it's not an edge case), the Tingen will enter an "unknown"
