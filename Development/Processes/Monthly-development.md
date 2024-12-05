@@ -70,9 +70,9 @@ Search for the following string in the documentation...
 ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%YYYY.MM-white?style=for-the-badge)
 ```
 
-...where `YYYY.MM` is the Year.Month value for the current documentation.
+...where `YY.MM` is the Year.Month value for the current documentation.
 
-Replace the value of `YYYY.MM` with the current Year.Month.
+Replace the value of `YY.MM` with the current Year.Month.
 
 # 8. Update the AutoHotKey script
 
