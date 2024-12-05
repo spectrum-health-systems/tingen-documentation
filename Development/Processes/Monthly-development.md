@@ -67,12 +67,17 @@ return new Dictionary<string, string>
 Search for the following string in the documentation...
 
 ```
-![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%YYYY.MM-white?style=for-the-badge)
+![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%20YY.MM-white?style=for-the-badge)
 ```
 
-...where `YY.MM` is the Year.Month value for the current documentation.
+...where `YY.MM` is the Year.Month value for the current documentation, and keeping in mind that the "***%20***" in "**%20***MM*" is a space!
 
 Replace the value of `YY.MM` with the current Year.Month.
+
+For example:
+```
+![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.12-white?style=for-the-badge)
+```
 
 # 8. Update the AutoHotKey script
 
