@@ -45,16 +45,16 @@ For example:
 // ================================================================ 241031 =====
 ```
 
-## 56 Update the tnBuild value
+## 6 Update the tnBuild value
 
-Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `HHMM` value.
+Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
 
 For example:
 
 ```csharp
 return new Dictionary<string, string>
 {
-    { "tnBuild",              "0919" },
+    { "tnBuild",              "241205.0944" },
     { "avSystemCode",         "UAT" },
     { "tnDataRoot",           @"C:\TingenData" },
     { "tnConfigFileName",     "Tingen.config" },
