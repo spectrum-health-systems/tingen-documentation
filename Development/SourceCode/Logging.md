@@ -1,6 +1,4 @@
-<!--
-  u241205_work-in-progress
--->
+<!-- u241205 -->
 
   ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
