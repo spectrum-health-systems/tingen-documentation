@@ -49,16 +49,10 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 ```
 
 ```csharp
-/*
-=================
-DEVELOPMENT NOTES
-=================
+/* DEVELOPMENT NOTES
 
------------------
 [DN--] 240817
------------------
 General note.
-
 
 As of v24.8, the TingenMode must be either "enabled" or "disabled".
 
@@ -72,12 +66,8 @@ For now, users should verify that the TingenMode is "enabled" or "disabled", but
 ```
 
 ```csharp
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-*/
+/* DEVELOPMENT NOTES
+ */
 ```
 
 ## Assembly Name
