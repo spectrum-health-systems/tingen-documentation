@@ -4,7 +4,7 @@
 
   ![logo](../.github/Images/Logos/TingenDocumentation-464x616.png)
 
-  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.12-white?style=for-the-badge)
+  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20TingEn%2024.12-white?style=for-the-badge)
 
 </div>
 
