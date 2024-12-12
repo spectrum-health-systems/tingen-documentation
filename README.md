@@ -4,13 +4,13 @@
 
   ![logo](../.github/Images/Logos/TingenDocumentation-464x616.png)
 
-  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20TingEn%2024.12-white?style=for-the-badge)
+  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.12-white?style=for-the-badge)
 
 </div>
 
 # Tingen Documentation
 
-Here be:
+Here bee:
 
 * **[The Tingen Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md)**  
   Contains all of the information, details, and stuff of you'll need to use Tingen in your environments
