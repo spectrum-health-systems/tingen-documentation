@@ -19,4 +19,8 @@
 
 ## YYMMDD
 
+- [ ] Update Tingen.asmx.cs file header
+- [ ] Update WelcomeToOutpost31.cs file header
+- [ ] Update the tnBuild value
+
 Development notes.
