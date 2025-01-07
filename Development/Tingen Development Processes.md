@@ -1,9 +1,13 @@
 # Tingen Development Processes
 
+**CONTENTS**
+[Components](#components)
+[Daily development]()
+
 ## Components
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph Documentation
     direction TB
 	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
@@ -16,30 +20,46 @@ flowchart LR
 
   classDef allNodes stroke-width:2px;
   class DevelopmentDocumentation,ApiDocumentationt,Manual,Tingen,Outpost31 allNodes;
+  
+  click Tingen "https://github.com/spectrum-health-systems/Tingen_development"
+  click Outpost31 "https://github.com/spectrum-health-systems/Outpost31"
 ```
 
-
+## Daily development
 
 ```mermaid
+---
+title: Overview
+---
+flowchart LR
+  DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
+  DeployToUat --> Testing("Testing") 
+  Testing --> DailyDevelopment
 
-  subgraph WebServiceComponents["Web service components"]
-      direction TB
-      %% Components
-      TingenComponent@{shape: rect, label: "**Tingen**<br/>The web service<br/>entry point"}
-      Outpost31Component@{shape: rect, label: "**Outpost31**<br/>The web service logic"}
-      %% Layout
-      TingenComponent --> Outpost31Component
-  end
-  %% Styles #f7dc6f #f5b041 #b9770e
-  style WebServiceComponents color:#FFF,fill:#2c3e50,stroke:#FFF,stroke-width:2px
-  style TingenComponent color:#FFF,fill:sienna,stroke:#FFF,stroke-width:2px
-  style Outpost31Component color:#FFF,fill:sienna,stroke:#FFF,stroke-width:2px
-  style DocumentationComponents color:#FFF,fill:#2c3e50,stroke:#FFF,stroke-width:2px
-  style DevelopmentDocumentationComponent color:#000,fill:#f7dc6f,stroke:#ba4a00,stroke-width:2px
-  style ApiDocumentationComponent color:#000,fill:#f5b041,stroke:#ba4a00,stroke-width:2px
-  style ManualComponent color:#FFF,fill:#b9770e,stroke:#ba4a00,stroke-width:2px
-  %% Links 
-  click TingenComponent "https://github.com/spectrum-health-systems/Tingen_development"
-  click Outpost31Component "https://github.com/spectrum-health-systems/Outpost31"
+  classDef allNodes stroke-width:2px;
+  class DailyDevelopment,DeployToUat,Testing allNodes;
 ```
 
+### 1. Update file headers
+
+Update the file headers for the following files:
+
+* Tingen.Tingen.asmx.cs
+* Outpost31.WelcomeToOutpost31.cs
+
+### 2. Update the `tnBuild` value
+
+Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
+
+For example:
+
+```csharp
+return new Dictionary<string, string>
+{
+    { "tnBuild",              "241205.0944" },
+    { "avSystemCode",         "UAT" },
+    { "tnDataRoot",           @"C:\TingenData" },
+    { "tnConfigFileName",     "Tingen.config" },
+    { "ntstSecurityFileName", "NtstSecurity.config" }
+};
+```
