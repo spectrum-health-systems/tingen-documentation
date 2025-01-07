@@ -6,14 +6,12 @@
 flowchart LR
   subgraph Documentation
     direction TB
-	  DevelopmentDocumentation["Development documentation"] ~~~
-      ApiDocumentation["API documentation"]
-      Manual["Manual"]
-      DevelopmentDocumentation ~~~ ApiDocumentation ~~~ Manual
+	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
+	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
   end
 
   classDef allNodes stroke-width:2px;
-  class DailyDevelopment,DeployToUat,Testing allNodes;
+  class DevelopmentDocumentation,ApiDocumentationt,Manual allNodes;
 ```
 
 ```mermaid
