@@ -31,9 +31,6 @@ flowchart TB
 ## Daily development
 
 ```mermaid
----
-title: Overview
----
 flowchart LR
   DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
   DeployToUat --> Testing("Testing")
@@ -67,4 +64,16 @@ return new Dictionary<string, string>
     { "tnConfigFileName",     "Tingen.config" },
     { "ntstSecurityFileName", "NtstSecurity.config" }
 };
+```
+
+## Release Candidates
+
+```mermaid
+flowchart LR
+  DailyDevelopment("Daily development") --> Successful("Deploy to UAT")
+  DeployToUat --> Testing("Testing")
+  Testing -- &nbsp;Update documentation&nbsp; --> DailyDevelopment
+
+  classDef allNodes stroke-width:2px;
+  class DailyDevelopment,DeployToUat,Testing,UpdateDocumentation allNodes;
 ```
