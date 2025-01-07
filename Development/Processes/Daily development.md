@@ -12,7 +12,7 @@ flowchart LR
   Testing --> DailyDevelopment
 
   classDef nodes stroke-width:2px;
-  class DailyDevelopment, DeployToUat, Testing nodes;
+  class DailyDevelopment,DeployToUat,Testing nodes;
 ```
 
 ## Documentation development
