@@ -3,27 +3,11 @@
 
 ***
 
-TINGEN DOCUMENTATION
+# TINGEN DOCUMENTATION
 
-  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
+> Based on Tingen 25.1
 
-***
-
-  <h1>
-
-    Tingen development processes
-
-  </h1>
-
-  
-
-</div>
-
-  
-
-# Monthly development
-
-  
+## Monthly development
 
 When development starts for a new month:
 
