@@ -1,11 +1,13 @@
 
 <!-- u250107 -->
 
-![[./_attachments/TingenDocumentation-232x308.png |232x308]]
+***
+
+TINGEN DOCUMENTATION
 
   ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 
-  
+***
 
   <h1>
 
