@@ -11,14 +11,11 @@ flowchart LR
   end
   subgraph WebService
     direction TB
-	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
-	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
+	  Tingen["Web service entry point"] --> Outpost31["Web service logic"] 
   end
 
-
-
   classDef allNodes stroke-width:2px;
-  class DevelopmentDocumentation,ApiDocumentationt,Manual allNodes;
+  class DevelopmentDocumentation,ApiDocumentationt,Manual,Tingen,Outpost31 allNodes;
 ```
 
 
