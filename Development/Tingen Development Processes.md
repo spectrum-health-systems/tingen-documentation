@@ -9,31 +9,22 @@ flowchart LR
 	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
 	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
   end
+  subgraph WebService
+    direction TB
+	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
+	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
+  end
+
+
 
   classDef allNodes stroke-width:2px;
   class DevelopmentDocumentation,ApiDocumentationt,Manual allNodes;
 ```
 
-```mermaid
-flowchart TB
-    subgraph Documentation["Documentation components"]
-	    direction TB
-		DevelopmentDocumentation["Development documentation"]
-    end
-```
 
 
 ```mermaid
-flowchart TB
-  subgraph DocumentationComponents["Documentation components"]
-      direction TB
-      %% Components
-      DevelopmentDocumentationComponent@{shape: doc, label: "Development documentation"}
-      ApiDocumentationComponent@{shape: doc, label: "API Documentation"}
-      ManualComponent@{shape: doc, label: "Tingen Manual"}
-      %% Layout
-      DevelopmentDocumentationComponent ~~~ ApiDocumentationComponent ~~~ ManualComponent
-  end
+
   subgraph WebServiceComponents["Web service components"]
       direction TB
       %% Components
