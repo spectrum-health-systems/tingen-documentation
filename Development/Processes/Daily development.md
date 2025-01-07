@@ -7,8 +7,8 @@
 
 ```mermaid
 flowchart LR
-  DailyDevelopment("Daily development") --> DeployToUAT("Deploy to UAT")
-  DeployToUAT --> Testing("Testing") 
+  DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
+  DeployToUat --> Testing("Testing") 
   Testing --> DailyDevelopment
 
   classDef nodes stroke-width:2px;
