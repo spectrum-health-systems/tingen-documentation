@@ -23,6 +23,9 @@ flowchart TB
   
   click Tingen "https://github.com/spectrum-health-systems/Tingen_development"
   click Outpost31 "https://github.com/spectrum-health-systems/Outpost31"
+  click Manual "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md"
+  click DevelopmentDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development"
+  click ApiDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md"
 ```
 
 ## Daily development
@@ -39,6 +42,8 @@ flowchart LR
   classDef allNodes stroke-width:2px;
   class DailyDevelopment,DeployToUat,Testing allNodes;
 ```
+
+The following steps are taken when a new daily development session begins:
 
 ### 1. Update file headers
 
