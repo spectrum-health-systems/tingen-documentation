@@ -30,7 +30,8 @@ Update the file headers for the following files:
 
 * Tingen.Tingen.asmx.cs
 * Outpost31.WelcomeToOutpost31.cs
-## 5. Update the tnBuild value
+
+## 5. Update the `tnBuild` value
 
 Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
 
@@ -46,6 +47,7 @@ return new Dictionary<string, string>
     { "ntstSecurityFileName", "NtstSecurity.config" }
 };
 ```
+
 ## 6. Update the documentation
 
 Search for the following string in the documentation...
