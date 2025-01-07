@@ -36,11 +36,11 @@ title: Overview
 ---
 flowchart LR
   DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
-  DeployToUat --> Testing("Testing") 
-  Testing --> DailyDevelopment
+  DeployToUat --> Testing("Testing")
+  Testing -Update documentation-> DailyDevelopment
 
   classDef allNodes stroke-width:2px;
-  class DailyDevelopment,DeployToUat,Testing allNodes;
+  class DailyDevelopment,DeployToUat,Testing,UpdateDocumentation allNodes;
 ```
 
 The following steps are taken when a new daily development session begins:
