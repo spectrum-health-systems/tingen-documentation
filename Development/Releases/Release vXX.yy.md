@@ -1,7 +1,6 @@
 <!-- u250107 -->
 
-
-# Tingen vXX.yy Template
+# Release vXX.yy
 
 ## Archive vXX.yy
 
@@ -16,3 +15,8 @@
 - [ ] Update the documentation
 - [ ] Update the AutoHotKey script
 - [ ] Update the Sandcastle help file versions
+
+
+## YYMMDD
+
+Development notes.

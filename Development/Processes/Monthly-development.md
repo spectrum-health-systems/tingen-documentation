@@ -4,7 +4,7 @@
 
   ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
 
-  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.12-white?style=for-the-badge)
+  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 
   <h1>
     Tingen development processes
@@ -38,8 +38,8 @@ Create a `YY.DD.##-development+final` branch of Tingen-Documentation using the c
 
 Update the following AssemblyInfo.cs files with the current version number:
 
-- Tingen_development/Properties/AssemblyInfo.cs
-- Outpost31/Properties/AssemblyInfo.cs
+* Tingen_development/Properties/AssemblyInfo.cs
+* Outpost31/Properties/AssemblyInfo.cs
 
 ## 6. Update file headers
 
@@ -82,15 +82,15 @@ Replace the value of `YY.MM` with the current Year.Month.
 
 For example:
 ```
-![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2024.12-white?style=for-the-badge)
+![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 ```
 
 ## 9. Update the Sandcastle help file versions
 
 Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
-- Tingen
-- Outpost31
+* Tingen
+* Outpost31
 
 ***
 
