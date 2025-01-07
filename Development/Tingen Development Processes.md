@@ -37,7 +37,7 @@ title: Overview
 flowchart LR
   DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
   DeployToUat --> Testing("Testing")
-  Testing -Update documentation-> DailyDevelopment
+  Testing -- Update documentation --> DailyDevelopment
 
   classDef allNodes stroke-width:2px;
   class DailyDevelopment,DeployToUat,Testing,UpdateDocumentation allNodes;
