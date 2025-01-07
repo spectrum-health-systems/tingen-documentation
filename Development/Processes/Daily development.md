@@ -3,44 +3,27 @@
 > [!info] Last updated: January 7, 2025
 # Daily development
 
-# Overview
+## Source code development
 
 ```mermaid
 flowchart LR
   DailyDevelopment("Daily development") --> DeployToUAT("Deploy to UAT")
   DeployToUAT --> Testing("Testing") 
   Testing --> DailyDevelopment
+
+  classDef nodes stroke-width:2px;
+  class DailyDevelopment, DeployToUat, Testing nodes;
 ```
 
-
-```mermaid
-graph LR
-  %% Components
-  DailyDevelopment@{shape: rect, label: "Daily development"}
-  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
-  Testing@{shape: rounded, label: "Testing"}
-  %% Layout
-  DailyDevelopment --> DeployToUat --> Testing --> DailyDevelopment
-  %% Styles
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style DeployToUat color:#FFF,fill:grey,stroke:#FFF,stroke-width:2px
-  style Testing color:#FFF,fill:steelblue,stroke:#FFF,stroke-width:2px
-```
-  
+## Documentation development
 
 ```mermaid
-graph LR
-  %% Components
-  DailyDevelopment@{shape: rect, label: "Daily development"}
-  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
-  Testing@{shape: rounded, label: "Testing"}
-  %% Layout
-  DailyDevelopment --> DeployToUat --> Testing --> DailyDevelopment
-  %% Styles
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style DeployToUat color:#FFF,fill:grey,stroke:#FFF,stroke-width:2px
-  style Testing color:#FFF,fill:steelblue,stroke:#FFF,stroke-width:2px
+flowchart LR
+  DailyDevelopment("Daily development") --> DevelopmentDocumentation("Development documentation")
+  DailyDevelopment("Daily development") --> TingenManual("Tingen Manual")
+
 ```
+
 
   
 
