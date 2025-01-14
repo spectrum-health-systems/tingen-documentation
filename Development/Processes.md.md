@@ -1,26 +1,18 @@
 <!-- u250114 -->
 
+> Last updated: January 14, 2025
+
 <div align="center">
 
-![logo](../github/Images/Logos/TingenDocumentation-232x308.png)
-
-![logo](../../github/Images/Logos/TingenDocumentation-232x308.png)
-
-
-![logo](../../../github/Images/Logos/TingenDocumentation-232x308.png)
+![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
 
  <h1>Tingen Development: Processes</h1>
 
 </div>
-sdf
 
+## CONTENTS
 
-![[../../github/Images/Logos/TingenDocumentation-232x308.png]]
-
-> Last updated: January 14, 2025
-# Tingen Development: Processes
-
-[Daily development](#daily-development)
+[Daily development](#daily-development)  
 [Monthly development](#monthly-development)
 
 # Daily development
