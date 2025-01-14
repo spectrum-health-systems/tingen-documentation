@@ -38,9 +38,6 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
  */
 ```
 
-
-
-
 ## Development Notes
 
 ```csharp

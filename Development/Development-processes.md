@@ -10,10 +10,37 @@
 
 </div>
 
-## CONTENTS
+### CONTENTS
 
+[Development components](#development-components)  
 [Daily development](#daily-development)  
 [Monthly development](#monthly-development)
+
+# Development components
+
+Tingen is comprised of the following components:
+
+```mermaid
+flowchart TB
+  subgraph Documentation
+    direction TB
+	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
+	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
+  end
+  subgraph WebService
+    direction TB
+	  Tingen["**Tingen**<br>Web service entry point"] --> Outpost31["**Outpost31**<br>Web service logic"] 
+  end
+
+  classDef allNodes stroke-width:2px;
+  class DevelopmentDocumentation,ApiDocumentationt,Manual,Tingen,Outpost31 allNodes;
+  
+  click Tingen "https://github.com/spectrum-health-systems/Tingen_development"
+  click Outpost31 "https://github.com/spectrum-health-systems/Outpost31"
+  click Manual "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md"
+  click DevelopmentDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development"
+  click ApiDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md"
+```
 
 # Daily development
 
