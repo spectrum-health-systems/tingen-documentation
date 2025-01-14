@@ -18,56 +18,14 @@ This is an overview of the Tingen development processes.
 
 # Tingen development
 
-The Tingen web service is comprised of the following components:
 
-```mermaid
-flowchart TB
-  subgraph DocumentationComponents["Documentation components"]
-      direction TB
-      %% Components
-      DevelopmentDocumentationComponent@{shape: doc, label: "Development documentation"}
-      ApiDocumentationComponent@{shape: doc, label: "API Documentation"}
-      ManualComponent@{shape: doc, label: "Tingen Manual"}
-      %% Layout
-      DevelopmentDocumentationComponent ~~~ ApiDocumentationComponent ~~~ ManualComponent
-  end
-  subgraph WebServiceComponents["Web service components"]
-      direction TB
-      %% Components
-      TingenComponent@{shape: rect, label: "**Tingen**<br/>The web service<br/>entry point"}
-      Outpost31Component@{shape: rect, label: "**Outpost31**<br/>The web service logic"}
-      %% Layout
-      TingenComponent --> Outpost31Component
-  end
-  %% Styles #f7dc6f #f5b041 #b9770e
-  style WebServiceComponents color:#FFF,fill:#2c3e50,stroke:#FFF,stroke-width:2px
-  style TingenComponent color:#FFF,fill:sienna,stroke:#FFF,stroke-width:2px
-  style Outpost31Component color:#FFF,fill:sienna,stroke:#FFF,stroke-width:2px
-  style DocumentationComponents color:#FFF,fill:#2c3e50,stroke:#FFF,stroke-width:2px
-  style DevelopmentDocumentationComponent color:#000,fill:#f7dc6f,stroke:#ba4a00,stroke-width:2px
-  style ApiDocumentationComponent color:#000,fill:#f5b041,stroke:#ba4a00,stroke-width:2px
-  style ManualComponent color:#FFF,fill:#b9770e,stroke:#ba4a00,stroke-width:2px
-  %% Links 
-  click TingenComponent "https://github.com/spectrum-health-systems/Tingen_development"
-  click Outpost31Component "https://github.com/spectrum-health-systems/Outpost31"
-```
 
 ## Development timelines
 
 ### Daily development
 
 ```mermaid
-flowchart LR
-  %% Components
-  DailyDevelopment@{shape: rect, label: "Daily development"}
-  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
-  Testing@{shape: rounded, label: "Testing"}
-  %% Layout
-  DailyDevelopment --> DeployToUat --> Testing --> DailyDevelopment
-  %% Styles
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style DeployToUat color:#FFF,fill:grey,stroke:#FFF,stroke-width:2px
-  style Testing color:#FFF,fill:steelblue,stroke:#FFF,stroke-width:2px
+
 ```
 
 ### Release candidates
@@ -116,17 +74,7 @@ flowchart LR
 
 ### Monthly archives
 
-```mermaid
-flowchart LR
-  %% Components
-  DailyDevelopment@{shape: rect, label: "Daily development"}
-  MonthlyArchive@{shape: stadium, label: "Monthly Archive"}
-  %% Layout
-  DailyDevelopment --x MonthlyArchive
-  %% Styles
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style MonthlyArchive color:#FFF,fill:#0e6655,stroke:#FFF,stroke-width:2px
-```
+
 
 # Documentation process
 

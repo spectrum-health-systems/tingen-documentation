@@ -18,46 +18,72 @@
 
 # Development components
 
-Tingen is comprised of the following components:
+The Tingen web service is comprised of the following components:
 
 ```mermaid
 flowchart TB
-  subgraph Documentation
-    direction TB
-	  DevelopmentDocumentation["Development documentation"] ~~~ ApiDocumentation["API documentation"] 
-	  ApiDocumentation["API documentation"] ~~~ Manual["Manual"]
+  subgraph Documentation["Documentation components"]
+      direction TB
+      %% Components
+      DevelopmentDocumentation@{shape: doc, label: "Development documentation"}
+      ApiDocumentation@{shape: doc, label: "API Documentation"}
+      Manual@{shape: doc, label: "Tingen Manual"}
+      %% Layout
+      DevelopmentDocumentation ~~~ ApiDocumentation ~~~ Manual
   end
-  subgraph WebService
-    direction TB
-	  Tingen["**Tingen**<br>Web service entry point"] --> Outpost31["**Outpost31**<br>Web service logic"] 
+  subgraph WebService["Web service components"]
+      direction TB
+      %% Components
+      Tingen@{shape: notch-rect, label: "**Tingen**<br/>The web service<br/>entry point"}
+      Outpost31@{shape: notch-rect, label: "**Outpost31**<br/>The web service logic"}
+      %% Layout
+      Tingen --> Outpost31
   end
-
-  classDef allNodes stroke-width:2px;
-  class DevelopmentDocumentation,ApiDocumentationt,Manual,Tingen,Outpost31 allNodes;
-  
+  %% Styles #f7dc6f #f5b041 #b9770e
+  style WebService color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:2px
+  style Tingen color:#000,fill:#ffc107,stroke:#b71c1c,stroke-width:2px
+  style Outpost31 color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:2px
+  style Documentation color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:2px
+  style DevelopmentDocumentation color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
+  style ApiDocumentation color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
+  style Manual color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
+  %% Links 
   click Tingen "https://github.com/spectrum-health-systems/Tingen_development"
   click Outpost31 "https://github.com/spectrum-health-systems/Outpost31"
-  click Manual "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual/Tingen-Manual.md"
   click DevelopmentDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development"
-  click ApiDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs/README.md"
+  click ApiDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs"
+  click Manual "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual"
+
+
 ```
 
 # Daily development
 
 ```mermaid
 ---
-title: Overview of the source code development process
+title: Overview of the daily development process
 ---
 flowchart LR
-  DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
-  DeployToUat --> Testing("Testing") 
-  Testing --> DailyDevelopment
-
-  classDef allNodes stroke-width:2px;
-  class DailyDevelopment,DeployToUat,Testing allNodes;
+  %% Components
+  Preparation@{shape: circle, label: "**Preparation**\nUpdate file headers\nUpdate tnBuild"}
+  subgraph Development["Daily development cycle"]
+    direction LR
+    DailyDevelopment@{shape: rounded, label: "Daily development"}
+    DeployToUat@{shape: rounded, label: "Deploy To UAT"}
+    Testing@{shape: rounded, label: "Testing"}
+    %% Layout
+    DailyDevelopment --> DeployToUat --> Testing --> DailyDevelopment
+  end
+  %% Layout
+  Preparation --> Development   
+  %% Styles
+  style Preparation color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
+  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
+  style DeployToUat color:#FFF,fill:grey,stroke:#FFF,stroke-width:2px
+  style Testing color:#FFF,fill:steelblue,stroke:#FFF,stroke-width:2px
 ```
 
-## Starting a new daily development session
+## Preparation
 
 ### 1. Update file headers
 
@@ -83,7 +109,24 @@ return new Dictionary<string, string>
 };
 ```
 
+
 # Monthly development
+
+```mermaid
+---
+title: Overview of the monthly development process
+---
+flowchart LR
+  %% Components
+  DailyDevelopment@{shape: rect, label: "Daily development"}
+  MonthlyArchive@{shape: stadium, label: "Monthly Archive"}
+  %% Layout
+  DailyDevelopment --x MonthlyArchive
+  %% Styles
+  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
+  style MonthlyArchive color:#FFF,fill:#0e6655,stroke:#FFF,stroke-width:2px
+```
+
 
 These are the steps to create a new monthly development build of Tingen.
 
