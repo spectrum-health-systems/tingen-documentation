@@ -22,12 +22,20 @@ The Tingen web service is comprised of the following components:
 
 ```mermaid
 flowchart TB
+  subgraph Other["Other components"]
+      direction TB
+      %% Components
+      ScriptLinkStandard@{shape: notch-rect, label: "ScriptLink Standard"}
+      Sandcastle@{shape: notch-rect, label: "Sandcastle"}
+      %% Layout
+      ScriptLinkStandard ~~~ Sandcastle
+  end
   subgraph Documentation["Documentation components"]
       direction TB
       %% Components
       DevelopmentDocumentation@{shape: doc, label: "Development documentation"}
       ApiDocumentation@{shape: doc, label: "API Documentation"}
-      Manual@{shape: doc, label: "Tingen Manual"}
+      Manual@{shape: doc, label: "Manual"}
       %% Layout
       DevelopmentDocumentation ~~~ ApiDocumentation ~~~ Manual
   end
@@ -39,22 +47,25 @@ flowchart TB
       %% Layout
       Tingen --> Outpost31
   end
-  %% Styles #f7dc6f #f5b041 #b9770e
-  style WebService color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:2px
-  style Tingen color:#000,fill:#ffc107,stroke:#b71c1c,stroke-width:2px
-  style Outpost31 color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:2px
-  style Documentation color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:2px
-  style DevelopmentDocumentation color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
-  style ApiDocumentation color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
-  style Manual color:#000,fill:#ffc107,stroke:#9c27b0,stroke-width:2px
+  %% Styles
+  style WebService color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:3px
+  style Tingen color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
+  style Outpost31 color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
+  style Documentation color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:3px
+  style DevelopmentDocumentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
+  style ApiDocumentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
+  style Manual color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
+  style Other color:#FFF,fill:#37474f,stroke:#FFF,stroke-width:3px
+  style ScriptLinkStandard color:#000,fill:#a1887f,stroke:#b71c1c,stroke-width:3px
+  style Sandcastle color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
   %% Links 
   click Tingen "https://github.com/spectrum-health-systems/Tingen_development"
   click Outpost31 "https://github.com/spectrum-health-systems/Outpost31"
   click DevelopmentDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development"
   click ApiDocumentation "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs"
   click Manual "https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual"
-
-
+  click ScriptLinkStandard "https://github.com/rcskids/ScriptLinkStandard"
+  click Sandcastle "https://github.com/EWSoftware/SHFB"
 ```
 
 # Daily development
@@ -68,6 +79,7 @@ flowchart LR
   Preparation@{shape: circle, label: "**Preparation**\nUpdate file headers\nUpdate tnBuild"}
   subgraph Development["Daily development cycle"]
     direction LR
+    %% Components
     DailyDevelopment@{shape: rounded, label: "Daily development"}
     DeployToUat@{shape: rounded, label: "Deploy To UAT"}
     Testing@{shape: rounded, label: "Testing"}
@@ -75,12 +87,12 @@ flowchart LR
     DailyDevelopment --> DeployToUat --> Testing --> DailyDevelopment
   end
   %% Layout
-  Preparation --> Development   
+  Preparation --> DailyDevelopment   
   %% Styles
-  style Preparation color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style DeployToUat color:#FFF,fill:grey,stroke:#FFF,stroke-width:2px
-  style Testing color:#FFF,fill:steelblue,stroke:#FFF,stroke-width:2px
+  style Preparation color:#000,fill:#eceff1,stroke:#42a5f5,stroke-width:3px
+  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  style DeployToUat color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  style Testing color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
 ```
 
 ## Preparation
@@ -112,53 +124,73 @@ return new Dictionary<string, string>
 
 # Monthly development
 
+These are the steps to create a new monthly development build of Tingen.
+
 ```mermaid
 ---
 title: Overview of the monthly development process
 ---
-flowchart LR
+flowchart TB
   %% Components
-  DailyDevelopment@{shape: rect, label: "Daily development"}
-  MonthlyArchive@{shape: stadium, label: "Monthly Archive"}
+  UpdateExternalComponents@{shape: rounded, label: "Update external components"}
+  ArchiveBranches@{shape: rounded, label: "Archive repository branches"}
+  UpdateSourceCode@{shape: rounded, label: "Update source code"}
+  UpdateDocumentation@{shape: rounded, label: "Update documentation"}
+  DailyDevelopment@{shape: rounded, label: "Daily development"}
   %% Layout
-  DailyDevelopment --x MonthlyArchive
+  UpdateExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
   %% Styles
-  style DailyDevelopment color:#FFF,fill:#16a085,stroke:#FFF,stroke-width:2px
-  style MonthlyArchive color:#FFF,fill:#0e6655,stroke:#FFF,stroke-width:2px
+  style UpdateExternalComponents color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
+  style ArchiveBranches color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
+  style UpdateSourceCode color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  style UpdateDocumentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
+  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
 ```
 
+## Preparation
 
-These are the steps to create a new monthly development build of Tingen.
+### 1. Update external components
 
-## 1. Update the AutoHotKey script
+#### The AutoHotKey script
 
 Update the following components of the AutoHotkey script:
 
 * ALT+CTRL+SHIFT+P
 * ALT+CTRL+SHIFT+R
 * ALT+CTRL+SHIFT+V
-## 2. Archive current repository branches
+  
+#### The Sandcastle help file versions
+
+Update the Sandcastle "Help file version" in the following Sandcastle profiles:
+
+* Tingen
+* Outpost31
+* 
+### 2. Archive repository branches
 
   Create a `YY.DD.##-development+final` branch for each of the following repositories:
 
 * Tingen_development
 * Outpost31
 * Tingen-Documentation
-# 3. Update the AssemblyInfo.cs files
 
-  Update the following `AssemblyInfo.cs` files with the current version number:
+### 3. Update the source code
+
+#### AssemblyInfo.cs
+
+Update the following `AssemblyInfo.cs` files with the current version number:
 
 * Tingen_development/Properties/AssemblyInfo.cs
 * Outpost31/Properties/AssemblyInfo.cs
-* 
-## 4. Update file headers
+  
+#### File headers
 
 Update the file headers for the following files:
 
 * Tingen.Tingen.asmx.cs
 * Outpost31.WelcomeToOutpost31.cs
 
-## 5. Update the `tnBuild` value
+#### The `tnBuild` value
 
 Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
 
@@ -175,7 +207,7 @@ return new Dictionary<string, string>
 };
 ```
 
-## 6. Update the documentation
+### 4. Update the documentation
 
 Search for the following string in the documentation...
 
@@ -193,9 +225,31 @@ For example:
 ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 ```
 
-## 7. Update the Sandcastle help file versions
+<!--
 
-Update the Sandcastle "Help file version" in the following Sandcastle profiles:
+Color codes
+-----------
+Project #b71c1c
+Documentation #9c27b0
 
-* Tingen
-* Outpost31
+Outpost31/Tingen #ff9800
+
+Development #42a5f5 
+Release candidate #26c6da
+Stable release #4caf50 
+Community #ffee58
+
+Daily Development
+Monthly development
+
+UAT
+LIVE
+
+Testing #a1887f
+
+General: #eceff1 
+Background#37474f
+
+ #ffc107
+
+-->

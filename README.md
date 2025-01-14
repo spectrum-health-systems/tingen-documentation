@@ -10,7 +10,7 @@
 
 # Tingen Documentation
 
-Here bee:
+Here be:
 
 * **[The Tingen Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual)**  
   Contains all of the information, details, and stuff of you'll need to use Tingen in your environments
