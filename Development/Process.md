@@ -1,8 +1,65 @@
-<!-- u250107 -->
-> [!info] Last updated: January 7, 2025
+<!-- u250114 -->
+
+> Last updated: January 14, 2025
+
+<div align="center">
+
+![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
+
+ <h1>Tingen Development Process</h1>
+
+</div>
+
+## CONTENTS
+
+[Daily development](#daily-development)  
+[Monthly development](#monthly-development)
+
+# Daily development
+
+```mermaid
+---
+title: Overview of the source code development process
+---
+flowchart LR
+  DailyDevelopment("Daily development") --> DeployToUat("Deploy to UAT")
+  DeployToUat --> Testing("Testing") 
+  Testing --> DailyDevelopment
+
+  classDef allNodes stroke-width:2px;
+  class DailyDevelopment,DeployToUat,Testing allNodes;
+```
+
+## Starting a new daily development session
+
+### 1. Update file headers
+
+Update the file headers for the following files:
+
+* Tingen.Tingen.asmx.cs
+* Outpost31.WelcomeToOutpost31.cs
+
+### 2. Update the `tnBuild` value
+
+Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
+
+For example:
+
+```csharp
+return new Dictionary<string, string>
+{
+    { "tnBuild",              "241205.0944" },
+    { "avSystemCode",         "UAT" },
+    { "tnDataRoot",           @"C:\TingenData" },
+    { "tnConfigFileName",     "Tingen.config" },
+    { "ntstSecurityFileName", "NtstSecurity.config" }
+};
+```
+
 # Monthly development
 
 These are the steps to create a new monthly development build of Tingen.
+
 ## 1. Update the AutoHotKey script
 
 Update the following components of the AutoHotkey script:
