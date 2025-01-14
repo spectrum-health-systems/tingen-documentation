@@ -99,20 +99,6 @@ flowchart LR
   style CommunityRelease color:#000,fill:#ff9800,stroke:#ffee58,stroke-width:3px
 ```
 
-```mermaid
-gantt
-    title Timeline
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
-
-```
-
-
 
 
 
@@ -139,6 +125,14 @@ flowchart LR
   style DeployToUat color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
   style Testing color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
 ```
+
+```mermaid
+%%{init: {'theme':'dark'}}%%
+flowchart LR
+  Refactor --> Pre-Development --> Development --> Testing --> Release
+```
+
+
 
 ## Preparation
 
