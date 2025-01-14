@@ -9,5 +9,7 @@
 </div>
 
 ## CONTENTS
-[Development processes](./Development-processes.md)  
-[Code snippets](./Source%20code/Code%20snippets.md)
+
+* [Development processes](./Development-processes.md)  
+* Source Code  
+  * [Code snippets](./Source%20code/Code%20snippets.md)

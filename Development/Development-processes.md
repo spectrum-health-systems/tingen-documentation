@@ -12,9 +12,13 @@
 
 ### CONTENTS
 
-[Development components](#development-components)  
-[Daily development](#daily-development)  
-[Monthly development](#monthly-development)
+* [Development components](#development-components)  
+* [Development workflow](development-workflow)
+* [Daily development](#daily-development)  
+* [Monthly development](#monthly-development)
+* [Release candidates](#release-candidates)
+* [Stable releases](#stable-releases)
+* [Community releases](#monthly-releases)
 
 # Development components
 
@@ -68,12 +72,33 @@ flowchart TB
   click Sandcastle "https://github.com/EWSoftware/SHFB"
 ```
 
+# Development workflow
+
+```mermaid
+flowchart LR
+  %% Components
+  DailyDevelopment@{shape: rounded, label: "Daily development"}
+  Documentation@{shape: doc, label: "Documentation"}
+  MonthlyArchive@{shape: notch-rect, label: "Monthly archive"}
+  ReleaseCandidate@{shape: stadium, label: "Release candidate"}
+  StableRelease@{shape: stadium, label: "Stable release"}
+  CommunityRelease@{shape: stadium, label: "Community release)"}
+  %% Layout
+  DailyDevelopment --> Documentation
+  DailyDevelopment --> MonthlyArchive
+  DailyDevelopment --> ReleaseCandidate --> StableRelease --> CommunityRelease
+  %% Styles
+  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  style Documentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
+  style MonthlyArchive color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
+  style ReleaseCandidate color:#000,fill:#ff9800,stroke:#26c6da,stroke-width:3px
+  style StableRelease color:#000,fill:#ff9800,stroke:#4caf50,stroke-width:3px
+  style CommunityRelease color:#000,fill:#ff9800,stroke:#ffee58,stroke-width:3px
+```
+
 # Daily development
 
 ```mermaid
----
-title: Overview of the daily development process
----
 flowchart LR
   %% Components
   Preparation@{shape: circle, label: "**Preparation**\nUpdate file headers\nUpdate tnBuild"}
@@ -121,24 +146,26 @@ return new Dictionary<string, string>
 };
 ```
 
-
 # Monthly development
 
 These are the steps to create a new monthly development build of Tingen.
 
 ```mermaid
----
-title: Overview of the monthly development process
----
 flowchart TB
   %% Components
-  UpdateExternalComponents@{shape: rounded, label: "Update external components"}
+  subgraph ExternalComponents[Update external components]
+    direction LR
+    %%UpdateExternalComponents@{shape: rounded, label: "Update external components"}
+    Updatea --> Updateb --> Update
+  end
+
   ArchiveBranches@{shape: rounded, label: "Archive repository branches"}
   UpdateSourceCode@{shape: rounded, label: "Update source code"}
   UpdateDocumentation@{shape: rounded, label: "Update documentation"}
   DailyDevelopment@{shape: rounded, label: "Daily development"}
   %% Layout
-  UpdateExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
+  ExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
+  %%UpdateExternalComponents --> Updatea
   %% Styles
   style UpdateExternalComponents color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
   style ArchiveBranches color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
@@ -151,7 +178,7 @@ flowchart TB
 
 ### 1. Update external components
 
-#### The AutoHotKey script
+#### 1a. AutoHotKey
 
 Update the following components of the AutoHotkey script:
 
@@ -159,7 +186,7 @@ Update the following components of the AutoHotkey script:
 * ALT+CTRL+SHIFT+R
 * ALT+CTRL+SHIFT+V
   
-#### The Sandcastle help file versions
+#### 1b. Sandcastle
 
 Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
@@ -176,21 +203,21 @@ Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
 ### 3. Update the source code
 
-#### AssemblyInfo.cs
+#### 3a. AssemblyInfo.cs
 
 Update the following `AssemblyInfo.cs` files with the current version number:
 
 * Tingen_development/Properties/AssemblyInfo.cs
 * Outpost31/Properties/AssemblyInfo.cs
   
-#### File headers
+#### 3b. File headers
 
 Update the file headers for the following files:
 
 * Tingen.Tingen.asmx.cs
 * Outpost31.WelcomeToOutpost31.cs
 
-#### The `tnBuild` value
+#### 3c. `tnBuild` value
 
 Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
 
@@ -224,6 +251,24 @@ For example:
 ```markdown
 ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 ```
+
+# Release candidates
+
+```mermaid
+flowchart LR
+  %% Components
+  DailyDevelopment@{shape: rounded, label: "Daily development"}
+  ReleaseCandidate@{shape: stadium, label: "Release candidate"}
+  Testing@{shape: rounded, label: "Testing"}
+  %% Layout
+  DailyDevelopment -- Successful testing --> ReleaseCandidate
+  DailyDevelopment -- Fixes/Updates --> ReleaseCandidate
+  %% Styles
+  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  style ReleaseCandidate color:#000,fill:#ff9800,stroke:#26c6da,stroke-width:3px
+  style Testing color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+```
+
 
 <!--
 
