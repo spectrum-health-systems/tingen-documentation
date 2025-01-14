@@ -75,6 +75,9 @@ flowchart TB
 # Development workflow
 
 ```mermaid
+---
+title: Overview
+---
 flowchart LR
   %% Components
   DailyDevelopment@{shape: rounded, label: "Daily development"}
@@ -95,6 +98,23 @@ flowchart LR
   style StableRelease color:#000,fill:#ff9800,stroke:#4caf50,stroke-width:3px
   style CommunityRelease color:#000,fill:#ff9800,stroke:#ffee58,stroke-width:3px
 ```
+
+```mermaid
+gantt
+    title Timeline
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+
+```
+
+
+
+
 
 # Daily development
 
@@ -153,19 +173,13 @@ These are the steps to create a new monthly development build of Tingen.
 ```mermaid
 flowchart TB
   %% Components
-  subgraph ExternalComponents[Update external components]
-    direction LR
-    %%UpdateExternalComponents@{shape: rounded, label: "Update external components"}
-    Updatea --> Updateb --> Update
-  end
-
+  UpdateExternalComponents@{shape: rounded, label: "Update external components"}
   ArchiveBranches@{shape: rounded, label: "Archive repository branches"}
   UpdateSourceCode@{shape: rounded, label: "Update source code"}
   UpdateDocumentation@{shape: rounded, label: "Update documentation"}
   DailyDevelopment@{shape: rounded, label: "Daily development"}
   %% Layout
-  ExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
-  %%UpdateExternalComponents --> Updatea
+  UpdateExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
   %% Styles
   style UpdateExternalComponents color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
   style ArchiveBranches color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
@@ -177,6 +191,20 @@ flowchart TB
 ## Preparation
 
 ### 1. Update external components
+
+```mermaid
+flowchart TB
+  %% Components
+  UpdateExternalComponents@{shape: rounded, label: "Update external components"}
+  UpdateAutoHotKey@{shape: rounded, label: "Update AutoHotKey"}
+  UpdateSandcastle@{shape: rounded, label: "Update Sandcastle"}
+  %% Layout
+  UpdateExternalComponents --> UpdateAutoHotKey --> UpdateSandcastle
+  %% Styles
+  style UpdateExternalComponents color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
+  style UpdateAutoHotKey color:#FFF,fill:#a1887f,stroke:#FFF,stroke-width:3px
+  style UpdateSandcastle color:#FFF,fill:#a1887f,stroke:#FFF,stroke-width:3px
+```
 
 #### 1a. AutoHotKey
 
