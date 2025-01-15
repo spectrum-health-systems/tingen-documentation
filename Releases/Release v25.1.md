@@ -1,8 +1,8 @@
 <!-- u250107 -->
 
-# Tingen vXX.yy Template
+# Tingen v25.1 Template
 
-## Archive vXX.yy
+## Archive v24.12
 
 *Please see the [Monthly Development](./Monthly-development.md) process documentation for details.*
 

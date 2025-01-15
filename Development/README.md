@@ -2,14 +2,24 @@
 
 <div align="center">
 
-![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
-
- <h1>Tingen Development</h1>
+![logo](../.github/Images/Logos/TingenDevelopmentDocumentation-232x308.png)
 
 </div>
 
-## CONTENTS
+# CONTENTS
 
-* [Development processes](./Development-processes.md)  
-* Source Code  
-  * [Code snippets](./Source%20code/Code%20snippets.md)
+* [COMPONENTS](./Components/components.md)
+
+* [PROCESSES](./Processes/processes.md)
+  * [Testing](./Processes/testing.md)
+
+* [RELEASES](./Releases/releases.md)
+
+* [SOURCE CODE](./SourceCode/source-code.md)
+  * [Comments](./SourceCode/comments.md)
+  * [Logging](./SourceCode/logging.md)
+  * [Snippets](./SourceCode/snippets.md)
+
+* [Workflows](./Workflows/workflows.md)
+
+
