@@ -18,8 +18,6 @@ This is an overview of the Tingen development processes.
 
 # Tingen development
 
-
-
 ## Development timelines
 
 ### Daily development

@@ -39,3 +39,10 @@
 - Standardize all images (e.g., no "_README.png")
 - Move to RarelySimple
 - Remove c:\TingenData\Lieutenant
+
+
+
+# TODO
+
+* Update README.md on server to point to online documentation whenever possible
+* Add folder structure stuff to online documentation
