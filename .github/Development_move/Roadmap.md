@@ -46,3 +46,16 @@
 
 * Update README.md on server to point to online documentation whenever possible
 * Add folder structure stuff to online documentation
+
+
+# Testing form
+
+* Form load does all the checks, then displays a popup with info
+* Checkboxes to:
+  * Rebuild built-in templates
+   
+# Docs
+
+* Verify the script paramter examples in Common_doc.xml are accurate
+
+test modopeninc enable/disable
