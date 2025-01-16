@@ -9,7 +9,7 @@
 
 ## Current version
 
-- [ ] Show details of UAT instance
+- [ ] **Show details of UAT instance**
     - [ ] Tingen version
     - [ ] Tingen status (enabled/disabled)
 - [ ] Show details of LIVE instance
