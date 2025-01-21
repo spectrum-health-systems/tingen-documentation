@@ -9,6 +9,7 @@
 
 ## Current version
 
+- [ ] Runs in admin mode on server
 - [ ] **Show details of UAT instance**
     - [ ] Tingen version
     - [ ] Tingen status (enabled/disabled)

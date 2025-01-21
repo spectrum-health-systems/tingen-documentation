@@ -9,7 +9,11 @@
 
 ## Current version
 
-TBD
+- [ ] Settings files
+    - [ ] Write settings files to remote\admin
+    - [ ] "Service version: YY.MM.x.y (YYMMDD)
+    - [ ] Proper MD formatting (spaces, etc.)
+
 
 ## Next version
 
