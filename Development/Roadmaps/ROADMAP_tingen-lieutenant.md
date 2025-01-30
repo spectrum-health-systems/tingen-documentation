@@ -1,4 +1,4 @@
-# ROADMAP: Tingen Commander
+# ROADMAP: Tingen Lieutenant
 
 ### CONTENTS
 
@@ -9,16 +9,7 @@
 
 ## Current version
 
-- [ ] Runs in admin mode on server
 - [ ] Auto-update
-- [ ] Show details of UAT instance
-    - [ ] Tingen version
-    - [ ] Tingen status (enabled/disabled)
-- [ ] Show details of LIVE instance
-    - [ ] Tingen version
-    - [ ] Tingen status (enabled/disabled)
-- [ ] Show details of repository main branch
-- [ ] Show details of repository development branch
 - [ ] Links to online documentation
 - [ ] Links to roadmaps
 - [ ] Links to changelogs
@@ -51,3 +42,9 @@ TBD
 ## Other
 
 TBD
+
+
+## Testing
+
+- [ ] Rename `README.md` to test server connectivity
+- [ ] Rename `Tingen.config` to test other connectivity
