@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![logo](../../.github/image/logo/TingenDevelopmentDocumentation-320x420.png)
+![logo](./.github/image/logo/TingenDevelopmentDocumentation-320x420.png)
 
  <h1>Monthly development</h1>
 
