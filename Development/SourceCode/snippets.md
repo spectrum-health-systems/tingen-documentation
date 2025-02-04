@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![logo](../.github/Images/Logos/TingenDocumentation-232x308.png)
+![logo](../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
 
  <h1>Code snippets</h1>
 

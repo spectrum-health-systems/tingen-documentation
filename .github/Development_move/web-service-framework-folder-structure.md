@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
+  ![logo](../../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
 
   ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 
@@ -297,7 +297,7 @@ These are the different messages users will receive.
 
 <div align="center">
 
-  ![logo](../../.github/Images/Logos/TingenDocumentation-232x308.png)
+  ![logo](../../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
 
   <h1>
     Tingen Web Service Framework
