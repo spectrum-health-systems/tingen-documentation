@@ -1,10 +1,10 @@
 <!-- u250114 -->
 
-> Last updated: JFebruary 4, 2025
+> Last updated: February 4, 2025
 
 <div align="center">
 
-![logo](../../.github/Image/Logo/TingenDevelopmentDocumentation-320x420.png)
+![logo](../../.github/image/logo/TingenDevelopmentDocumentation-320x420.png)
 
  <h1>Monthly development</h1>
 
