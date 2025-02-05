@@ -2,7 +2,7 @@
 
   ![logo](../../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
 
-  ![BASEDON_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
+  ![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 
 <div align="center">
     <h1>
