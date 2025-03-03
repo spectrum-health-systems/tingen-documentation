@@ -1,10 +1,10 @@
-<!-- u250114 -->
+<!-- u250303 -->
 
-> Last updated: February 4, 2025
+> Last updated: March 3, 2025
 
 <div align="center">
 
-![logo](./.github/image/logo/TingenDevelopmentDocumentation-320x420.png)
+![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
  <h1>Monthly development</h1>
 
@@ -20,12 +20,11 @@ flowchart LR
   %% Layout
   Preparation --> Refactor --> Development --> Release
   %% Styles
-  style Preparation color:#FFF,stroke:#42a5f5,stroke-width:3px
-  style Refactor color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Development color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Release color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  classDef Preparation stroke:#42a5f5,stroke-width:3px,fill:#000000,color:#0FFFFFF
+  class Preparation Preparation
 ```
 
+  style Preparation color:#FFF,stroke:#42a5f5,stroke-width:3px
 
 
 # Monthly development
