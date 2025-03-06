@@ -218,6 +218,8 @@ For example:
 
 <br>
 
+# DEVELOPMENT
+
 <!-- DEVELOPMENT -->
 
 <div align="center">
@@ -300,6 +302,8 @@ flowchart TB
 ## Updating the Development documentation
 
 <!-- RELEASE -->
+
+# RELEASE
 
 <div align="center">
 
