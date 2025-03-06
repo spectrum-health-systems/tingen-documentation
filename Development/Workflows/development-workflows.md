@@ -1,12 +1,19 @@
-<!-- u250304 -->
+<!-- u250306 -->
 
-> Last updated: March 4, 2025
+<!--
+  I'm sure the Mermaid.js code here looks awful, but it was a real pain to get
+  all it looking the way it does, so I don't plan on touching it going forward.
+
+  The rest of the document will be updated normally.
+-->
+
+> Last updated: March 6, 2025
 
 <div align="center">
 
 ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
-  <h1>Workflows</h1>
+  <h1>Development workflows</h1>
 
 </div>
 
@@ -22,14 +29,12 @@ flowchart TB
   UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
   Development@{shape: rounded, label: "Development"}
   Release@{shape: rounded, label: "Release"}
-
   %% Layout
-  Start --> Archive:::R0_ --> UpdateComponents:::P0_ --> Development:::U0_ --> Release:::G2_
-
+  Start --> Archive:::R2_ --> UpdateComponents:::P2_ --> Development:::U2_ --> Release:::G2_
   %% Styles
-  classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
-  classDef P0_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
-  classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef R2_ stroke:#f9ebea,stroke-width:3px,fill:#CD6155,color:#f9ebea
+  classDef P2_ stroke:#f5eef8,stroke-width:3px,fill:#af7ac5,color:#f5eef8
+  classDef U2_ stroke:#eaf2f8,stroke-width:3px,fill:#5499c7,color:#eaf2f8
   classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
   classDef Hidden display: none;
 ```
@@ -38,10 +43,7 @@ flowchart TB
 
 <br>
 
-<!--
-ARCHIVE WORKFLOW
-This HTML is ugly, but needs to be this way to work.
--->
+<!-- ARCHIVE -->
 
 # ARCHIVE
 
@@ -54,7 +56,6 @@ flowchart TB
   UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
   Development@{shape: rounded, label: "Development"}
   Release@{shape: rounded, label: "Release"}
-
   %% Subgraphs
   subgraph _Archive ["Archive"]
     direction LR
@@ -68,11 +69,9 @@ flowchart TB
         ArchiveTingenWebService:::R7_ ~~~ ArchiveOutpost31:::R7_ ~~~ ArchiveTingenDocumentation:::R7_
       end
   end
-
   %% Layout
   Start --> _Archive:::R5_ --> UpdateComponents:::B7a_ --> Development:::B7a_ --> Release:::B7a_
-  _ArchiveRepositories:::R6_
-      
+  _ArchiveRepositories:::R6_   
   %% Styles
   classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16
   classDef R6_ stroke:#641e16,stroke-width:3px,fill:#E6B0AA,color:#641e16
@@ -97,10 +96,7 @@ Create a `YY.DD.##-development+final` branch for each of the following repositor
 
 <br>
 
-<!--
-UPDATE COMPONENTS WORKFLOW
-This HTML is ugly, but needs to be this way to work.
--->
+<!-- UPDATE COMPONENTS -->
 
 # UPDATE COMPONENTS
 
@@ -113,7 +109,6 @@ flowchart TB
   Archive@{shape: rounded, label: "Archive"}
   Development@{shape: rounded, label: "Development"}
   Release@{shape: rounded, label: "Release"}
-
   %% Subgraphs
   subgraph _UpdateComponents ["Update Components"]
     direction LR
@@ -122,7 +117,6 @@ flowchart TB
     UpdateSandCastleProfiles@{shape: rounded, label: "Update\nSandcastle profiles"}
     UpdateAutoHotKey:::P6_ ~~~ UpdateSandCastleProfiles:::P6_ ~~~ _UpdateSourceCode:::P6_ ~~~ _UpdateDocumentation:::P6_
   end
-
   subgraph _UpdateSourceCode ["Update source code"]
     direction TB
     %% Components
@@ -131,7 +125,6 @@ flowchart TB
     UpdateTngnBuild@{shape: rounded, label: "Update\nTngnBuild value"}
     UpdateAssemblyInfo:::P7_ ~~~ UpdateClassHeaders:::P7_ ~~~ UpdateTngnBuild:::P7_
   end
-
   subgraph _UpdateDocumentation ["Update documentation"]
     direction TB
     %% Components
@@ -140,10 +133,8 @@ flowchart TB
     UpdateDevelopmentDocumentation@{shape: docs, label: "Update\nDevelopment documentation"}
     UpdateTingenManual:::P7_ ~~~ UpdateAPIDocumentation:::P7_ ~~~ UpdateDevelopmentDocumentation:::P7_
   end
-
   %% Layout
   Start --> Archive:::B7a_ --> _UpdateComponents:::P5_ --> Development:::B7a_ --> Release:::B7a_
-
   %% Styles
   classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
   classDef P5a_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f,font-size:8p
@@ -227,10 +218,7 @@ For example:
 
 <br>
 
-<!--
-DEVELOPMENT WORKFLOW
-This HTML is ugly, but needs to be this way to work.
--->
+<!-- DEVELOPMENT -->
 
 <div align="center">
 
@@ -271,7 +259,6 @@ flowchart TB
       end
       _SourceCodeModifications:::U6_ --> DeployToUat:::U6_ --> Test:::U6_  
   end
-
   %% Layout
   Start --> Archive:::B7a_ --> UpdateComponents:::B7a_ --> _Development:::U5_ --> Release:::B7a_
   Test -- Fail --> _SourceCodeModifications
@@ -312,10 +299,7 @@ flowchart TB
 
 ## Updating the Development documentation
 
-<!--
-RELEASE WORKFLOW
-This HTML is ugly, but needs to be this way to work.
--->
+<!-- RELEASE -->
 
 <div align="center">
 
@@ -336,7 +320,6 @@ flowchart TB
       StableRelease:::G7_
       CommunityRelease:::G7_
     end
-
   %% Layout
   Start --> Archive:::B7a_ --> UpdateComponents:::B7a_ --> Development:::B7a_ --> _Release:::G5_
   %% Styles
@@ -355,10 +338,9 @@ flowchart TB
 
 ## Community
 
-
-- December 20: Abatab WinterYY
-- March 20: Abatab SpringYY
-- June 20: Abatab SummerYY
-- September 20: Abatab AutumnYY
+* December 20: Abatab WinterYY
+* March 20: Abatab SpringYY
+* June 20: Abatab SummerYY
+* September 20: Abatab AutumnYY
 
 For example: `Abatab Autumn23`
