@@ -10,12 +10,6 @@
 
 </div>
 
-### CONTENTS
-
-[Releases](#releases)  
-[???](#monthly-releases)
-
-<br>
 <br>
 
 <div align="center">
@@ -23,27 +17,23 @@
 ```mermaid
 flowchart LR
   %% Components
+  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
   Archive@{shape: rounded, label: "Archive"}
-  Update@{shape: rounded, label: "Update"}
-  Refactor@{shape: rounded, label: "Refactor"}
+  UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
   Development@{shape: rounded, label: "Development"}
-  Documentation@{shape: docs, label: "Documentation"}
-  Release@{shape: rounded, label: "Release"}
+  Release@{shape: circ, label: "Release"}
   %% Layout
-  Archive:::R5_ --> Update:::P5_ --> Refactor:::U5_ --> Development:::G5_ --> Release:::Y5_
-  Refactor --> Documentation:::E5_
-  Development --> Documentation
-  %% -- Refactor:::S02 & Development:::S03 --> Documentation:::S05
+  Start -.->Archive:::R0_ --> UpdateComponents:::P0_ --> Development:::U0_ --> Release:::G2_
+
   %% Styles
-  classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16
-  classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
-  classDef U5_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
-  classDef G5_ stroke:#145a32,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef P0_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
   classDef Y5_ stroke:#7d6608,stroke-width:3px,fill:#fef9e7,color:#7d6608
   classDef E5_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
   %% Styles - Global
   classDef Hidden display: none;
-
 
 ```
 
@@ -53,48 +43,77 @@ flowchart LR
 
 ***
 
-<br>
-
 <!--
-PREPARATION WORKFLOW
+ARCHIVE WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
 <details>
-<summary> Preparation workflow
+  <summary>
 
-```mermaid
-flowchart LR
-  %% Components
-  Preparation@{shape: rounded, label: "Preparation"}
-  Refactor@{shape: rounded, label: "Refactor"}
-  Development@{shape: rounded, label: "Development"}
-  Release@{shape: rounded, label: "Release"}
-  %% Layout
-  Preparation:::S01 --> Refactor:::S02 --> Development:::S02 --> Release:::S02
-  %% Styles
-  classDef S01 stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f,font-size:16pt
-  classDef S02 stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#000000,font-size:10pt
-  class Preparation Preparation
-  class Refactor,Development,Release GreyedOut
-```
+  ```mermaid
+  flowchart LR
+    %% Components
+    Archive@{shape: rounded, label: "Archive"}
+    ArchiveRepostitories@{shape: rounded, label: "Archive\nRepositories"}
+    %% Layout
+    Start:::Hidden -.->Archive:::R5_ --> ArchiveRepostitories:::R1_ -.-> Continue:::Hidden
+    %% Styles
+    classDef R5_ stroke:#641e16,stroke-width:3px,stroke-dasharray: 7 7,fill:#f9ebea,color:#641e16
+    classDef R1_ stroke:#f9ebea,stroke-width:3px,fill:#E6B0AA,color:#641e16
+    %% Styles - Global
+    classDef Hidden display: none;
+  ```
 
 </summary>
 
-Developing a new release of Tingen starts with:
+## Archive repositories
 
-1. Archiving repository branches
-2. Updating external components
-3. Updating the source code versions/builds
-4. Updating the documentation
-
-## Archive repository branches
-
-  Create a `YY.DD.##-development+final` branch for each of the following repositories:
+Create a `YY.DD.##-development+final` branch for each of the following repositories:
 
 * Tingen-WebService
 * Outpost31
 * Tingen-Documentation
+
+</details>
+
+<br>
+
+<!--
+UPDATE COMPONENTS WORKFLOW
+This HTML is ugly, but needs to be this way to work.
+-->
+
+<details>
+  <summary>
+
+  ```mermaid
+  flowchart LR
+    %% Components
+    Archive@{shape: rounded, label: "Archive"}
+    UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
+    UpdateAutoHotKey@{shape: rounded, label: "Update\nAutoHotKey script"}
+    UpdateSandCastleProfiles@{shape: rounded, label: "Update\nSandcastle profiles"}
+    UpdateSourceCode@{shape: rounded, label: "Update\nsource code"}
+    %% Layout
+    Archive:::R5_ -.->UpdateComponents:::P5_ --> UpdateAutoHotKey:::P6_ --> UpdateSandCastleProfiles:::P6_ -->  UpdateSourceCode:::P6_
+    %% Styles
+    classDef R5_ stroke:#641e16,stroke-width:3px,stroke-dasharray: 5 5,fill:#f9ebea,color:#641e16,font-size:8pt
+    classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
+    classDef P6_ stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f
+    %% Styles - Global
+    classDef Hidden display: none;
+  ```
+
+  </summary>
+
+Developing a new release of Tingen starts with:
+
+2. Updating external components
+3. Updating the source code versions/builds
+4. Updating the documentation
+
+
 
 ## Update external components
 
