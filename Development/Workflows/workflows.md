@@ -1,192 +1,385 @@
-<!-- u250114 -->
+<!-- u250304 -->
 
-> Last updated: January 14, 2025
+> Last updated: March 4, 2025
 
 <div align="center">
 
-![logo](../../.github/Images/Logos/TingenDevelopmentDocumentation-320x425.png)
+![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
- <h1>Development workflow</h1>
+  <h1>Workflows</h1>
 
 </div>
 
-# Overview
+### CONTENTS
 
-```mermaid
-gantt
-  title Monthly development phases
-  dateFormat X
-  axisFormat %d
-  Planning : 0, 2d
-  Refactor : 4d
-  Development : 24d
-  Release : 1d
-```
+[Releases](#releases)  
+[???](#monthly-releases)
 
-## Planning
+<br>
+<br>
 
-During the planning phase:
-
-* The current development branch is archived
-* Source code and documentation version numbers are updated
-* External components are updated
-* Upcoming features are ironed out
-
-### Archiving the current development branch
-
-TBD
-
-### Preparing for a new monthly release
-
-```mermaid
-flowchart TB
-  %% Components
-  UpdateExternalComponents@{shape: rounded, label: "Update external components"}
-  ArchiveBranches@{shape: rounded, label: "Archive repository branches"}
-  UpdateSourceCode@{shape: rounded, label: "Update source code"}
-  UpdateDocumentation@{shape: rounded, label: "Update documentation"}
-  DailyDevelopment@{shape: rounded, label: "Daily development"}
-  %% Layout
-  UpdateExternalComponents --> ArchiveBranches --> UpdateSourceCode --> UpdateDocumentation --> DailyDevelopment
-  %% Styles
-  style UpdateExternalComponents color:#000,fill:#a1887f,stroke:#FFF,stroke-width:3px
-  style ArchiveBranches color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
-  style UpdateSourceCode color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style UpdateDocumentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
-  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-```
-
-
-
-
-
-## Development
-
-
-
-## Release
-
-During the release phase:
-
-* TBD
-
-
-## Monthly development
-
-
-
-
-
-```mermaid
-flowchart TB
-  %% Subgraph 1
-  subgraph LR[MonthlyDevelopment]
-  end
-  %% Subgraph 2
-  subgraph LR[DailyDevelopment]
-  end
-  %% Layout
-  MonthlyDevelopent --> DailyDevelopment
-
-```
-
-
-
-
-
-
-
-
+<div align="center">
 
 ```mermaid
 flowchart LR
   %% Components
+  Archive@{shape: rounded, label: "Archive"}
+  Update@{shape: rounded, label: "Update"}
+  Refactor@{shape: rounded, label: "Refactor"}
   Development@{shape: rounded, label: "Development"}
-  Documentation@{shape: doc, label: "Documentation"}
-  MonthlyArchive@{shape: notch-rect, label: "Monthly archive"}
-  ReleaseCandidate@{shape: stadium, label: "Release candidate"}
-  StableRelease@{shape: stadium, label: "Stable release"}
-  CommunityRelease@{shape: stadium, label: "Community release)"}
+  Documentation@{shape: docs, label: "Documentation"}
+  Release@{shape: rounded, label: "Release"}
   %% Layout
+  Archive:::R5_ --> Update:::P5_ --> Refactor:::U5_ --> Development:::G5_ --> Release:::Y5_
+  Refactor --> Documentation:::E5_
   Development --> Documentation
-  Development --> ReleaseCandidate --> StableRelease --> CommunityRelease
-  StableRelease --> MonthlyArchive
+  %% -- Refactor:::S02 & Development:::S03 --> Documentation:::S05
   %% Styles
-  style Development color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Documentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
-  style MonthlyArchive color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
-  style ReleaseCandidate color:#000,fill:#ff9800,stroke:#26c6da,stroke-width:3px
-  style StableRelease color:#000,fill:#ff9800,stroke:#4caf50,stroke-width:3px
-  style CommunityRelease color:#000,fill:#ff9800,stroke:#ffee58,stroke-width:3px
+  classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef U5_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef G5_ stroke:#145a32,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef Y5_ stroke:#7d6608,stroke-width:3px,fill:#fef9e7,color:#7d6608
+  classDef E5_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
+  %% Styles - Global
+  classDef Hidden display: none;
+
+
 ```
 
+</div>
 
-
-
-
-
-
+<br>
 
 ***
 
+<br>
 
+<!--
+PREPARATION WORKFLOW
+This HTML is ugly, but needs to be this way to work.
+-->
+
+<details>
+<summary> Preparation workflow
 
 ```mermaid
 flowchart LR
   %% Components
-  Preparation@{shape: circle, label: "Preparation"}
+  Preparation@{shape: rounded, label: "Preparation"}
+  Refactor@{shape: rounded, label: "Refactor"}
+  Development@{shape: rounded, label: "Development"}
+  Release@{shape: rounded, label: "Release"}
+  %% Layout
+  Preparation:::S01 --> Refactor:::S02 --> Development:::S02 --> Release:::S02
+  %% Styles
+  classDef S01 stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f,font-size:16pt
+  classDef S02 stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#000000,font-size:10pt
+  class Preparation Preparation
+  class Refactor,Development,Release GreyedOut
+```
+
+</summary>
+
+Developing a new release of Tingen starts with:
+
+1. Archiving repository branches
+2. Updating external components
+3. Updating the source code versions/builds
+4. Updating the documentation
+
+## Archive repository branches
+
+  Create a `YY.DD.##-development+final` branch for each of the following repositories:
+
+* Tingen-WebService
+* Outpost31
+* Tingen-Documentation
+
+## Update external components
+
+### AutoHotKey script
+
+Update the following components of the AutoHotkey script:
+
+* ALT+CTRL+SHIFT+P
+* ALT+CTRL+SHIFT+R
+* ALT+CTRL+SHIFT+V
+  
+### Sandcastle profiles
+
+Update the Sandcastle "Help file version" in the following Sandcastle profiles:
+
+* Tingen
+* Outpost31
+
+## Update the source code
+
+### AssemblyInfo.cs
+
+Update the following `AssemblyInfo.cs` files with the current version number:
+
+* Tingen_development/Properties/AssemblyInfo.cs
+* Outpost31/Properties/AssemblyInfo.cs
+  
+### Class file headers
+
+Update the file headers for the following files:
+
+* Tingen.Tingen.asmx.cs
+* Outpost31.WelcomeToOutpost31.cs
+
+### The `tnBuild` value
+
+Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
+
+For example:
+
+```csharp
+return new Dictionary<string, string>
+{
+    { "tnBuild",              "241205.0944" },
+    { "avSystemCode",         "UAT" },
+    { "tnDataRoot",           @"C:\TingenData" },
+    { "tnConfigFileName",     "Tingen.config" },
+    { "ntstSecurityFileName", "NtstSecurity.config" }
+};
+```
+
+## Update the documentation
+
+Search for the following string in the documentation...
+
+```markdown
+![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%20YY.MM-white?style=for-the-badge)
+```
+
+...where `YY.MM` is the Year.Month value for the current documentation, and keeping in mind that the "***%20***" in "**%20***MM*" is a space!
+
+Replace the value of `YY.MM` with the current Year.Month.
+
+For example:
+
+```markdown
+![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
+```
+
+</details> <!-- PREPARATION WORKFLOW -->
+
+<!--
+REFACTOR WORKFLOW
+This HTML is ugly, but needs to be this way to work.
+-->
+
+<details>
+<summary> Refactor workflow
+
+```mermaid
+flowchart LR
+  %% Components
+  Preparation@{shape: rounded, label: "Preparation"}
+  Refactor@{shape: rounded, label: "Refactor"}
+  Development@{shape: rounded, label: "Development"}
+  Release@{shape: rounded, label: "Release"}
+  %% Layout
+  Preparation:::S02 --> Refactor --> Development:::S02 --> Release:::S02
+  %% Styles
+  classDef Refactor stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360,font-size:16pt
+  classDef S02 stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#000000,font-size:10pt
+  class Refactor Refactor
+  class Preparation,Development,Release GreyedOut
+```
+
+</summary>
+
+During the refactor phase the following components are cleand up and/or refactored:
+
+* Source code
+* Source code comments
+* XML documentation
+* Documentation
+
+</details> <!-- REFACTOR WORKFLOW -->
+
+<!--
+DEVELOPMENT WORKFLOW
+This HTML is ugly, but needs to be this way to work.
+-->
+
+<details>
+<summary> Development workflow
+
+```mermaid
+flowchart LR
+  %% Components
+  Preparation@{shape: rounded, label: "Preparation"}
   Refactor@{shape: rounded, label: "Refactor"}
   Development@{shape: rounded, label: "Development"}
   Release@{shape: rounded, label: "Release"}
   %% Layout
   Preparation --> Refactor --> Development --> Release
   %% Styles
-  style Preparation color:#FFF,stroke:#42a5f5,stroke-width:3px
-  style Refactor color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Development color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Release color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
+  classDef Development stroke:#145a32,stroke-width:3px,fill:#a9dfbf,color:#145a32,font-size:16pt
+  classDef GreyedOut stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff,font-size:10pt
+  class Development Development
+  class Preparation,Refactor,Release GreyedOut
 ```
 
+</summary>
 
+Development consists of:
 
+* Determining new functionality
+* Adding new functionality
+* Updating/modifying current functionality
+* Testing
+* Squishing bugs
+* Adding new documentation
+* Updating/modifying current documentation
 
+<div align="center">
 
+```mermaid
+---
+title: Development overview
+---
+flowchart LR
+  %% Components
+  Development@{shape: rounded, label: "Development"}
+  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
+  Document@{shape: docs, label: "Documentation"}
+  Test@{shape: diamond, label: "Test"}
+  Release@{shape: rounded, label: "Release"}
+  %% Layout
+  Development -.-> Document
+  Development --> DeployToUat --> Test
+  Test -- Fail --> Development
+  Test -- Success --> Release
+  %% Styles
+  classDef Development stroke:#00000,stroke-width:3px,stroke-dasharray: 5 5,fill:#a9dfbf,color:#145a32
+  classDef DeployToUat stroke:#145a32,stroke-width:3px,fill:#52be80,color:#e9f7ef
+  classDef Document stroke:#6e2c00,stroke-width:3px,fill:#edbb99,color:#6e2c00
+  classDef Test stroke:#e9f7ef,stroke-width:3px,fill:#145a32,color:#e9f7ef
+  classDef Release stroke:#7d6608,stroke-width:3px,fill:#f9e79f,color:#7d6608
+  class Development Development
+  class DeployToUat DeployToUat
+  class Test Test
+  class Document Document
+  class Release Release
+  linkStyle 3 stroke:#A93226,stroke-width:3px, color: pink;
+  linkStyle 4 stroke:#145a32,stroke-width:3px
+```
 
+</div>
 
+</details> <!-- DEVELOPMENT WORKFLOW -->
 
+<details>
+  <summary>Release workflow
 
 ```mermaid
 flowchart LR
   %% Components
-  DailyDevelopment@{shape: rounded, label: "Daily development"}
-  Documentation@{shape: doc, label: "Documentation"}
-  MonthlyArchive@{shape: notch-rect, label: "Monthly archive"}
-  ReleaseCandidate@{shape: stadium, label: "Release candidate"}
-  StableRelease@{shape: stadium, label: "Stable release"}
-  CommunityRelease@{shape: stadium, label: "Community release)"}
+  Preparation@{shape: rounded, label: "Preparation"}
+  Refactor@{shape: rounded, label: "Refactor"}
+  Development@{shape: rounded, label: "Development"}
+  Release@{shape: rounded, label: "Release"}
   %% Layout
-  DailyDevelopment --> Documentation
-  DailyDevelopment --> ReleaseCandidate --> StableRelease --> CommunityRelease
-  StableRelease --> MonthlyArchive
+  Preparation --> Refactor --> Development --> Release
   %% Styles
-  style DailyDevelopment color:#000,fill:#ff9800,stroke:#42a5f5,stroke-width:3px
-  style Documentation color:#000,fill:#ff9800,stroke:#9c27b0,stroke-width:3px
-  style MonthlyArchive color:#000,fill:#ff9800,stroke:#b71c1c,stroke-width:3px
-  style ReleaseCandidate color:#000,fill:#ff9800,stroke:#26c6da,stroke-width:3px
-  style StableRelease color:#000,fill:#ff9800,stroke:#4caf50,stroke-width:3px
-  style CommunityRelease color:#000,fill:#ff9800,stroke:#ffee58,stroke-width:3px
+  classDef Release stroke:#7d6608,stroke-width:3px,fill:#f9e79f,color:#7d6608,font-size:16pt
+  classDef GreyedOut stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff,font-size:10pt
+  class Release Release
+  class Preparation,Refactor,Development GreyedOut
+```
+  
+</summary>
+
+
+</details> <!-- RELEASE WORKFLOW -->
+
+***
+
+
+
+
+<div align="center">
+
+```mermaid
+---
+title: Release overview
+---
+flowchart LR
+  %% Components
+  Release@{shape: rounded, label: "Release"}
+  ReleaseCandidate@{shape: rounded, label: "Release\nCandidate"}
+  Stable@{shape: rounded, label: "Stable\nrelease"}
+  Community@{shape: rounded, label: "Community\nrelease"}
+  %% Layout
+  Release --> ReleaseCandidate
+  ReleaseCandidate --> Stable
+  Stable --> Community
+  %% Styles
+  classDef Release stroke:#000000,stroke-width:3px,stroke-dasharray: 5 5,fill:#f9e79f,color:#7d6608
+  classDef ReleaseCandidate stroke:#7d6608,stroke-width:3px,fill:#f4d03f,color:#7d6608
+  classDef Stable stroke:#fef9e7,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
+  classDef CommunityRelease stroke:#7d6608,stroke-width:3px,fill:#f9e79f,color:#7d6608
+  class Release Release
+  class ReleaseCandidate ReleaseCandidate
+  class Stable Stable
 ```
 
+</div>
+
+
+### Release candidate
+
+### Stable
+
+### Community
+
+
+- December 20: Abatab WinterYY
+- March 20: Abatab SpringYY
+- June 20: Abatab SummerYY
+- September 20: Abatab AutumnYY
+
+For example: `Abatab Autumn23`
 
 
 
-During monthly development and testing:
 
-* The current development branches are archived
-* 
-* The existing codebase is refactored and cleaned up
-* New functionality is added, and existing functionality is updated/modified
-* Bugs are squished
-* Code is refactored
-* New documentation is added, and existing documentation is updated/modified
-* Iterative testing is done in a non-production environment
+
+
+
+
+
+
+<!--
+
+Color codes
+-----------
+Project #b71c1c
+Documentation #9c27b0
+
+Outpost31/Tingen #ff9800
+
+Development #42a5f5 
+Release candidate #26c6da
+Stable release #4caf50 
+Community #ffee58
+
+Daily Development
+Monthly development
+
+UAT
+LIVE
+
+Testing #a1887f
+
+General: #eceff1 
+Background#37474f
+
+ #ffc107
+
+-->
