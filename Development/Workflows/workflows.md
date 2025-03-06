@@ -50,34 +50,7 @@ This HTML is ugly, but needs to be this way to work.
 <details>
   <summary>
 
-```mermaid
-flowchart LR
-  %% Components
-  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
-  Archive@{shape: rounded, label: "Archive"}
-  UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
-  Development@{shape: rounded, label: "Development"}
-  Release@{shape: circ, label: "Release"}
-  %% Layout
-  Start -->Archive:::R5a_ --> UpdateComponents:::B7a_ --> Development:::B7a_ --> Release:::B7a_
-
-  %% Styles
-  classDef R5a_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16,font-size: 16pt
-  classDef P0_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
-  classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
-  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef Y5_ stroke:#7d6608,stroke-width:3px,fill:#fef9e7,color:#7d6608
-  classDef E5_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
-  classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#FFFFFF,font-size: 8pt
-  %% Styles - Global
-  classDef Hidden display: none;
-```
-
-
-</summary>
-
-
-  ```mermaid
+ ```mermaid
   flowchart LR
     %% Components
     Archive@{shape: rounded, label: "Archive"}
@@ -90,6 +63,8 @@ flowchart LR
     %% Styles - Global
     classDef Hidden display: none;
   ```
+
+</summary>
 
 ## Archive repositories
 
@@ -114,14 +89,13 @@ This HTML is ugly, but needs to be this way to work.
   ```mermaid
   flowchart LR
     %% Components
-    Archive@{shape: rounded, label: "Archive"}
     UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
     UpdateAutoHotKey@{shape: rounded, label: "Update\nAutoHotKey script"}
     UpdateSandCastleProfiles@{shape: rounded, label: "Update\nSandcastle profiles"}
     UpdateSourceCode@{shape: rounded, label: "Update\nsource code"}
     UpdateDocumentation@{shape: rounded, label: "Update\ndocumentation"}
     %% Layout
-    Archive:::R5_ -.->UpdateComponents:::P5_ --> UpdateAutoHotKey:::P6_ --> UpdateSandCastleProfiles:::P6_ -->  UpdateSourceCode:::P6_ --> UpdateDocumentation:::P6_
+    UpdateComponents:::P5_ --> UpdateAutoHotKey:::P6_ --> UpdateSandCastleProfiles:::P6_ -->  UpdateSourceCode:::P6_ --> UpdateDocumentation:::P6_
     %% Styles
     classDef R5_ stroke:#641e16,stroke-width:3px,stroke-dasharray: 5 5,fill:#f9ebea,color:#641e16,font-size:8pt
     classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
