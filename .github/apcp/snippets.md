@@ -1,89 +1,4 @@
-# Tingen Web Service
-
-# FLOW
-
-```mermaid
-flowchart TB
-
-  subgraph TingenWebService
-    direction TB
-    %% Components
-    GetExeAsmName@{shape: rounded, label: "Get executing\nassembly name"}
-    GetTngnVer@{shape: rounded, label: "Get Tingen Web\nService version"}
-    CreateEmptyTngnSession@{shape: rounded, label: "Create empty\nTngnSession"}
-    %% Layout
-    GetExeAsmName --> GetTngnVer --> CreateEmptyTngnSession
-    %% Styles
-    class GetExeAsmName,GetTngnVer,CreateEmptyTngnSession Yellow
-  end
-
-  TingenWebService ==> Outpost31.Runtime.Spin.Up
-
-  subgraph Outpost31
-    direction TB
-
- subgraph Outpost.Runtime.Spin.Up
-    direction TB
-
-    subgraph Outpost.Configuration.RuntimeSettings
-      direction LR
-      %% Components
-      Load
-      AreValid@{shape: diamond}
-      %% Layout
-      Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-      Configuration.RuntimeSettings.AreValid --NO--> EXIT
-      Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-      %% Styles
-    end
-
-    %% Components
-    Configuration.RuntimeSettings.Load
-    Configuration.RuntimeSettings.AreValid@{shape: diamond}
-    %% Layout
-    Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-    Configuration.RuntimeSettings.AreValid --NO--> EXIT
-    Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-    %% Styles
-  end
-  end
-
- 
-
-
-  
-  
-
-
-
-
-  %% Components
-  EXIT
-
-  %% Layout
-
-
-  %% Styles - Global
-  classDef Hidden display: none;
-  classDef Yellow color:#000000,fill:#EDDA74,stroke:#F6BE00,stroke-width:2px
-
-```
-
-  GetExecutingAssemblyName --> GetTngnVersion["Get TngnVersion"] --> CreateEmptyTngnSession["Create Empty TngnSession"] --> Outpost31.Runtime.Spin.Up
-
-  subgraph Outpost31.Runtime.Spin.Up
-    direction TB
-    Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-    Configuration.RuntimeSettings.AreValid{"Configuration.RuntimeSettings.AreValid"} --NO--> EXIT
-    Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-  end
-
-  Outpost31.Runtime.Spin.Up --> Outpost31.Session.New
-
-  subgraph Outpost31.Session.New
-    direction TB
-    DoSomething --> DoSomethingElse
-  end
+<!-- u250306 -->
 
 # DEVELOPMENT GUIDELINES
 
@@ -97,19 +12,6 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 * XML documentation
 * File headers
 * Mermaid
-
-# SNIPPETS
-
-```
-/// <summary>The executing Assembly name.</summary>
-/// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
-public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-```
-
-```
-/* Logging infrastructure hasn't been initialized yet, so if you need to create a log file here, use a Primeval Log.
- */
-```
 
 # HEADERS
 
@@ -169,4 +71,93 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 // uYYMMDD_documentation
 ```
 
+## Other headers
 
+### HTML files
+
+```html
+<!-- u240820 -->
+```
+
+# CODE
+
+## Executing Assembly name
+
+```csharp
+/// <summary>The executing Assembly name.</summary>
+/// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
+public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+```
+
+## Creating a Primeival Log
+
+```csharp
+LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+```
+
+# Log warnings
+
+## No Trace Logs
+
+```csharp
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
+ */
+```
+
+or
+
+```csharp
+/* Do not create Trace Logs here. */
+```
+
+## No Trace Logs or Primeival Logs
+
+```csharp
+/* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
+ *
+ * Primeval Log can't go since that may result in an infinite loop/stack overflow when the
+ * Primeval log directory is being refreshed.
+ */
+```
+
+or
+
+```csharp
+/* Do not create Trace or Primeival Logs here. */
+```
+
+# Development note comments
+
+```csharp
+/*
+[DN01] 240817
+Make the following changes:
+  - Change #1
+  - Change #2
+*/
+```
+
+
+# XML documentation
+
+## SeeAlso
+
+```csharp
+<seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+```
+
+## Link to URL
+
+```csharp
+<see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
+
+<paramref name="name"/>
+
+<see cref="ReturnOptionObject"/>
+
+<see cref="Outpost31.Core.Avatar.ReturnObject.Finalize(Session.TingenSession, string, string)"/>
+
+ More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
+```
+
+***

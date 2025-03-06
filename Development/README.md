@@ -6,9 +6,8 @@
 
 </div>
 
-# CONTENTS
+# Development resources
 
-* [Code snippets](./code-snippets.md)
 * [Development workflows](./development-workflows.md)
 * [Source code commenting](source-code-comments.md)
 * [Tingen components](./tingen-components.md)
