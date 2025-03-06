@@ -104,6 +104,8 @@ This HTML is ugly, but needs to be this way to work.
 
 # UPDATE COMPONENTS
 
+<div align="center">
+
 ```mermaid
 flowchart TB 
   %% Components
@@ -127,7 +129,7 @@ flowchart TB
     UpdateAssemblyInfo@{shape: rounded, label: "Update\nAssemblyInfo.cs"}
     UpdateClassHeaders@{shape: rounded, label: "Update\nclass headers"}
     UpdateTngnBuild@{shape: rounded, label: "Update\nTngnBuild value"}
-    UpdateAssemblyInfo:::P7_ --> UpdateClassHeaders:::P7_ --> UpdateTngnBuild:::P7_
+    UpdateAssemblyInfo:::P7_ ~~~ UpdateClassHeaders:::P7_ ~~~ UpdateTngnBuild:::P7_
   end
 
   subgraph _UpdateDocumentation ["Update documentation"]
@@ -136,7 +138,7 @@ flowchart TB
     UpdateTingenManual@{shape: docs, label: "Update\nTingen Manual"}
     UpdateAPIDocumentation@{shape: docs, label: "Update\nAPI documentation"}
     UpdateDevelopmentDocumentation@{shape: docs, label: "Update\nDevelopment documentation"}
-    UpdateTingenManual:::P7_ --> UpdateAPIDocumentation:::P7_ --> UpdateDevelopmentDocumentation:::P7_
+    UpdateTingenManual:::P7_ ~~~ UpdateAPIDocumentation:::P7_ ~~~ UpdateDevelopmentDocumentation:::P7_
   end
 
   %% Layout
@@ -149,8 +151,9 @@ flowchart TB
   classDef P7_ stroke:#512e5f,stroke-width:3px,fill:#af7ac5,color:#f5eef8
   classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
   classDef Hidden display: none;
-  linkStyle 3,4,5,6,7,8 stroke:#000000,stroke-width:1px
 ```
+
+</div>
 
 ## Update the AutoHotKey script
 
@@ -229,6 +232,8 @@ DEVELOPMENT WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
+<div align="center">
+
 ```mermaid
 flowchart TB 
   %% Components
@@ -273,22 +278,17 @@ flowchart TB
   Test -- Success --> _Documentation:::U6_
   _Documentation --> _SourceCodeModifications
   %% Styles
-  classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
-  classDef U1_ stroke:#eaf2f8,stroke-width:3px,fill:#a9cce3,color:#154360
-  classDef U2_ stroke:#eaf2f8,stroke-width:3px,fill:#5499c7,color:#eaf2f8
-  classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
-  classDef U4_ stroke:#eaf2f8,stroke-width:3px,fill:#154360,color:#eaf2f8
   classDef U5_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
   classDef U6_ stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360
   classDef U7_ stroke:#154360,stroke-width:3px,fill:#5499c7,color:#eaf2f8
-  classDef U8_ stroke:#154360,stroke-width:3px,fill:#2471a3,color:#eaf2f8
-  classDef U9_ stroke:#154360,stroke-width:3px,fill:#154360,color:#eaf2f8
   classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
   classDef Hidden display: none;
   linkStyle 3,4,11 stroke:#000000,stroke-width:2px
   linkStyle 9 stroke:#A93226,stroke-width:2px, color: #E6B0AA
   linkStyle 10 stroke:#1d8348,stroke-width:2px, color: #a9dfbf
 ```
+
+</div>
 
 ## New functionality
 
@@ -317,6 +317,8 @@ RELEASE WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
+<div align="center">
+
 ```mermaid
 flowchart TB 
   %% Components
@@ -338,19 +340,14 @@ flowchart TB
   %% Layout
   Start --> Archive:::B7a_ --> UpdateComponents:::B7a_ --> Development:::B7a_ --> _Release:::G5_
   %% Styles
-  classDef G0_ stroke:#e9f7ef,stroke-width:3px,fill:#eaf2f8,color:#154360
-  classDef G1_ stroke:#e9f7ef,stroke-width:3px,fill:#a9dfbf,color:#145a32
-  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef G3_ stroke:#e9f7ef,stroke-width:3px,fill:#1d8348,color:#e9f7ef
-  classDef G4_ stroke:#e9f7ef,stroke-width:3px,fill:#145a32,color:#e9f7ef
   classDef G5_ stroke:#145a32,stroke-width:3px,fill:#eaf2f8,color:#154360
   classDef G6_ stroke:#145a32,stroke-width:3px,fill:#a9dfbf,color:#145a32
   classDef G7_ stroke:#145a32,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef G8_ stroke:#145a32,stroke-width:3px,fill:#1d8348,color:#e9f7ef
-  classDef G9_ stroke:#145a32,stroke-width:3px,fill:#145a32,color:#e9f7ef
   classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
   classDef Hidden display: none;
 ```
+
+</div>
 
 ## Release candidate
 
