@@ -1,16 +1,18 @@
-<!-- u250114 -->
+<!-- u250306 -->
 
-> Last updated: January 14, 2025
+> Last updated: March 6, 2025
 
 <div align="center">
 
-![logo](../../.github/Images/Logos/TingenDevelopmentDocumentation-320x425.png)
+![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
  <h1>Tingen components</h1>
 
 </div>
 
 The Tingen web service is comprised of the following components:
+
+<div align="center">
 
 ```mermaid
 flowchart TB
@@ -59,3 +61,5 @@ flowchart TB
   click ScriptLinkStandard "https://github.com/rcskids/ScriptLinkStandard"
   click Sandcastle "https://github.com/EWSoftware/SHFB"
 ```
+
+</div>

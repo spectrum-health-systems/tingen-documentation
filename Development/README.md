@@ -8,23 +8,8 @@
 
 # CONTENTS
 
+* [Code snippets](./code-snippets.md)
 * [Development workflows](./development-workflows.md)
-
-
-
-
-* [COMPONENTS](./Components/components.md)
-
-* [PROCESSES](./Processes/processes.md)
-  * [Testing](./Processes/testing.md)
-
-* [RELEASES](./Releases/releases.md)
-
-* [SOURCE CODE](./SourceCode/source-code.md)
-  * [Comments](./SourceCode/comments.md)
-  * [Logging](./SourceCode/logging.md)
-  * [Snippets](./SourceCode/snippets.md)
-
-* [Workflows](./Workflows/workflows.md)
-
-
+* [Source code commenting](source-code-comments.md)
+* [Tingen components](./tingen-components.md)
+* [Tingen logging](tingen-logging.md)

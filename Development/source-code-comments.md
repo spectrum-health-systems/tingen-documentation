@@ -1,15 +1,14 @@
-<!-- u250114 -->
+<!-- u250306 -->
 
-> Last updated: January 14, 2025
+> Last updated: March 6, 2025
 
 <div align="center">
 
-![logo](../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
+![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
- <h1>Tingen Source Code Comments</h1>
+  <h1>Development workflows</h1>
 
 </div>
-
 ### CONTENTS
 
 [Overview](#overview)

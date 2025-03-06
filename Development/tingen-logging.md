@@ -1,15 +1,14 @@
-<!-- u241205 -->
+<!-- u250306 -->
 
-  ![logo](../../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
-
-  ![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
+> Last updated: March 6, 2025
 
 <div align="center">
-    <h1>
-        LOGGING
-    </h1>
-</div>
 
+![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
+
+  <h1>Development workflows</h1>
+
+</div>
 <br>
 <br>
 
