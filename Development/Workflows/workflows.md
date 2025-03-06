@@ -15,56 +15,76 @@
 <div align="center">
 
 ```mermaid
-flowchart LR
+flowchart TB
   %% Components
   Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
   Archive@{shape: rounded, label: "Archive"}
   UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
   Development@{shape: rounded, label: "Development"}
   Release@{shape: circ, label: "Release"}
+
+  %% Subgraphs
+  %% (none)
+
   %% Layout
-  Start -->Archive:::R0_ --> UpdateComponents:::P0_ --> Development:::U0_ --> Release:::G2_
+  Start --> Archive:::R0_ --> UpdateComponents:::P0_ --> Development:::U0_ --> Release:::G2_
 
   %% Styles
   classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
   classDef P0_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
   classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
   classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef Y5_ stroke:#7d6608,stroke-width:3px,fill:#fef9e7,color:#7d6608
-  classDef E5_ stroke:#784212,stroke-width:3px,fill:#fdf2e9,color:#784212
-  %% Styles - Global
   classDef Hidden display: none;
 ```
 
 </div>
 
 <br>
-
-***
+<br>
 
 <!--
 ARCHIVE WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
-<details>
-  <summary>
+# ARCHIVE
 
- ```mermaid
-  flowchart LR
-    %% Components
-    Archive@{shape: rounded, label: "Archive"}
-    ArchiveRepostitories@{shape: rounded, label: "Archive\nRepositories"}
-    %% Layout
-    Start:::Hidden -.->Archive:::R5_ --> ArchiveRepostitories:::R1_ -.-> Continue:::Hidden
-    %% Styles
-    classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16,font-size:8pt 
-    classDef R1_ stroke:#f9ebea,stroke-width:3px,fill:#E6B0AA,color:#641e16
-    %% Styles - Global
-    classDef Hidden display: none;
-  ```
+```mermaid
+flowchart TB
+  %% Components
+  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+  UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
+  Development@{shape: rounded, label: "Development"}
+  Release@{shape: circ, label: "Release"}
 
-</summary>
+  %% Subgraphs
+  subgraph _Archive ["Archive"]
+    direction LR
+      subgraph _ArchiveRepositories ["Repositories"]
+        direction LR
+        %% Components
+        ArchiveTingenWebService@{shape: rounded, label: "Archive\nTingen\nWeb Service"}
+        ArchiveOutpost31@{shape: rounded, label: "Archive\nOutpost31"}
+        ArchiveTingenDocumentation@{shape: rounded, label: "Archive\nTingen\ndocumentation"}
+        %% Layout
+        RepoStart:::Hidden -.-> ArchiveTingenWebService:::R2_ --> ArchiveOutpost31:::R2_ --> ArchiveTingenDocumentation:::R2_ -.-> RepoEnd:::Hidden
+      end
+  end
+
+  %% Layout
+  Start --> _Archive:::R5_ --> UpdateComponents:::B7a_ --> Development:::B7a_ --> Release:::B7a_
+  _ArchiveRepositories:::R6_
+      
+  %% Styles
+  classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef R1_ stroke:#f9ebea,stroke-width:3px,fill:#E6B0AA,color:#641e16
+  classDef R2_ stroke:#f9ebea,stroke-width:3px,fill:#CD6155,color:#f9ebea
+  classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef R6_ stroke:#641e16,stroke-width:3px,fill:#E6B0AA,color:#641e16
+  classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
+  classDef Hidden display: none;
+  linkStyle 0,1,2,3 stroke:#000000,stroke-width:1px
+```
 
 ## Archive repositories
 
@@ -74,7 +94,9 @@ Create a `YY.DD.##-development+final` branch for each of the following repositor
 * Outpost31
 * Tingen-Documentation
 
-</details>
+<br>
+
+***
 
 <br>
 
@@ -83,30 +105,65 @@ UPDATE COMPONENTS WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
-<details>
-  <summary>
+# UPDATE COMPONENTS
 
-  ```mermaid
-  flowchart LR
+```mermaid
+flowchart TB 
+  %% Components
+  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+  Archive@{shape: rounded, label: "Archive"}
+  Development@{shape: rounded, label: "Development"}
+  Release@{shape: circ, label: "Release"}
+
+  %% Subgraphs
+  subgraph _UpdateComponents ["Update Components"]
+    direction LR
     %% Components
-    UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
     UpdateAutoHotKey@{shape: rounded, label: "Update\nAutoHotKey script"}
     UpdateSandCastleProfiles@{shape: rounded, label: "Update\nSandcastle profiles"}
-    UpdateSourceCode@{shape: rounded, label: "Update\nsource code"}
-    UpdateDocumentation@{shape: rounded, label: "Update\ndocumentation"}
-    %% Layout
-    UpdateComponents:::P5_ --> UpdateAutoHotKey:::P6_ --> UpdateSandCastleProfiles:::P6_ -->  UpdateSourceCode:::P6_ --> UpdateDocumentation:::P6_
-    %% Styles
-    classDef R5_ stroke:#641e16,stroke-width:3px,stroke-dasharray: 5 5,fill:#f9ebea,color:#641e16,font-size:8pt
-    classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
-    classDef P6_ stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f
-    %% Styles - Global
-    classDef Hidden display: none;
-  ```
+    UpdateStart:::Hidden -.-> UpdateAutoHotKey:::P6_ --> UpdateSandCastleProfiles:::P6_ --> _UpdateSourceCode:::P6_ --> _UpdateDocumentation:::P6_ -.-> UpdateEnd:::Hidden
+  end
 
-  </summary>
+  subgraph _UpdateSourceCode ["Update source code"]
+    direction TB
+    %% Components
+    UpdateAssemblyInfo@{shape: rounded, label: "Update\nAssemblyInfo.cs"}
+    UpdateClassHeaders@{shape: rounded, label: "Update\nclass headers"}
+    UpdateTngnBuild@{shape: rounded, label: "Update\nTngnBuild value"}
+    UpdateAssemblyInfo:::P7_ --> UpdateClassHeaders:::P7_ --> UpdateTngnBuild:::P7_
+  end
 
-### Update the AutoHotKey script
+  subgraph _UpdateDocumentation ["Update documentation"]
+    direction TB
+    %% Components
+    UpdateTingenManual@{shape: docs, label: "Update\nTingen Manual"}
+    UpdateAPIDocumentation@{shape: docs, label: "Update\nAPI documentation"}
+    UpdateDevelopmentDocumentation@{shape: docs, label: "Update\nDevelopment documentation"}
+    UpdateTingenManual:::P7_ --> UpdateAPIDocumentation:::P7_ --> UpdateDevelopmentDocumentation:::P7_
+  end
+
+  %% Layout
+  Start --> Archive:::B7a_ --> _UpdateComponents:::P5_ --> Development:::B7a_ --> Release:::B7a_
+
+  %% Styles
+  classDef P0_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef P1_ stroke:#f5eef8,stroke-width:3px,fill:#d7bde2,color:#512e5f
+  classDef P2_ stroke:#f5eef8,stroke-width:3px,fill:#af7ac5,color:#f5eef8
+  classDef P3_ stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8
+  classDef P4_ stroke:#f5eef8,stroke-width:3px,fill:#512e5f,color:#f5eef8
+  classDef P5_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef P5a_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f,font-size:8p
+  classDef P6_ stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f
+  classDef P7_ stroke:#512e5f,stroke-width:3px,fill:#af7ac5,color:#f5eef8
+  classDef P8_ stroke:#512e5f,stroke-width:3px,fill:#884ea0,color:#f5eef8
+  classDef P9_ stroke:#512e5f,stroke-width:3px,fill:#512e5f,color:#f5eef8
+  classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
+  classDef P5_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef Hidden display: none;
+  linkStyle 0,1,2,3,4,5,6,7,8 stroke:#000000,stroke-width:1px
+```
+
+## Update the AutoHotKey script
 
 Update the following components of the AutoHotkey script:
 
@@ -114,7 +171,7 @@ Update the following components of the AutoHotkey script:
 * ALT+CTRL+SHIFT+R
 * ALT+CTRL+SHIFT+V
   
-### Update Sandcastle profiles
+## Update Sandcastle profiles
 
 Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
@@ -172,33 +229,106 @@ For example:
 ![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 ```
 
-</details> <!-- PREPARATION WORKFLOW -->
+<br>
+
+***
+
+<br>
 
 <!--
-REFACTOR WORKFLOW
+DEVELOPMENT WORKFLOW
 This HTML is ugly, but needs to be this way to work.
 -->
 
-<details>
-<summary> Refactor workflow
+```mermaid
+flowchart TB 
+  %% Components
+  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+  Archive@{shape: rounded, label: "Archive"}
+  UpdateComponents@{shape: rounded, label: "Update\ncomponents"}
+  Release@{shape: circ, label: "Release"}
+  %% Subgraphs
+  subgraph _Development ["Development"]
+    direction TB
+      DeployToUat@{shape: rounded, label: "Deploy To UAT"}
+      Test@{shape: diamond, label: "Test"}
+      subgraph _SourceCodeModifications ["Source code modifications"]
+        direction TB
+        %% Components
+        NewFunctionality@{shape: rounded, label: "New\nfunctionality"}
+        UpdateExistingFunctionality@{shape: rounded, label: "Update existing\nfunctionality"}
+        BugFixes@{shape: rounded, label: "Bug fixes"}
+        Refactor@{shape: rounded, label: "Refactoring"}
+      end
+      subgraph _Documentation ["Documentation"]
+        direction LR
+        %% Components
+        TingenManual@{shape: docs, label: "Tingen Manual"}
+        APIDocumentation@{shape: docs, label: "API documentation"}
+        DevelopmentDocumentation@{shape: docs, label: "Development documentation"}
+        TingenManual--> APIDocumentation --> DevelopmentDocumentation
+      end
+      StartDevelopment:::Hidden -.-> _SourceCodeModifications --> DeployToUat --> Test  
+  end
+
+  %% Layout
+  Start --> Archive:::B7a_ --> UpdateComponents:::B7a_ --> _Development:::U5_ --> Release:::B7a_
+  Test -- Fail --> _Development
+  Test -- Success --> _Documentation
+  _Documentation --> _Development
+  %% Styles
+  classDef U0_ stroke:#eaf2f8,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef U1_ stroke:#eaf2f8,stroke-width:3px,fill:#a9cce3,color:#154360
+  classDef U2_ stroke:#eaf2f8,stroke-width:3px,fill:#5499c7,color:#eaf2f8
+  classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
+  classDef U4_ stroke:#eaf2f8,stroke-width:3px,fill:#154360,color:#eaf2f8
+  classDef U5_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef U6_ stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360
+  classDef U7_ stroke:#154360,stroke-width:3px,fill:#5499c7,color:#eaf2f8
+  classDef U8_ stroke:#154360,stroke-width:3px,fill:#2471a3,color:#eaf2f8
+  classDef U9_ stroke:#154360,stroke-width:3px,fill:#154360,color:#eaf2f8
+
+  classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef P5_ stroke:#f5eef8,stroke-width:3px,fill:#f5eef8,color:#512e5f
+  classDef P5a_ stroke:#512e5f,stroke-width:3px,fill:#f5eef8,color:#512e5f,font-size:8pt 
+  classDef P6_ stroke:#512e5f,stroke-width:3px,fill:#d7bde2,color:#512e5f
+  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
+  classDef B7a_ stroke:#7b7d7d,stroke-width:3px,fill:#000000,color:#7b7d7d,font-size: 10pt
+  classDef Hidden display: none;
+  %%linkStyle 0,1,2,3,4,5,6,7,8,9,10,11 stroke:#000000,stroke-width:1px
+```
+
+
+
+
+
+
+
+
+
+
+
 
 ```mermaid
 flowchart LR
   %% Components
-  Preparation@{shape: rounded, label: "Preparation"}
-  Refactor@{shape: rounded, label: "Refactor"}
   Development@{shape: rounded, label: "Development"}
-  Release@{shape: rounded, label: "Release"}
+  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
+  %% Document@{shape: docs, label: "Documentation"}
+  Test@{shape: diamond, label: "Test"}
+  %% Release@{shape: rounded, label: "Release"}
   %% Layout
-  Preparation:::S02 --> Refactor --> Development:::S02 --> Release:::S02
-  %% Styles
-  classDef Refactor stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360,font-size:16pt
-  classDef S02 stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#000000,font-size:10pt
-  class Refactor Refactor
-  class Preparation,Development,Release GreyedOut
-```
+  Start:::Hidden -.-> Development:::U5a_ -.-> DeployToUat:::U6_
+  DeployToUat --> Test
 
-</summary>
+  %% Styles
+  classDef U5a_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
+  classDef U6_ stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360
+  linkStyle 3 stroke:#A93226,stroke-width:3px, color: pink;
+  linkStyle 4 stroke:#145a32,stroke-width:3px
+  %% Styles - Global
+  classDef Hidden display: none;
+```
 
 During the refactor phase the following components are cleand up and/or refactored:
 
@@ -206,35 +336,6 @@ During the refactor phase the following components are cleand up and/or refactor
 * Source code comments
 * XML documentation
 * Documentation
-
-</details> <!-- REFACTOR WORKFLOW -->
-
-<!--
-DEVELOPMENT WORKFLOW
-This HTML is ugly, but needs to be this way to work.
--->
-
-<details>
-<summary> Development workflow
-
-```mermaid
-flowchart LR
-  %% Components
-  Preparation@{shape: rounded, label: "Preparation"}
-  Refactor@{shape: rounded, label: "Refactor"}
-  Development@{shape: rounded, label: "Development"}
-  Release@{shape: rounded, label: "Release"}
-  %% Layout
-  Preparation --> Refactor --> Development --> Release
-  %% Styles
-  classDef Development stroke:#145a32,stroke-width:3px,fill:#a9dfbf,color:#145a32,font-size:16pt
-  classDef GreyedOut stroke:#000000,stroke-width:3px,fill:#7b7d7d,color:#ffffff,font-size:10pt
-  class Development Development
-  class Preparation,Refactor,Release GreyedOut
-```
-
-</summary>
-
 Development consists of:
 
 * Determining new functionality
@@ -247,36 +348,7 @@ Development consists of:
 
 <div align="center">
 
-```mermaid
----
-title: Development overview
----
-flowchart LR
-  %% Components
-  Development@{shape: rounded, label: "Development"}
-  DeployToUat@{shape: rounded, label: "Deploy To UAT"}
-  Document@{shape: docs, label: "Documentation"}
-  Test@{shape: diamond, label: "Test"}
-  Release@{shape: rounded, label: "Release"}
-  %% Layout
-  Development -.-> Document
-  Development --> DeployToUat --> Test
-  Test -- Fail --> Development
-  Test -- Success --> Release
-  %% Styles
-  classDef Development stroke:#00000,stroke-width:3px,stroke-dasharray: 5 5,fill:#a9dfbf,color:#145a32
-  classDef DeployToUat stroke:#145a32,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef Document stroke:#6e2c00,stroke-width:3px,fill:#edbb99,color:#6e2c00
-  classDef Test stroke:#e9f7ef,stroke-width:3px,fill:#145a32,color:#e9f7ef
-  classDef Release stroke:#7d6608,stroke-width:3px,fill:#f9e79f,color:#7d6608
-  class Development Development
-  class DeployToUat DeployToUat
-  class Test Test
-  class Document Document
-  class Release Release
-  linkStyle 3 stroke:#A93226,stroke-width:3px, color: pink;
-  linkStyle 4 stroke:#145a32,stroke-width:3px
-```
+
 
 </div>
 
@@ -353,6 +425,31 @@ flowchart LR
 - September 20: Abatab AutumnYY
 
 For example: `Abatab Autumn23`
+
+
+
+
+
+
+
+<!--
+
+-->
+
+```mermaid
+flowchart LR
+  classDef R0_ stroke:#f9ebea,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef R1_ stroke:#f9ebea,stroke-width:3px,fill:#E6B0AA,color:#641e16
+  classDef R2_ stroke:#f9ebea,stroke-width:3px,fill:#CD6155,color:#f9ebea
+  classDef R3_ stroke:#f9ebea,stroke-width:3px,fill:#A93226,color:#f9ebea
+  classDef R4_ stroke:#f9ebea,stroke-width:3px,fill:#641e16,color:#f9ebea
+  classDef R5_ stroke:#641e16,stroke-width:3px,fill:#f9ebea,color:#641e16
+  classDef R6_ stroke:#641e16,stroke-width:3px,fill:#E6B0AA,color:#641e16
+  classDef R7_ stroke:#641e16,stroke-width:3px,fill:#CD6155,color:#f9ebea
+  classDef R8_ stroke:#641e16,stroke-width:3px,fill:#A93226,color:#f9ebea
+  classDef R9_ stroke:#641e16,stroke-width:3px,fill:#641e16,color:#f9ebea
+```
+
 
 
 
