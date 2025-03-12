@@ -65,11 +65,54 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 //  ██████  ██  ██ ██████ █████ ██████ █████  ██████   ██████  ███ 
 //  ██  ██  ██  ██   ██   █████ ██  ██ ██████   ██        ███   ██ 
 //  ██████  ██████   ██   ██    ██████  █████   ██     ██████   ██ 
-//                             Outpost31.Core.Avatar.SystemCode.cs
+//                                       Core.Avatar.SystemCode.cs
 //                                   Logic for Avatar System Codes
 // uYYMMDD_code
 // uYYMMDD_documentation
 ```
+
+## Tingen Commander
+
+// ████████╗██╗███╗   ██╗ ██████╗ ███████╗███╗   ██╗
+// ╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝████╗  ██║
+//    ██║   ██║██╔██╗ ██║██║  ███╗█████╗  ██╔██╗ ██║
+//    ██║   ██║██║╚██╗██║██║   ██║██╔══╝  ██║╚██╗██║
+//    ██║   ██║██║ ╚████║╚██████╔╝███████╗██║ ╚████║
+//    ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝                                            
+//  ██████╗ ██████╗ ███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██████╗ ███████╗██████╗ 
+// ██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗
+// ██║     ██║   ██║██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+// ██║     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
+// ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██████╔╝███████╗██║  ██║
+//  ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+//                                                        Tingen Web Service Utility
+//                                                         Development Release 0.1.0
+//
+// https://github.com/APrettyCoolProgram/Tingen-Commander
+// Copyright (c) A Pretty Cool Program. All rights reserved.
+// Licensed under the Apache 2.0 license.
+//
+// u250311_code
+// u250311_documentation
+
+### Other Tingen Commander classes
+
+// ████████╗██╗███╗   ██╗ ██████╗ ███████╗███╗   ██╗
+// ╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝████╗  ██║
+//    ██║   ██║██╔██╗ ██║██║  ███╗█████╗  ██╔██╗ ██║
+//    ██║   ██║██║ ╚████║╚██████╔╝███████╗██║ ╚████║
+//    ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝                                            
+//  ██████╗ ██████╗ ███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██████╗ ███████╗██████╗ 
+// ██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗
+// ██║     ██║   ██║██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+// ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██████╔╝███████╗██║  ██║
+//  ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+//                                                        Tingen Web Service Utility
+//                                                         Development Release 0.1.0
+//
+// u250311_code
+// u250311_documentation
+
 
 ## Other headers
 
@@ -107,7 +150,7 @@ LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
 or
 
 ```csharp
-/* Do not create Trace Logs here. */
+/* Trace Logs won't work here. */
 ```
 
 ## No Trace Logs or Primeival Logs
@@ -123,7 +166,7 @@ or
 or
 
 ```csharp
-/* Do not create Trace or Primeival Logs here. */
+/* Trace/Primeival Logs won't work here. */
 ```
 
 # Development note comments

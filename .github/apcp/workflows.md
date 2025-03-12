@@ -1,86 +1,45 @@
 # Tingen Web Service
 
-# FLOW
-
 ```mermaid
+
+
 flowchart TB
 
-  subgraph TingenWebService
-    direction TB
-    %% Components
-    GetExeAsmName@{shape: rounded, label: "Get executing\nassembly name"}
-    GetTngnVer@{shape: rounded, label: "Get Tingen Web\nService version"}
-    CreateEmptyTngnSession@{shape: rounded, label: "Create empty\nTngnSession"}
-    %% Layout
-    GetExeAsmName --> GetTngnVer --> CreateEmptyTngnSession
-    %% Styles
-    class GetExeAsmName,GetTngnVer,CreateEmptyTngnSession Yellow
-  end
+  Avatar@{shape: circ, label: "Avatar"}
+  TingenWebService.asmx.cs@{shape: rounded, label: "TingenWebService.asmx.cs"}
+  InitNewSession@{shape: rounded, label: "Initialize\nnew (empty) session"}
+  Avatar --> TingenWebService.asmx.cs --> InitNewSession
 
-  TingenWebService ==> Outpost31.Runtime.Spin.Up
-
-  subgraph Outpost31
+  subgraph Runtime.Spin.Up ["Runtime.Spin.Up()"]
     direction TB
 
- subgraph Outpost.Runtime.Spin.Up
-    direction TB
-
-    subgraph Outpost.Configuration.RuntimeSettings
+    subgraph Runtime.RuntimeSettings.Load ["Runtime.RuntimeSettings.Load()"]
       direction LR
-      %% Components
-      Load
-      AreValid@{shape: diamond}
-      %% Layout
-      Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-      Configuration.RuntimeSettings.AreValid --NO--> EXIT
-      Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-      %% Styles
-    end
+      SetVersion@{shape: rounded, label: "Set\nTngnVersion"}
+      SetBuild@{shape: rounded, label: "Set\nTngnBuild"}
+      SetSystemCode@{shape: rounded, label: "Set\nngnSystemCode"}
+      SetMode@{shape: rounded, label: "Set\nTngnMode"}
+      SetDatestamp@{shape: rounded, label: "Set\nDatestamp"}
+      SetTimeStamp@{shape: rounded, label: "Set\nTimestamp"}
 
-    %% Components
-    Configuration.RuntimeSettings.Load
-    Configuration.RuntimeSettings.AreValid@{shape: diamond}
-    %% Layout
-    Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-    Configuration.RuntimeSettings.AreValid --NO--> EXIT
-    Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-    %% Styles
-  end
-  end
-
- 
-
-
+      SetVersion --> SetBuild@{shape: rounded, label: "Set TngnBuild"} --> SetSystemCode@{shape: rounded, label: "Set TngnSystemCode"} --> SetMode@{shape: rounded, label: "Set TngnMode"} --> SetDatestamp@{shape: rounded, label: "Set Datestamp"} --> SetTimeStamp@{shape: rounded, label: "Set Timestamp"}
+    end 
   
+    subgraph Runtime.RuntimeSettings.AreValid ["Runtime.RuntimeSettings.AreValid()"]
+      direction LR
+      ValidateMode@{shape: rounded, label: "Validate\nTngnMode"}
+      ValidateSystemCode@{shape: rounded, label: "Validate\nTngnSystemCode"}
+      ValidateBuild@{shape: rounded, label: "Validate\nTngnBuild"}
+
+      ValidateMode@{shape: rounded, label: "Validate\nTngnMode"} --> ValidateSystemCode@{shape: rounded, label: "Validate\nTngnSystemCode"} --> ValidateBuild@{shape: rounded, label: "Validate\nTngnBuild"}
+    end 
   
+    Runtime.RuntimeSettings.Load --> Runtime.RuntimeSettings.AreValid
+
+  end 
+
+  InitNewSession --> Runtime.Spin.Up
 
 
-
-
-  %% Components
-  EXIT
-
-  %% Layout
-
-
-  %% Styles - Global
-  classDef Hidden display: none;
-  classDef Yellow color:#000000,fill:#EDDA74,stroke:#F6BE00,stroke-width:2px
 
 ```
-
-  GetExecutingAssemblyName --> GetTngnVersion["Get TngnVersion"] --> CreateEmptyTngnSession["Create Empty TngnSession"] --> Outpost31.Runtime.Spin.Up
-
-  subgraph Outpost31.Runtime.Spin.Up
-    direction TB
-    Configuration.RuntimeSettings.Load --> Configuration.RuntimeSettings.AreValid
-    Configuration.RuntimeSettings.AreValid{"Configuration.RuntimeSettings.AreValid"} --NO--> EXIT
-    Configuration.RuntimeSettings.AreValid --YES --> Continue_Outpost31.Session.New("Continue to Outpost31.Session.New")
-  end
-
-  Outpost31.Runtime.Spin.Up --> Outpost31.Session.New
-
-  subgraph Outpost31.Session.New
-    direction TB
-    DoSomething --> DoSomethingElse
-  end
