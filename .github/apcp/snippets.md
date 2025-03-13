@@ -113,8 +113,21 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 // u250311_code
 // u250311_documentation
 
-
 ## Other headers
+
+### Du
+
+// ██████╗ ██╗   ██╗
+// ██╔══██╗██║   ██║
+// ██║  ██║██║   ██║
+// ██║  ██║██║   ██║
+// ██████╔╝╚██████╔╝
+// ╚═════╝  ╚═════╝
+// Du.File.cs
+//
+// u250311_code
+// u250311_documentation
+
 
 ### HTML files
 
