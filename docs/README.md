@@ -1,8 +1,8 @@
-<!-- u241212 -->
+<!-- u250401 -->
 
 <div align="center">
 
-  ![logo](../.github/image/logos/TingenDevelopmentDocumentation_logo_320x420.png)
+  ![logo](../.github/image/logo/TingenDocumentation_logo_320x420.png)
 
   ![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
 
@@ -12,10 +12,8 @@
 
 Check out this cool API documentation:
 
-* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-WebService/API/Tingen/index.html)
 
-
-* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-WebService/API/Tingen/index.html)
+* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen-WebService/html/N_TingenWebService.htm)
 
 * [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
 
@@ -28,10 +26,3 @@ The **good news** is that means this documentation is *always current*.
 The **bad news** is it may also be *incomplete*! Incomplete documentation is (generally) noted.
 
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
-
-<!--
-API documentation for the following should be added:
-
-- Tingen DevDeploy
-
--->
