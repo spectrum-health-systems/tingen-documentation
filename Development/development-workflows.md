@@ -65,8 +65,9 @@ flowchart TB
         ArchiveTingenWebService@{shape: rounded, label: "Archive\nTingen\nWeb Service"}
         ArchiveOutpost31@{shape: rounded, label: "Archive\nOutpost31"}
         ArchiveTingenDocumentation@{shape: rounded, label: "Archive\nTingen\ndocumentation"}
+        ArchiveTingenCommander@{shape: rounded, label: "Archive\nTingen\nCommander"}
         %% Layout
-        ArchiveTingenWebService:::R7_ ~~~ ArchiveOutpost31:::R7_ ~~~ ArchiveTingenDocumentation:::R7_
+        ArchiveTingenWebService:::R7_ ~~~ ArchiveOutpost31:::R7_ ~~~ ArchiveTingenDocumentation:::R7_ ~~~ ArchiveTingenCommander:::R7_
       end
   end
   %% Layout
@@ -89,6 +90,7 @@ Create a `YY.DD.##-development+final` branch for each of the following repositor
 * Tingen-WebService (using the `development` branch)
 * Outpost31 (using the `development` branch)
 * Tingen-Documentation (using the `main` branch)
+* Tingen-Commander (using the `development` branch)
 
 <br>
 
@@ -158,8 +160,9 @@ Update the following components of the AutoHotkey script:
 
 Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
-* Tingen
+* Tingen-WebService
 * Outpost31
+* Tingen-Commander
 
 ## Update the source code
 
@@ -167,8 +170,9 @@ Update the Sandcastle "Help file version" in the following Sandcastle profiles:
 
 Update the following `AssemblyInfo.cs` files with the current version number:
 
-* Tingen_development/Properties/AssemblyInfo.cs
+* Tingen-WebService/Properties/AssemblyInfo.cs
 * Outpost31/Properties/AssemblyInfo.cs
+* Tingen-Commander/Properties/AssemblyInfo.cs
   
 ### Class file headers
 
