@@ -2,30 +2,10 @@
 
 ### Roadmaps
 
-* [Tingen](./ROADMAP_tingen.md)
+* [Tingen Web Service](./ROADMAP_tingen-web-service.md)
 * [Outpost31](./ROADMAP_outpost31.md)
 * [Tingen Commander](./ROADMAP_tingen-commander.md)
-* [Tingen DevDeploy](./ROADMAP_tingen-devdeploy.md)
 * [Tingen Documentation](./ROADMAP_tingen-documentation.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- u241205 -->
-
-
-
-
-
 
 ## Lieutenant
 
