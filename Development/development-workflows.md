@@ -204,7 +204,7 @@ return new Dictionary<string, string>
 Search for the following string in the documentation...
 
 ```markdown
-![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%20YY.MM-white?style=for-the-badge)
+![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%20YY.MM-white?style=for-the-badge)
 ```
 
 ...where `YY.MM` is the Year.Month value for the current documentation, and keeping in mind that the "***%20***" in "**%20***MM*" is a space!
@@ -214,7 +214,7 @@ Replace the value of `YY.MM` with the current Year.Month.
 For example:
 
 ```markdown
-![TINGEN_VERSION](https://img.shields.io/badge/BASED%20ON%20Tingen%2025.11-white?style=for-the-badge)
+![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.4-white?style=for-the-badge)
 ```
 
 <br>
