@@ -180,6 +180,7 @@ Update the file headers for the following files:
 
 * Tingen.Tingen.asmx.cs
 * Outpost31.WelcomeToOutpost31.cs
+* TingenCommander.MainWindow.xaml.cs
 
 ### The `tnBuild` value
 
