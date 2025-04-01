@@ -12,7 +12,10 @@
 
 Check out this cool API documentation:
 
-* [Tingen](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen/index.html)
+* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-WebService/API/Tingen/index.html)
+
+
+* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-WebService/API/Tingen/index.html)
 
 * [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/index.html)
 
