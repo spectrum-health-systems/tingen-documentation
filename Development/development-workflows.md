@@ -7,7 +7,7 @@
   The rest of the document will be updated normally.
 -->
 
-> Last updated: March 6, 2025
+> Last updated: April 1, 2025
 
 <div align="center">
 
@@ -86,9 +86,9 @@ flowchart TB
 
 Create a `YY.DD.##-development+final` branch for each of the following repositories:
 
-* Tingen-WebService
-* Outpost31
-* Tingen-Documentation
+* Tingen-WebService (using the `development` branch)
+* Outpost31 (using the `development` branch)
+* Tingen-Documentation (using the `main` branch)
 
 <br>
 

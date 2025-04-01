@@ -97,21 +97,16 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 
 ### Other Tingen Commander classes
 
-// ████████╗██╗███╗   ██╗ ██████╗ ███████╗███╗   ██╗
-// ╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝████╗  ██║
-//    ██║   ██║██╔██╗ ██║██║  ███╗█████╗  ██╔██╗ ██║
-//    ██║   ██║██║ ╚████║╚██████╔╝███████╗██║ ╚████║
-//    ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝                                            
-//  ██████╗ ██████╗ ███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██████╗ ███████╗██████╗ 
-// ██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗
-// ██║     ██║   ██║██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
-// ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██████╔╝███████╗██║  ██║
-//  ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
-//                                                        Tingen Web Service Utility
-//                                                         Development Release 0.1.0
+// ███ █ ██  █  ██   ███ ██  █
+//  █  █ █ █ █ █  ██ ██  █ █ █
+//  █  █ █  ██  ███  ███ █  ██
 //
-// u250311_code
-// u250311_documentation
+//  ██  ██  ██ ██ ██ ██  █  ██  █ ███  ███ ███
+// █   █  █ █ █ █ █ █ █ ███ █ █ █ █  █ ██  ███
+//  ██  ██  █   █ █   █ █ █ █  ██ ███  ███ █  █
+
+// u250319_code
+// u250319_documentation
 
 ## Other headers
 
@@ -124,10 +119,9 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 // ██████╔╝╚██████╔╝
 // ╚═════╝  ╚═════╝
 // Du.File.cs
-//
+
 // u250311_code
 // u250311_documentation
-
 
 ### HTML files
 
@@ -217,3 +211,60 @@ Make the following changes:
 ```
 
 ***
+
+# Source code comment types
+
+```
+// -DEPRECIATED- %optional-note%
+// %code%
+
+or 
+
+/* -DEPRECIATED- %optional-note%
+%code%
+*/
+```
+
+```
+// #DEVNOTE#
+// %note%
+
+or
+
+/* #DEVNOTE#
+%note%
+*/
+```
+
+```
+// !IMPORTANT!
+// %note%
+
+or 
+
+/* !IMPORTANT!
+%note%
+*/
+```
+
+```
+// {REFACTOR}
+// %note%
+
+or 
+
+/* {REFACTOR}
+%note%
+*/
+```
+
+```
+// @TODO@
+// %note%
+
+or
+
+/* @TODO@
+%note%
+*/
+```
