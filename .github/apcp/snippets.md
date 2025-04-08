@@ -139,7 +139,7 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
-## Creating a Primeival Log
+## Creating a Primeval Log
 
 ```csharp
 LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
@@ -173,7 +173,7 @@ or
 or
 
 ```csharp
-/* Trace/Primeival Logs won't work here. */
+/* Trace/Primeval Logs won't work here. */
 ```
 
 # Development note comments
