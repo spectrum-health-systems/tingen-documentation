@@ -187,7 +187,6 @@ Make the following changes:
 */
 ```
 
-
 # XML documentation
 
 ## SeeAlso
@@ -268,3 +267,14 @@ or
 %note%
 */
 ```
+
+# Abbreviations
+
+Avtr          = Avatar
+Env           = Environment
+OptObj        = OptionObject
+Rntm          = Runtime
+Slnk          = Scriptlink
+SysCode       = System Code
+Tngn          = Tingen
+TngnWbSv      = Tingen Web Service
