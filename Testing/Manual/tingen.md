@@ -1,21 +1,28 @@
-<!-- u250114 -->
+# Tingen Web Service testing
 
-<div align="center">
+# Log files
 
-![logo](../../.github/Images/Logos/TingenDevelopmentDocumentation-232x308.png)
+- [ ] Defcon log files
+  - [ ] Defcon 1
+  - [ ] Defcon 2
+  - [ ] Defcon 3
+  - [ ] Defcon 4
+  - [ ] Defcon 5
 
-</div>
+- [ ] Primeval logs
 
-## Tingen mode
+- [ ] Trace logs
 
-* [ ] Set the Tingen Mode to "disabled"
-  * [ ] Verify mode file is updated
-  * [ ] Verify current settings file is updated
+## Modes
 
-* [ ] Set Tingen Mode to "asdf"
-  * [ ] Verify mode file is updated
-  * [ ] Verify current settings file is updated
+- [ ] Set the Tingen Mode to "disabled"
+  - [ ] Verify mode file is updated
+  - [ ] Verify current settings file is updated
 
-* [ ] Set Tingen Mode to "enabled"
-  * [ ] Verify mode file is updated
-  * [ ] Verify current settings file is updated
+- [ ] Set Tingen Mode to "asdf"
+  - [ ] Verify mode file is updated
+  - [ ] Verify current settings file is updated
+
+- [ ] Set Tingen Mode to "enabled"
+  - [ ] Verify mode file is updated
+  - [ ] Verify current settings file is updated

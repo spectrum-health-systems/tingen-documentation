@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\CSB_Development\GitHub\Spectrum - Tingen\Tingen-WebService\.github\sandcastle\Tingen-WebService.shfbproj" started="4/15/2025 11:12:17 AM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\CSB_Development\GitHub\Spectrum - Tingen\Tingen-WebService\.github\sandcastle\Tingen-WebService.shfbproj" started="4/18/2025 9:48:00 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -26,153 +26,19 @@ References to include:
     Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL
 
 Copying XML comments files
-    C:\IT\CSB_Development\GitHub\Spectrum - Tingen\Tingen-WebService\src\bin\Generated.xml -&gt; C:\Caches\Sandcastle\Generated.xml
+SHFB: Warning BE0063: &#39;C:\IT\CSB_Development\GitHub\Spectrum - Tingen\Tingen-WebService\src\bin\Generated.xml&#39; matches a previously copied comments filename.  The duplicate will be copied to a unique name to preserve the comments it contains.
+    C:\IT\CSB_Development\GitHub\Spectrum - Tingen\Tingen-WebService\src\bin\Generated.xml -&gt; C:\Caches\Sandcastle\{507fa531-dd2e-41f8-bedf-1ed319bfc0ef}
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0158
+    Last step completed in 00:00:00.0083
 </buildStep>
-<buildStep step="GenerateApiFilter">
-Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0000
-</buildStep>
-<buildStep step="GenerateReflectionInfo">
-Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-a8c88a9c-f779-4017-bc48-9f5c746472b0.proj]
-Build started 4/15/2025 11:12:20 AM.
+<buildStep step="Failed">
 
-Project &quot;C:\Caches\Sandcastle\GenerateRefInfo-a8c88a9c-f779-4017-bc48-9f5c746472b0.proj&quot; on node 1 (default targets).
-PrepareForBuild:
-  Creating directory &quot;obj\Debug\&quot;.
-GenerateRefInfo:
-  Microsoft.Build (v17.13.19+0d9f5a35a017e4d80d644dadb751c5a2184aebe6)
-  c Microsoft Corporation. All rights reserved.
-  No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 2 dependency assemblies.
-  Using framework redirect &#39;System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
-  Using framework redirect &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
-  Using framework redirect &#39;System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
-  Wrote information on 1 namespaces, 1 types, and 6 members
-  Merging duplicate type and member information
-  Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\Caches\Sandcastle\GenerateRefInfo-a8c88a9c-f779-4017-bc48-9f5c746472b0.proj&quot; (default targets).
-    Last step completed in 00:00:00.9227
-</buildStep>
-<buildStep step="ApplyDocumentModel">
-Applying document model to reflection output...
-    Last step completed in 00:00:00.0537
-</buildStep>
-<buildStep step="AddApiTopicFilenames">
-Adding topic filenames to API members...
-    Last step completed in 00:00:00.0096
-</buildStep>
-<buildStep step="GenerateApiTopicManifest">
-Generating API topic manifest...
-    Last step completed in 00:00:00.0000
-</buildStep>
-<buildStep step="GenerateNamespaceSummaries">
-Generating namespace summary information...
-    Last step completed in 00:00:00.0426
-</buildStep>
-<buildStep step="CopyAdditionalContent">
-Copying additional content files...
-No additional content to copy
-    Last step completed in 00:00:00.0020
-</buildStep>
-<buildStep step="MergeTablesOfContents">
-Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0000
-</buildStep>
-<buildStep step="GenerateIntermediateTableOfContents">
-Generating intermediate table of contents file for API content...
-Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0227
-</buildStep>
-<buildStep step="CreateBuildAssemblerConfigs">
-Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.4035
-</buildStep>
-<buildStep step="CombiningIntermediateTocFiles">
-Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0078
-</buildStep>
-<buildStep step="MergeCustomConfigs">
-Merging custom build component configurations
-C:\Caches\Sandcastle\BuildAssembler.config
-  Updating reference topic configurations.
-  No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0233
-</buildStep>
-<buildStep step="BuildTopics">
-Building help topics...
-<plugIn name="Website Table of Contents Generator" behavior="Before" priority="1000">
-Loading TOC info and adding unique IDs to parent nodes
-</plugIn>Loading configuration...
-Processing topics...
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-Processed 10 topic(s)
-2 warning(s)
-CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 of 15.
-CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-<plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
-Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:05.4763
-</buildStep>
-<buildStep step="CopyStandardHelpContent">
-Copying standard help content...
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css -&gt; C:\Caches\Sandcastle\Output\Website\css\bulma.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css.map -&gt; C:\Caches\Sandcastle\Output\Website\css\bulma.css.map
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.min.css -&gt; C:\Caches\Sandcastle\Output\Website\css\bulma.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.css -&gt; C:\Caches\Sandcastle\Output\Website\css\font-awesome.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.min.css -&gt; C:\Caches\Sandcastle\Output\Website\css\font-awesome.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ja-JP.css -&gt; C:\Caches\Sandcastle\Output\Website\css\ja-JP.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ko-KR.css -&gt; C:\Caches\Sandcastle\Output\Website\css\ko-KR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\presentationStyle.css -&gt; C:\Caches\Sandcastle\Output\Website\css\presentationStyle.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\vs.min.css -&gt; C:\Caches\Sandcastle\Output\Website\css\vs.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-CN.css -&gt; C:\Caches\Sandcastle\Output\Website\css\zh-CN.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-TW.css -&gt; C:\Caches\Sandcastle\Output\Website\css\zh-TW.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\icons\favicon.ico -&gt; C:\Caches\Sandcastle\Output\Website\icons\favicon.ico
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\clipboard.min.js -&gt; C:\Caches\Sandcastle\Output\Website\scripts\clipboard.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\highlight.min.js -&gt; C:\Caches\Sandcastle\Output\Website\scripts\highlight.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\jquery-3.5.1.min.js -&gt; C:\Caches\Sandcastle\Output\Website\scripts\jquery-3.5.1.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\presentationStyle.js -&gt; C:\Caches\Sandcastle\Output\Website\scripts\presentationStyle.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.ttf -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-brands-400.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.woff2 -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-brands-400.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.ttf -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-regular-400.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.woff2 -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-regular-400.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.ttf -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-solid-900.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.woff2 -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-solid-900.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.ttf -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-v4compatibility.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.woff2 -&gt; C:\Caches\Sandcastle\Output\Website\webfonts\fa-v4compatibility.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\GeneralError.html -&gt; C:\Caches\Sandcastle\Output\Website\GeneralError.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\index.html -&gt; C:\Caches\Sandcastle\Output\Website\index.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\PageNotFound.html -&gt; C:\Caches\Sandcastle\Output\Website\PageNotFound.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\search.html -&gt; C:\Caches\Sandcastle\Output\Website\search.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.aspx -&gt; C:\Caches\Sandcastle\Output\Website\SearchHelp.aspx
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\Caches\Sandcastle\Output\Website\SearchHelp.inc.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\Caches\Sandcastle\Output\Website\SearchHelp.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\Caches\Sandcastle\Output\Website\Web.Config
-    Last step completed in 00:00:00.2230
-</buildStep>
-<buildStep step="GenerateFullTextIndex">
-Generating full-text index for the website...
-
-    Last step completed in 00:00:00.1524
-</buildStep>
-<buildStep step="CopyingWebsiteFiles">
-Copying website files to output folder...
-
-Copied 71 files for the website content
-    Last step completed in 00:00:00.0860
-</buildStep>
-<buildStep step="CleanIntermediates">
-Removing intermediate files...
-    Last step completed in 00:00:00.0209
-</buildStep>
-<buildStep step="Completed">
-
-Build completed successfully at 4/15/2025 11:12:28 AM.  Total time: 00:00:10.9534
+SHFB: Error BE0065: BUILD FAILED: The file &#39;C:\Caches\Sandcastle\StopWordList.txt&#39; already exists.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build()
 
 </buildStep>
 </shfbBuild>
