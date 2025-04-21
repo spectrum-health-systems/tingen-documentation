@@ -2,12 +2,14 @@
 	<span class="identifier">TngnWbsvSession</span> <span class="parameter">tngnSession</span>,
 	<span class="identifier">int</span> <span class="parameter">errorCode</span>,
 	<span class="identifier">string</span> <span class="parameter">errorMessage</span> = ""
-)</code></pre></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">tngnSession</span>  <a href="T_Outpost31_Core_Session_TngnWbsvSession.htm">TngnWbsvSession</a></dt><dd>The Tingen Session data structure object.</dd><dt class="has-text-weight-normal"><span class="parameter">errorCode</span>  <a href="https://learn.microsoft.com/dotnet/api/system.int32" target="_blank" rel="noopener noreferrer">Int32</a></dt><dd>The OptionObject Error Code.</dd><dt class="has-text-weight-normal"><span class="parameter">errorMessage</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  (Optional)</dt><dd>The OptionObject error message.</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDECSection"><p>
-                    Before an OptionObject can be returned to Avatar, we need to make sure that all<br />
-                    of the required OptionObject components exist and/or are modified correctly.<br /><br />
-                    This is done by calling the OptionObject's built in <span class="code">ToReturnOptionObject</span><br />
-                    method on the OptionObject, then sending it back to Avatar.
-                </p><p><b>Error Codes</b><br />
+)</code></pre></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">tngnSession</span>  <a href="T_Outpost31_Core_Session_TngnWbsvSession.htm">TngnWbsvSession</a></dt><dd>The Tingen Session data structure object.</dd><dt class="has-text-weight-normal"><span class="parameter">errorCode</span>  <a href="https://learn.microsoft.com/dotnet/api/system.int32" target="_blank" rel="noopener noreferrer">Int32</a></dt><dd>The OptionObject Error Code.</dd><dt class="has-text-weight-normal"><span class="parameter">errorMessage</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  (Optional)</dt><dd>The OptionObject error message.</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDECSection"><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Important information about this method</p></div><div class="message-body">
+                    Before an OptionObject can be returned to Avatar, we need to make sure<br />
+                    that all of the required OptionObject components exist and/or are<br />
+                    modified correctly.<br /><br />
+                    This is done by calling the OptionObject's built<br />
+                    in <span class="code">ToReturnOptionObject()</span> method on the OptionObject, then<br />
+                    sending it back to Avatar.
+                </div></article><p><b>Error Codes</b><br />
                     When an OptionObject is returned to Avatar, it requires one of the following<br />
                     single-digit integer Error Codes:
                     <table class="table is-hoverable"><thead><tr><th>Error Code</th><th>Description</th></tr></thead><tr><td>0</td><td>No action taken</td></tr><tr><td>1</td><td>
