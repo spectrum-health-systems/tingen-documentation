@@ -1,3 +1,5 @@
+<!-- 250430 -->
+
 # The Script Parameter
 
 ## CONTENTS
@@ -24,6 +26,7 @@ The maximum length of a script parameter is 50 characters, and includes:
 
 | Module name | Abbreviation |
 | ----------- | ------------ |
+| Admin       | Admin |
 | Form Access | `FrmAccess` |
 | Open Incident | `OpenIncident` |
 | Prototype code | `_p` |
@@ -68,3 +71,13 @@ Module........-Command...-Action..............-Opt
 ```
 
 `ProgressNote-VerifyLocation-GroupIndividualNote`
+
+# Valid Script Parameters
+
+## Prototypes
+
+* _pDocSysCodeDenyAccessToForm
+
+* Prototype.DocSysCode.DenyAccessToForm
+* Admin.Status.Current
+QuickMedicationOrder.Verify.Dose

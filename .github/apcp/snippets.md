@@ -278,3 +278,19 @@ Slnk          = Scriptlink
 SysCode       = System Code
 Tngn          = Tingen
 TngnWbSv      = Tingen Web Service
+
+## OptionObject
+
+The OptionObject contains all of the content of and metadata describing the calling myAvatar form
+
+## Method notes
+
+<note title="Important information about this method">
+    <list type="bullet">
+        <item>This method is required by Avatar and <i>should not be modified</i>.</item>
+        <item>
+            Trace Logs can't go here because the logging infrastructure<br/>
+            hasn't been initialized yet.
+        </item>
+    </list>
+</note>

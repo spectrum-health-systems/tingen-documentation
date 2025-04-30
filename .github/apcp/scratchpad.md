@@ -69,3 +69,27 @@ I. full path/absolute path
 file name, folder name, volume name
 
 filename, pathname, volume name
+
+
+
+
+
+
+        private static string LogContents (OptionObject2015 sentOptObj, string sentSlnkScriptParam)
+        {
+            return "EntityID: " + sentOptObj.EntityID + Environment.NewLine +
+                   "EpisodeNumber: " + sentOptObj.EpisodeNumber + Environment.NewLine +
+                   "ErrorCode: " + sentOptObj.ErrorCode + Environment.NewLine +
+                   "ErrorMesg: " + sentOptObj.ErrorMesg + Environment.NewLine +
+                   "Facility: " + sentOptObj.Facility + Environment.NewLine +
+                   "NamespaceName: " + sentOptObj.NamespaceName + Environment.NewLine +
+                   "OptionId: " + sentOptObj.OptionId + Environment.NewLine +
+                   "OptionStaffId: " + sentOptObj.OptionStaffId + Environment.NewLine +
+                   "OptionUserId: " + sentOptObj.OptionUserId + Environment.NewLine +
+                   "ParentNamespace: " + sentOptObj.ParentNamespace + Environment.NewLine +
+                   "ServerName: " + sentOptObj.ServerName + Environment.NewLine +
+                   "SystemCode: " + sentOptObj.SystemCode + Environment.NewLine +
+                   "SessionToken: " + sentOptObj.SessionToken + Environment.NewLine +
+                   "OptionId: " + sentOptObj.OptionId + Environment.NewLine +
+                   "Script Parameter: " + sentSlnkScriptParam + Environment.NewLine;
+        }

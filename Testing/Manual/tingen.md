@@ -2,6 +2,8 @@
 
 # Log files
 
+- [ ] Critical Failure logs
+
 - [ ] Defcon log files
   - [ ] Defcon 1
   - [ ] Defcon 2
