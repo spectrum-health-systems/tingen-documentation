@@ -191,9 +191,11 @@ Update `tnBuild` value in `Core.RuntimeSettings.New()` to the current `YYMMDD` v
 For example:
 
 ```text
-...
+.
+.
 TngnWbsvBuild = "250430",
-...
+.
+.
 ```
 
 ## Update the documentation

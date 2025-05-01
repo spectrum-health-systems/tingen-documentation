@@ -10,24 +10,24 @@
                     Generally the fix for a missing OptionObject and/or Script Parameter is to<br />
                     re-import the Tingen Web Service WSDL.
                 </div></article><p>
-                    When Avatar calls the Tingen Web Service, it passes very important components:
+                    When Avatar calls the Tingen Web Service, it passes two components:
                     <dl><dt>The OptionObject</dt><dd>
                                 Contains all of the content of and metadata describing the calling<br />
                                 Avatar form.
                             </dd><dt>The Script Parameter</dt><dd>Contains information about the requested action(s)</dd></dl></p><p>
-                    When the Tingen Web Service receives a request from Avatar, the first thing it<br />
-                    does is determine if it is a <i>prototype</i> or <i>standard</i> request:<br /><dl><dt>Prototype requests</dt><dd>
+                    When the Tingen Web Service receives a request (via the Script Parameter)<br />
+                    from Avatar, the first thing it does is determine if it is a <i>prototype</i> or<br /><i>standard</i> request:<br /><dl><dt>Prototype requests</dt><dd>
                                 Used to test new functionality. They start with <span class="code">_p</span>, are handed off<br />
                                 to <span class="code">Module.Prototype</span>, and potentially follow their own set of rules<br />
                                 and workflows.
                             </dd><dt>Standard requests</dt><dd>
                                 Existing functionality, requests are handed off to the necessary <span class="code">Module</span>,<br />
                                 and follow the standard Tingen Web Service rules and workflows.
-                            </dd></dl></p><p>
-                    The main functions of this method are:
-                    <ul><li>Receive the <span class="code">SentOptionObject</span> and <span class="code">ScriptParameter</span> from Avatar</li><li>Handle prototype requests</li><li>Handle standard requests</li></ul></p><p>
-                    The workflow for <i>standard</i> requests is:
-                    <ol><li>Initialize a new Tingen Session</li><li>Start the Tingen Web Service</li><li>Pass the <span class="code">SentOptionObject</span> and <span class="code">ScriptParameter</span> to the Outpost31</li><li>Outpost31 processes the request and returns a finalized <span class="code">OptionObject</span></li><li>Return the finalized <span class="code">OptionObject</span> to Avatar</li></ol></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="T_TingenWebService_TingenWebService.htm">TingenWebService Class</a></div><div><a href="N_TingenWebService.htm">TingenWebService Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a><ul class="menu"><li><a class="quickLink">Parameters</a></li><li><a class="quickLink">Return Value</a></li></ul></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
+                            </dd></dl><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Request examples</p></div><div class="message-body">
+                        Example of a prototype request:<br /><span class="code">_pDocSysCode.DenyAccessToForm</span><br /><br />
+                        Example of a standard request:<br /><span class="code">DocSysCode.DenyAccessToForm</span><br /></div></article></p><p>
+                    While prototype requests follow thier own workflows, the <i>standard</i> request workflow is:
+                    <ol><li>Receive the <span class="code">SentOptionObject</span> and <span class="code">ScriptParameter</span> from Avatar</li><li>Initialize a new Tingen Session</li><li>Start the Tingen Web Service</li><li>Pass the <span class="code">SentOptionObject</span> and <span class="code">ScriptParameter</span> to the Outpost31</li><li>Outpost31 processes the request and returns a finalized <span class="code">OptionObject</span></li><li>Return the finalized <span class="code">OptionObject</span> to Avatar</li></ol></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="T_TingenWebService_TingenWebService.htm">TingenWebService Class</a></div><div><a href="N_TingenWebService.htm">TingenWebService Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a><ul class="menu"><li><a class="quickLink">Parameters</a></li><li><a class="quickLink">Return Value</a></li></ul></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
 Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
 </div> 
 				</div></div></footer></div><script>$(function(){
