@@ -36,5 +36,27 @@ For example:
 # Valid standard requests
 
 * `Admin.Status.Current`
+* `FormAccess.Deny.DocSysCode`
 
-* `_pDocSysCode.DenyAccessToForm`
+## Prototypes
+
+* `_pFormAccess.Deny.DocSysCode`
+
+```
+12345678901234-1234567890-12345678901234567890-123
+Module........-Command...-Action..............-Opt
+```
+
+
+
+
+
+# Valid Script Parameters
+
+## Prototypes
+
+* _pDocSysCodeDenyAccessToForm
+
+* Prototype.DocSysCode.DenyAccessToForm
+* Admin.Status.Current
+QuickMedicationOrder.Verify.Dose
