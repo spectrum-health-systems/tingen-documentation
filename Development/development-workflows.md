@@ -7,11 +7,13 @@
   The rest of the document will be updated normally.
 -->
 
-> Last updated: April 1, 2025
+> Last updated: May 1, 2025
 
 <div align="center">
 
-![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
+  ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
+
+  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
 
   <h1>Development workflows</h1>
 
@@ -184,19 +186,14 @@ Update the file headers for the following files:
 
 ### The `tnBuild` value
 
-Update `tnBuild` value in `Core.Session.TingenSession.BuildStaticVars()` to the current `YYMMDD.HHMM` value.
+Update `tnBuild` value in `Core.RuntimeSettings.New()` to the current `YYMMDD` value.
 
 For example:
 
-```csharp
-return new Dictionary<string, string>
-{
-    { "tnBuild",              "241205.0944" },
-    { "avSystemCode",         "UAT" },
-    { "tnDataRoot",           @"C:\TingenData" },
-    { "tnConfigFileName",     "Tingen.config" },
-    { "ntstSecurityFileName", "NtstSecurity.config" }
-};
+```text
+...
+TngnWbsvBuild = "250430",
+...
 ```
 
 ## Update the documentation
@@ -214,7 +211,7 @@ Replace the value of `YY.MM` with the current Year.Month.
 For example:
 
 ```markdown
-![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.4-white?style=for-the-badge)
+![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
 ```
 
 <br>

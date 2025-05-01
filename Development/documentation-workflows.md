@@ -7,12 +7,14 @@
   The rest of the document will be updated normally.
 -->
 
-> Last updated: May 21, 2025
+> Last updated: May 1, 2025
 
 <div align="center">
 
-![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
+  ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
+  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
+  
   <h1>Documentation workflows</h1>
 
 </div>
