@@ -19,6 +19,8 @@
 
 # Overview
 
+Longer form stuff is used (e.g., if...then instead of conditionals, no expression statements). For now. Things will be made more efficient over time, but not at the expense of readability.
+
 
 # In-line comments
 

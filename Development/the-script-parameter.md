@@ -35,23 +35,32 @@ For example:
 
 # Valid standard requests
 
+```
+12345678901234-1234567890-12345678901234567890-123
+Module........-Command...-Action..............-Opt
+```
+
 * `Admin.Status.Current`
-* `FormAccess.Deny.DocSysCode`
+* `FormAccess.Deny.SysCodeDoc`
+* `FormAccess.Deny.SysCodeDocHoc`
+* `FormAccess.Deny.SysCodeList01`
 
 ## Prototypes
-
-* `_pFormAccess.Deny.DocSysCode`
 
 ```
 12345678901234-1234567890-12345678901234567890-123
 Module........-Command...-Action..............-Opt
 ```
 
+* `_pFormAccess.Deny.DocSysCode`
 
 
 
 
 # Valid Script Parameters
+
+
+
 
 ## Prototypes
 
