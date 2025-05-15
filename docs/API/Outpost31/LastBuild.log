@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\.github\sandcastle\Outpost31.shfbproj" started="5/1/2025 1:08:05 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\.github\sandcastle\Outpost31.shfbproj" started="5/15/2025 12:45:44 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -11,6 +11,9 @@ Using presentation style &#39;Default2022&#39; located in &#39;C:\Program Files 
 Loading and initializing plug-ins...
 Website Table of Contents Generator Version 2025.3.22.0
 Copyright &#169; 2006-2025, Eric Woodruff, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
 </buildStep>
@@ -18,138 +21,59 @@ Clearing any prior web/markdown output...
 Validating and copying documentation source information
 Source: C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\src\Outpost31.csproj
     Found project &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\src\Outpost31.csproj&#39;
-
-Parsing project files
-    Found assembly &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\src\bin\Debug\Outpost31.dll&#39; (.NETFramework 4.8)
-
-References to include:
-    Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.IO.Pipelines, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL
-    System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL
-    System.Text.Encodings.Web, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.Text.Json, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-    System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL
-
-Copying XML comments files
-    C:\Users\Chris.Banwarth\DevEnv\GitHub\SHS\Outpost31\src\bin\Debug\Generated.xml -&gt; C:\Caches\Sandcastle\Generated.xml
-</buildStep>
-<buildStep step="GenerateSharedContent">
-Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0020
-</buildStep>
-<buildStep step="GenerateApiFilter">
-Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0126
-</buildStep>
-<buildStep step="GenerateReflectionInfo">
-Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-28263833-cb12-40e9-840d-0c957cbad914.proj]
-Build started 5/1/2025 1:08:06 PM.
-
-Project &quot;C:\Caches\Sandcastle\GenerateRefInfo-28263833-cb12-40e9-840d-0c957cbad914.proj&quot; on node 1 (default targets).
-PrepareForBuild:
-  Creating directory &quot;obj\Debug\&quot;.
-GenerateRefInfo:
-  Microsoft.Build (v17.13.19+0d9f5a35a017e4d80d644dadb751c5a2184aebe6)
-  c Microsoft Corporation. All rights reserved.
-  No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 11 dependency assemblies.
-  Wrote information on 12 namespaces, 18 types, and 78 members
-  Merging duplicate type and member information
-  Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\Caches\Sandcastle\GenerateRefInfo-28263833-cb12-40e9-840d-0c957cbad914.proj&quot; (default targets).
-    Last step completed in 00:00:00.7614
-</buildStep>
-<buildStep step="ApplyDocumentModel">
-Applying document model to reflection output...
-    Last step completed in 00:00:00.0310
-</buildStep>
-<buildStep step="AddApiTopicFilenames">
-Adding topic filenames to API members...
-    Unique name M_Outpost31_Core_Utility_Du_DuFile_WriteLocal_1 generated for M:Outpost31.Core.Utility.Du.DuFile.WriteLocal(System.String,System.String,System.Boolean)
-    Last step completed in 00:00:00.0324
-</buildStep>
-<buildStep step="GenerateApiTopicManifest">
-Generating API topic manifest...
-    Last step completed in 00:00:00.0454
-</buildStep>
-<buildStep step="GenerateNamespaceSummaries">
-Generating namespace summary information...
-    Last step completed in 00:00:00.2593
-</buildStep>
-<buildStep step="CopyAdditionalContent">
-Copying additional content files...
-No additional content to copy
-    Last step completed in 00:00:00.0000
-</buildStep>
-<buildStep step="MergeTablesOfContents">
-Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0000
-</buildStep>
-<buildStep step="GenerateIntermediateTableOfContents">
-Generating intermediate table of contents file for API content...
-Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0471
-</buildStep>
-<buildStep step="CreateBuildAssemblerConfigs">
-Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.1525
-</buildStep>
-<buildStep step="CombiningIntermediateTocFiles">
-Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0010
-</buildStep>
-<buildStep step="MergeCustomConfigs">
-Merging custom build component configurations
-C:\Caches\Sandcastle\BuildAssembler.config
-  Updating reference topic configurations.
-  No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0414
-</buildStep>
-<buildStep step="BuildTopics">
-Building help topics...
-<plugIn name="Website Table of Contents Generator" behavior="Before" priority="1000">
-Loading TOC info and adding unique IDs to parent nodes
-</plugIn>Loading configuration...
-
-SHFB: Error BE0065: ResolveConceptualLinksComponent: The specified target metadata directory &#39;xmlComp&#39; does not exist.
-
-    Last step completed in 00:00:02.5667
+    Last step completed in 00:00:00.0221
 </buildStep>
 <buildStep step="Failed">
 
-SHFB: Error BE0065: BUILD FAILED: An unexpected error occurred while attempting to create the build component &#39;Switch Component&#39;
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponent(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponents(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.&lt;BuildTopics&gt;b__27_0()
-   at System.Threading.Tasks.Task.Execute()
-
-One or more errors occurred.
-   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.BuildTopics()
+SHFB: Error BE0065: BUILD FAILED: Method not found: &#39;System.ReadOnlySpan`1&lt;Char&gt; Microsoft.IO.Path.GetFileName(System.ReadOnlySpan`1&lt;Char&gt;)&#39;.
+   at Microsoft.Build.Shared.FileMatcher.IsFileNameMatch(String path, String pattern)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at Microsoft.Build.Shared.FileMatcher.&lt;RemoveProjectDirectory&gt;d__37.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesForStep(RecursiveStepResult stepResult, RecursionState recursionState, String projectDirectory, Boolean stripProjectDirectory)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesRecursive(ConcurrentStack`1 listOfFiles, RecursionState recursionState, String projectDirectory, Boolean stripProjectDirectory, IList`1 searchesToExclude, Dictionary`2 searchesToExcludeInSubdirs, TaskOptions taskOptions)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesImplementation(String projectDirectoryUnescaped, String filespecUnescaped, List`1 excludeSpecsUnescaped)
+   at Microsoft.Build.Shared.FileMatcher.&lt;&gt;c__DisplayClass67_0.&lt;GetFiles&gt;b__1(String _)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Build.Shared.FileMatcher.GetFiles(String projectDirectoryUnescaped, String filespecUnescaped, List`1 excludeSpecsUnescaped)
+   at Microsoft.Build.Internal.EngineFileUtilities.GetFileList(String directoryEscaped, String filespecEscaped, Boolean returnEscaped, Boolean forceEvaluateWildCards, IEnumerable`1 excludeSpecsEscaped, FileMatcher fileMatcher, Object loggingMechanism, IElementLocation includeLocation, IElementLocation excludeLocation, IElementLocation importLocation, BuildEventContext buildEventContext, String buildEventFileInfoFullPath, Boolean disableExcludeDriveEnumerationWarning)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetMatchedItems(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.EvaluatorData.GetItems(String itemType)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCapture[S](Expander`2 expander, ItemExpressionCapture expressionCapture, IItemProvider`1 evaluatedItems, IElementLocation elementLocation, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, List`1&amp; itemsFromCapture)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCaptureIntoItems[S,T](ItemExpressionCapture expressionCapture, Expander`2 expander, IItemProvider`1 items, IItemFactory`2 itemFactory, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetMatchedItems(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.EvaluatorData.GetItems(String itemType)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCapture[S](Expander`2 expander, ItemExpressionCapture expressionCapture, IItemProvider`1 evaluatedItems, IElementLocation elementLocation, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, List`1&amp; itemsFromCapture)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCaptureIntoItems[S,T](ItemExpressionCapture expressionCapture, Expander`2 expander, IItemProvider`1 items, IItemFactory`2 itemFactory, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at System.Linq.Enumerable.&lt;SelectManyIterator&gt;d__17`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.&lt;GetEnumerator&gt;d__1.MoveNext()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ICollection`1 propertiesFromCommandLine, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+   at SandcastleBuilder.Utils.MSBuild.MSBuildProject..ctor(String projectFile)
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources()
    at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build()
-
-An unexpected error occurred while attempting to create the build component &#39;Switch Component&#39;
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponent(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponents(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.&lt;BuildTopics&gt;b__27_0()
-   at System.Threading.Tasks.Task.Execute()
-
-An unexpected error occurred while attempting to create the build component &#39;Resolve Conceptual Links Component&#39;
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponent(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponents(XPathNavigator configuration)
-   at Sandcastle.Tools.BuildComponents.SwitchComponent.Initialize(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponent(XPathNavigator configuration)
-
-ResolveConceptualLinksComponent: The specified target metadata directory &#39;xmlComp&#39; does not exist.
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.WriteMessage(String componentName, MessageLevel level, String key, String message)
-   at Sandcastle.Core.BuildAssembler.BuildComponent.BuildComponentCore.WriteMessage(MessageLevel level, String message, Object[] args)
-   at Sandcastle.Tools.BuildComponents.ResolveConceptualLinksComponent.Initialize(XPathNavigator configuration)
-   at SandcastleBuilder.Utils.BuildEngine.BuildAssemblerInternal.LoadComponent(XPathNavigator configuration)
 
 </buildStep>
 </shfbBuild>
