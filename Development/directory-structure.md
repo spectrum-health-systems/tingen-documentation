@@ -33,3 +33,43 @@
 
 ## Server
 
+C:
++---Tingen_Data
+    \---Commander
+        \---Logs
+    \---DevDeploy
+        \---Logs
+        \---Staging
+    \---Development
+        \---Builds
+    \---Public
+    \---WebService
+        \---LIVE
+            \...copy of UAT
+        \---UAT
+            \---Archive
+                \---Build
+                \---Log
+                \---Release
+            \---Config
+                \---Core
+                \---Module
+                \---Runtime
+            \---Data
+                \---Export
+                \---Import
+            \---Messages
+                \---Alert
+                \---Error
+                \---Warning
+            \---Log
+                \---Critical
+                \---Debug
+                \---Debuggler
+                \---Primeval
+            \---Sessions
+            \---Temporary
+            \---Templates
+                \---OptObjErrorMessage
+                \---UserMessage
+    
