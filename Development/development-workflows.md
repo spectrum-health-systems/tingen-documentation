@@ -1,4 +1,4 @@
-<!-- u250512 -->
+<!-- u250519 -->
 
 <!--
   I'm sure the Mermaid.js code here looks awful, but it was a real pain to get
@@ -6,8 +6,6 @@
 
   The rest of the document will be updated normally.
 -->
-
-> Last updated: May 12, 2025
 
 <div align="center">
 
@@ -57,15 +55,15 @@ flowchart TB
   %% Components
   Start@{shape: sm-circ, label: ""}
   AutoHotKey@{shape: rounded, label: "Start\nAutoHotkey"}
-  VSCodeDocumentationProject@{shape: rounded, label: "Open documentation\nproject in VS Code"}
-  VSCodeWebService@{shape: rounded, label: "Open Web Service\nproject in VS Code"}
-  VSWebService@{shape: rounded, label: "Open Web Service\nproject in Visual Studio"}
+  VSCodeProjects@{shape: rounded, label: "VS Code:\nDocumentation\\Web Service\nprojects"}
+  VS2022Projects@{shape: rounded, label: "Open Web Service\nproject in Visual Studio"}
+  SandcastleProjects@{shape: rounded, label: "Sandcastle:\nOutpost31\\Web Service\nprojects"}
   GitHubDesktop@{shape: rounded, label: "Open GitHub\nDesktop"}
   Development@{shape: rounded, label: "Development"}
   Finish@{shape: rounded, label: "Finish"}
   %% Subgraphs
   %% Layout
-  Start --> AutoHotKey:::B7a_ --> VSCodeDocumentationProject:::B7a_ --> VSCodeWebService:::B7a_ --> VSWebService:::B7a_ --> GitHubDesktop:::B7a_ --> Development --> Finish
+  Start --> AutoHotKey:::B7a_ --> VSCodeProjects:::B7a_ --> VSCodeWebService:::B7a_ --> VS2022Projects:::B7a_ --> SandcastleProjects:::B7a_ -->GitHubDesktop:::B7a_ --> Development --> Finish
   %% Styles
   classDef U5_ stroke:#154360,stroke-width:3px,fill:#eaf2f8,color:#154360
   classDef U6_ stroke:#154360,stroke-width:3px,fill:#a9cce3,color:#154360
