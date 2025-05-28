@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="9f2050b0-6334-49cc-971c-a9c646c5b2dd" visible="True" isDefault="true" isSelected="true" title="Tingen DevDeploy">
+  <Topic id="9f2050b0-6334-49cc-971c-a9c646c5b2dd" visible="True" isDefault="true" isSelected="true" title="Tingen DevDeploy" linkText="https://github.com/spectrum-health-systems/tingen-dev-deploy">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>
