@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant\shfb-tingen-lieutenant.shfbproj" started="5/28/2025 2:41:38 PM">
+<buildStep step="Initializing">
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
+Locating components in the following folder(s):
+    C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components
+Using framework reflection data for &#39;.NET Framework 4.7.2&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;Default2022&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022&#39;
+Loading and initializing plug-ins...
+Website Table of Contents Generator Version 2025.3.22.0
+Copyright &#169; 2006-2025, Eric Woodruff, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="Failed">
+
+SHFB: Error BE0039: The project does not have any documentation sources defined
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources() in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\BuildEngine\BuildProcess.cs:line 2342
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build() in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\BuildEngine\BuildProcess.cs:line 908
+
+</buildStep>
+</shfbBuild>
