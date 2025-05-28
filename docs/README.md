@@ -8,18 +8,17 @@
 
 </div>
 
+# Manual
+
 # API documentation
 
 Check out this cool API documentation:
 
-https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Web-Service/html/82a31265-4fa5-4761-b2aa-a7ff62431767.htm
-
-
 * [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-tingen-dev-deploy/)
-* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Commander/)
-* [Tingen Lieutenant](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Lieutenant/)
-* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/API/Outpost31/)
-* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Web-Service/)
+* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-tingen-commander/)
+* [Tingen Lieutenant](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-tingen-lieutenant/)
+* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-outpost31/)
+* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-tingen-web-service/)
 
 ## A note about the API documentation
 
