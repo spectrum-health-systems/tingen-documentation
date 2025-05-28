@@ -30,9 +30,9 @@
       <Argument Key="logoAlignment" Value="left" xmlns="" />
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>Markdown</HelpFileFormat>
     <SyntaxFilters>C#, Visual Basic, Managed C++, F#, ASP.NET</SyntaxFilters>
-    <PresentationStyle>Default2022</PresentationStyle>
+    <PresentationStyle>Markdown</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>False</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
