@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant\shfb-tingen-lieutenant.shfbproj" started="5/28/2025 2:41:38 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant\shfb-tingen-lieutenant.shfbproj" started="5/28/2025 2:47:34 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -16,13 +16,241 @@ Clearing any prior web/markdown output...
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
+Source: C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-lieutenant\src\TingenLieutenant.csproj
+    Found project &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-lieutenant\src\TingenLieutenant.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-lieutenant\src\bin\Debug\net9.0\TingenLieutenant.dll&#39; (.NETCoreApp 9.0)
+SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.7.2&#39; to &#39;.NET Core/.NET Standard/.NET 5.0+&#39; for the build.
+
+References to include:
+    Microsoft.CSharp
+    Microsoft.VisualBasic
+    Microsoft.VisualBasic.Core
+    Microsoft.Win32.Primitives
+    Microsoft.Win32.Registry
+    mscorlib
+    netstandard
+    System
+    System.AppContext
+    System.Buffers
+    System.Collections
+    System.Collections.Concurrent
+    System.Collections.Immutable
+    System.Collections.NonGeneric
+    System.Collections.Specialized
+    System.ComponentModel
+    System.ComponentModel.Annotations
+    System.ComponentModel.DataAnnotations
+    System.ComponentModel.EventBasedAsync
+    System.ComponentModel.Primitives
+    System.ComponentModel.TypeConverter
+    System.Configuration
+    System.Console
+    System.Core
+    System.Data
+    System.Data.Common
+    System.Data.DataSetExtensions
+    System.Diagnostics.Contracts
+    System.Diagnostics.Debug
+    System.Diagnostics.DiagnosticSource
+    System.Diagnostics.FileVersionInfo
+    System.Diagnostics.Process
+    System.Diagnostics.StackTrace
+    System.Diagnostics.TextWriterTraceListener
+    System.Diagnostics.Tools
+    System.Diagnostics.TraceSource
+    System.Diagnostics.Tracing
+    System.Drawing
+    System.Drawing.Primitives
+    System.Dynamic.Runtime
+    System.Formats.Asn1
+    System.Formats.Tar
+    System.Globalization
+    System.Globalization.Calendars
+    System.Globalization.Extensions
+    System.IO
+    System.IO.Compression
+    System.IO.Compression.Brotli
+    System.IO.Compression.FileSystem
+    System.IO.Compression.ZipFile
+    System.IO.FileSystem
+    System.IO.FileSystem.AccessControl
+    System.IO.FileSystem.DriveInfo
+    System.IO.FileSystem.Primitives
+    System.IO.FileSystem.Watcher
+    System.IO.IsolatedStorage
+    System.IO.MemoryMappedFiles
+    System.IO.Pipelines
+    System.IO.Pipes
+    System.IO.Pipes.AccessControl
+    System.IO.UnmanagedMemoryStream
+    System.Linq
+    System.Linq.Expressions
+    System.Linq.Parallel
+    System.Linq.Queryable
+    System.Memory
+    System.Net
+    System.Net.Http
+    System.Net.Http.Json
+    System.Net.HttpListener
+    System.Net.Mail
+    System.Net.NameResolution
+    System.Net.NetworkInformation
+    System.Net.Ping
+    System.Net.Primitives
+    System.Net.Quic
+    System.Net.Requests
+    System.Net.Security
+    System.Net.ServicePoint
+    System.Net.Sockets
+    System.Net.WebClient
+    System.Net.WebHeaderCollection
+    System.Net.WebProxy
+    System.Net.WebSockets
+    System.Net.WebSockets.Client
+    System.Numerics
+    System.Numerics.Vectors
+    System.ObjectModel
+    System.Reflection
+    System.Reflection.DispatchProxy
+    System.Reflection.Emit
+    System.Reflection.Emit.ILGeneration
+    System.Reflection.Emit.Lightweight
+    System.Reflection.Extensions
+    System.Reflection.Metadata
+    System.Reflection.Primitives
+    System.Reflection.TypeExtensions
+    System.Resources.Reader
+    System.Resources.ResourceManager
+    System.Resources.Writer
+    System.Runtime
+    System.Runtime.CompilerServices.Unsafe
+    System.Runtime.CompilerServices.VisualC
+    System.Runtime.Extensions
+    System.Runtime.Handles
+    System.Runtime.InteropServices
+    System.Runtime.InteropServices.JavaScript
+    System.Runtime.InteropServices.RuntimeInformation
+    System.Runtime.Intrinsics
+    System.Runtime.Loader
+    System.Runtime.Numerics
+    System.Runtime.Serialization
+    System.Runtime.Serialization.Formatters
+    System.Runtime.Serialization.Json
+    System.Runtime.Serialization.Primitives
+    System.Runtime.Serialization.Xml
+    System.Security
+    System.Security.AccessControl
+    System.Security.Claims
+    System.Security.Cryptography
+    System.Security.Cryptography.Algorithms
+    System.Security.Cryptography.Cng
+    System.Security.Cryptography.Csp
+    System.Security.Cryptography.Encoding
+    System.Security.Cryptography.OpenSsl
+    System.Security.Cryptography.Primitives
+    System.Security.Cryptography.X509Certificates
+    System.Security.Principal
+    System.Security.Principal.Windows
+    System.Security.SecureString
+    System.ServiceModel.Web
+    System.ServiceProcess
+    System.Text.Encoding
+    System.Text.Encoding.CodePages
+    System.Text.Encoding.Extensions
+    System.Text.Encodings.Web
+    System.Text.Json
+    System.Text.RegularExpressions
+    System.Threading
+    System.Threading.Channels
+    System.Threading.Overlapped
+    System.Threading.Tasks
+    System.Threading.Tasks.Dataflow
+    System.Threading.Tasks.Extensions
+    System.Threading.Tasks.Parallel
+    System.Threading.Thread
+    System.Threading.ThreadPool
+    System.Threading.Timer
+    System.Transactions
+    System.Transactions.Local
+    System.ValueTuple
+    System.Web
+    System.Web.HttpUtility
+    System.Windows
+    System.Xml
+    System.Xml.Linq
+    System.Xml.ReaderWriter
+    System.Xml.Serialization
+    System.Xml.XDocument
+    System.Xml.XmlDocument
+    System.Xml.XmlSerializer
+    System.Xml.XPath
+    System.Xml.XPath.XDocument
+    WindowsBase
+
+Copying XML comments files
+    C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-dev-deploy\src\AppData\XmlDoc\generated.xml -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\generated.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
     Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-a8e3ad44-8f8e-4ca7-8fde-95662ae57d6f.proj]
+Build started 5/28/2025 2:47:35 PM.
+
+Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-a8e3ad44-8f8e-4ca7-8fde-95662ae57d6f.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  Microsoft.Build (v17.14.8+a7a4d5af02be5aa6dc93a492d6d03056dc811388)
+  c Microsoft Corporation. All rights reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 1 assemblies for reflection and 168 dependency assemblies.
+  Wrote information on 2 namespaces, 3 types, and 24 members
+  Merging duplicate type and member information
+  Merged 0 duplicate type(s) and 0 duplicate member(s)
+Done Building Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-a8e3ad44-8f8e-4ca7-8fde-95662ae57d6f.proj&quot; (default targets).
+    Last step completed in 00:00:01.1287
+</buildStep>
+<buildStep step="ApplyDocumentModel">
+Applying document model to reflection output...
+    Last step completed in 00:00:00.0005
+</buildStep>
+<buildStep step="AddApiTopicFilenames">
+Adding topic filenames to API members...
+    Last step completed in 00:00:00.0055
+</buildStep>
+<buildStep step="GenerateApiTopicManifest">
+Generating API topic manifest...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.4840
+</buildStep>
+<buildStep step="CopyConceptualContent">
+Copying conceptual content...
+Checking for token files...
+Checking for code snippets files...
+Copying images and creating the media map file...
+Generating conceptual topic files
+    Parsing topic file &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant\Content\Welcome.aml&#39;
+    C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sandcastle\shfb-tingen-lieutenant\Content\Welcome.aml -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\ddueXml\a2018e36-b94d-42c3-b590-4524cc7a3869.xml
+    Last step completed in 00:00:00.0144
 </buildStep>
 <buildStep step="Failed">
 
-SHFB: Error BE0039: The project does not have any documentation sources defined
-   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources() in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\BuildEngine\BuildProcess.cs:line 2342
-   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build() in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\BuildEngine\BuildProcess.cs:line 908
+SHFB: Error BE0054: The conceptual topic &#39;Version History&#39; (ID: 51f8dced-5026-412d-a732-47f74422cc2a) does not match any file in the project
+   at SandcastleBuilder.Utils.ConceptualContent.TopicCollection.GenerateConceptualTopics(String folder, BuildProcess builder, IEnumerable`1 validNamespaces) in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\ConceptualContent\TopicCollection.cs:line 387
+   at SandcastleBuilder.Utils.ConceptualContent.ConceptualContentSettings.CopyContentFiles(BuildProcess builder) in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\ConceptualContent\ConceptualContentSettings.cs:line 174
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build() in C:\GH\SHFB\SHFB\Source\SandcastleBuilderUtils\BuildEngine\BuildProcess.cs:line 1153
 
 </buildStep>
 </shfbBuild>

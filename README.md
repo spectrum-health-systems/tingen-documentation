@@ -10,13 +10,28 @@
 
 Here be:
 
-* **[The Tingen Manual](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Manual)**  
-  Contains all of the information, details, and stuff of you'll need to use Tingen in your environments
+# Manual
 
-* **[Development documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Development)**  
-  If you are interested in how Tingen is developed, there is a whole bunch of  to take a look at.
+# API documentation
 
-* **[API documentation](https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/docs)**
+Check out this cool API documentation:
+
+* [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-dev-deploy/)
+* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-commander/)
+* [Tingen Lieutenant](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-lieutenant/)
+* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-outpost31/)
+* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-web-service/)
+
+## A note about the API documentation
+
+API documentation is modified using the `development` branches of Tingen and Outpost31.
+
+The **good news** is that means this documentation is *always current*.
+
+The **bad news** is it may also be *incomplete*! Incomplete documentation is (generally) noted.
+
+Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
+
 
 You can also review the Tingen Documentation [Roadmaps](https://github.com/orgs/spectrum-health-systems/projects/50/views/3) and [Changelogs](https://github.com/orgs/spectrum-health-systems/projects/50/views/4?groupedBy%5BcolumnId%5D=141162087&filterQuery=status%3ACompleted)
 

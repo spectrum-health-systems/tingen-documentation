@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic id="N:TingenLieutenant" type="API" />
+  <topic id="T:TingenLieutenant.Lieutenant" type="API" />
+  <topic id="Methods.T:TingenLieutenant.Lieutenant" type="API" />
+  <topic id="M:TingenLieutenant.Lieutenant.DisplayMessage(System.String,System.Boolean)" type="API" />
+  <topic id="N:TingenLieutenant.WebService" type="API" />
+  <topic id="T:TingenLieutenant.WebService.Deploy" type="API" />
+  <topic id="Methods.T:TingenLieutenant.WebService.Deploy" type="API" />
+  <topic id="Properties.T:TingenLieutenant.WebService.Deploy" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.#ctor" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.BuildDefaultConfig(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.CopyDirectory(System.String,System.String)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.CreateDefaultConfigFile(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.DeploymentProcess(System.String,System.Boolean)" type="API" />
+  <topic id="P:TingenLieutenant.WebService.Deploy.DeployPath" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.DownloadSourceUrl(System.String,System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.ExitDeployment(System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.GetSourceType(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.LoadConfigFile(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.RefreshDeployPath(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.RefreshStagePath(System.String,System.Boolean)" type="API" />
+  <topic id="P:TingenLieutenant.WebService.Deploy.Source" type="API" />
+  <topic id="P:TingenLieutenant.WebService.Deploy.SourceType" type="API" />
+  <topic id="P:TingenLieutenant.WebService.Deploy.StagePath" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifyConfiguration(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifyDeployPath(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifyFramework(System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifySourcePath(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifySourceUrl(System.String,System.Boolean)" type="API" />
+  <topic id="M:TingenLieutenant.WebService.Deploy.VerifyStagePath(System.String,System.Boolean)" type="API" />
+  <topic id="T:TingenLieutenant.WebService.ViaDevDeploy" type="API" />
+  <topic id="Methods.T:TingenLieutenant.WebService.ViaDevDeploy" type="API" />
+  <topic id="M:TingenLieutenant.WebService.ViaDevDeploy.#ctor" type="API" />
+  <topic id="M:TingenLieutenant.WebService.ViaDevDeploy.DeployWebService(System.String)" type="API" />
+</topics>

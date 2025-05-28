@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>TingenDevDeploy</name>
+  </assembly>
+  <members>
+    <member name="T:TingenDevDeploy.Program">
+      <summary>The main class for Tingen-DevDeploy.</summary>
+    </member>
+    <member name="M:TingenDevDeploy.Program.Main">
+      <summary>The main entry point for Tingen-DevDeploy.</summary>
+    </member>
+    <member name="N:TingenLieutenant">
+      <summary />
+    </member>
+    <member name="N:TingenLieutenant.WebService">
+      <summary />
+    </member>
+  </members>
+</doc>
