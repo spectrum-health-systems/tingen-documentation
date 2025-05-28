@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="82a31265-4fa5-4761-b2aa-a7ff62431767" visible="True" isDefault="true" isSelected="true" title="Welcome to the [TODO: Add project name]">
+  <Topic id="82a31265-4fa5-4761-b2aa-a7ff62431767" visible="True" isDefault="true" isSelected="true" title="Tingen Web Service" linkText="https://github.com/spectrum-health-systems/tingen-web-service">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>

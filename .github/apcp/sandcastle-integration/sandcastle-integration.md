@@ -2,7 +2,7 @@
 
 ## Install the VS2022 extensions
 
-![(vs2022-extensions.png)
+![](vs2022-extensions.png)
 
 ## Create a new Visual Studio 2022 documentation project
 
@@ -32,7 +32,7 @@ In the project you are creating documentation for:
 
 ### Project Properties -> Build
 
-1. Change **Framework version** to `.NET Core/.NET Standard/.NET 5.0+`
+1. Change **Framework version** to the correct framework
 
 ![](build.png)
 
