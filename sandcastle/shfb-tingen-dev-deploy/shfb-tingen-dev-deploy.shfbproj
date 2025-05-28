@@ -84,6 +84,7 @@ Please see the &amp;lt%3ba href=&amp;quot%3bhttps://github.com/spectrum-health-s
     <ContentLayout Include="ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Html Page1.html" />
     <Content Include="icons\Help.png" />
   </ItemGroup>
   <!-- Import the common build targets during NuGet restore because before the packages are being installed, $(SHFBROOT) is not set yet -->
