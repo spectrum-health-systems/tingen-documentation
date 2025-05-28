@@ -10,7 +10,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>981e6a03-6398-4e32-b512-5c2cbd479d94</ProjectGuid>
+    <ProjectGuid>f73e75ef-a02c-4cf8-a34b-efb84f3fb414</ProjectGuid>
     <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>shfb_tingen_dev_deploy</AssemblyName>
@@ -18,7 +18,7 @@
     <Name>shfb_tingen_dev_deploy</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Core/.NET Standard/.NET 5.0+</FrameworkVersion>
-    <OutputPath>..\..\docs\API\Tingen-Dev-Deploy\</OutputPath>
+    <OutputPath>..\..\docs\API\shfb-tingen-dev-deploy\</OutputPath>
     <HtmlHelpName>shfb_tingen_dev_deploy</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
@@ -30,16 +30,16 @@
       <Argument Key="logoAlignment" Value="left" xmlns="" />
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
-    <HelpFileFormat>Markdown</HelpFileFormat>
-    <SyntaxFilters>C#, Visual Basic, Managed C++, F#, ASP.NET</SyntaxFilters>
-    <PresentationStyle>Markdown</PresentationStyle>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <PresentationStyle>Default2022</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
-    <KeepLogFile>False</KeepLogFile>
+    <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
-    <HelpTitle>Tingen DevDeploy Documentation</HelpTitle>
+    <HelpTitle>Tinge DevDeploy</HelpTitle>
     <HelpFileVersion>2.1.0.0</HelpFileVersion>
     <NamingMethod>Guid</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
@@ -52,10 +52,10 @@ Please see the &amp;lt%3ba href=&amp;quot%3bhttps://github.com/spectrum-health-s
 &amp;lt%3b/div&amp;gt%3b</FooterText>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Internals, Privates, PrivateFields, Protected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
-    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\..\..\tingen-dev-deploy\src\TingenDevDeploy.csproj" xmlns="" />
     </DocumentationSources>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
@@ -81,10 +81,12 @@ Please see the &amp;lt%3ba href=&amp;quot%3bhttps://github.com/spectrum-health-s
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\Welcome.aml" />
+  </ItemGroup>
+  <ItemGroup>
     <ContentLayout Include="ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Html Page1.html" />
     <Content Include="icons\Help.png" />
   </ItemGroup>
   <!-- Import the common build targets during NuGet restore because before the packages are being installed, $(SHFBROOT) is not set yet -->

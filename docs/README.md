@@ -15,13 +15,11 @@ Check out this cool API documentation:
 https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Web-Service/html/82a31265-4fa5-4761-b2aa-a7ff62431767.htm
 
 
-* [Tingen DevDeploy](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen-DevDeploy/)
-* [Tingen Commander](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen-Commander/)
-* [Tingen Lieutenant](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen-Lieutenant/)
-* [Outpost31](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Outpost31/)
-* [Tingen Web Service](https://spectrum-health-systems.github.io/Tingen-Documentation/API/Tingen-Web-Service/)
+* [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/API/shfb-tingen-dev-deploy/)
+* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Commander/)
+* [Tingen Lieutenant](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Lieutenant/)
+* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/API/Outpost31/)
 * [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Web-Service/)
-* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/API/Tingen-Web-Service/html/82a31265-4fa5-4761-b2aa-a7ff62431767.htm)
 
 ## A note about the API documentation
 
