@@ -18,7 +18,7 @@
     <Name>shfb_tingen_dev_deploy</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Core/.NET Standard/.NET 5.0+</FrameworkVersion>
-    <OutputPath>..\..\docs\API\Tingen-DevDeploy\</OutputPath>
+    <OutputPath>..\..\docs\API\Tingen-Dev-Deploy\</OutputPath>
     <HtmlHelpName>shfb_tingen_dev_deploy</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
