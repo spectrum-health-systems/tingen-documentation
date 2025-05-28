@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\.github\sandcastle\Outpost31.shfbproj" started="5/19/2025 10:03:46 AM">
+<buildStep step="Initializing">
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
+Locating components in the following folder(s):
+    C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\.github\sandcastle
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components
+Using framework reflection data for &#39;.NET Framework 4.8&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;Default2022&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022&#39;
+Loading and initializing plug-ins...
+Website Table of Contents Generator Version 2025.3.22.0
+Copyright &#169; 2006-2025, Eric Woodruff, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\Outpost31.csproj
+    Found project &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\Outpost31.csproj&#39;
+    Last step completed in 00:00:00.2093
+</buildStep>
+<buildStep step="Failed">
+
+SHFB: Error BE0065: BUILD FAILED: Method not found: &#39;System.ReadOnlySpan`1&lt;Char&gt; Microsoft.IO.Path.GetFileName(System.ReadOnlySpan`1&lt;Char&gt;)&#39;.
+   at Microsoft.Build.Shared.FileMatcher.IsFileNameMatch(String path, String pattern)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at Microsoft.Build.Shared.FileMatcher.&lt;RemoveProjectDirectory&gt;d__37.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesForStep(RecursiveStepResult stepResult, RecursionState recursionState, String projectDirectory, Boolean stripProjectDirectory)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesRecursive(ConcurrentStack`1 listOfFiles, RecursionState recursionState, String projectDirectory, Boolean stripProjectDirectory, IList`1 searchesToExclude, Dictionary`2 searchesToExcludeInSubdirs, TaskOptions taskOptions)
+   at Microsoft.Build.Shared.FileMatcher.GetFilesImplementation(String projectDirectoryUnescaped, String filespecUnescaped, List`1 excludeSpecsUnescaped)
+   at Microsoft.Build.Shared.FileMatcher.&lt;&gt;c__DisplayClass67_0.&lt;GetFiles&gt;b__1(String _)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Build.Shared.FileMatcher.GetFiles(String projectDirectoryUnescaped, String filespecUnescaped, List`1 excludeSpecsUnescaped)
+   at Microsoft.Build.Internal.EngineFileUtilities.GetFileList(String directoryEscaped, String filespecEscaped, Boolean returnEscaped, Boolean forceEvaluateWildCards, IEnumerable`1 excludeSpecsEscaped, FileMatcher fileMatcher, Object loggingMechanism, IElementLocation includeLocation, IElementLocation excludeLocation, IElementLocation importLocation, BuildEventContext buildEventContext, String buildEventFileInfoFullPath, Boolean disableExcludeDriveEnumerationWarning)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetMatchedItems(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.EvaluatorData.GetItems(String itemType)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCapture[S](Expander`2 expander, ItemExpressionCapture expressionCapture, IItemProvider`1 evaluatedItems, IElementLocation elementLocation, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, List`1&amp; itemsFromCapture)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCaptureIntoItems[S,T](ItemExpressionCapture expressionCapture, Expander`2 expander, IItemProvider`1 items, IItemFactory`2 itemFactory, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetMatchedItems(ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.EvaluatorData.GetItems(String itemType)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCapture[S](Expander`2 expander, ItemExpressionCapture expressionCapture, IItemProvider`1 evaluatedItems, IElementLocation elementLocation, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, List`1&amp; itemsFromCapture)
+   at Microsoft.Build.Evaluation.Expander`2.ItemExpander.ExpandExpressionCaptureIntoItems[S,T](ItemExpressionCapture expressionCapture, Expander`2 expander, IItemProvider`1 items, IItemFactory`2 itemFactory, ExpanderOptions options, Boolean includeNullEntries, Boolean&amp; isTransformExpression, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.IncludeOperation.SelectItems(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.ApplyImpl(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemOperation.Apply(Builder listBuilder, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.ComputeItems(LazyItemList lazyItemList, ImmutableHashSet`1 globsToIgnore)
+   at Microsoft.Build.Evaluation.LazyItemEvaluator`4.LazyItemList.GetItemData(ImmutableHashSet`1 globsToIgnore)
+   at System.Linq.Enumerable.&lt;SelectManyIterator&gt;d__17`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.&lt;GetEnumerator&gt;d__1.MoveNext()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ICollection`1 propertiesFromCommandLine, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+   at SandcastleBuilder.Utils.MSBuild.MSBuildProject..ctor(String projectFile)
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources()
+   at SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build()
+
+</buildStep>
+</shfbBuild>
