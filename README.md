@@ -12,7 +12,7 @@ Here be:
 
 # Manual
 
-The [Tingen Manual](docs/manual/Tingen-Manual.md)
+The [Tingen Manual](https://spectrum-health-systems.github.io/tingen-documentation/manual/Tingen-Manual.md)
 
 # API documentation
 
