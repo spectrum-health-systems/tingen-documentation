@@ -18,7 +18,7 @@
     <Name>shfb_tingen_web_service</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
-    <OutputPath>..\..\docs\API\Tingen-Web-Service\</OutputPath>
+    <OutputPath>..\..\docs\api\sfhb-tingen-web-service\</OutputPath>
     <HtmlHelpName>shfb_tingen_web_service</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
