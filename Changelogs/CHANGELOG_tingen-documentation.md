@@ -1,1 +1,0 @@
-# CHANGELOG: Tingen Documentation
