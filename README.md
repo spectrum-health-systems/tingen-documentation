@@ -12,6 +12,8 @@ Here be:
 
 # Manual
 
+The [Tingen Manual](docs/manual/Tingen-Manual.md)
+
 # API documentation
 
 Check out this cool API documentation:
