@@ -21,6 +21,11 @@
             <param name="status">The current status of the deployment configuration verification process.</param>
             <returns>A message to display to the user.</returns>
         </member>
+        <member name="M:TingenLieutenant.Blueprint.UserMessage.ArchivePath(System.String)">
+            <summary>Status messages related the archive path.</summary>
+            <param name="status">The current status of the archive path verification process.</param>
+            <returns>A message to display to the user.</returns>
+        </member>
         <member name="M:TingenLieutenant.Blueprint.UserMessage.SourceType(System.String)">
             <summary>Status messages related the type of source.</summary>
             <param name="status">The current status of the source type verification process.</param>
@@ -69,6 +74,17 @@
                 You can modify the configuration file to deploy any branch to any location,<br/>
                 but performance and security are not guaranteed.
             </remarks>
+        </member>
+        <member name="P:TingenLieutenant.WebService.Deploy.ArchivePath">
+            <summary>The location where the existing Tingen Web Service is archived.</summary>
+            <remarks>
+                The ArchivePath:<br/>
+                <list type="bullet">
+                    <item>Can be a local directory</item>
+                    <item>Can be a network share/mapped drive</item>
+                </list>
+            </remarks>
+            <value>The default value is "<c>C:\Tingen_Data\DevDeploy\Archive</c>"</value>
         </member>
         <member name="P:TingenLieutenant.WebService.Deploy.Source">
             <summary>The location of the Tingen Web Service that will be deployed.</summary>
@@ -162,6 +178,26 @@
             <param name="useCli">Determines if the message will be displayed on the CLI or the GUI.</param>
             <returns>A <see cref="T:TingenLieutenant.WebService.Deploy"/> object representing the deserialized contents of the configuration file.</returns>
         </member>
+        <member name="M:TingenLieutenant.WebService.Deploy.VerifyArchivePath(System.String,System.Boolean)">
+            <summary>Determines the status of the <see cref="P:TingenLieutenant.WebService.Deploy.ArchivePath"/>.</summary>
+            <remarks>If the <paramref name="archivePath"/> is invalid, the deployment process will not proceed.</remarks>
+            <param name="archivePath">The location where the existing Tingen Web Service is archived prior to deployment.</param>
+            <param name="useCli">Determines if the message will be displayed on the CLI or the GUI.</param>
+            <returns>
+                The status of the archive path:
+                <list type="bullet">
+                    <item>null-or-empty: The passed <paramref name="archivePath"/> is null/empty</item>
+                    <item>does-not-exist: The <paramref name="archivePath"/> does not exist</item>
+                    <item>exists: The <paramref name="archivePath"/> does exist</item>
+                </list>
+            </returns>
+        </member>
+        <member name="M:TingenLieutenant.WebService.Deploy.ArchiveExistingService(System.String,System.String,System.Boolean)">
+            <summary>Archives the existing service before deploying.</summary>
+            <param name="archivePath">The location where the existing Tingen Web Service is archived.</param>
+            <param name="deployPath">The location where the Tingen Web Service is deployed.</param>
+            <param name="useCli">Determines if the message will be displayed on the CLI or the GUI.</param>
+        </member>
         <member name="M:TingenLieutenant.WebService.Deploy.GetSourceType(System.String,System.Boolean)">
             <summary>Determines the type of the given source based on its format.</summary>
             <param name="source">The location of the Tingen Web Service that will be deployed.</param>
@@ -198,15 +234,15 @@
         </member>
         <member name="M:TingenLieutenant.WebService.Deploy.VerifyStagePath(System.String,System.Boolean)">
             <summary>Determines the status of the <see cref="P:TingenLieutenant.WebService.Deploy.StagePath"/>.</summary>
-            <remarks>If the <paramref name="stagePath"/> is invalid, the deployment process will not proceed.</remarks>
-            <param name="stagePath">The location where the Tingen Web Service is staged for deployment.</param>
+            <remarks>If the <paramref name="StagePath"/> is invalid, the deployment process will not proceed.</remarks>
+            <param name="StagePath">The location where the Tingen Web Service is staged for deployment.</param>
             <param name="useCli">Determines if the message will be displayed on the CLI or the GUI.</param>
             <returns>
                 The status of the staging path:
                 <list type="bullet">
-                    <item>null-or-empty: The passed <paramref name="stagePath"/> is null/empty</item>
-                    <item>does-not-exist: The <paramref name="stagePath"/> does not exist</item>
-                    <item>exists: The <paramref name="stagePath"/> does exist</item>
+                    <item>null-or-empty: The passed <paramref name="StagePath"/> is null/empty</item>
+                    <item>does-not-exist: The <paramref name="StagePath"/> does not exist</item>
+                    <item>exists: The <paramref name="StagePath"/> does exist</item>
                 </list>
             </returns>
         </member>
