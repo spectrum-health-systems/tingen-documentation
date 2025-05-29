@@ -18,4 +18,4 @@ The [Tingen Manual](https://spectrum-health-systems.github.io/tingen-documentati
 
 ## tingen-documenation/docs/static
 
-Static documentation.
+[Static documentation](./static/)
