@@ -18,26 +18,14 @@
 (* Defaults:
         <span class="keyword">let </span><span class="identifier">_</span><span class="identifier">errorMessage</span> = defaultArg <span class="identifier">errorMessage</span> ""
 *)
-<span class="keyword">-&gt;</span> <span class="keyword">unit</span> </code></pre></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">tngnSession</span>  <a href="022f6022-aaaf-8695-21e1-d71a9b8ab3a6.htm">TngnWbsvSession</a></dt><dd>The Tingen Session data structure object.</dd><dt class="has-text-weight-normal"><span class="parameter">errorCode</span>  <a href="https://learn.microsoft.com/dotnet/api/system.int32" target="_blank" rel="noopener noreferrer">Int32</a></dt><dd>The OptionObject Error Code.</dd><dt class="has-text-weight-normal"><span class="parameter">errorMessage</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  (Optional)</dt><dd>The OptionObject error message.</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDECSection"><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Important information about this method</p></div><div class="message-body">
+<span class="keyword">-&gt;</span> <span class="keyword">unit</span> </code></pre></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">tngnSession</span>  <a href="022f6022-aaaf-8695-21e1-d71a9b8ab3a6.htm">TngnWbsvSession</a></dt><dd>The Tingen Session data structure object.</dd><dt class="has-text-weight-normal"><span class="parameter">errorCode</span>  <a href="https://learn.microsoft.com/dotnet/api/system.int32" target="_blank" rel="noopener noreferrer">Int32</a></dt><dd>The OptionObject Error Code.</dd><dt class="has-text-weight-normal"><span class="parameter">errorMessage</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  (Optional)</dt><dd>The OptionObject error message.</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDBCSection"><p>
                     Before an OptionObject can be returned to Avatar, we need to make sure<br />
                     that all of the required OptionObject components exist and/or are<br />
                     modified correctly.<br /><br />
-                    This is done by calling the OptionObject's built<br />
-                    in <span class="code">ToReturnOptionObject()</span> method on the OptionObject, then<br />
-                    sending it back to Avatar.
-                </div></article><p><b>Error Codes</b><br />
-                    When an OptionObject is returned to Avatar, it requires one of the following<br />
-                    single-digit integer Error Codes:
-                    <table class="table is-hoverable"><thead><tr><th>Error Code</th><th>Description</th></tr></thead><tr><td>0</td><td>No action taken</td></tr><tr><td>1</td><td>
-                                Returns an Error Message with an "Ok" button, and stops<br />
-                                further processing of scripts
-                            </td></tr><tr><td>2</td><td>
-                                Returns an Error Message with "OK" and "Cancel" buttons,<br />
-                                and stops further scripts the user clicks "Cancel")
-                            </td></tr><tr><td>3</td><td>Returns an Error Message with "Ok" button</td></tr><tr><td>4</td><td>
-                                Returns an Error Message with "Yes" and "No" buttons<br />
-                                and stops further scripts the user clicks "No")
-                            </td></tr><tr><td>5</td><td>Returns a URL to be opened in a new browser</td></tr><tr><td>6</td><td>Returns a form to be opened in Avatar</td></tr></table></p><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Common Error Codes</p></div><div class="message-body">
+                    This is done by calling the OptionObject's built in <span class="code">ToReturnOptionObject()</span><br />
+                    method on the OptionObject, then sending it back to Avatar.
+                </p><p>
+                    When an OptionObject is returned to Avatar, it requires an <a href="https://spectrum-health-systems.github.io/tingen-documentation/static/optionobject-error-codes" target="_blank" rel="noopener noreferrer">OptionObject Error Code</a><br /><br />
                     The most common error codes are:
                     <ul><li><strong>1</strong> – 
                                 Used when you don't want the user to take an action, such as<br />
@@ -46,8 +34,7 @@
                                 Used when you want warn the user they may want to make<br />
                                 changes, and give them the option to stop further processing,<br />
                                 or continuing
-                            </li></ul></div></article><p>
-                    Please see the <a href="b40d0715-aefb-ed3d-f324-afb1fbbb75f2.htm">OptionObjects</a> class documentation for more information about Error Codes.<br /></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="b40d0715-aefb-ed3d-f324-afb1fbbb75f2.htm">OptionObjects Class</a></div><div><a href="2abbf81c-2d2a-b166-5d79-18b9bd7759bf.htm">Finalize Overload</a></div><div><a href="eae81f89-36a6-a170-a7c9-1ab22b230f7c.htm">Outpost31.Core.Avatar Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
+                            </li></ul></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4 class="quickLinkHeader">Reference</h4><div><a href="b40d0715-aefb-ed3d-f324-afb1fbbb75f2.htm">OptionObjects Class</a></div><div><a href="2abbf81c-2d2a-b166-5d79-18b9bd7759bf.htm">Finalize Overload</a></div><div><a href="eae81f89-36a6-a170-a7c9-1ab22b230f7c.htm">Outpost31.Core.Avatar Namespace</a></div><h4 class="quickLinkHeader">Other Resources</h4><div><a href="https://spectrum-health-systems.github.io/tingen-documentation/static/optionobject-error-codes" target="_blank" rel="noopener noreferrer">OptionObject Error Codes</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">See Also</a><ul class="menu"><li><a class="quickLink">Reference</a></li><li><a class="quickLink">Other Resources</a></li></ul></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
 Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
 </div> 
 				</div></div></footer></div><script>$(function(){

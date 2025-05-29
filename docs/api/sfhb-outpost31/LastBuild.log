@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="5/29/2025 2:22:28 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="5/29/2025 3:52:00 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -47,10 +47,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-19f6f67e-fae5-48f0-8396-4265e94638ec.proj]
-Build started 5/29/2025 2:22:28 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-c456d74b-d02b-4205-b6de-8d46bf679cc1.proj]
+Build started 5/29/2025 3:52:00 PM.
 
-Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\GenerateRefInfo-19f6f67e-fae5-48f0-8396-4265e94638ec.proj&quot; on node 1 (default targets).
+Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\GenerateRefInfo-c456d74b-d02b-4205-b6de-8d46bf679cc1.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -59,27 +59,27 @@ GenerateRefInfo:
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 4 dependency assemblies.
   Using framework redirect &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
-  Wrote information on 12 namespaces, 21 types, and 96 members
+  Wrote information on 13 namespaces, 22 types, and 97 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\GenerateRefInfo-19f6f67e-fae5-48f0-8396-4265e94638ec.proj&quot; (default targets).
-    Last step completed in 00:00:00.9020
+Done Building Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\GenerateRefInfo-c456d74b-d02b-4205-b6de-8d46bf679cc1.proj&quot; (default targets).
+    Last step completed in 00:00:00.8971
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0088
+    Last step completed in 00:00:00.0115
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0063
+    Last step completed in 00:00:00.0082
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0066
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0257
+    Last step completed in 00:00:00.0256
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -95,11 +95,11 @@ Indexing C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-do
 Indexing C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\System.Buffers.xml
 Indexing C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\Microsoft.Bcl.AsyncInterfaces.xml
 Indexing C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\outpost31.xml
-Indexed 161111 members in 137 file(s).  10 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 161112 members in 137 file(s).  10 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 Documentation merged successfully.  Merged comments were saved in &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\_InheritedDocs_.xml&#39;.
-    Last step completed in 00:00:00.4400
+    Last step completed in 00:00:00.5733
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -113,19 +113,19 @@ Generating conceptual topic files
     C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\ddueXml\c07a96b6-a791-477f-8bd3-df5564dd8811.xml
     Parsing topic file &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\ddueXml\33565a60-9900-4a09-83af-1351427e4991.xml
-    Last step completed in 00:00:00.0198
+    Last step completed in 00:00:00.0482
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0099
+    Last step completed in 00:00:00.0200
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-outpost31\icons\Help.png -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0043
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -134,15 +134,15 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0107
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.0827
+    Last step completed in 00:00:00.1859
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0159
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -170,6 +170,8 @@ SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Avatar.ScriptParam
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Avatar.ScriptParameter.Validate(System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Avatar.ScriptParameter.Validate(System.String)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Avatar.ScriptParameter.Validate(System.String)] Missing &lt;param name=&quot;sentScriptParam&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Blueprint] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Blueprint.OptObjErrorMessage] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Configuration] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Configuration.TngnWbsvConfiguration.CreateDefault(System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Configuration.TngnWbsvConfiguration.CreateDefault(System.String)] Missing &lt;param name=&quot;tngnWbsvEnvironment&quot;/&gt; documentation
@@ -252,15 +254,15 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.FormAccess.Deny.
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.FormAccess.Deny.SysCodeFromList(Outpost31.Core.Session.TngnWbsvSession,System.Collections.Generic.List{System.String})] Missing &lt;param name=&quot;sysCodeList&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Module.Prototype] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Prototype.Code.FormAccessDocSysCodeDeny(Outpost31.Core.Session.TngnWbsvSession)] Missing &lt;param name=&quot;tngnWbsvSession&quot;/&gt; documentation
-Processed 160 topic(s)
-94 warning(s)
+Processed 164 topic(s)
+96 warning(s)
 CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
 ResolveArtLinksComponent: Copying media files...
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:03.2187
+</plugIn>    Last step completed in 00:00:03.3954
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -296,26 +298,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\sfhb-outpost31\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.1308
+    Last step completed in 00:00:00.1966
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0749
+    Last step completed in 00:00:00.0794
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 285 files for the website content
-    Last step completed in 00:00:00.3090
+Copied 291 files for the website content
+    Last step completed in 00:00:00.2890
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0746
+    Last step completed in 00:00:00.0806
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 5/29/2025 2:22:33 PM.  Total time: 00:00:05.7620
+Build completed successfully at 5/29/2025 3:52:06 PM.  Total time: 00:00:06.2729
 
 </buildStep>
 </shfbBuild>
