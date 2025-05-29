@@ -47,7 +47,7 @@
             <returns>A message to display to the user.</returns>
         </member>
         <member name="T:TingenLieutenant.Lieutenant">
-            <summary>The main class for Tingen Lieutenante.</summary>
+            <summary>The main class for Tingen Lieutenant.</summary>
             <remarks>This class contains general methods for Tingen Lieutenant.</remarks>
         </member>
         <member name="M:TingenLieutenant.Lieutenant.DisplayMessage(System.String,System.Boolean)">
