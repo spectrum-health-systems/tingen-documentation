@@ -34,6 +34,10 @@ The **bad news** is it may also be *incomplete*! Incomplete documentation is (ge
 
 Also, since API documentation is generated using the *development versions* of source code, it may be different than the stable release source code.
 
+# Static documenation
+
+Examples.
+
 
 You can also review the Tingen Documentation [Roadmaps](https://github.com/orgs/spectrum-health-systems/projects/50/views/3) and [Changelogs](https://github.com/orgs/spectrum-health-systems/projects/50/views/4?groupedBy%5BcolumnId%5D=141162087&filterQuery=status%3ACompleted)
 

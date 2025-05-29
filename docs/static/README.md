@@ -1,5 +1,5 @@
 <!-- u250429 -->
 
-# tingen-documenation/static
+# tingen-documentation/static
 
 This folder contains static documentation that can be referenced in source code.

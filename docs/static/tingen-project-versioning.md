@@ -1,34 +1,14 @@
-<!-- u250501 -->
+<!-- u250529 -->
 
-<div align="center">
+# Tingen Project Versioning
 
-  ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
+The Tingen projects use `MM.DD.patch` versioning, where:
 
-  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
-  
-  <h1>Tingen Web Service versioning</h1>
+* `MM` is the the release year
+* `DD` is the release month
+* `patch` is an optional patch number
 
-</div>
-
-<br>
-
-The Tingen Web Service is closer to Semantic versioning than the Microsoft versioning scheme, and consists of up to three components:
-
-* The release year
-* The release month
-* An optional patch number
-
-Or:
-
-```
-YY.MM.Patch
-```
-
-Put those together and you get a version number that looks like this:  
-
-```
-25.02.1
-```
+For example: `25.02.1`
 
 This isn't 'Nam, there are rules:
 
