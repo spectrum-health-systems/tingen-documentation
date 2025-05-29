@@ -8,9 +8,9 @@
 
 </div>
 
-Here be:
+This is a collection of all Tingen related documentation.
 
-# Manual
+# The Tingen Manual
 
 The [Tingen Manual](https://spectrum-health-systems.github.io/tingen-documentation/manual/Tingen-Manual.md)
 

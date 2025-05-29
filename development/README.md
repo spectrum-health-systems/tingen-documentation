@@ -1,14 +1,6 @@
-<!-- u250114 -->
+<!-- u250529 -->
 
-<div align="center">
-
-  ![logo](/.github/image/logo/TingenDocumentation_logo_320x420.png)
-
-  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
-
-</div>
-
-# Development resources
+# tingen-documentation/development
 
 * [Development workflows](./development-workflows.md)
 * [Source code commenting](source-code-comments.md)
