@@ -13,4 +13,5 @@ This is a collection of all Tingen related documentation.
 * [Manuals](./docs/manual/)
 * [API documentation](./docs/api/)
 * [Static documentation](./docs/static/)
+* [Development documentation](./docs/development/)
 * [Misc documentation](./docs/misc)
