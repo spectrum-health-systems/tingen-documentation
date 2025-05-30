@@ -1,7 +1,6 @@
 <!-- u250530 -->
 
-[Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/static/the-optionobject.md)
-
+[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/static/the-optionobject.md)]
 
 # The OptionObject
 
@@ -10,8 +9,6 @@
 - [The WorkOptionObject](#the-workoptionobject)
 - [The ReturnOptionObject](#the-returnoptionobject)
 - [OptionObject Error Codes](#optionobject-error-codes)
-
-
 
 ## OptionObject Error Codes
 

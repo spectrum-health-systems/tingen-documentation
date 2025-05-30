@@ -7,6 +7,8 @@
   The rest of the document will be updated normally.
 -->
 
+[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/development/workflows.md)]
+
 # Workflows
 
 [Sandcastle/GitHub Pages](#sandcastlegithub-pages)

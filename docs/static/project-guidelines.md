@@ -1,5 +1,7 @@
 <!-- u250530 -->
 
+[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/static/project-guidelines.md)]
+
 # Project Guidelines
 
 * [Source code comments](#source-code-comments)

@@ -1,5 +1,7 @@
 <!-- 250430 -->
 
+[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/static/the-script-parameter.md)]
+
 ## CONTENTS
 [Overview](#overview)
 [Components](components)
