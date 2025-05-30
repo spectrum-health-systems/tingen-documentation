@@ -2,7 +2,7 @@
 
 ## Install the VS2022 extensions
 
-![](vs2022-extensions.png)
+![](./shfb-integration/vs2022-extensions.png)
 
 ## Create a new Visual Studio 2022 documentation project
 
@@ -34,7 +34,7 @@ In the project you are creating documentation for:
 
 1. Change **Framework version** to the correct framework
 
-![](build.png)
+![](./shfb-integration/build.png)
 
 ### Project Properties -> Help File
 
@@ -47,7 +47,7 @@ Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Docume
 </div>
 ```
 
-![](help-file.png)
+![](./shfb-integration/help-file.png)
 
 ### Project Properties -> Help 1/Website
 
@@ -67,7 +67,7 @@ No changes.
 2. Check **Private fields**
 3. Check **Private members**
 
-![](visibility.png)
+![](./shfb-integration/visibility.png)
 
 ### Project Properties -> Missing Tags
 
@@ -77,7 +77,7 @@ No changes.
 
 1. Change **Help content output path** to `..\..\docs\API\%Project-Name`
 
-![](paths.png)
+![](./shfb-integration/paths.png)
 
 ### Project Properties -> Components
 
