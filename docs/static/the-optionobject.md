@@ -1,6 +1,8 @@
-<!-- u250529 -->
+<!-- u250530 -->
 
-# OptionObject Error Codes
+# The OptionObject
+
+## OptionObject Error Codes
 
 When an OptionObject is returned to Avatar, it requires one of the following single-digit integer Error Codes:
 
@@ -12,7 +14,7 @@ When an OptionObject is returned to Avatar, it requires one of the following sin
 * *5* - Returns a URL to be opened in a new browser
 * *6* - Returns a form to be opened in Avatar
 
-## Common Error Codes
+### Common Error Codes
 
 The most common error codes are:
 
