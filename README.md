@@ -12,15 +12,11 @@ This is a collection of all Tingen related documentation.
 
 # Manuals
 
-The following manuals are available:
+[Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-dev-deploy.md)
 
-The [Tingen DevDeploy Manual](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-dev-deploy.md)
-
-The [Tingen Web Service Manual](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-web-service-manual.md)
+[Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-web-service-manual.md)
 
 # API documentation
-
-Check out this cool API documentation:
 
 * [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-dev-deploy/)
 * [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-commander/)
