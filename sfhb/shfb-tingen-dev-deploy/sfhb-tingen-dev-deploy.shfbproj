@@ -15,7 +15,7 @@
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>shfb_tingen_dev_deploy</AssemblyName>
     <RootNamespace>shfb_tingen_dev_deploy</RootNamespace>
-    <Name>shfb_tingen_dev_deploy</Name>
+    <Name>sfhb-tingen-dev-deploy</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Core/.NET Standard/.NET 5.0+</FrameworkVersion>
     <OutputPath>..\..\docs\api\shfb-tingen-dev-deploy\</OutputPath>
@@ -39,7 +39,7 @@
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
-    <HelpTitle>Tinge DevDeploy</HelpTitle>
+    <HelpTitle>Tingen DevDeploy</HelpTitle>
     <HelpFileVersion>2.1.0.0</HelpFileVersion>
     <NamingMethod>Guid</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>

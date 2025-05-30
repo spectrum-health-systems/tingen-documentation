@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-tingen-lieutenant\shfb-tingen-lieutenant.shfbproj" started="5/29/2025 1:04:10 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-tingen-lieutenant\shfb-tingen-lieutenant.shfbproj" started="5/30/2025 11:31:20 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -202,10 +202,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-98d2a038-cb7a-4cf0-aaa8-45e5ca2aa171.proj]
-Build started 5/29/2025 1:04:11 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-e614038a-d2cd-444a-b1dd-22c0245c61a0.proj]
+Build started 5/30/2025 11:31:21 AM.
 
-Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-98d2a038-cb7a-4cf0-aaa8-45e5ca2aa171.proj&quot; on node 1 (default targets).
+Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-e614038a-d2cd-444a-b1dd-22c0245c61a0.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -216,24 +216,24 @@ GenerateRefInfo:
   Wrote information on 2 namespaces, 2 types, and 26 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-98d2a038-cb7a-4cf0-aaa8-45e5ca2aa171.proj&quot; (default targets).
-    Last step completed in 00:00:01.8370
+Done Building Project &quot;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\GenerateRefInfo-e614038a-d2cd-444a-b1dd-22c0245c61a0.proj&quot; (default targets).
+    Last step completed in 00:00:01.1632
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0049
+    Last step completed in 00:00:00.0057
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.5401
+    Last step completed in 00:00:00.5376
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -243,19 +243,19 @@ Copying images and creating the media map file...
 Generating conceptual topic files
     Parsing topic file &#39;C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-tingen-lieutenant\Content\Welcome.aml&#39;
     C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-tingen-lieutenant\Content\Welcome.aml -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\ddueXml\a2018e36-b94d-42c3-b590-4524cc7a3869.xml
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0158
+    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\sfhb\shfb-tingen-lieutenant\icons\Help.png -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -264,15 +264,15 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0038
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.4621
+    Last step completed in 00:00:00.6259
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0028
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -280,7 +280,7 @@ C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentati
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0077
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -315,7 +315,7 @@ CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 o
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:04.5166
+</plugIn>    Last step completed in 00:00:08.3328
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -351,26 +351,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\tingen-documentation\docs\api\shfb-tingen-lieutenant\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.1108
+    Last step completed in 00:00:00.2753
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0478
+    Last step completed in 00:00:00.0482
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 97 files for the website content
-    Last step completed in 00:00:00.0954
+    Last step completed in 00:00:00.2029
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0478
+    Last step completed in 00:00:00.1606
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 5/29/2025 1:04:18 PM.  Total time: 00:00:08.2701
+Build completed successfully at 5/30/2025 11:31:32 AM.  Total time: 00:00:12.0520
 
 </buildStep>
 </shfbBuild>
