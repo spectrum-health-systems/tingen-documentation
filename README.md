@@ -1,4 +1,4 @@
-<!-- u250429 -->
+<!-- u250430 -->
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 This is a collection of all Tingen related documentation.
 
-* [Manuals](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-dev-deploy)
-* [API documentation](https://spectrum-health-systems.github.io/tingen-documentation/api)
-* [Static documentation](https://spectrum-health-systems.github.io/tingen-documentation/static)
-* [Misc documentation](https://spectrum-health-systems.github.io/tingen-documentation/misc)
+* [Manuals](./docs/manual/)
+* [API documentation](./docs/api/)
+* [Static documentation](./docs/static/)
+* [Misc documentation](./docs/misc)

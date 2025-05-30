@@ -1,7 +1,5 @@
 <!-- u250429 -->
 
-# tingen-documenation/docs/api
-
 # API documentation
 
 * [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-dev-deploy/)
