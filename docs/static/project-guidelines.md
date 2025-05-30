@@ -1,6 +1,17 @@
-<!-- u250529 -->
+<!-- u250530 -->
 
-# Tingen Project Versioning
+# Project Guidelines
+
+* [Source code comments](#source-code-comments)
+* [Versioning](#versioning)
+
+## Source code
+
+[XML documentation guidelines](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/development-guidelines/xml-documentation.md)
+[Source code comment guidelines](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/development-guidelines/comments.md)
+[Source code syntax and formatting](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/development-guidelines/syntax-and-formatting.md)
+
+## Versioning
 
 The Tingen projects use `MM.DD.patch` versioning, where:
 
