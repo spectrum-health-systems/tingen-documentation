@@ -18,7 +18,7 @@
     <Name>shfb_outpost31</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.7.2</FrameworkVersion>
-    <OutputPath>..\..\docs\api\sfhb-outpost31\</OutputPath>
+    <OutputPath>..\..\docs\api\shfb-outpost31\</OutputPath>
     <HtmlHelpName>shfb_outpost31</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
