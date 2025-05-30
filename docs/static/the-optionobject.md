@@ -2,6 +2,14 @@
 
 # The OptionObject
 
+- [The OptionObject](#the-optionobject)
+- [The SentOptionObject](#the-sentoptionobject)
+- [The WorkOptionObject](#the-workoptionobject)
+- [The ReturnOptionObject](#the-returnoptionobject)
+- [OptionObject Error Codes](#optionobject-error-codes)
+
+
+
 ## OptionObject Error Codes
 
 When an OptionObject is returned to Avatar, it requires one of the following single-digit integer Error Codes:

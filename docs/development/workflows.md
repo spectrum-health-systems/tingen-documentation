@@ -9,6 +9,9 @@
 
 # Workflows
 
+[Sandcastle/GitHub Pages](#sandcastlegithub-pages)
+[Tingen Web Service](#tingen-web-service)
+
 ## Sandcastle/GitHub pages
 
 <div align="center">
@@ -32,6 +35,8 @@ flowchart TB
   classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
   classDef Hidden display: none;
 ```
+
+***
 
 # Tingen Web Service
 
