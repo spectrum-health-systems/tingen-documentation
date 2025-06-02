@@ -2,5 +2,12 @@
 
 # Development documentation
 
-* [Sandcastle Help File Builder](sfhb.md)
-* [Workflows](workflows.md)
+## Workflows
+
+* [Daily development](workflow-daily-development.md)  
+Daily development process and procedures.
+
+## Documentation
+
+* [Sandcastle Help File Builder](sfhb.md)  
+Integrating SFHB with VS2022, creating document projects, and building API documentation.

@@ -119,7 +119,7 @@ No changes.
 
 Using the documentation project:
 
-1. Right-click -> **Documentation Sources*
+1. Right-click -> *Documentation Sources*
 2. **Add documentation source**
 3. Add the `.shfbproj` file
 
@@ -128,7 +128,7 @@ Using the documentation project:
 On the VS2022 menu bar:
 
 1. **Build** -> **Configuration Manager**
-2. Uncheck **Build* for all documentation projects
+2. Uncheck *Build* for all documentation projects
 
 Save everything
 

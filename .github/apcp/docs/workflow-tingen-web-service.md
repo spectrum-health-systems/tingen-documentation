@@ -1,4 +1,4 @@
-<!-- u250530 -->
+<!-- u250602 -->
 
 <!--
   I'm sure the Mermaid.js code here looks awful, but it was a real pain to get
@@ -7,47 +7,7 @@
   The rest of the document will be updated normally.
 -->
 
-[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/development/workflows.md)]
-
-# Workflows
-
-[Generate Sandcastle documentation](#generate-sandcastle-documentation)
-[GitHub Pages](#sandcastlegithub-pages)
-[Tingen Web Service](#tingen-web-service)
-
-
-
-
-
-***
-
-## Sandcastle/GitHub pages
-
-<div align="center">
-
-```mermaid
-flowchart TB
-  %% Components
-  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
-  CleanSolution@{shape: rounded, label: "Clean Visual Studio solution"}
-  BuildSolution@{shape: rounded, label: "Build  Visual Studio solution"}
-  BuildSandcastle@{shape: rounded, label: "Build Sandcastle documentation"}
-  CommitChanges@{shape: rounded, label: "Commit changes to\nTingen-Documentation repository"}
-  DeployPages@{shape: rounded, label: "Deploy GitHub pages"}
-
-  %% Layout
-  Start --> CleanSolution:::R2_ --> BuildSolution:::R2_ --> BuildSandcastle:::U2_ --> CommitChanges:::G2_ --> DeployPages:::G2_
-  %% Styles
-  classDef R2_ stroke:#f9ebea,stroke-width:3px,fill:#CD6155,color:#f9ebea
-  classDef P2_ stroke:#f5eef8,stroke-width:3px,fill:#af7ac5,color:#f5eef8
-  classDef U2_ stroke:#eaf2f8,stroke-width:3px,fill:#5499c7,color:#eaf2f8
-  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
-  classDef Hidden display: none;
-```
-
-***
-
-# Tingen Web Service
+# Workflow - Tingen Web Service
 
 ```mermaid
 
