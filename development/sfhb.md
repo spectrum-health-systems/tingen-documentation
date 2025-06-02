@@ -1,9 +1,10 @@
+<!-- u250602 -->
+
 # Sandcastle Help File Builder
 
 * [Integration with Visual Studio 2022](#integration-with-visual-studio-2022)
 * [Create a new Visual Studio 2022 Documentation Project](#create-a-new-visual-studio-2022-documentation-project)
 * [Generating Sandcastle documentation](#generating-sandcastle-documentation)
-
 
 # Integration with Visual Studio 2022
 
@@ -153,6 +154,8 @@ flowchart TB
   classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
   classDef Hidden display: none;
 ```
+
+</div>
 
 ## GitHub Pages
 
