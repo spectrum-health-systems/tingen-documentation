@@ -1,12 +1,25 @@
-[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/development/the-optionobject.md)]
+# Sandcastle Help File Builder
 
-# Sandcastle integration with Visual Studio 2022
+* [Integration with Visual Studio 2022](#integration-with-visual-studio-2022)
+* [Create a new Visual Studio 2022 Documentation Project](#create-a-new-visual-studio-2022-documentation-project)
+* [Generating Sandcastle documentation](#generating-sandcastle-documentation)
 
-## Install the VS2022 extensions
 
-![](./shfb-integration/vs2022-extensions.png)
+# Integration with Visual Studio 2022
 
-## Create a new Visual Studio 2022 documentation project
+Install the latest version of the [Sandcastle Help File Builder](https://github.com/EWSoftware/SHFB).
+
+It is recommended to also install the [Extended XML Doc Comments Provider (VS2022+)](https://marketplace.visualstudio.com/items?itemName=EWoodruff.ExtendedDocCommentsProvider2022) extension.
+
+# Create a new Visual Studio 2022 Documentation Project
+
+You will need to create a Documentation Project for each project you want to document.
+
+Documentation projects should start with `sfhb-`.
+
+For example, the Documentation Project for the `tingen-web-service` would be named `sfhb-tingen-web-service`.
+
+To create the new project:
 
 1. Start Visual Studio
 2. Create a new `Sandcastle Help File Builder Project`
@@ -36,7 +49,7 @@ In the project you are creating documentation for:
 
 1. Change **Framework version** to the correct framework
 
-![](./shfb-integration/build.png)
+![](./shfb/build.png)
 
 ### Project Properties -> Help File
 
@@ -49,7 +62,7 @@ Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Docume
 </div>
 ```
 
-![](./shfb-integration/help-file.png)
+![](./shfb/help-file.png)
 
 ### Project Properties -> Help 1/Website
 
@@ -69,7 +82,7 @@ No changes.
 2. Check **Private fields**
 3. Check **Private members**
 
-![](./shfb-integration/visibility.png)
+![](./shfb/visibility.png)
 
 ### Project Properties -> Missing Tags
 
@@ -79,7 +92,7 @@ No changes.
 
 1. Change **Help content output path** to `..\..\docs\API\%Project-Name`
 
-![](./shfb-integration/paths.png)
+![](./shfb/paths.png)
 
 ### Project Properties -> Components
 
@@ -116,4 +129,31 @@ On the VS2022 menu bar:
 1. **Build** -> **Configuration Manager**
 2. Uncheck **Build* for all documentation projects
 
-## Save everything
+Save everything
+
+# Generating Sandcastle documentation
+
+<div align="center">
+
+```mermaid
+flowchart TB
+  %% Components
+  Start@{shape: sm-circ, label: "Start the workflow\n[sm-circ]"}
+  CleanSolution@{shape: rounded, label: "Clean Visual Studio solution"}
+  BuildSolution@{shape: rounded, label: "Build Visual Studio solution"}
+  BuildSandcastle@{shape: rounded, label: "Build Sandcastle documentation"}
+  CommitChanges@{shape: rounded, label: "Commit changes to\nTingen-Documentation repository"}
+
+  %% Layout
+  Start --> CleanSolution:::R2_ --> BuildSolution:::R2_ --> BuildSandcastle:::U2_ --> CommitChanges:::G2_
+  %% Styles
+  classDef R2_ stroke:#f9ebea,stroke-width:3px,fill:#CD6155,color:#f9ebea
+  classDef P2_ stroke:#f5eef8,stroke-width:3px,fill:#af7ac5,color:#f5eef8
+  classDef U2_ stroke:#eaf2f8,stroke-width:3px,fill:#5499c7,color:#eaf2f8
+  classDef G2_ stroke:#e9f7ef,stroke-width:3px,fill:#52be80,color:#e9f7ef
+  classDef Hidden display: none;
+```
+
+## GitHub Pages
+
+A few minutes after the `tingen-documention` repository has been updated, the GitHub Pages site will be refreshed.

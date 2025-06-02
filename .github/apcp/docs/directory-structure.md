@@ -4,7 +4,7 @@
 
   ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
-  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
+  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.6-white?style=for-the-badge)
   
   <h1>Tingen Web Service directory structure</h1>
 

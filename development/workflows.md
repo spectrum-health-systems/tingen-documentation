@@ -11,8 +11,15 @@
 
 # Workflows
 
-[Sandcastle/GitHub Pages](#sandcastlegithub-pages)
+[Generate Sandcastle documentation](#generate-sandcastle-documentation)
+[GitHub Pages](#sandcastlegithub-pages)
 [Tingen Web Service](#tingen-web-service)
+
+
+
+
+
+***
 
 ## Sandcastle/GitHub pages
 

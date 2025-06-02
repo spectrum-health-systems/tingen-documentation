@@ -11,7 +11,7 @@
 
   ![logo](/.github/image/logo/TingenDevelopmentDocumentation_logo_320x420.png)
 
-  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
+  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.6-white?style=for-the-badge)
 
   <h1>Development workflows</h1>
 
@@ -281,9 +281,7 @@ flowchart TB
 
 Update the following components of the AutoHotkey script:
 
-* ALT+CTRL+SHIFT+P
-* ALT+CTRL+SHIFT+R
-* ALT+CTRL+SHIFT+V
+* ALT+CTRL+SHIFT+Y
   
 ## Update Sandcastle profiles
 
@@ -340,7 +338,7 @@ Replace the value of `YY.MM` with the current Year.Month.
 For example:
 
 ```markdown
-![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.5-white?style=for-the-badge)
+![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.6-white?style=for-the-badge)
 ```
 
 <br>
