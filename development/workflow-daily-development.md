@@ -14,7 +14,7 @@ This is the daily workflow for all Tingen projects.
 <div align="center">
 
 ```mermaid
-flowchart TB 
+flowchart LR 
   %% Components
   Start@{shape: sm-circ, label: ""}
   Preparation@{shape: rounded, label: "Preparation"}
@@ -37,7 +37,7 @@ flowchart TB
 <div align="center">
 
 ```mermaid
-flowchart TB
+flowchart LR
   %% Components
   Start@{shape: sm-circ, label: ""}
   AutoHotKey@{shape: rounded, label: "Start\nAutoHotkey"}
