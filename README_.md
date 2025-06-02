@@ -12,12 +12,12 @@ This is a collection of all Tingen related documentation.
 
 # Manuals
 
-* [Tingen DevDeploy](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-dev-deploy)
-* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/manual/tingen-web-service-manual)
+* [Tingen DevDeploy](./manuals/tingen-dev-deploy/tingen-dev-deploy-manual.md)
+* [Tingen Web Service](./manuals/tingen-web-service/tingen-web-service-manual.md)
 
 # Static documentation
 
-[Here.](https://spectrum-health-systems.github.io/tingen-documentation/static)
+You'll find various static documentation (often referenced in the source code) [here](./static/).
 
 # API documentation
 
@@ -39,7 +39,7 @@ Also, since API documentation is generated using the *development versions* of s
 
 # Other documentation
 
-You can also review the Tingen Documentation [Roadmaps](https://github.com/orgs/spectrum-health-systems/projects/50/views/3) and [Changelogs](https://github.com/orgs/spectrum-health-systems/projects/50/views/4?groupedBy%5BcolumnId%5D=141162087&filterQuery=status%3ACompleted)
+There is [miscellaneous](./miscellaneous/) documentation, as well as [Roadmaps](https://github.com/orgs/spectrum-health-systems/projects/50/views/3) and [Changelogs](https://github.com/orgs/spectrum-health-systems/projects/50/views/4?groupedBy%5BcolumnId%5D=141162087&filterQuery=status%3ACompleted)
 
 # Documentation snapshots
 
