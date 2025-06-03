@@ -99,3 +99,10 @@ filename, pathname, volume name
 ## Pixel fonts
 
 https://fontmeme.com/pixel-fonts/
+
+* font: Minecraftory
+* size:
+    * Release: 29
+    * Version: 20
+* colors: FB6222 and FEF698
+* effect: Shadow-SolidS
