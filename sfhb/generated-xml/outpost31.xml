@@ -89,6 +89,14 @@
             <param name="errorMessage">The OptionObject error message.</param>
             <seealso href= "https://spectrum-health-systems.github.io/tingen-documentation/static/optionobject-error-codes">OptionObject Error Codes</seealso>
         </member>
+        <member name="M:Outpost31.Core.Blueprint.LogMessage.FormAccessDeniedGeneral">
+            <summary>The Access Denied error code message.</summary>
+            <returns>The Access Denied error code message.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Blueprint.LogDetail.Runtime(Outpost31.Core.Runtime.TngnWbsvRuntimeSettings)">
+            <summary>The summary of the Tingen Web Service configuration at runtime.</summary>
+            <return>A summary of the Tingen Web Service configuration at runtime.</return>
+        </member>
         <member name="T:Outpost31.Core.Logger.LogBuilder">
             <summary>Generates various log components.</summary>
             <remarks>
@@ -518,14 +526,6 @@
                     </list>
                 </para>
             </remarks>
-        </member>
-        <member name="M:Outpost31.Core.Template.Message.FormAccessDeniedGeneral">
-            <summary>The Access Denied error code message.</summary>
-            <returns>The Access Denied error code message.</returns>
-        </member>
-        <member name="M:Outpost31.Core.Template.Detail.Runtime(Outpost31.Core.Runtime.TngnWbsvRuntimeSettings)">
-            <summary>The summary of the Tingen Web Service configuration at runtime.</summary>
-            <return>A summary of the Tingen Web Service configuration at runtime.</return>
         </member>
         <member name="T:Outpost31.Core.Utility.Du.DuFile">
             <summary>Logic related to files input/output.</summary>
