@@ -4,7 +4,7 @@
 
   ![logo](.github/image/logo/TingenDocumentation_logo_320x420.png)
 
-  ![TINGEN_VERSION](https://img.shields.io/badge/TINGEN%2025.6-white?style=for-the-badge)
+  ![Release 25.6](https://github.com/spectrum-health-systems/tingen/blob/main/.github/image/releases/release-25.6.png)
 
 </div>
 
