@@ -4,6 +4,8 @@
 
   ![logo](/.github/image/logo/tngndocs-194x254.png)
 
+  **DO NOT MODIFY ANYTHING IN THIS FOLDER**
+
 </div>
 
 # API documentation
