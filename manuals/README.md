@@ -4,11 +4,9 @@
 
   ![logo](/.github/image/logo/tngndocs-194x254.png)
 
-  Manuals
-  
 </div>
 
-# Tingen manuals
+# Manuals
 
 * [Tingen DevDeploy manual](./tngndvdp/)
 * [Tingen Web Service manual](./tngnsrvc/)
