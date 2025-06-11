@@ -1,15 +1,17 @@
 <!-- u250611 -->
+
 <div align="center">
 
-  ![logo](.github/image/logo/TingenDocumentation_logo_320x420.png)
+  ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
 
-  ![Release 25.6](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/verel/r/r25.6.png)
+  ![Version 2.1](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/verel/v/v2.1.png)
 
 </div>
+
 # The Tingen DevDeploy Manual
 
 ## Contents
 
-[Installation]()
-[Configuration]()
-[Usage]()
+* [Installation]()
+* [Configuration]()
+* [Usage]()
