@@ -10,8 +10,6 @@
 
 </div>
 
-# The Tingen DevDeploy Manual
-
 ## Contents
 
 * [Installation](tngndvdp-installation.md)
