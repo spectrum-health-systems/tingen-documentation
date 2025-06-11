@@ -17,4 +17,6 @@ Since Tingen DevDeploy is a single, portable file, all you need to do to "instal
 1. Download the [latest release](https://github.com/spectrum-health-systems/tingen-dev-deploy/releases)
 2. Extract TingenDevDeploy to a location where it can be executed
 
+That's it!
+
 > &larr; [Back to Tingen DevDeploy manual homepage](README.md)

@@ -13,5 +13,5 @@
 ## Contents
 
 * [Installation](tngndvdp-installation.md)
-* [Configuration]()
+* [Configuration](tngndvdp-configuration.md)
 * [Usage]()
