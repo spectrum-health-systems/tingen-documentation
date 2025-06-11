@@ -6,9 +6,10 @@
 
   ![Version 2.1](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/verel/v/v2.1.png)
 
-  ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
 
 </div>
+
+# Tingen DevDeploy manual
 
 ## Contents
 
