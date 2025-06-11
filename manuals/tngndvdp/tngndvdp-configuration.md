@@ -8,7 +8,7 @@
 
   ![Version 2.1](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/verel/v/v2.1.png)
 
-  ![Documentation](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
+  ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
 
 </div>
 
@@ -18,66 +18,63 @@ The first time Tingen DevDeploy is executed, it looks for the `devdeploy-config.
 
 If the `devdeploy-config.json file` doesn't exist, one is created using the default values that will work with any standard installation of the Tingen Web Service.
 
-## Modifying the configuration
+# Modifying the configuration
 
-The `devdeploy-config.json file` file contains the following configuration settings:
-
-* ArchivePath  
-  The location where the existing Tingen Web Service will be archived.
-
-* Source  
-  The location of the Tingen Web Service that will be deployed.
-
-* SourceType  
-  The type of source, either a URL or a directory path.
-
-* StagePath  
-  The location where the Tingen Web Service is staged for deployment.
-
-* DeployPath  
-  The location where the Tingen Web Service is deployed.
-
-### ArchivePath
+## ArchivePath
 
 > Default value: `C:\Tingen_Data\DevDeploy\Archive`
 
-This can be:
+The location where the existing Tingen Web Service will be archived.
+
+The `ArchivePath` must be one of the following:
 
 * A local directory
 * A network share/mapped drive
 
-### Source
+## Source
 
 > Default value: `https://github.com/spectrum-health-systems/Tingen-WebService/archive/refs/heads/development.zip`
 
-This isn't necessarily a "path", since it can be either a directory or a URL.
+The location of the Tingen Web Service that will be deployed.
 
-If the RepositoryPath is a URL:
+The `Source` isn't necessarily a "path", since it can be either a directory or a URL.
+
+If the `Source` is a URL:
+
 * It must point to a ".zip" file<
 * It must formatted correctly
 
-If the RepositoryPath is a directory:
-* It can be a local directory
-* It can be a network share/mapped drive
-
-### SourceType
-
-> Default value: ""
-
-### StagingPath
-
-> Default value: `C:\Tingen_Data\DevDeploy\Stage`
-
-This can be:
+If the `Source` is a directory, it must be one of the following:
 
 * A local directory
 * A network share/mapped drive
 
-### Deploy Path
+## SourceType
+
+> Default value: ""
+
+The type of source, either `path` or `url`.
+
+This value is set at runtime, so don't modify the value in the configuration file.
+
+## StagingPath
+
+> Default value: `C:\Tingen_Data\DevDeploy\Stage`
+
+The location where the Tingen Web Service is staged for deployment.
+
+The `StagingPath` must be one of the following:
+
+* A local directory
+* A network share/mapped drive
+
+## Deploy Path
 
 > Default value: `C:\Tingen\UAT`
 
-This can be:
+The location where the Tingen Web Service is deployed.
+
+The `DeployPath` must be one of the following:
 
 * A local directory
 * A network share/mapped drive
