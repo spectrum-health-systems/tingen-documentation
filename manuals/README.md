@@ -2,5 +2,5 @@
 
 # Manuals
 
-* [Tingen DevDeploy manual](./tingen-dev-deploy/tngndvdp-manual-home.md)
-* [Tingen Web Service manual](./tingen-web-service/tngnsrvc-manual-home.md)
+* [Tingen DevDeploy manual](./tngndvdp/)
+* [Tingen Web Service manual](./tngnsrvc/)
