@@ -4,6 +4,8 @@
 
   ![logo](/.github/image/logo/tngndocs-194x254.png)
 
+  Manuals
+  
 </div>
 
 # Tingen manuals
