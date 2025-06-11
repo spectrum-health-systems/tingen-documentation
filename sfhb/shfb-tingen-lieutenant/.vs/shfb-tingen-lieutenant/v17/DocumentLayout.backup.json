@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chris.Banwarth\\DevEnv\\GitHub\\spectrum-health-systems\\tingen-documentation\\sandcastle\\shfb-tingen-lieutenant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93625326-562C-48BE-94BB-717E8DACD4E4}|shfb-tingen-lieutenant.shfbproj|C:\\Users\\Chris.Banwarth\\DevEnv\\GitHub\\spectrum-health-systems\\tingen-documentation\\sandcastle\\shfb-tingen-lieutenant\\Content\\Welcome.aml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{93625326-562C-48BE-94BB-717E8DACD4E4}|shfb-tingen-lieutenant.shfbproj|solutionrelative:Content\\Welcome.aml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Welcome.aml",
+              "DocumentMoniker": "C:\\Users\\Chris.Banwarth\\DevEnv\\GitHub\\spectrum-health-systems\\tingen-documentation\\sandcastle\\shfb-tingen-lieutenant\\Content\\Welcome.aml",
+              "RelativeDocumentMoniker": "Content\\Welcome.aml",
+              "ToolTip": "C:\\Users\\Chris.Banwarth\\DevEnv\\GitHub\\spectrum-health-systems\\tingen-documentation\\sandcastle\\shfb-tingen-lieutenant\\Content\\Welcome.aml",
+              "RelativeToolTip": "Content\\Welcome.aml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-28T18:10:51.961Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
