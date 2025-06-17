@@ -4,6 +4,12 @@
 
   ![logo](.github/image/logo/tngndocs-320x420.png)
 
+
+</div>
+
+Documentation for these Tingen projects:
+
+<div align="center">
 <table>
   <tr>
     <td>
@@ -25,10 +31,6 @@
 </table>
 
 </div>
-
-
-
-Documentation for Tingen projects.
 
 * [Manuals](./manuals/)
 * [API documentation](./docs/api/)
