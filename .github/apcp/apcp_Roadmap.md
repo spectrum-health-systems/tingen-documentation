@@ -6,21 +6,17 @@
 
 ### 25.6
 
-- [ ] Admin
-    - [ ] Framework verification
-    - [ ] Framework reset
-    - [ ] Statuses
-
-- [ ] Logging
-    * [ ] Primeval logs
-    * [ ] Debuggler logs
-    * [ ] Trace logs
-
 ### 25.7
 
 * TBD
 
 ### Queue
+
+* All current functionality
+ - Open incident
+ - Kristy's report
+ - dose
+ - ?
 
 * Blacklists
 * Whitelists
