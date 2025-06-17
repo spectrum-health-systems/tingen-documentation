@@ -175,3 +175,7 @@ You are probably looking for this:
 
 [Tingen Web Service Community Release](https://github.com/spectrum-health-systems/tingen-community-release)
 ```
+
+```
+/// <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
+```
