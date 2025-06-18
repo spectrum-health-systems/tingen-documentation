@@ -77,3 +77,10 @@ filename, pathname, volume name
 avtr = Avatar
 avtrEnvironment = Avatar Environment (LIVE, UAT, etc.)
 tngnwsvc = Tingen Web Service
+
+
+<seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
+
+<seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/avatar/environment.md">Avatar Environents</seealso>
+
+<see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/avatar/environment.md#system-code">Avatar System Code</see>

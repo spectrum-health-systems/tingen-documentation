@@ -1,17 +1,14 @@
-<!-- 250430 -->
+<!-- 250618 -->
 
-[View [Markdown version](https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/static/the-script-parameter.md)]
+_CONTENTS_  
+[The Script Parameter](#the-script-parameter)  
+[Components](#components)  
+[Syntax](#syntax)  
+[Valid requests](#valid-requests)  
+[Depreciated](#depreciated)
 
-## CONTENTS
-[Overview](#overview)
-[Components](components)
-[Syntax](#syntax)
-[Current]
-[Depreciated]
+# The Script Parameter <!-- static_documentation -->
 
-***
-
-# Overview
 The Script Parameter sent from Avatar contains all of the information that the Tingen Web Service needs to do what it needs to do.
 
 The maximum length of a script parameter is 50 characters, and includes:
@@ -27,7 +24,13 @@ For example:
 
 `Admin.Status.Current`
 
-# Valid standard requests
+## Components <!-- static_documentation -->
+
+## Syntax <!-- static_documentation -->
+
+# Valid requests<!-- static_documentation -->
+
+## Standard requests
 
 ```
 12345678901234-1234567890-12345678901234567890-123
@@ -39,7 +42,7 @@ Module........-Command...-Action..............-Opt
 * `FormAccess.Deny.SysCodeDocHoc`
 * `FormAccess.Deny.SysCodeList01`
 
-## Prototypes
+## Prototype requests
 
 ```
 12345678901234-1234567890-12345678901234567890-123
@@ -47,11 +50,6 @@ Module........-Command...-Action..............-Opt
 ```
 
 * `_pFormAccess.Deny.DocSysCode`
-
-
-
-
-# Valid Script Parameters
 
 
 
