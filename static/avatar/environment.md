@@ -13,7 +13,7 @@ Netsmart defines the following Avatar Systems when deploying Avatar at an organi
 
 ## System Code
 
-The Avatar *System ***Code***
+The Avatar *System **Code***
 
 The Avatar *System Code* determines (in part) what Avatar functionality a user has access to while they are logged into an Avatar *System*.
 
