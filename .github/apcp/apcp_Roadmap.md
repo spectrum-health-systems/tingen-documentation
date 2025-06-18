@@ -2,15 +2,7 @@
 
 > Internal apcp development only!
 
-## Tingen-WebService
-
-### 25.6
-
-### 25.7
-
-* TBD
-
-### Queue
+* WsvcMissingArgs.txt allows for placeholders that are replaced by the actual values.
 
 * All current functionality
  - Open incident
