@@ -84,3 +84,89 @@ tngnwsvc = Tingen Web Service
 <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/avatar/environment.md">Avatar Environents</seealso>
 
 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/avatar/environment.md#system-code">Avatar System Code</see>
+
+
+
+```csharp
+        /// <summary>Creates a new instance of the RuntimeSettings class.</summary>
+        /// <returns>An object containing the runtime settings for the Tingen Web Service.</returns>
+        /// <include file='AppData/XmlDoc/Core.Runtime.xml' path='Core.Runtime/Class[@name="TngnWbsvRuntimeSettings"]/New/*'/>
+        public static WsvcRuntime New(string tngnWbsvVersion, string tngnWbsvEnvironment)
+        {
+            /* #DEVNOTE#
+             * Please read the XML Documentation for this method for important information.
+             */
+
+            LogEvent.Debuggler(tngnWbsvEnvironment, $"[CREATE DATA PATH]");
+
+            string tngnWbsvDataPath    = $@"C:\Tingen_Data\WebService\{tngnWbsvEnvironment}";
+
+            LogEvent.Debuggler(tngnWbsvEnvironment, $"[GET MODE]");
+
+            string tngnWbsvMode        = GetTngnWbsvMode($@"{tngnWbsvDataPath}\Runtime\TngnWbsv.Mode", ValidTngnWbsvModes());
+
+            LogEvent.Debuggler(tngnWbsvEnvironment, $"[CREATING RUNTIME SETTINGS]");
+
+
+            var thing = new WsvcRuntime()
+            {
+                TngnWsvcVer     = tngnWbsvVersion,
+                TngnWsvcBuild       = "250512",
+                TngnWsvcAvtrSys = tngnWbsvEnvironment,
+                TngnWsvcMode        = tngnWbsvMode,
+                TngnWsvcDataPath    = tngnWbsvDataPath,
+                TngnWsvcHostName    = Environment.MachineName,
+                CurrentDate         = DateTime.Now.ToString("YYMMDD"),
+                CurrentTime         = DateTime.Now.ToString("HHMMSS"),
+            };
+
+            LogEvent.Debuggler(tngnWbsvEnvironment, $"[RUNTIME SETTINGS CREATED]");
+
+            return thing;
+
+            //return new TngnWbsvRuntimeSettings()
+            //{
+            //    TngnWbsvVersion     = tngnWbsvVersion,
+            //    TngnWbsvBuild       = "250512",
+            //    TngnWbsvEnvironment = tngnWbsvEnvironment,
+            //    TngnWbsvMode        = tngnWbsvMode,
+            //    TngnWbsvDataPath    = tngnWbsvDataPath,
+            //    TngnWbsvHostName    = Environment.MachineName,
+            //    CurrentDate         = DateTime.Now.ToString("YYMMDD"),
+            //    CurrentTime         = DateTime.Now.ToString("HHMMSS"),
+            //};
+        }
+
+        /// <summary>Get the contents of a file, and validate it.</summary>
+        /// <param name="filePath">The file path.</param>
+        /// <param name="validateAgainst">A list of values to validate against.</param>
+        /// <returns>The valid contents of the file (or we exit the application).</returns>
+        /// <include file='AppData/XmlDoc/Core.Runtime.xml' path='Core.Runtime/Class[@name="TngnWbsvRuntimeSettings"]/TngnWbsvRuntimeSettings.New/*'/>
+        private static string GetTngnWbsvMode(string filePath, List<string> validateAgainst)
+        {
+            /* Trace Logs won't work here. */
+
+            string tngnWbsvMode = DuFile.ReadAndVerifyLocal(filePath, validateAgainst);
+
+            if (tngnWbsvMode.Contains("The contents of are not valid.")) // test
+            {
+                // Log this.
+                Service.Spin.DownImmediately();
+            }
+
+            //#DEVNOTE# Test to make sure this works if the contents are not valid.
+            return tngnWbsvMode;
+        }
+
+        /// <summary>Valid Tingen Web Service modes.</summary>
+        /// <returns>A list of valid Tingen Web Service modes.</returns>
+        private static List<string> ValidTngnWbsvModes()
+        {
+            return new List<string>()
+            {
+                "enabled",
+                "disabled",
+                "passthrough"
+            };
+        }
+```

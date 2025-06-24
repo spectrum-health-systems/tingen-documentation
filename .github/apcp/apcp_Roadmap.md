@@ -2,6 +2,11 @@
 
 > Internal apcp development only!
 
+* A random number generator determines if things are done:
+    * Status updates
+    * Framework checks
+    * temp file cleaning
+
 * WsvcMissingArgs.txt allows for placeholders that are replaced by the actual values.
 
 * All current functionality
