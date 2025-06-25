@@ -4,11 +4,12 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <member name="T:Outpost31.Core.Avatar.Environment">
-            <summary>Avatar environment details.</summary>
+        <member name="T:Outpost31.Core.Avatar.AvtrSystemInfo">
+            <summary>Avatar system information.</summary>
+            <remarks>TBD</remarks>
             <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
         </member>
-        <member name="P:Outpost31.Core.Avatar.Environment.AvtrSys">
+        <member name="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSys">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks>
                 The Avatar <i>System</i> determines what Avatar environment the Tingen Web Service will interface with.<br/>
@@ -23,7 +24,7 @@
             </remarks>
             <value>The Tingen Web Service works with the "LIVE" or "UAT" Avatar Systems.</value>
         </member>
-        <member name="P:Outpost31.Core.Avatar.Environment.AvtrSysCode">
+        <member name="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSysCode">
             <summary>The Avatar System Code used to login to Avatar.</summary>
             <remarks>
                 The Avatar <i>System Code</i> determines(in part) what Avatar functionality a user has access to while they are logged into an Avatar <i>System</i>.<br/>
@@ -32,27 +33,25 @@
                 In addition, the Avatar System Code may be similar or the same as the Avatar System.<br/>
             </remarks>
         </member>
-        <member name="T:Outpost31.Core.Avatar.ScriptParameter">
+        <member name="T:Outpost31.Core.Avatar.AvtrParameter">
             <summary>Script parameter logic</summary>
-            <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/avtr/script-param.md">The Script Parameter</seealso>
+            <remarks>TBD</remarks>
             <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
         </member>
-        <member name="P:Outpost31.Core.Avatar.ScriptParameter.Original">
+        <member name="P:Outpost31.Core.Avatar.AvtrParameter.Original">
             <summary>The original script parameter sent from Avatar.</summary>
         </member>
-        <member name="M:Outpost31.Core.Avatar.ScriptParameter.Request(Outpost31.Core.Session.WsvcSession)">
+        <member name="M:Outpost31.Core.Avatar.AvtrParameter.Request(Outpost31.Core.Session.WsvcSession)">
             <summary>Processes a request based on the parameters provided in the specified session.</summary>
-            <remarks>
-                None yet.
-            </remarks>
+            <remarks>TBD</remarks>
             <param name="wsvcSession">The session object containing the request parameters and runtime settings</param>
         </member>
-        <member name="M:Outpost31.Core.Avatar.ScriptParameter.CheckExistance(System.String)">
+        <member name="M:Outpost31.Core.Avatar.AvtrParameter.CheckExistance(System.String)">
             <summary>Validates whether the provided script parameter is null, empty, or consists only of white-space characters.</summary>
             <param name="origParam">The script parameter to validate.</param>
             <returns>A message indicating whether the provided script parameter exists or does not exist.</returns>
         </member>
-        <member name="T:Outpost31.Core.Avatar.OptionObject">
+        <member name="T:Outpost31.Core.Avatar.AvtrOptionObject">
             <summary>OptionObject logic.</summary>
             <remarks>
                 The OptionObject holds all of the content of and metadata describing the<br/>
@@ -60,23 +59,23 @@
              </remarks>
             <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
         </member>
-        <member name="P:Outpost31.Core.Avatar.OptionObject.Original">
+        <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Original">
             <summary>The original OptionObject sent from Avatar.</summary>
             <remarks>This is <i>never</i> modified during a Tingen Web Service session.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.OptionObject.Worker">
+        <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Worker">
             <summary>The OptionObject work is done.</summary>
             <remarks>This object is <i>potentially</i> modified during a Tingen Web Service session.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.OptionObject.Finalized">
+        <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Finalized">
             <summary>The finalized OptionObject that is returned to Avatar.</summary>
             <remarks>This is the finalized WorkOptObj, ready to be returned to Avatar.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.OptionObject.ExeAsm">
+        <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.ExeAsm">
             <summary>The executing Assembly name.</summary>
             <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
         </member>
-        <member name="M:Outpost31.Core.Avatar.OptionObject.Finalize(Outpost31.Core.Session.WsvcSession,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.Finalize(Outpost31.Core.Session.WsvcSession,System.Int32,System.String)">
             <summary>Finalize an OptionObject so it can be returned to Avatar.</summary>
             <remarks>
                 <para>
@@ -87,40 +86,40 @@
                         <item>Ensures that all required components of the OptionObject are valid</item>
                         <item>Assigns an error code to the object</item>
                         <item>Assigns an error message to the object</item>
-                    </list> 
+                    </list>
                 </para>
                 <para>
-            The <c>error code</c> must be one of the following:
-            <list type="bullet">
-                <item>
-                    <term>0</term>
-                    <description>No action taken</description>
-                </item>
-                <item>
-                    <term>1</term>
-                    <description>Returns an Error Message with an "Ok" button, and stops further processing of scripts.</description>
-                </item>
-                <item>
-                    <term>2</term>
-                    <description>Returns an Error Message with "OK" and "Cancel" buttons, and stops further scripts the user clicks "Cancel"</description>
-                </item>
-                <item>
-                    <term>3</term>
-                    <description>Returns an Error Message with "Ok" button</description>
-                </item>
-                <item>
-                    <term>4</term>
-                    <description> Returns an Error Message with "Yes" and "No" buttons and stops further scripts the user clicks "No"</description>
-                </item>
-                <item>
-                    <term>5</term>
-                    <description>Returns a URL to be opened in a new browser</description>
-                </item>
-                <item>
-                    <term>6</term>
-                    <description>Returns a form to be opened in Avatar</description>
-                </item>
-            </list>
+                The <c>error code</c> must be one of the following:
+                <list type="bullet">
+                    <item>
+                        <term>0</term>
+                        <description>No action taken</description>
+                    </item>
+                    <item>
+                        <term>1</term>
+                        <description>Returns an Error Message with an "Ok" button, and stops further processing of scripts.</description>
+                    </item>
+                    <item>
+                        <term>2</term>
+                        <description>Returns an Error Message with "OK" and "Cancel" buttons, and stops further scripts the user clicks "Cancel"</description>
+                    </item>
+                    <item>
+                        <term>3</term>
+                        <description>Returns an Error Message with "Ok" button</description>
+                    </item>
+                    <item>
+                        <term>4</term>
+                        <description> Returns an Error Message with "Yes" and "No" buttons and stops further scripts the user clicks "No"</description>
+                    </item>
+                    <item>
+                        <term>5</term>
+                        <description>Returns a URL to be opened in a new browser</description>
+                    </item>
+                    <item>
+                        <term>6</term>
+                        <description>Returns a form to be opened in Avatar</description>
+                    </item>
+                </list>
             </para>    
                 <example>
                 Examples of common error codes:
@@ -156,18 +155,27 @@
             <param name="errCode">The OptionObject error code.</param>
             <param name="errMsg">The OptionObject error message.</param>
         </member>
-        <member name="M:Outpost31.Core.Avatar.OptionObject.CheckExistance(ScriptLinkStandard.Objects.OptionObject2015)">
+        <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.CheckExistance(ScriptLinkStandard.Objects.OptionObject2015)">
             <summary> Validates whether the provided <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> instance exists.</summary>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> instance to validate.</param>
             <returns>A string indicating the validation result.</returns>
         </member>
-        <member name="M:Outpost31.Core.Blueprint.LogMsg.FormAccessDeniedGeneral">
+        <member name="T:Outpost31.Core.Blueprint.LogDetailBprt">
+            <summary>Blueprints for log details.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Blueprint.LogDetailBprt.RuntimeConfig(Outpost31.Core.Runtime.ConfigRuntime)">
+            <summary>The summary of the Tingen Web Service configuration at runtime.</summary>
+            <return>A summary of the Tingen Web Service configuration at runtime.</return>
+        </member>
+        <member name="T:Outpost31.Core.Blueprint.WsvcErrorBprt">
+            <summary>Blueprints for Tingen Web Service error messages.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Blueprint.WsvcErrorBprt.ModuleFormAccessDeniedGeneral">
             <summary>The Access Denied error code message.</summary>
             <returns>The Access Denied error code message.</returns>
         </member>
-        <member name="M:Outpost31.Core.Blueprint.LogDetail.Runtime(Outpost31.Core.Runtime.WsvcRuntime)">
-            <summary>The summary of the Tingen Web Service configuration at runtime.</summary>
-            <return>A summary of the Tingen Web Service configuration at runtime.</return>
+        <member name="T:Outpost31.Core.Blueprint.LogHeaderBprt">
+            <summary>Blueprints for log headers.</summary>
         </member>
         <member name="T:Outpost31.Core.Logger.LogBuilder">
             <summary>Generates various log components.</summary>
@@ -225,7 +233,7 @@
             diagnostic or monitoring purposes. The returned dictionary provides both the storage location and the
             content of the log entry for further processing or display.</remarks>
             <param name="logType">The type of log to generate.</param>
-            <param name="traceLevel">The <see cref="P:Outpost31.Core.Configuration.TngnWbsvConfiguration.TraceLevel"/> of the log</param>
+            <param name="traceLevel">The <see cref="!:Configuration.WsvcConfiguration.TraceLevel"/> of the log</param>
             <param name="avtrEnv">The Avatar environment that the Tingen Web Service has interfaced with.</param>
             <param name="exeAsm">The name of the assembly generating the log entry.</param>
             <param name="fromPath">The full path of the file being logged.</param>
@@ -436,119 +444,39 @@
         <member name="M:Outpost31.Core.Request.StandardRequest.FormAccessFromList(Outpost31.Core.Session.WsvcSession)">
             <summary>Form access from a list.</summary>
         </member>
-        <member name="T:Outpost31.Core.Runtime.WsvcRuntime">
-            <summary>Runtime settings for the Tingen Web Service.</summary>
-            <remarks>
-                <para>
-                    This class is used to set the runtime configurations for the Tingen Web Service.
-                </para>
-            </remarks><seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcVer">
-            <summary>The Tingen Web Service version number.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcBuild">
-            <summary>The Tingen Web Service build number.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcAvtrSys">
-            <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcMode">
-            <summary>The Tingen Web Service mode.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcDataPath">
-            <summary>The Tingen Web Service data path.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.TngnWsvcHostName">
-            <summary>The name of the machine running the Tingen Web Service.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.CurrentDate">
-            <summary>The current date in YYMMDD format.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Runtime.WsvcRuntime.CurrentTime">
-            <summary>The current time in HHMMSS format.</summary>
-        </member>
-        <member name="M:Outpost31.Core.Runtime.WsvcRuntime.New(System.String,System.String)">
-            <summary>Creates a new instance of the RuntimeSettings class.</summary>
-            <returns>An object containing the runtime settings for the Tingen Web Service.</returns>
-            <remarks>
-                <para>
-                    This method sets all runtime settings for the Tingen Web Service.
-                </para>
-                <para>                 
-                    The following runtime settings are loaded from external files:
-                    <list type="bullet">
-                        <item>
-                            <b>tngnWbsvEnv</b><br />
-                            The Avatar environment that the Tingen Web Service will interface with.<br />
-                            This value is stored in the <c>.\AppData\Runtime\TngnWbsv.Env</c> file,<br />
-                            and must be a valid Avatar environment.<br />
-                            <i>If this file does not exist, the Tingen Web Service will not start.</i><br />
-                        </item>
-                        <item>
-                            <b>tngnWbsvEnvDataPath</b><br />
-                            The path on the machine that hosts the Tingen Web Service, where all data<br />
-                            required by the Tingen Web Service will be stored. This is per-environment,<br />
-                            and the first part of this path is hardcoded as <c>C:\Tingen_Data\</c>, so<br />
-                            the directory must exist on the hosts machine.
-                        </item>
-                        <item>
-                            <b>tngnWbsvMode</b><br />
-                            The Avatar environment that the Tingen Web Service will interface with.<br />
-                            This value is stored in the <c>.\AppData\Runtime\TngnWbsv.Env</c> file,<br />
-                            and must be a valid Avatar environment.<br />
-                            <i>If this file does not exist, the Tingen Web Service will not start.</i><br />
-                        </item>
-                    </list>
-                </para>
-                <para>
-                    In addition to the above, this method also sets the Tingen Web Service <c>build</c> number,<br />
-                    which is in <c>YYMMDD</c> format. This value must be updated whenever the Tingen Web Service<br />
-                    is deployed to the host machine.
-                </para>
-            </remarks>
-        </member>
-        <member name="M:Outpost31.Core.Runtime.WsvcRuntime.GetTngnWbsvMode(System.String,System.Collections.Generic.List{System.String})">
-            <summary>Get the contents of a file, and validate it.</summary>
-            <param name="filePath">The file path.</param>
-            <param name="validateAgainst">A list of values to validate against.</param>
-            <returns>The valid contents of the file (or we exit the application).</returns>
-            <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Runtime.xml" path="Core.Runtime/Class[@name=&quot;TngnWbsvRuntimeSettings&quot;]/TngnWbsvRuntimeSettings.New/*" />
-        </member>
-        <member name="M:Outpost31.Core.Runtime.WsvcRuntime.ValidTngnWbsvModes">
-            <summary>Valid Tingen Web Service modes.</summary>
-            <returns>A list of valid Tingen Web Service modes.</returns>
-        </member>
-        <member name="T:Outpost31.Core.Configuration.TngnWbsvConfiguration">
-            <summary>Runtime setting logic for the Tingen Web Service.</summary>
-            <remarks>
-                <note title="About this class">
-                    This class handles all configuration logic for the Tingen Web Service.<br/>
-                    <list type="bullet">
-                        <item>Should not be used in production</item>
-                        <item>Is most likely super ugly</item>
-                        <item>Probably doesn't follow best practices</item>
-                    </list>
-                </note>
-            </remarks>
+        <member name="T:Outpost31.Core.Runtime.ConfigRuntime">
+            <summary>Runtime configuration logic.</summary>
+            <remarks>TBD.</remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
         </member>
-        <member name="M:Outpost31.Core.Configuration.TngnWbsvConfiguration.New(System.String)">
-            <summary>Load the runtime settings for the Tingen Web Service.</summary>
-            <param name="tngnWbsvVersion">The Tingen Web Service version</param>
-            <returns>Runtime settings for the Tingen Web Service.</returns>
-            <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Runtime.xml" path="Core.Runtime/Class[@name=&quot;TngnWbsvConfiguration&quot;]/ClassDescription/*" />
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.WsvcVer">
+            <summary>The current version of the Tingen Web Service.</summary>
         </member>
-        <member name="M:Outpost31.Core.Configuration.TngnWbsvConfiguration.TngnWbsvConfigSummary(Outpost31.Core.Configuration.TngnWbsvConfiguration,System.String)">
-            <summary>The summary of the Tingen Web Service configuration at runtime.</summary>
-            <return>A summary of the Tingen Web Service configuration at runtime.</return>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.WsvcBuild">
+            <summary>The current build number of the Tingen Web Service.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.AvtrSys">
+            <summary>The Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSys"/>  System that the Tingen Web Service will interface with.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.WsvcMode">
+            <summary>The Tingen Web Service mode.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.WsvcDataPath">
+            <summary>The Tingen Web Service data path.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.WsvcHostName">
+            <summary>The name of the machine running the Tingen Web Service.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.CurrentDate">
+            <summary>The current date in YYMMDD format.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Runtime.ConfigRuntime.CurrentTime">
+            <summary>The current time in HHMMSS format.</summary>
         </member>
         <member name="T:Outpost31.Core.Session.WsvcSession">
-            <summary> Session logic for the Tingen Web Service.</summary>
-        </member>
-        <member name="P:Outpost31.Core.Session.WsvcSession.WsvcConfig">
-            <summary>The Tingen Web Service configuration object.</summary>
-            <remarks>The TngnWbsvConfig object contains all runtime and external configuration information.</remarks>
+             <summary>Session logic for the Tingen Web Service.</summary>
+             <remarks>TBD</remarks>
+            <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
         </member>
         <member name="P:Outpost31.Core.Session.WsvcSession.OptObj">
             <summary>Gets or sets the optional object associated with the avatar.</summary>
@@ -556,15 +484,19 @@
         <member name="P:Outpost31.Core.Session.WsvcSession.ScriptParam">
             <summary>The ScriptLink Script Parameter sent from Avatar.</summary>
         </member>
-        <member name="P:Outpost31.Core.Session.WsvcSession.AvtrEnv">
+        <member name="P:Outpost31.Core.Session.WsvcSession.AvtrSysInfo">
             <summary>The Avatar System Code that this instance of the Tingen Web Service will interface with.</summary>
         </member>
         <member name="M:Outpost31.Core.Session.WsvcSession.New(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">
             <summary>Creates and initializes a new TngnWbsvSession object</summary>
-            <param name="sentOptObj">The OptionObject that is sent from Avatar.</param>
-            <param name="sentScriptParam">The Script Parameter that is sent from Avatar.</param>
+            <param name="origOptObj">The OptionObject that is sent from Avatar.</param>
+            <param name="origScriptParam">The Script Parameter that is sent from Avatar.</param>
             <param name="wsvcVer">The current version of the Tingen Web Service.</param>
             <returns>A new Tingen Web Service session object.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Utility.Du.DuDirectory.VerifyParent(System.String)">
+            <summary>Verify a parent directory of a file exists.</summary>
+            <param name="fullPath">The full path of a file.</param>
         </member>
         <member name="T:Outpost31.Core.Utility.Du.DuFile">
             <summary>Logic related to files input/output.</summary>
@@ -634,28 +566,6 @@
                 </para>
             </remarks>
             <returns>The contents of the file as a JSON object.</returns>
-        </member>
-        <member name="T:Outpost31.Core.Service.Spin">
-            <summary>Startup/shutdown logic for the Tingen Web Service.</summary>
-            <remarks>
-                <note title="About this class">
-                    Starup/shutdown class for the Tingen Web Service.
-                </note>
-            </remarks><seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
-        </member>
-        <member name="P:Outpost31.Core.Service.Spin.ExeAsm">
-            <summary>The executing Assembly name.</summary>
-            <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
-        </member>
-        <member name="M:Outpost31.Core.Service.Spin.Up(Outpost31.Core.Session.WsvcSession,ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">
-            <summary>Spin up a new instance of the Tingen Web Service.</summary>
-            <param name="sentOptObj"></param>
-            <param name="sentScriptParam"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Outpost31.Core.Service.Spin.Down">
-            <summary>Spin down the Tingen Web Service.</summary>
-            <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Runtime.xml" path="Core.Runtime/Class[@name=&quot;Spin&quot;]/Down/*" />
         </member>
         <member name="M:Outpost31.Module.Admin.Parse.Request(Outpost31.Core.Session.WsvcSession)">
             <summary>Admin requests.</summary>

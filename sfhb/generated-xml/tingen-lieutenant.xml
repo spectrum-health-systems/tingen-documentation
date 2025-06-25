@@ -137,7 +137,7 @@
             </remarks>
             <value>The default value is "<c>C:\Tingen\UAT</c>"</value>
         </member>
-        <member name="M:TingenLieutenant.WebService.Deploy.DeploymentProcess(System.String,System.Boolean)">
+        <member name="M:TingenLieutenant.WebService.Deploy.DeploymentProcess(System.String,System.String,System.Boolean)">
             <summary>Handles the deployment process from start to finish.</summary>
             <param name="configPath">The path to the configuration file.</param>
             <param name="useCli">Determines if the message will be displayed on the CLI or the GUI.</param>

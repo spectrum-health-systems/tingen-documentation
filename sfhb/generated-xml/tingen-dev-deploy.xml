@@ -11,7 +11,7 @@
                 from the <c>TingenLieutenant.WebService.Deploy</c> namespace.
             </remarks>
         </member>
-        <member name="M:TingenDevDeploy.Program.Main">
+        <member name="M:TingenDevDeploy.Program.Main(System.String[])">
             <summary>The main entry point for Tingen DevDeploy.</summary>
             <remarks>
                 The configuration file path is hard coded to "<c>./AppData/devdeploy-conf.json</c>".<br/>
