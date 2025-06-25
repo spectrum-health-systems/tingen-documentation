@@ -6,7 +6,7 @@
 
   ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
 
-  ![Version 2.2](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/verel/v/v2.2.png)
+  ![Release](https://img.shields.io/badge/release-v2.2-teal)
 
   ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
 
