@@ -20,14 +20,24 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 <!-- u240820 -->
 ```
 
+# COMMENTS
+
+# Class links to documentation
+
+```csharp
+/// <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
+/// <seealso href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">Tingen API Documentation</seealso>
+```
+
 # CODE
 
 ## Executing Assembly name
 
 ```csharp
-/// <summary>The executing Assembly name.</summary>
-/// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
-public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+/// <summary>The executing assembly name.</summary>
+/// <remarks>A required log component, defined here so it can be used throughout the class.</remarks>
+public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly()
+                                                    .GetName().Name;
 ```
 
 ## Creating a Primeval Log
