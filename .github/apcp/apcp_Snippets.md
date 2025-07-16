@@ -36,8 +36,7 @@ Guidelines for the following can be found [here](https://github.com/APrettyCoolP
 ```csharp
 /// <summary>The executing assembly name.</summary>
 /// <remarks>A required log component, defined here so it can be used throughout the class.</remarks>
-public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly()
-                                                    .GetName().Name;
+public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 ```
 
 ## Creating a Primeval Log
