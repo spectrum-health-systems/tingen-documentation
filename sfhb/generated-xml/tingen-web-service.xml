@@ -6,7 +6,6 @@
     <members>
         <member name="T:TingenWebService.ProjectInfo">
             <summary>Provides additional information about the Tingen Web Service.</summary>
-            <remarks>
                  <remarks>
             <b>About the Tingen Web Service</b><br />
             Netsmart's Avatar™ is a behavioral health EHR that offers a recovery-focused suite of solutions that<br />
@@ -21,7 +20,6 @@
                 quickly and efficiently.
             </remarks><br />
                  <b>Documentation</b><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br /><see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see><br />
-            </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
             <summary>The entry class for the Tingen Web Service.</summary>
