@@ -20,11 +20,13 @@
                 Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't<br />
                 included in the official release, and provides a solid foundation for building additional functionality<br />
                 quickly and efficiently<br />
-                <br />
+            </MoreRemarks><br />
+                <MoreRemarks>
                 <b>Associated projects</b><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see> (front-end)<br />
                 <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see> (back-end)<br />
-                <br />
+            </MoreRemarks><br />
+                <MoreRemarks>
                 <b>Documentation</b><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
