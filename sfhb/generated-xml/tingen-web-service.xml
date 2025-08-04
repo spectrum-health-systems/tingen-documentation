@@ -7,29 +7,9 @@
         <member name="T:TingenWebService.ProjectInfo">
             <summary>Provides additional information about the Tingen Web Service.</summary>
             <remarks>
-                 <remarks>
-                <b>About the Tingen Web Service</b><br />
-                Netsmart's Avatar™ is a behavioral health EHR that offers a recovery-focused suite of solutions that<br />
-                leverage real-time analytics and clinical decision support to drive value-based care.<br />
-                <br />
-                While Avatar™ is a robust platform, it isn't perfect. The good news is that you can extend myAvatar™<br />
-                functionality via Netsmart's Avatar™ Web Services, and/or custom web services that are written by other<br />
-                Avatar™ users.<br />
-                <br />
-                Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't<br />
-                included in the official release, and provides a solid foundation for building additional functionality<br />
-                quickly and efficiently.
-            </remarks><br />
+                 <b>About the Tingen Web Service</b><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                  <br />
-                 <remarks>
-                <b>Documentation</b><br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see>
-                <br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>
-                <br />
-                <see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see>
-                <br />
-            </remarks>
+                 <b>Documentation</b><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br /><see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see><br />
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
@@ -45,9 +25,7 @@
                      <item><see cref="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)" /></item>
                   </list>
                 </para>
-                <remarks>
-                For more information, please see <see cref="T:TingenWebService.ProjectInfo" />.
-            </remarks>
+                <see cref="T:TingenWebService.ProjectInfo" />
             </remarks>
         </member>
         <member name="P:TingenWebService.TingenWebService.ExeAsm">
