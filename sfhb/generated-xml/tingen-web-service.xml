@@ -8,7 +8,7 @@
             <summary>Provides additional information about the Tingen Web Service.</summary>
             <remarks>
                  <b>About the Tingen Web Service</b><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                 <b>Documentation</b><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br /><see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see><br />
+                 <b>Documentation</b><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project!</see><br /><see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br /><see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see><br />
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
