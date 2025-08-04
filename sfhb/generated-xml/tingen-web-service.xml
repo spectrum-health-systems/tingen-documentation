@@ -20,7 +20,7 @@
                 included in the official release, and provides a solid foundation for building additional functionality<br />
                 quickly and efficiently<br />
                 <br />
-                <b>Repositories</b><br />
+                <b>Associated projects</b><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see> (front-end)<br />
                 <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see> (back-end)<br />
                 <br />
@@ -43,7 +43,9 @@
                      <item><see cref="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)" /></item>
                   </list>
                 </para>
-                <see cref="T:TingenWebService.ProjectInfo" />
+                <remarks>
+                For more information, please see <see cref="T:TingenWebService.ProjectInfo" />.
+            </remarks>
             </remarks>
         </member>
         <member name="P:TingenWebService.TingenWebService.ExeAsm">
