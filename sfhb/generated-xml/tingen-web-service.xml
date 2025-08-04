@@ -23,11 +23,11 @@
                  <br />
                  <remarks>
                 <b>Documentation</b><br />
-                <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see>
                 <br />
-                <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</seealso>
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>
                 <br />
-                <seealso href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</seealso>
+                <see href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">API Documentation</see>
                 <br />
             </remarks>
             </remarks>
