@@ -3,6 +3,7 @@
 | Abbreviation | Meaning | Notes |
 | ------------ | ------- | ----- |
 | Avtr | Avatar | |
-| ExeAsm | Name of the Executing Assembly | |
-| Wsvc | web service | |
-| WsvcVer | The web service version | |
+| AvtrSysy | Avatar System | |
+| ExeAsm | Executing Assembly name | |
+| Wsvc | Web Service | |
+| WsvcVer | Web Service version | |
