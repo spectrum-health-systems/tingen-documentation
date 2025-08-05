@@ -4,29 +4,29 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <member name="T:Outpost31.Core.Avatar.AvtrSystemInfo">
-            <summary>Logic for Avatar system/system codes/environments/etc.</summary>
-            <remarks>TBD</remarks>
-            <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
-            <seealso href="https://spectrum-health-systems.github.io/tingen-documentation-project/api">Tingen API Documentation</seealso>
-        </member>
-        <member name="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSys">
-            <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
+        <member name="T:Outpost31.Core.Avatar.AvtrSystem">
+            <summary>Logic for Avatar systems and system codes.</summary>
             <remarks>
-                The Avatar <i>System</i> determines what Avatar environment the Tingen Web Service will interface with.<br/>
-                <br/>
-                Netsmart defines the following Avatar Systems when deploying Avatar at an organization:
-                <list type="bullet">
-                    <item>LIVE</item>
-                    <item>UAT</item>
-                    <item>SBOX</item>
-                    <item>BUILD</item>
-                </list>
+                The Tingen Web Service refers to Avatar <see cref="T:Outpost31.Core.Avatar.AvtrSystem"> <i>System</i> </see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"> <i>System Code</i></see>.<br />
+                <br />
+                While both contain the word <i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
+                <br />
+                <para>
+                For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSys">
+            <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
+            <remarks>
+                <para>
+                TODO - Add description.
+            </para>
             </remarks>
             <value>The Tingen Web Service works with the <c>LIVE</c> or <c>UAT</c> Avatar Systems.</value>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSysCode">
-            <summary>The Avatar System Code used to login to Avatar.</summary>
+        <member name="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode">
+            <summary>The Avatar <i>System Code</i> used to login to Avatar.</summary>
             <remarks>
                 The Avatar <i>System Code</i> determines(in part) what Avatar functionality a user has access to while they are logged into
                 an Avatar <i>System</i>.<br/>
@@ -41,15 +41,21 @@
                 The Avatar Script Parameter is a string that is sent from Avatar to the Tingen Web Service, and contains<br />
                 the information that the Tingen Web Service needs to do it's work.<br />
                 <br />
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Common.xml" path="Common/Class[@name=&quot;Parameter&quot;]/Description/*" /><br />
+                <para>
+                TODO - Add description.
+            </para><br />
                 <br />
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Common.xml" path="Common/Class[@name=&quot;Parameter&quot;]/Example/*" /><br />
+                <para>
+                TODO - Add examples.
+            </para><br />
                 <br />
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Common.xml" path="Common/Class[@name=&quot;Parameter&quot;]/ListOf/*" />&gt;<br />
+                <para>
+                TODO - Add a link to a list of valid parameters. (probably a link to the Avatar documentation)
+            </para><br />
                 <br />
-                <MoreRemarks>
+                <para>
                 For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
-            </MoreRemarks>
+            </para>
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrParameter.Original">
@@ -58,9 +64,9 @@
         <member name="M:Outpost31.Core.Avatar.AvtrParameter.Request(Outpost31.Core.Session.WsvcSession)">
             <summary>Processes a request based on the parameters provided in the specified session.</summary>
             <remarks>
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.xml" path="Core/Class[@name=&quot;Avatar.AvtrParameter&quot;]/Description/*" /><br />
-                <br />
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.xml" path="Core/Class[@name=&quot;Avatar.AvtrParameter&quot;]/Example/*" /><br />
+                <para>
+                TODO - Add a link to a list of valid parameters. (probably a link to the Avatar documentation)
+            </para><br />
             </remarks>
             <param name="wsvcSession">The session object containing the request parameters and runtime settings</param>
         </member>
@@ -74,9 +80,9 @@
             <remarks>
                 An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> contains metadata of an Avatar form.<br />
                 <br />
-                <MoreRemarks>
+                <para>
                 For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
-            </MoreRemarks>
+            </para>
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Original">
@@ -105,11 +111,11 @@
             <remarks>
                 An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> must be finalized before being returned to Avatar.<br />
                 <br />
-                The <see cref="M:ScriptLinkStandard.Objects.OptionObject2015.ToReturnOptionObject(System.Int32,System.String)" /> method:
+                This method finalizes an OptionObject by:
                 <list type="bullet">
-                    <item>Ensures that all required components of the OptionObject are valid</item>
-                    <item>Assigns an <i>error code</i> to the object</item>
-                    <item>Assigns an <i>error message</i> to the object</item>
+                    <item>Ensuring that all required components of the OptionObject are valid</item>
+                    <item>Assigning an <i>error code</i> to the OptionObject</item>
+                    <item>Assigning an <i>error message</i> to the OptionObject</item>
                 </list>
                 <para>
                 The <c>error code</c> must be one of the following:
@@ -476,7 +482,7 @@
             <summary>The current build number of the Tingen Web Service.</summary>
         </member>
         <member name="P:Outpost31.Core.Runtime.RuntimeConfig.AvtrSys">
-            <summary>The Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystemInfo.AvtrSys"/>  System that the Tingen Web Service will interface with.</summary>
+            <summary>The Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSys"/>  System that the Tingen Web Service will interface with.</summary>
         </member>
         <member name="P:Outpost31.Core.Runtime.RuntimeConfig.WsvcMode">
             <summary>The Tingen Web Service mode.</summary>
@@ -609,18 +615,18 @@
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
             <remarks>
-                <MoreRemarks>
+                <para>
                 <b>About Outpost31</b><br />
                 Outpost31 is a class library that provides the back-end functionality for the Tingen Web Service.
-            </MoreRemarks><br />
+            </para><br />
                 <br />
-                <MoreRemarks>
+                <para>
                 <b>Associated projects</b><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see> (front-end)<br />
                 <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see> (back-end)<br />
-            </MoreRemarks><br />
+            </para><br />
                 <br />
-                <MoreRemarks>
+                <para>
                 <b>Documentation</b>
                 <br />
                 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see>
@@ -628,7 +634,7 @@
                 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>
                 <br />
                 <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
-            </MoreRemarks><br />
+            </para><br />
             </remarks>
         </member>
     </members>
