@@ -101,7 +101,7 @@
                 This is defined at the start of each class, so it can be used at any time that a log needs to be created.<br />
             </remarks>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.Finalize(Outpost31.Core.Session.WsvcSession,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.ToReturn(Outpost31.Core.Session.WsvcSession,System.Int32,System.String)">
             <summary>Finalize an <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> so it can be returned to Avatar.</summary>
             <remarks>
                 An OptionObject must be finalized before being returned to Avatar.<br />
@@ -145,7 +145,7 @@
                     </item>
                 </list>
             </para><example>
-                <b>Common error codes:</b>
+                <b>Common error codes</b>
                 <list type="bullet">
                     <item>
                         <term>1</term>
@@ -173,16 +173,80 @@
                     </item>
                 </list>
             </example>
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/AvtrOptionObject.xml" path="AvtrOptionObject/Class[@name=&quot;OptionObject&quot;]/ErrorCode.Example/*" />
             </remarks>
-            <param name="wsvcSession">The <see cref="T:Outpost31.Core.Session.WsvcSession">Tingen session</see> instance.</param>
-            <param name="errorCode">The OptionObject error code.</param>
-            <param name="errorMessage">The OptionObject error message.</param>
+            <param name="wsvcSession">The Tingen Web Service <see cref="T:Outpost31.Core.Session.WsvcSession">session</see> instance.</param>
+            <param name="errorCode">
+                The OptionObject error code.
+                <para>
+                <b>Error codes</b>
+                <list type="bullet">
+                    <item>
+                        <term>0</term>
+                        <description>No action taken</description>
+                    </item>
+                    <item>
+                        <term>1</term>
+                        <description>Returns an Error Message with an "Ok" button, and stops further processing of scripts.</description>
+                    </item>
+                    <item>
+                        <term>2</term>
+                        <description>Returns an Error Message with "OK" and "Cancel" buttons, and stops further scripts the user clicks "Cancel"</description>
+                    </item>
+                    <item>
+                        <term>3</term>
+                        <description>Returns an Error Message with "Ok" button</description>
+                    </item>
+                    <item>
+                        <term>4</term>
+                        <description> Returns an Error Message with "Yes" and "No" buttons and stops further scripts the user clicks "No"</description>
+                    </item>
+                    <item>
+                        <term>5</term>
+                        <description>Returns a URL to be opened in a new browser</description>
+                    </item>
+                    <item>
+                        <term>6</term>
+                        <description>Returns a form to be opened in Avatar</description>
+                    </item>
+                </list>
+            </para><example>
+                <b>Common error codes</b>
+                <list type="bullet">
+                    <item>
+                        <term>1</term>
+                        <description>
+                            Typically used when you want to display some information to the user, and prevent them from taking an action.<br />
+                            <br />
+                            For example, you want to let the user know that a field contains invalid data, they cannot proceed until they correct it.
+                        </description>
+                    </item>
+                    <item>
+                        <term>3</term>
+                        <description>
+                            Typically used when you would like to notify the user of something, but it is not critical to their current task.<br />
+                            <br />
+                            For example, you want to wish the users a happy birthday!.
+                        </description>
+                    </item>
+                    <item>
+                        <term>4</term>
+                        <description>
+                            A combination of the above two, where you want to display a message to the user, but also allow them to take an action.<br />
+                            <br />
+                            For example, you want to let the user know that there is a potential misspelling in their text, but they can choose to ignore it and proceed anyway.
+                        </description>
+                    </item>
+                </list>
+            </example>.
+             </param>
+            <param name="errorMessage">The OptionObject error message to display to the user.</param>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.CheckExistance(ScriptLinkStandard.Objects.OptionObject2015)">
-            <summary> Validates whether the provided OptionObject instance exists.</summary>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> instance to validate.</param>
-            <returns>A string indicating the validation result.</returns>
+            <summary>Determines whether the specified <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> instance exists.</summary>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> instance to validate. This parameter can be <c>null</c>.</param>
+            <returns>A <see cref="T:System.String"/> indicating the existence of the <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> instance.  Returns "An
+            OptionObject was not sent." if <paramref name="origOptObj"/> is <c>null</c>;  otherwise, returns "An
+            OptionObject was sent.".</returns>
         </member>
         <member name="T:Outpost31.Core.Blueprint.LogTemplate">
             <summary>Blueprints for log details.</summary>
