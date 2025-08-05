@@ -7,7 +7,7 @@
         <member name="T:Outpost31.Core.Avatar.AvtrSystem">
             <summary>Logic for Avatar systems and system codes.</summary>
             <remarks>
-                The Tingen Web Service refers to Avatar <see cref="T:Outpost31.Core.Avatar.AvtrSystem"> <i>System</i> </see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"> <i>System Code</i></see>.<br />
+                The Tingen Web Service refers to Avatar <see cref="T:Outpost31.Core.Avatar.AvtrSystem"> <i>System</i> </see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"> <i>System <b>Code</b></i></see>.<br />
                 <br />
                 While both contain the word <i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
                 <para>
@@ -16,18 +16,16 @@
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSys">
-            <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
+            <summary>The Avatar <see cref="T:Outpost31.Core.Avatar.AvtrSystem"> <i>System</i> </see> that the Tingen Web Service will interface with.</summary>
             <remarks>
-                <para>
-                TODO - Add description.
-            </para>
+                Common Avatar <i>Systems</i> are <c>LIVE</c>, <c>UAT</c>, <c>SBOX</c>, <c>BUILD</c>.
             </remarks>
             <value>The Tingen Web Service works with the <c>LIVE</c> or <c>UAT</c> Avatar Systems.</value>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode">
-            <summary>The Avatar <i>System Code</i> used to login to Avatar.</summary>
+            <summary>The Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"> <i>System <b>Code</b></i></see> used to login to Avatar.</summary>
             <remarks>
-                The Avatar <i>System Code</i> determines(in part) what Avatar functionality a user has access to while they are logged into
+                The Avatar <i>System Code</i> determines (in part) what Avatar functionality a user has access to while they are logged into
                 an Avatar <i>System</i>.<br/>
                 <br/>
                 Organizations may have many different Avatar <i>System Codes</i>, but only a few Avatar <i>Systems</i>. In addition, the
@@ -37,7 +35,7 @@
         <member name="T:Outpost31.Core.Avatar.AvtrParameter">
             <summary>Logic for the Avatar script parameter.</summary>
             <remarks>
-                 The Script Parameter sent from Avatar contains all of the information that the Tingen Web Service needs to do what it needs to do.<br />
+                 The Script Parameter sent from Avatar contains all of the information that the Tingen Web Service needs to do work.<br />
                 <para>
                 The script parameter comprised of the following components:<br />
                 <list type="bullet">
@@ -56,27 +54,31 @@
                 <list type="bullet">
                     <item><c>Admin.Status.Current</c></item>
                     <item><c>FormAccess.Deny.SysCodeDoc</c></item>
-                    <item><c>Another.Request.For.Tingen</c></item>
+                    <item><c>_pRequest.Under.Development</c></item>
                 </list>
-                Script parameters must one of the <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/valid-parameters.md"> current valid parameters</see>
              </para><br />
+                <para>     
+                Script parameters must one of the <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/valid-parameters.md"> current valid parameters.</see>
+            </para>
                 <para>
                 For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrParameter.Original">
-            <summary>The original script parameter sent from Avatar.</summary>
+            <summary>The original <see cref="T:Outpost31.Core.Avatar.AvtrParameter">script parameter</see> sent from Avatar.</summary>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvtrParameter.Request(Outpost31.Core.Session.WsvcSession)">
-            <summary>Processes a request based on the parameters provided in the specified session.</summary>
+            <summary>Parse a script parameter passed from Avatar.</summary>
             <remarks>
-                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/AvtrParameter.xml" path="AvtrParameter/Class[@name=&quot;Parameter&quot;]/ListOf/*" /><br />
+                <para>     
+                Script parameters must one of the <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/valid-parameters.md"> current valid parameters.</see>
+            </para>
             </remarks>
-            <param name="wsvcSession">The session object containing the request parameters and runtime settings</param>
+            <param name="wsvcSession">The Tingen Web Service <see cref="T:Outpost31.Core.Session.WsvcSession">session</see> object containing the request parameters and runtime settings</param>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvtrParameter.CheckExistence(System.String)">
-            <summary>Validates whether the provided script parameter is null, empty, or consists only of white-space characters.</summary>
+            <summary>Validates whether the provided <see cref="T:Outpost31.Core.Avatar.AvtrParameter">script parameter</see> is null, empty, or consists only of white-space characters.</summary>
             <param name="origParam">The script parameter to validate.</param>
             <returns>A message indicating whether the provided script parameter exists or does not exist.</returns>
         </member>
