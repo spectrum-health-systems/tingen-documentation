@@ -10,9 +10,8 @@
                 The Tingen Web Service refers to Avatar <see cref="T:Outpost31.Core.Avatar.AvtrSystem"> <i>System</i> </see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"> <i>System Code</i></see>.<br />
                 <br />
                 While both contain the word <i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
-                <br />
                 <para>
-                For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -40,21 +39,17 @@
             <remarks>
                 The Avatar Script Parameter is a string that is sent from Avatar to the Tingen Web Service, and contains<br />
                 the information that the Tingen Web Service needs to do it's work.<br />
-                <br />
                 <para>
                 TODO - Add description.
             </para><br />
-                <br />
                 <para>
                 TODO - Add examples.
             </para><br />
-                <br />
                 <para>
                 TODO - Add a link to a list of valid parameters. (probably a link to the Avatar documentation)
             </para><br />
-                <br />
                 <para>
-                For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -76,26 +71,26 @@
             <returns>A message indicating whether the provided script parameter exists or does not exist.</returns>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvtrOptionObject">
-            <summary>Logic for Avatar OptionObjects.</summary>
+            <summary>Logic for Avatar <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObjects</see>.</summary>
             <remarks>
-                An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> contains metadata of an Avatar form.<br />
+                An OptionObject contains metadata of an Avatar form.<br />
                 <br />
                 <para>
-                For more information, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Original">
-            <summary>The original OptionObject sent from Avatar.</summary>
-            <remarks>This <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> is <i>never</i> modified during a Tingen Web Service session.</remarks>
+            <summary>The original <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> sent from Avatar.</summary>
+            <remarks>This OptionObject is <i>never</i> modified during a Tingen Web Service session.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Worker">
-            <summary>The OptionObject where work is done.</summary>
-            <remarks>This <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> is <i>potentially</i> modified during a Tingen Web Service session.</remarks>
+            <summary>The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> where work is done.</summary>
+            <remarks>This OptionObject is <i>potentially</i> modified during a Tingen Web Service session.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.Finalized">
-            <summary>The finalized OptionObject that is returned to Avatar.</summary>
-            <remarks>This is the finalized <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see>, ready to be returned to Avatar.</remarks>
+            <summary>The finalized <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> that is returned to Avatar.</summary>
+            <remarks>This is the finalized OptionObject, ready to be returned to Avatar.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrOptionObject.ExeAsmName">
             <summary>The executing assembly name.</summary>
@@ -107,9 +102,9 @@
             </remarks>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvtrOptionObject.Finalize(Outpost31.Core.Session.WsvcSession,System.Int32,System.String)">
-            <summary>Finalize an OptionObject so it can be returned to Avatar.</summary>
+            <summary>Finalize an <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> so it can be returned to Avatar.</summary>
             <remarks>
-                An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> must be finalized before being returned to Avatar.<br />
+                An OptionObject must be finalized before being returned to Avatar.<br />
                 <br />
                 This method finalizes an OptionObject by:
                 <list type="bullet">
@@ -118,7 +113,7 @@
                     <item>Assigning an <i>error message</i> to the OptionObject</item>
                 </list>
                 <para>
-                The <c>error code</c> must be one of the following:
+                <b>Error codes</b>
                 <list type="bullet">
                     <item>
                         <term>0</term>
@@ -149,9 +144,8 @@
                         <description>Returns a form to be opened in Avatar</description>
                     </item>
                 </list>
-            </para>
-                <example>
-                Examples of common error codes:
+            </para><example>
+                <b>Common error codes:</b>
                 <list type="bullet">
                     <item>
                         <term>1</term>
@@ -179,6 +173,7 @@
                     </item>
                 </list>
             </example>
+                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/AvtrOptionObject.xml" path="AvtrOptionObject/Class[@name=&quot;OptionObject&quot;]/ErrorCode.Example/*" />
             </remarks>
             <param name="wsvcSession">The <see cref="T:Outpost31.Core.Session.WsvcSession">Tingen session</see> instance.</param>
             <param name="errorCode">The OptionObject error code.</param>
@@ -617,7 +612,7 @@
             <remarks>
                 <para>
                 <b>About Outpost31</b><br />
-                Outpost31 is a class library that provides the back-end functionality for the Tingen Web Service.
+                Outpost31 is a class library that provides the back-end functionality for the <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see>.
             </para><br />
                 <para>
                 <b>Associated projects</b><br />
