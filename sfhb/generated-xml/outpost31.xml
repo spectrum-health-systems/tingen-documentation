@@ -38,9 +38,28 @@
             <summary>Logic for the Avatar script parameter.</summary>
             <remarks>
                  The Script Parameter sent from Avatar contains all of the information that the Tingen Web Service needs to do what it needs to do.<br />
-                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
-                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
-                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
+                <para>
+                The script parameter comprised of the following components:<br />
+                <list type="bullet">
+                    <item>The requested <c>Module</c> (the <i>namespace</i>)</item>
+                    <item>The requested <c>Command</c> (the <i>class</i>)</item>
+                    <item>The requested <c>Request</c> (the <i>method</i>)</item>
+                    <item>The requested <c>Option</c></item>
+                </list>
+                In addition:
+                <list type="bullet">
+                    <item>The maximum length of a script parameter is 50 characters</item>
+                    <item>Components are separated by a "<c>.</c>"</item>
+                    <item>Prototype parameters start with "<c>_p</c>"</item>
+                </list>
+                Examples:
+                <list type="bullet">
+                    <item><c>Admin.Status.Current</c></item>
+                    <item><c>FormAccess.Deny.SysCodeDoc</c></item>
+                    <item><c>Another.Request.For.Tingen</c></item>
+                </list>
+                Script parameters must one of the <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/valid-parameters.md"> current valid parameters</see>
+             </para><br />
                 <para>
                 For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
@@ -52,7 +71,7 @@
         <member name="M:Outpost31.Core.Avatar.AvtrParameter.Request(Outpost31.Core.Session.WsvcSession)">
             <summary>Processes a request based on the parameters provided in the specified session.</summary>
             <remarks>
-                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
+                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/AvtrParameter.xml" path="AvtrParameter/Class[@name=&quot;Parameter&quot;]/ListOf/*" /><br />
             </remarks>
             <param name="wsvcSession">The session object containing the request parameters and runtime settings</param>
         </member>
