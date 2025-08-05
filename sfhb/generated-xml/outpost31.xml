@@ -619,13 +619,11 @@
                 <b>About Outpost31</b><br />
                 Outpost31 is a class library that provides the back-end functionality for the Tingen Web Service.
             </para><br />
-                <br />
                 <para>
                 <b>Associated projects</b><br />
                 <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see> (front-end)<br />
                 <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see> (back-end)<br />
             </para><br />
-                <br />
                 <para>
                 <b>Documentation</b>
                 <br />
