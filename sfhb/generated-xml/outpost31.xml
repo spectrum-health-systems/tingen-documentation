@@ -37,17 +37,10 @@
         <member name="T:Outpost31.Core.Avatar.AvtrParameter">
             <summary>Logic for the Avatar script parameter.</summary>
             <remarks>
-                The Avatar Script Parameter is a string that is sent from Avatar to the Tingen Web Service, and contains<br />
-                the information that the Tingen Web Service needs to do it's work.<br />
-                <para>
-                TODO - Add description.
-            </para><br />
-                <para>
-                TODO - Add examples.
-            </para><br />
-                <para>
-                TODO - Add a link to a list of valid parameters. (probably a link to the Avatar documentation)
-            </para><br />
+                 The Script Parameter sent from Avatar contains all of the information that the Tingen Web Service needs to do what it needs to do.<br />
+                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
+                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
+                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
                 <para>
                 For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
             </para>
@@ -59,9 +52,7 @@
         <member name="M:Outpost31.Core.Avatar.AvtrParameter.Request(Outpost31.Core.Session.WsvcSession)">
             <summary>Processes a request based on the parameters provided in the specified session.</summary>
             <remarks>
-                <para>
-                TODO - Add a link to a list of valid parameters. (probably a link to the Avatar documentation)
-            </para><br />
+                <!-- Badly formed XML file "C:\Users\Chris.Banwarth\DevEnv\GitHub\spectrum-health-systems\outpost31\src\AppData\XmlDoc\AvtrParameter.xml" cannot be included --><br />
             </remarks>
             <param name="wsvcSession">The session object containing the request parameters and runtime settings</param>
         </member>
