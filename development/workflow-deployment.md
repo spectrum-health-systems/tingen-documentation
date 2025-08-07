@@ -6,5 +6,3 @@
 
 * [Tingen Web Service](https://github.com/spectrum-health-systems/tingen-web-service)
 * [Outpost31](https://github.com/spectrum-health-systems/outpost31)
-
-
