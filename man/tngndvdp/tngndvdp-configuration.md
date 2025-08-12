@@ -9,15 +9,15 @@
 
 </div>
 
-# Configuration
+# Configuring TingenDevDeploy
 
 The first time Tingen DevDeploy is executed, it looks for the `devdeploy-config.json file`.
 
 If the `devdeploy-config.json file` doesn't exist, one is created using the default values that will work with any standard installation of the Tingen Web Service.
 
-# Modifying the configuration
+## Modifying the configuration
 
-## ArchivePath
+### ArchivePath
 
 > Default value: `C:\Tingen_Data\DevDeploy\Archive`
 
@@ -28,7 +28,7 @@ The `ArchivePath` must be one of the following:
 * A local directory
 * A network share/mapped drive
 
-## Source
+### Source
 
 > Default value: `https://github.com/spectrum-health-systems/Tingen-WebService/archive/refs/heads/development.zip`
 
@@ -46,7 +46,7 @@ If the `Source` is a directory, it must be one of the following:
 * A local directory
 * A network share/mapped drive
 
-## SourceType
+### SourceType
 
 > Default value: ""
 
@@ -54,7 +54,7 @@ The type of source, either `path` or `url`.
 
 This value is set at runtime, so don't modify the value in the configuration file.
 
-## StagingPath
+### StagingPath
 
 > Default value: `C:\Tingen_Data\DevDeploy\Stage`
 
@@ -65,7 +65,7 @@ The `StagingPath` must be one of the following:
 * A local directory
 * A network share/mapped drive
 
-## Deploy Path
+### Deploy Path
 
 > Default value: `C:\Tingen\UAT`
 
