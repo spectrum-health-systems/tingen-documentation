@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![logo](.github/img/logo/TngnDocProj-320x420.png)
+  ![logo](/.github/img/logo/TngnDocProj-320x420.png)
 
 # The Tingen Documentation Project
 
