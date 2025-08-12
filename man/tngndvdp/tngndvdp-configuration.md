@@ -5,11 +5,11 @@
 <br>
 <div align="center">
 
-  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-194x254.png)
 
 </div>
 
-# Configuring TingenDevDeploy
+# Configuring Tingen DevDeploy
 
 The first time Tingen DevDeploy is executed, it looks for the `devdeploy-config.json file`.
 
