@@ -1,14 +1,11 @@
-<!-- u250611 -->
+<!-- u250812 -->
 
-> &larr; [Back to Tingen DevDeploy manual homepage](README.md)
-
+⦗ [Tingen Documentation Project](../../../README.md) 🠬 [Tingen Manuals](../../README.md) 🠬 [Tingen DevDeploy Manual](../README.md) ⦘
+<br>
+<br>
 <div align="center">
 
-  ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
-
-  ![Release](https://img.shields.io/badge/release-v2.2-teal)
-
-  ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)
 
 </div>
 
@@ -79,4 +76,8 @@ The `DeployPath` must be one of the following:
 * A local directory
 * A network share/mapped drive
 
-> &larr; [Back to Tingen DevDeploy manual homepage](README.md)
+<br>
+
+***
+
+⦗ [Tingen Documentation Project](../../../README.md) 🠬 [Tingen Manuals](../../README.md) 🠬 [Tingen DevDeploy Manual](../README.md) ⦘
