@@ -1,4 +1,4 @@
-<!-- u250611 -->
+<!-- u250812 -->
 
 # Tingen Documentation Project > Manuals
 
@@ -8,3 +8,11 @@
   [![Tingen DevDeploy Manual](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)](./tngndvdp/)]
 
 </div>
+
+<br>
+
+***
+
+<br>
+
+[< Back to the **Tingen Documentation Project Main Page**](../README.md)
