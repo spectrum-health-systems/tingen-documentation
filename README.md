@@ -6,7 +6,42 @@
 
 </div>
 
-Documentation for these Tingen projects:
+
+<div align="center">
+<table>
+  <tr>
+    <td>
+      <a HREF="https://github.com/spectrum-health-systems/tingen-web-service"><img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-320x420.png"></a>
+    </td>
+    <td>
+      <a HREF="https://github.com/spectrum-health-systems/outpost31"><img src="https://github.com/spectrum-health-systems/outpost31/blob/main/.github/img/logo/TngnOpto-320x420.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>The Tingen Web Service</b>
+    </td>
+    <td align="center">
+      <b>Outpost 31</b><br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div align="center">
 <table>
@@ -22,9 +57,8 @@ Documentation for these Tingen projects:
     <td align="center">
       <b>The Tingen Web Service</b>
     </td>
-    <td>
+    <td align="center">
       <b>Outpost 31</b><br>
-      The backend logic for the Tingen Web Service
     </td>
   </tr>
 </table>
