@@ -1,12 +1,6 @@
 <!-- u250611 -->
 
-<div align="center">
-
-  ![logo](/.github/img/logo/TngnDocProj-194x254.png)
-
-</div>
-
-# Manuals
+# Tingen Documentation Project > Manuals
 
 <div align="center">
 
