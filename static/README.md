@@ -1,6 +1,8 @@
-<!-- u250812 -->
+<!-- u250812-->
 
-# Static documentation
+[🏠︎](../../README.md)
+
+# The Tingen
 
 ## About static documentation
 
@@ -18,3 +20,9 @@ This way, the individual document can be modified, as long as the URL doesn't ch
 * [The OptionObject](tngnwsvc-optionobject.md)
 * [The Script Parameter](tngnwsvc-script-parameter.md)
 * [Project Guidelines](tngn-project-guidelines.md)
+
+<br>
+
+***
+
+[🏠︎](../../README.md)
