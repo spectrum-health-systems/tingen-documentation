@@ -6,7 +6,7 @@
 
 <div align="center">
 
-  ![logo](/.github/img/logo/TngnDocProj-194x254.png)
+  ![logo](../.github/img/logo/TngnDocProj-194x254.png)
 
 # Manuals
 
