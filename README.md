@@ -24,37 +24,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<div align="center">
-<table>
-  <tr>
-    <td>
-      <a HREF="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/man/tngnwsvc/TngnWsvcMan-home.md"><img src="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/.github/img/logo/man/TngnDocProj-TngnWsvcMan-320x420.png"></a>
-    </td>
-    <td>
-      <a HREF="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/man/tngndvdp/TngnDvdpMan-home.md"><img src="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>The Tingen Web Service</b>
-    </td>
-    <td align="center">
-      <b>Outpost 31</b><br>
-    </td>
-  </tr>
-</table>
-
-
 * [Manuals](./man/)
 * [API documentation](./docs/api/)
 * [Static documentation](./static/)
