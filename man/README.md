@@ -13,6 +13,4 @@
 
 ***
 
-<br>
-
 [< Back to the **Tingen Documentation Project Main Page**](../README.md)
