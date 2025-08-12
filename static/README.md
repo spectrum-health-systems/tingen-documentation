@@ -6,12 +6,9 @@
 
   ![logo](/.github/img/logo/TngnDocProj-194x254.png)
 
-# The Tingen Documentation Project
+# Static documentation
 
 </div>
-
-
-# Static documentation
 
 The following documents always exist that their URL, so they can be referenced at any time.
 
