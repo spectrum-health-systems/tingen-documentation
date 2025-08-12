@@ -1,10 +1,17 @@
 <!-- u250812-->
 
-[🏠︎](../../README.md)
+⦗[🏠︎](../../README.md)⦘
 
-# The Tingen
+<div align="center">
 
-## About static documentation
+  ![logo](/.github/img/logo/TngnDocProj-320x420.png)
+
+# The Tingen Documentation Project
+
+</div>
+
+
+# Static documentation
 
 The following documents always exist that their URL, so they can be referenced at any time.
 
@@ -12,17 +19,12 @@ This way, the individual document can be modified, as long as the URL doesn't ch
 
 ## Documentation
 
-* [Common abbreviations](common-abbreviations.md)
-* [Valid Script Parameters](valid-parameters.md)
-
-* [Logging](tngnwsvc-logging.md)
-* [Tingen Web Service features](tngnwsvc-features.md)
-* [The OptionObject](tngnwsvc-optionobject.md)
-* [The Script Parameter](tngnwsvc-script-parameter.md)
-* [Project Guidelines](tngn-project-guidelines.md)
+* [Common abbreviations](common-abbreviation.md)
+* [Project Guidelines](project-guideline.md)
+* [Valid Script Parameters](valid-parameter.md)
 
 <br>
 
 ***
 
-[🏠︎](../../README.md)
+⦗[🏠︎](../../README.md)⦘
