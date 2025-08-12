@@ -1,21 +1,19 @@
-<!-- u250812 -->
+<!-- u250812-->
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Web Service Manual](../README.md) ⦘
-<br>
-<br>
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+
 <div align="center">
 
-  ![logo](/.github/img/logo/man/TngnDocProj-TngnWsvcMan-316x420.png)
+  ![logo](/.github/img/logo/TngnDocProj-194x254.png)
+
+# Tingen Web Service Manual
 
 </div>
 
-### Contents
-
-Will go here
-
+Content
 
 <br>
 
 ***
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Web Service Manual](../README.md) ⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘

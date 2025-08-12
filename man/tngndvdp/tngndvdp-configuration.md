@@ -1,8 +1,7 @@
 <!-- u250812 -->
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Manuals](../README.md) 🠬 [Tingen DevDeploy Manual](README.md) ⦘
-<br>
-<br>
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+
 <div align="center">
 
   ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-194x254.png)
@@ -80,4 +79,4 @@ The `DeployPath` must be one of the following:
 
 ***
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Manuals](../README.md) 🠬 [Tingen DevDeploy Manual](README.md) ⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘

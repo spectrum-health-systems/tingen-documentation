@@ -10,8 +10,6 @@
 
 </div>
 
-# Guidelines
-
 * Abbreviations are used for common terms/names/whatever that appear throughout a project's source code.
 * The first character of an abbreviation is capitalized when necessary.  
 *Examples*:

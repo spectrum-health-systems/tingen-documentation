@@ -1,8 +1,7 @@
 <!-- u250812 -->
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Manuals](../README.md) ⦘
-<br>
-<br>
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+
 <div align="center">
 
   ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)
@@ -19,4 +18,4 @@
 
 ***
 
-⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Manuals](../README.md) ⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘

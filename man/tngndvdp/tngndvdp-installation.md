@@ -1,18 +1,14 @@
 <!-- u250611 -->
 
-> &larr; [Back to Tingen DevDeploy manual homepage](README.md)
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
 
 <div align="center">
 
-  ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
-
-  ![Release](https://img.shields.io/badge/release-v2.2-teal)
-
-  ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-194x254.png)
 
 </div>
 
-# Installation
+# Installing Tingen DevDeploy
 
 Since Tingen DevDeploy is a single, portable file, all you need to do to "install" it is:
 
@@ -21,4 +17,9 @@ Since Tingen DevDeploy is a single, portable file, all you need to do to "instal
 
 That's it!
 
-> &larr; [Back to Tingen DevDeploy manual homepage](README.md)
+
+<br>
+
+***
+
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘

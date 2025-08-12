@@ -1,6 +1,12 @@
 <!-- u250812 -->
 
-> [⮈ Back to the **Tingen Documentation Project Main Page**](../README.md)
+⦗[🏠︎](/README.md)⦘
+
+<div align="center">
+
+  ![logo](/.github/img/logo/TngnDocProj-194x254.png)
+
+# Title
 
 ***
 
@@ -19,4 +25,4 @@
 
 ***
 
-> [⮈ Back to the **Tingen Documentation Project Main Page**](../README.md)
+⦗[🏠︎](/README.md)⦘

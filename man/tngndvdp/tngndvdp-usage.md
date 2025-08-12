@@ -1,18 +1,14 @@
 <!-- u250611 -->
 
-> &larr; [Back to Tingen DevDeploy manual homepage](README.md)
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
 
 <div align="center">
 
-  ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
-
-  ![Release](https://img.shields.io/badge/release-v2.2-teal)
-
-  ![Manual](https://github.com/APrettyCoolProgram/aprettycoolprogram/blob/main/profile/pub/other/manual.png)
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-194x254.png)
 
 </div>
 
-# Usage
+# Using Tingen DevDeploy
 
 To use Tingen DevDeploy:
 
@@ -33,3 +29,9 @@ The Tingen DevDeploy default settings will:
 ## Using the Tingen DevDeploy on a local workstation
 
 You can deploy any branch of the Tingen Web Service to any target by modifying the configuration file, but please note that performance may be impacted by a number of factors.
+
+<br>
+
+***
+
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
