@@ -3,7 +3,7 @@
 ⦗[🏠︎](/README.md)⦘
 <div align="center">
 
-  ![logo](/.github/img/logo/api/TngnDocProjApi-194x254.png)
+  ![logo](/.github/img/logo/api/TngnDocProjApi-320x420.png)
 
 # Tingen Project API Documentation
 
