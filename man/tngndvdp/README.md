@@ -5,7 +5,7 @@
 <br>
 <div align="center">
 
-  ![logo](https://github.com/spectrum-health-systems/tingen-dev-deploy/blob/main/.github/image/logo/tngndvdp-194x254.png)
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)
 
 </div>
 
