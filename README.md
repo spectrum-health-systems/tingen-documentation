@@ -12,7 +12,7 @@ Documentation for these Tingen projects:
 <table>
   <tr>
     <td>
-      <img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-320x420.png"/>
+      <img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-320x568.png"/>
     </td>
     <td>
       <a HREF="https://github.com/spectrum-health-systems/outpost31"><img src="https://github.com/spectrum-health-systems/outpost31/blob/main/.github/image/logo/o31-194x254.png"></a>
