@@ -1,8 +1,6 @@
 <!-- u250812 -->
 
-⦗ [Tingen Documentation Project](../../README.md) 🡄 [Tingen Web Service Manual Main Page](../README.md) ⦘
-
-***
+⦗ [Tingen Documentation Project](../../README.md) 🠬 [Tingen Web Service Manual Main Page](../README.md) ⦘
 
 <div align="center">
 
