@@ -4,14 +4,9 @@
 
   ![logo](.github/img/logo/TngnDocProj-320x420.png)
 
-# Manuals
-
-[![Tingen Web Service Manual](/.github/img/logo/man/TngnDocProj-TngnWsvcMan-316x420.png)](./tngnwsvc/)&nbsp;&nbsp;&nbsp;&nbsp;
+[![Tingen Manuals](/.github/img/logo/man/TngnDocProj-Man-320x420.png)](./man/)&nbsp;&nbsp;&nbsp;&nbsp;
+[![Tingen Web Service API Documentation](/.github/img/logo/api/TngnDocProjApi-320x420.png)](./api/)&nbsp;&nbsp;&nbsp;&nbsp;
 [![Tingen DevDeploy Manual](/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png)](./tngndvdp/)
-
-
-
-
 
 
 
