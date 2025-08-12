@@ -30,7 +30,7 @@ The following documentation is available:
 <table>
   <tr>
     <td>
-      <a HREF="https://github.com/spectrum-health-systems/tingen-web-service"><img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-345x418.png"></a>
+      <a HREF="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/man/tngnwsvc/tngnsrvc-manual-home.md"><img src="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/.github/img/logo/man/TngnDocProj-TngnWsvcMan-320x420.png"></a>
     </td>
     <td>
       <a HREF="https://github.com/spectrum-health-systems/outpost31"><img src="https://github.com/spectrum-health-systems/outpost31/blob/main/.github/img/logo/TngnOpto-320x420.png"></a>
