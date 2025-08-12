@@ -8,5 +8,5 @@
 
 # Manuals
 
-* ![/.github/img/logo/tngndocs-194x254.png](./tngndvdp/)
-* [Tingen Web Service manual](./tngnwsvc/)
+* ![/.github/img/logo/man/TngnDocProj-TngnWsvcMan-320x420.png](./tngnwsvc/)
+* ![/.github/img/logo/man/TngnDocProj-TngnDvdpMan-320x420.png](./tngndvdp/)
