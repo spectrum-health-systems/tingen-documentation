@@ -8,5 +8,5 @@
 
 # Manuals
 
-* [Tingen DevDeploy manual](./tngndvdp/)
-* [Tingen Web Service manual](./tngnsrvc/)
+* ![/.github/img/logo/tngndocs-194x254.png](./tngndvdp/)
+* [Tingen Web Service manual](./tngnwsvc/)
