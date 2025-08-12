@@ -11,7 +11,7 @@
 <table>
   <tr>
     <td>
-      <a HREF="https://github.com/spectrum-health-systems/tingen-web-service"><img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-320x420.png"></a>
+      <a HREF="https://github.com/spectrum-health-systems/tingen-web-service"><img src="https://github.com/spectrum-health-systems/tingen-web-service/blob/main/.github/img/logo/TngnWsvc-340x412.png"></a>
     </td>
     <td>
       <a HREF="https://github.com/spectrum-health-systems/outpost31"><img src="https://github.com/spectrum-health-systems/outpost31/blob/main/.github/img/logo/TngnOpto-320x420.png"></a>
