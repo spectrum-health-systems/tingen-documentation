@@ -1,6 +1,14 @@
-<!-- u250429 -->
+<!-- u250812-->
 
-# sfhb/
+⦗[🏠︎](/README.md)⦘
+
+<div align="center">
+
+  ![logo](/.github/img/logo/TngnDocProj-Danger-194x254.png)
+
+# THIS IS A SPECIAL DIRECTORY! DON'T TOUCH!
+
+</div>
 
 **DO NOT MODIFY ANYTHING IN THIS FOLDER**
 
@@ -9,3 +17,9 @@ This folder contains the Visual Studio 2022 projects for creating documentation 
 For information on using Sandcastle with Tingen projects, please take a look at [this](../development/sfhb.md).
 
 **DO NOT MODIFY ANYTHING IN THIS FOLDER**
+
+<br>
+
+***
+
+⦗[🏠︎](/README.md)⦘

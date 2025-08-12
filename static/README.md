@@ -1,6 +1,6 @@
 <!-- u250812-->
 
-⦗[🏠︎](../../README.md)⦘
+⦗[🏠︎](/README.md)⦘
 
 <div align="center">
 
@@ -24,4 +24,4 @@ This way, the individual document can be modified, as long as the URL doesn't ch
 
 ***
 
-⦗[🏠︎](../../README.md)⦘
+⦗[🏠︎](/README.md)⦘

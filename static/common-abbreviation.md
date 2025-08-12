@@ -1,6 +1,16 @@
+<!-- u250812-->
+
+⦗[🏠︎](/README.md)⦘ ⦗[Static Documentation](./README.md)⦘
+
+<div align="center">
+
+  ![logo](/.github/img/logo/TngnDocProj-194x254.png)
+
 # Common Tingen-project Abbreviations
 
-## Guidelines
+</div>
+
+# Guidelines
 
 * Abbreviations are used for common terms/names/whatever that appear throughout a project's source code.
 * The first character of an abbreviation is capitalized when necessary.  
@@ -8,7 +18,7 @@
     * Property: `TngnWsvcVersion`
     * Variable: `tngnWsvcVersion`
 
-## Tingen Projects
+# Tingen Projects
 
 | Project |Abbreviation | Notes |
 | ------------ | ------- | ----- |
@@ -18,7 +28,7 @@
 | Tingen Lieutenant | `TngnLtnt` | |
 | Tingen Web Service | `TngnWsvc` | |
 
-## Avatar related
+# Avatar related
 
 | Component |Abbreviation | Notes |
 | ------------ | ------- | ----- |
@@ -32,9 +42,15 @@
 | Work OptionObject | `WorkOptObj` | The work OptionObject |
 
 
-## Common variables
+# Common variables
 
 | Name |Abbreviation | Notes |
 | ------------ | ------- | ----- |
 | Executing Assembly Name | `ExeAsmName` | |
 | Tingen Web Service version | `TngnWsvcVer` | |
+
+<br>
+
+***
+
+⦗[🏠︎](/README.md)⦘ ⦗[Static Documentation](./README.md)⦘
