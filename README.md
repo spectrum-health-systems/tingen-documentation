@@ -6,8 +6,8 @@
 
 [![Tingen Manuals](/.github/img/logo/man/TngnDocProj-Man-194x254.png)](./man/)&nbsp;&nbsp;&nbsp;&nbsp;
 [![Tingen Web Service API Documentation](/.github/img/logo/api/TngnDocProjApi-194x254.png)](./api/)&nbsp;&nbsp;&nbsp;&nbsp;
-[![Tingen Static documentation](/.github/img/logo/man/TngnDocProjStatic-194x254.png.png)](./static/)
-[![Tingen development documentation](/.github/img/logo/man/TngnDocProjDev-194x254.png.png)](./dev/)
+[![Tingen Static documentation](/.github/img/logo/static/TngnDocProjStatic-194x254.png.png)](./static/)
+[![Tingen development documentation](/.github/img/logo/dev/TngnDocProjDev-194x254.png.png)](./dev/)
 
 
 
