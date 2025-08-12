@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![logo](.github/image/logo/tngndocs-320x420.png)
+  ![logo](.github/image/logo/TngnDocProj-320x420.png)
 
 </div>
 
