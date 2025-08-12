@@ -1,7 +1,7 @@
 <!-- u250812 -->
 
-> [⮈ Back to the **Tingen Documentation Project Main Page**](../../README.md)  
-> [⮈ Back to the **Tingen Web Service Manual Main Page**](../README.md)
+> [⮈ Back to the **Tingen Documentation Project** Main Page](../../README.md)  
+> [⮈ Back to the **Tingen Web Service Manual** Main Page](../README.md)
 
 ***
 
