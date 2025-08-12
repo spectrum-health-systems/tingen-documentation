@@ -1,12 +1,14 @@
-<!-- u250611 -->
+<!-- u250812-->
+
+⦗[🏠︎](/README.md)⦘ 
 
 <div align="center">
 
-  ![logo](/.github/image/logo/tngndocs-194x254.png)
+  ![logo](/.github/img/logo/dev/TngnDocProjDev-194x254.png)
+
+# Development Documentation
 
 </div>
-
-# Development documentation
 
 ## Workflows
 
@@ -17,3 +19,9 @@ Daily development process and procedures.
 
 * [Sandcastle Help File Builder](sfhb.md)  
 Integrating SFHB with VS2022, creating document projects, and building API documentation.
+
+<br>
+
+***
+
+⦗[🏠︎](/README.md)⦘
