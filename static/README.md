@@ -6,13 +6,11 @@
 
   ![logo](/.github/img/logo/static/TngnDocProjStatic-320x420.png)
 
-# Static documentation
-
 </div>
 
-The following documents always exist that their URL, so they can be referenced at any time.
+OK, so what's actually static here are the ***URLs*** to this documentation, *not* the documentation itself.
 
-This way, the individual document can be modified, as long as the URL doesn't change.
+The documentation here is actually intended to be modified, and since the URL won't change, it can be referenced elsewhere.
 
 ## Documentation
 
