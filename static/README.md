@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  ![logo](/.github/img/logo/static/TngnDocProjStatic-320x420.png-320x420.png)
+  ![logo](/.github/img/logo/static/TngnDocProjStatic-320x420.png)
 
 # Static documentation
 
