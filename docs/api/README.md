@@ -1,11 +1,9 @@
-<!-- u250812-->
+<!-- u250813-->
 
 ⦗[🏠︎](/README.md)⦘
 <div align="center">
 
   ![logo](/.github/img/logo/api/TngnDocProjApi-320x420.png)
-
-# Tingen Project API Documentation
 
 </div>
 
