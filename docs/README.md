@@ -1,6 +1,6 @@
 <!-- u250818-->
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]
 
 <div align="center">
 
@@ -22,4 +22,4 @@ Go [here](https://github.com/spectrum-health-systems/tingen-documentation-projec
 
 ***
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]

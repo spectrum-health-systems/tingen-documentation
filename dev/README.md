@@ -1,6 +1,6 @@
 <!-- u250818-->
 
-⦗[🏠︎](/README.md)⦘ 
+[[🏠︎](/README.md)]
 
 <div align="center">
 
@@ -37,4 +37,4 @@ Integrating SFHB with VS2022, creating document projects, and building API docum
 
 ***
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]

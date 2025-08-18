@@ -1,6 +1,6 @@
 <!-- u250812-->
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]
 
 <div align="center">
 
@@ -20,4 +20,4 @@ This folder contains the Visual Studio 2022 projects for creating documentation 
 
 ***
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]

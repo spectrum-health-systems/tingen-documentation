@@ -1,6 +1,7 @@
 <!-- u250818-->
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]
+
 <div align="center">
 
   ![logo](/.github/img/logo/api/TngnDocProjApi-320x420.png)
@@ -26,4 +27,4 @@ API documentation is generated using a project's **development** branch, so:
 
 ***
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]

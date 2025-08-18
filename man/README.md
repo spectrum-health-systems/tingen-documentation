@@ -1,6 +1,6 @@
 <!-- u250818 -->
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]
 
 <div align="center">
 
@@ -21,4 +21,4 @@ Available manuals:
 
 ***
 
-⦗[🏠︎](/README.md)⦘
+[[🏠︎](/README.md)]
