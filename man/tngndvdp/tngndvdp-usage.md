@@ -1,6 +1,6 @@
-<!-- u250611 -->
+<!-- u250618 -->
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](./README.md)⦘ ⦗[Tingen DevDeploy Manual](../README.md)⦘
 
 <div align="center">
 
@@ -34,4 +34,4 @@ You can deploy any branch of the Tingen Web Service to any target by modifying t
 
 ***
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](./README.md)⦘ ⦗[Tingen DevDeploy Manual](../README.md)⦘

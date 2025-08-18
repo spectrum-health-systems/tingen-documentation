@@ -1,6 +1,6 @@
-<!-- u250812 -->
+<!-- u250818 -->
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](./README.md)⦘ ⦗[Tingen DevDeploy Manual](../README.md)⦘
 
 <div align="center">
 
@@ -79,4 +79,4 @@ The `DeployPath` must be one of the following:
 
 ***
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Project Manuals](./README.md)⦘
+⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](./README.md)⦘ ⦗[Tingen DevDeploy Manual](../README.md)⦘
