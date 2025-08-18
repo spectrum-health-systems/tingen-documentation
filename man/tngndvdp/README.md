@@ -10,9 +10,9 @@
 
 # Contents
 
-* [Installation](tngndvdp-installation.md)
-* [Configuration](tngndvdp-configuration.md)
-* [Usage](tngndvdp-usage.md)
+* [Installing Tingen DevDeploy](tngndvdp-installation.md)
+* [Configuring Tingen DevDeploy](tngndvdp-configuration.md)
+* [Using Tingen DevDeploy](tngndvdp-usage.md)
 
 <br>
 

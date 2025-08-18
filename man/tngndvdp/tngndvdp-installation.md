@@ -1,4 +1,4 @@
-<!-- u250611 -->
+<!-- u250618 -->
 
 [[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md) ❬ [Tingen DevDeploy Manual](./README.md)
 
@@ -13,10 +13,11 @@
 Since Tingen DevDeploy is a single, portable file, all you need to do to "install" it is:
 
 1. Download the [latest release](https://github.com/spectrum-health-systems/tingen-dev-deploy/releases)
-2. Extract TingenDevDeploy to a location where it can be executed
+2. Extract `TingenDevDeploy-X.Y.zip` to a location where it can be executed
 
 That's it!
 
+Next: [Configuring Tingen DevDeploy](tngndvdp-configuration.md)
 
 <br>
 
