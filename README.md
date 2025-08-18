@@ -1,4 +1,4 @@
-<!-- u250813 -->
+<!-- u250818 -->
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 
 </div>
 
-The Tingen Documentation project contains the following:
+The Tingen Documentation project contains:
 
 <div align="center">
 

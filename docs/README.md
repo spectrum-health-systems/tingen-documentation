@@ -1,4 +1,4 @@
-<!-- u250812-->
+<!-- u250818-->
 
 ⦗[🏠︎](/README.md)⦘
 
@@ -13,6 +13,8 @@
 **DO NOT MODIFY ANYTHING IN THIS FOLDER**
 
 This folder contains generated documentation.
+
+Go [here](https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/docs/api) instead.
 
 ***DO NOT MODIFY ANYTHING IN THIS FOLDER!!!***
 

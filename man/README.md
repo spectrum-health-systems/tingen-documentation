@@ -1,4 +1,4 @@
-<!-- u250812 -->
+<!-- u250818 -->
 
 ⦗[🏠︎](/README.md)⦘
 
@@ -6,9 +6,9 @@
 
   ![logo](/.github/img/logo/TngnDocProj-194x254.png)
 
-  # Tingen Project Manuals
-
 </div>
+
+Available manuals:
 
 <div align="center">
 

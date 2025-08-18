@@ -1,4 +1,4 @@
-<!-- u250812-->
+<!-- u250818-->
 
 ⦗[🏠︎](/README.md)⦘ 
 
@@ -6,7 +6,7 @@
 
   ![logo](/.github/img/logo/dev/TngnDocProjDev-320x420.png)
 
-# Development Documentation
+This is a collection of development documentation for Tingen projects.
 
 </div>
 
