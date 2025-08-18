@@ -75,6 +75,8 @@ The `DeployPath` must be one of the following:
 * A local directory
 * A network share/mapped drive
 
+> Next step: [Using Tingen DevDeploy](tngndvdp-usage.md)
+
 <br>
 
 ***

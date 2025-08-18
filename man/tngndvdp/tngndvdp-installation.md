@@ -17,7 +17,7 @@ Since Tingen DevDeploy is a single, portable file, all you need to do to "instal
 
 That's it!
 
-Next: [Configuring Tingen DevDeploy](tngndvdp-configuration.md)
+> Next step: [Configuring Tingen DevDeploy](tngndvdp-configuration.md)
 
 <br>
 
