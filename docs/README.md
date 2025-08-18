@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  ![logo](/.github/img/logo/TngnDocProj-Danger-194x254.png)
+  ![logo](/.github/img/logo/warn/TngnDocProj-Warning-320x420.png)
 
 # THIS IS A SPECIAL DIRECTORY! DON'T TOUCH!
 
