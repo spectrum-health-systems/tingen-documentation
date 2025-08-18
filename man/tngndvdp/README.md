@@ -1,6 +1,6 @@
 <!-- u250812 -->
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](../README.md)⦘
+[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md)
 
 <div align="center">
 
@@ -18,4 +18,4 @@
 
 ***
 
-⦗[🏠︎](/README.md)⦘ ⦗[Tingen Manuals](../README.md)⦘
+[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md)
