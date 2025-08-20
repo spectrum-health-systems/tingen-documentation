@@ -6,7 +6,7 @@
 
   ![logo](/.github/img/logo/man/TngnDocProj-TngnWsvcMan-194x254.png)
 
-## Setting up Internet Information Services (IIS) for Windows Server
+## Hosting the Tingen Web Service using Microsoft IIS
 
 </div>
 
@@ -14,12 +14,36 @@
 
 ### CONTENTS
 
+* [Overview](#overview)
 * [Installing IIS](#installing-iis)
+* [Hosting the Tingen Web Service using IIS]()
 
 ***
 
-# Installing IIS
+# Overview
 
+In order to use any web service that interfaces with myAvatar™, that web service needs to be ***hosted*** at a location that myAvatar™ has access to
+
+There are two options for hosting a custom web service:
+
+1. **Have Netsmart host your custom web service**<br>
+If your myAvatar™ environments are hosted by Netsmart, they can also host your custom web services. If you choose to have Netsmart host your custom web service, you can skip the rest of this document and contact them to set things up.
+
+2. **Self-host your custom web service**<br>
+If you self-host your myAvatar™ environments, or would rather have complete control over your custom web services, you can self-host them. This document will walk you through the process of doing that.
+
+# Using Microsoft IIS to host a custom web service
+
+You can probably host your custom web service using many web server/operating systems combinations, but these guidelines will focus on getting setup on Microsoft IIS.
+
+These are the steps that I use to host a the Tingen Web Service, but they are more of a *guideline* than a perfect set of instructions. It's quite possible that I didn't follow best-practices, or maybe I have something setup incorrectly, so please use caution when following these steps.
+
+### PLEASE NOTE
+
+* This document assumes that you already have a IIS up and running.
+* Keep in mind that myAvatar™ can only communicate with web services via the *HTTPS* protocol.
+
+# Installing IIS
 
 ```mermaid
 flowchart LR
@@ -122,26 +146,7 @@ If the server does not reboot automatically, reboot manually.
 
 # Overview
 
-In order to use any web service that interfaces with myAvatar™, that web service needs to be ***hosted*** at a location that myAvatar™ has access to
 
-There are two options for hosting a custom web service:
-
-1. **Have Netsmart host your custom web service**<br>
-If your myAvatar™ environments are hosted by Netsmart, they can also host your custom web services. If you choose to have Netsmart host your custom web service, you can skip the rest of this document and contact them to set things up.
-
-2. **Self-host your custom web service**<br>
-If you self-host your myAvatar™ environments, or would rather have complete control over your custom web services, you can self-host them. This document will walk you through the process of doing that.
-
-# Using Microsoft IIS to host a custom web service
-
-You can probably host your custom web service using many web server/operating systems combinations, but these guidelines will focus on getting setup on Microsoft IIS.
-
-These are the steps that I used - twice! - to host a custom web service in our environment, but they are more of a *guideline* than a perfect set of instructions. It's quite possible that I didn't follow best-practices, or maybe I have something setup incorrectly, so please use caution when following these steps. And since I (hopefully?) won't have to do this again, this section will probably not be updated.
-
-### PLEASE NOTE
-
-* This document assumes that you already have a IIS version 10 up and running.
-* Keep in mind that myAvatar™ can only communicate with web services via the HTTPS:// protocol.
 
 ## Creating an Application Pool
 
