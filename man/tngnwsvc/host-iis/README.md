@@ -246,9 +246,48 @@ This is what the Add Website window should look like:
 
 <div align="center">
 
-  ![](host-iis-19.jpg)
+  ![](host-iis-18.jpg)
 
 </div>
+
+8. Click **OK**, and the ***Sites*** tree should look like this:
+
+<div align="center">
+
+  ![](host-iis-18.jpg)
+
+</div>
+
+
+
+## Adding directories for LIVE and UAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Configuring the new TingenWebService site
 
@@ -318,6 +357,19 @@ The SSL Settings should now look like this:
   ![](host-iis-26.jpg)
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Verifying the new site
 
