@@ -207,7 +207,7 @@ From within IIS:
 
 # Sites
 
-# Disabling the current site
+## Disabling the current site
 
 Since we are going to be creating a new Site, we can disable default site that was installed with IIS.
 
@@ -258,38 +258,7 @@ This is what the Add Website window should look like:
 
 </div>
 
-
-
-## Adding directories for LIVE and UAT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Configuring the new TingenWebService site
+## Configuring the new TingenWebService site
 
 We'll want to make sure that we are in the TingenWebService site when configuring:
 
@@ -299,37 +268,7 @@ We'll want to make sure that we are in the TingenWebService site when configurin
 
 </div>
 
-## Enable directory Browsing
-
-In the TingenWebService Home:
-
-1. Double-click on the **Directory Browsing** icon:
-
-<div align="center">
-
-  ![](host-iis-21.jpg)
-
-</div>
-
-On the right-hand side under **Actions**, click **Enable**
-
-<div align="center">
-
-  ![](host-iis-22.jpg)
-
-</div>
-
-2. Click **Enable**
-
-The browsing functionality should now look like this:
-
-<div align="center">
-
-  ![](host-iis-23.jpg)
-
-</div>
-
-## Enable SSL
+### Enable SSL
 
 In the TingenWebService Home:
 
@@ -357,6 +296,132 @@ The SSL Settings should now look like this:
   ![](host-iis-26.jpg)
 
 </div>
+
+## Verify the TingenWebService Site is secure
+
+In the TingenWebService Home, click on **Browse *:433 (https)**.
+
+<div align="center">
+
+  ![](host-iis-f.jpg)
+
+</div>
+
+The following page should open in a browser:
+
+<div align="center">
+
+  ![](host-iis-g.jpg)
+
+</div>
+
+# Creating the `LIVE` Application
+
+## Create the `Tingen_WebService\LIVE` folder
+
+Add a folder for `LIVE` to the `C:\Tingen_WebService` folder, like this:
+
+<div align="center">
+
+  ![](host-iis-h.jpg)
+
+</div>
+
+## Create a test web page
+
+1. Create a file named `test-page.html` with the following content:
+
+```text
+Hello World!
+```
+
+2. Save that file to `C:\Tingen_WebService\LIVE`
+
+## Converting `TingenWebService\LIVE` to an Application
+
+In IIS, folders look like...uh...folders, and Applications look like the symbol next to `UAT`
+
+<div align="center">
+
+  ![](host-iis-c.jpg)
+
+</div>
+
+`UAT` looks like that because I've already converted it to an Application, which is what we are going to do with `LIVE` now.
+
+1. **Right-click** on `LIVE` under ***Sites > TingenWebService***
+2. Choose **Convert to Application**
+
+The ***Add Application*** window should look like this:
+
+<div align="center">
+
+  ![](host-iis-d.jpg)
+
+</div>
+
+3. Click **OK**
+
+## Enable directory Browsing
+
+> [!TIP]  
+> If the web service stops working, this is one of the first things to check!
+
+In the /LIVE Home:
+
+1. Double-click on the **Directory Browsing** icon:
+
+<div align="center">
+
+  ![](host-iis-e.jpg)
+
+</div>
+
+On the right-hand side under **Actions**, click **Enable**
+
+<div align="center">
+
+  ![](host-iis-22.jpg)
+
+</div>
+
+2. Click **Enable**
+
+The browsing functionality should now look like this:
+
+<div align="center">
+
+  ![](host-iis-23.jpg)
+
+</div>
+
+# Test the `LIVE` application
+
+In the /LIVE Home, click the **Browse *:443 (https)** link
+
+
+
+
+<div align="center">
+
+  ![](host-iis-23.jpg)
+
+</div>
+
+
+
+
+
+# Creating the `UAT` Application
+
+Follow the same steps above to create the `UAT` Application
+
+
+
+
+
+
+
 
 
 
