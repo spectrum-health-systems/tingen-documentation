@@ -32,13 +32,13 @@ If your myAvatar™ environments are hosted by Netsmart, they can also host your
 2. **Self-host your custom web service**<br>
 If you self-host your myAvatar™ environments, or would rather have complete control over your custom web services, you can self-host them. This document will walk you through the process of doing that.
 
-# Using Microsoft IIS to host a custom web service
+## Using Microsoft IIS to host a custom web service
 
 You can probably host your custom web service using many web server/operating systems combinations, but these guidelines will focus on getting setup on Microsoft IIS.
 
 These are the steps that I use to host a the Tingen Web Service, but they are more of a *guideline* than a perfect set of instructions. It's quite possible that I didn't follow best-practices, or maybe I have something setup incorrectly, so please use caution when following these steps.
 
-### PLEASE NOTE
+## PLEASE NOTE
 
 * This document assumes that you already have a IIS up and running.
 * Keep in mind that myAvatar™ can only communicate with web services via the *HTTPS* protocol.
