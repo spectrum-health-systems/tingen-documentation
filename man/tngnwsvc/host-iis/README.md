@@ -1,17 +1,79 @@
-﻿<!-- 220504.104939 -->
+﻿<!-- u250818 -->
 
-# Hosting custom myAvatar™ web services
+[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md) ❬ [Tingen Web Service Manual](./README.md)
 
->Last updated: May 3, 2022 by [Chris Banwarth](https://github.com/APrettyCoolProgram)
+<div align="center">
+
+  ![logo](/.github/img/logo/man/TngnDocProj-TngnWsvcMan-194x254.png)
+
+## Setting up Internet Information Services (IIS) for Windows Server
+
+</div>
 
 ***
 
 ### CONTENTS
 
-[Overview](#hosting-overview)<br>
-[Using Microsoft IIS to host a custom web service](#using-microsoft-iis-to-host-a-custom-web-service)<br>
+* [Installing IIS](#installing-iis)
 
 ***
+
+# Installing IIS
+
+
+```mermaid
+flowchart LR
+  %% Content
+  ServerRole@{shape: rect, label: "Add the IIS\nServer Role" }
+  %% Layout
+  ServerRole("Add the IISServer Role") --> Features(Features) --> WebServerRoleServices(Web Server Role IIS Services)
+  %% Styles
+```
+
+1. Launch the **Server Manager** application
+
+2. Under **Server Roles**, check the box next to **Web Server (IIS)**
+
+<div align="center">
+
+  ![](host-iis-01.png)
+
+</div>
+
+
+
+2. If a popup suggests you include the management tools, leave the **Include management tools** box checked, then click **Add Features**
+
+<div align="center">
+
+  ![](host-iis-02.png)
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Overview
 
@@ -131,3 +193,9 @@ Your AvatoolWebService site should look like this:
 </h6>
 
 At this point, you should be able to point a browser to your website, and see the landing page.
+
+<br>
+
+***
+
+[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md) ❬ [Tingen DevDeploy Manual](./README.md)
