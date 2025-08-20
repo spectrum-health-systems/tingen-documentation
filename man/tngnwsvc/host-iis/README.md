@@ -367,7 +367,7 @@ The ***Add Application*** window should look like this:
 > [!TIP]  
 > If the web service stops working, this is one of the first things to check!
 
-In the /LIVE Home:
+In the `/LIVE` Home:
 
 1. Double-click on the **Directory Browsing** icon:
 
@@ -399,59 +399,25 @@ The browsing functionality should now look like this:
 
 In the /LIVE Home, click the **Browse *:443 (https)** link
 
-
-
+The following page should open in a browser:
 
 <div align="center">
 
-  ![](host-iis-23.jpg)
+  ![](host-iis-j.jpg)
 
 </div>
 
+Clicking on **test-page.html** should display this page:
 
+<div align="center">
 
+  ![](host-iis-k.jpg)
 
+</div>
 
 # Creating the `UAT` Application
 
 Follow the same steps above to create the `UAT` Application
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Verifying the new site
-
-Your AvatoolWebService site should look like this:
-
-<h6 align="center">
-
-  <img src="resource/image/readme/iis-site-home-633x206.png" width="633">
-  <br>
-  Maybe?
-  <br>
-
-</h6>
-
-At this point, you should be able to point a browser to your website, and see the landing page.
-
-<br>
 
 ***
 
