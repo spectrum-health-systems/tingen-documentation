@@ -314,6 +314,24 @@ The browsing functionality should now look like this:
 
 The `IIS AppPool\Tingen_WebService` needs read access to everything in the c:\Tingen_WebService folder
 
+## Give the `%ServerName%\IIS_IUSRS` user access
+
+The `%ServerName%\IIS_IUSRS` needs read access to everything in the c:\Tingen_WebService folder
+
+## Give the `%ServerName%\IIS_IUSRS` user access
+
+The `%ServerName%\IIS_IUSRS` needs read access to everything in the c:\Tingen_WebService folder
+
+## Modify the Anonymous Authentication settings
+
+1. Click the **Tingen_WebServices** Site
+
+2. Click the **Authentication** icon
+
+3. **Right-click** the ***Anonymous Authentication*** option
+
+4. Change the ***User Identity*** to **Application Pool**
+
 # Test the `LIVE` application
 
 In the /LIVE Home, click the **Browse *:443 (https)** link
