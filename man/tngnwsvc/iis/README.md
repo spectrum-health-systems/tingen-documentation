@@ -1,12 +1,16 @@
-﻿﻿<!-- u250818 -->
+﻿<!-- u250821 -->
 
-[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md) ❬ [Tingen Web Service Manual](./README.md)
+[[🏠︎](../../README.md)] ❬ [Tingen Web Service Manual](../README.md)
+
+***
 
 <div align="center">
 
+# Tingen Web Service Manual
+
   ![logo](/.github/img/logo/man/TngnDocProj-TngnWsvcMan-194x254.png)
 
-## Hosting the Tingen Web Service using Microsoft IIS
+## Hosting Tingen using Microsoft IIS
 
 </div>
 
@@ -38,11 +42,6 @@ If you self-host your myAvatar™ environments, or would rather have complete co
 You can probably host your custom web service using many web server/operating systems combinations, but these guidelines will focus on getting setup on Microsoft IIS.
 
 These are the steps that I use to host a the Tingen Web Service, but they are more of a *guideline* than a perfect set of instructions. It's quite possible that I didn't follow best-practices, or maybe I have something setup incorrectly, so please use caution when following these steps.
-
-## PLEASE NOTE
-
-* This document assumes that you already have a IIS up and running.
-* Keep in mind that myAvatar™ can only communicate with web services via the *HTTPS* protocol.
 
 # Installing Microsoft IIS
 
@@ -310,10 +309,6 @@ The browsing functionality should now look like this:
 
 </div>
 
-## Give the `IIS AppPool\Tingen_WebService` user access
-
-The `IIS AppPool\Tingen_WebService` needs read access to everything in the c:\Tingen_WebService folder
-
 # Test the `LIVE` application
 
 In the /LIVE Home, click the **Browse *:443 (https)** link
@@ -340,4 +335,4 @@ Follow the same steps above to create the `UAT` Application
 
 ***
 
-[[🏠︎](/README.md)] ❬ [Tingen Manuals](../README.md) ❬ [Tingen DevDeploy Manual](./README.md)
+[[🏠︎](../../README.md)] ❬ [Tingen Web Service Manual](../README.md)
