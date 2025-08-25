@@ -11,10 +11,13 @@
 </div>
 
 * Abbreviations are used for common terms/names/whatever that appear throughout a project's source code.
+
 * The first character of an abbreviation is capitalized when necessary.  
 *Examples*:
-    * Property: `TngnWsvcVersion`
-    * Variable: `tngnWsvcVersion`
+  * Property: `TngnWsvcVersion`
+  * Variable: `tngnWsvcVersion`
+
+* Shortened abreviations may be used when the longer version isn't necessary. For example, the Tingen Web Service may be referred to as `Wsvc` instead of `TngnWsvc` in the Tingen Web Service source code, since it is obvious what "web service" is being referred to.
 
 # Tingen Projects
 
@@ -38,7 +41,6 @@
 | Original OptionObject | `OrigOptObj` | The original OptionObject sent from Avatar to the Tingen Web Service |
 | Original Script Parameter | `OrigScriptParam` |  The original Script Parameter sent from Avatar to the Tingen Web Service |
 | Work OptionObject | `WorkOptObj` | The work OptionObject |
-
 
 # Common variables
 
