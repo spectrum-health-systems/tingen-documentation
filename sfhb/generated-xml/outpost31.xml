@@ -11,7 +11,7 @@
                 <br />
                 While both contain the word <i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -62,7 +62,7 @@
                 Script parameters must one of the <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/valid-parameters.md"> current valid parameters.</see>
             </para>
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -89,7 +89,7 @@
                 An OptionObject contains metadata of an Avatar form.<br />
                 <br />
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -218,7 +218,7 @@
                 </note>
                 <br />
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>  
             </remarks>
         </member>
@@ -344,7 +344,7 @@
                 </note>
                 <br />
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>   
             </remarks>
         </member>
@@ -491,7 +491,7 @@
                 that is not specific to <i>core</i> or <i>module</i> functionality.
                 <br />
                 <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>
             </remarks>
         </member>
@@ -527,7 +527,7 @@
             <param name="avtrSys">The Avatar System that the Tingen Web Service interfaces with.</param>
             <returns>The runtime configuration for a Tingen Web Service session.</returns>
         </member>
-        <member name="M:Outpost31.Core.Runtime.RuntimeConfiguration.WriteBlank(System.String)">
+        <member name="M:Outpost31.Core.Runtime.RuntimeConfiguration.WriteBlank(System.String,System.String)">
             <summary>Writes a blank runtimeConfig file.</summary>
             <param name="runtimeConfigPath"></param>
         </member>
@@ -537,7 +537,7 @@
                  The Tingen Web Service session object contains all of the information that the Tingen Web Service needs to do work.<br />
                  <br />
                  <para>
-                For more information about <b>Outpost31</b>, please see <see cref="T:Outpost31.ProjectInfo" />.
+                For more information about <b>Outpost31</b>, please see <see cref="!:ProjectInfo" />.
             </para>
              </remarks>
             <seealso href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</seealso>
@@ -646,6 +646,9 @@
         <member name="M:Outpost31.Module.Admin.Parse.Request(Outpost31.Core.Session.TngnWsvcSession)">
             <summary>Admin requests.</summary>
         </member>
+        <member name="M:Outpost31.Module.Development.Gamut.FromTngnWsvc(System.String,System.String)">
+            <summary>Development only.</summary>
+        </member>
         <member name="M:Outpost31.Module.FormAccess.Deny.SysCodeDoc(Outpost31.Core.Session.TngnWsvcSession)">
             <summary>Deny access to the form if the System Code is "DOC".</summary>
         </member>
@@ -661,29 +664,6 @@
         <member name="M:Outpost31.Module.Prototype.Code.FormAccessDocSysCodeDeny(Outpost31.Core.Session.TngnWsvcSession)">
             <summary>Deny access to the form for anyone using the DOC System Code.</summary>
             <remarks>This functionality was added as a standard request on 5-1-2025.</remarks>
-        </member>
-        <member name="T:Outpost31.ProjectInfo">
-            <summary>Provides additional information about Outpost31.</summary>
-            <remarks>
-                <para>
-                <b>About Outpost31</b><br />
-                Outpost31 is a class library that provides the back-end functionality for the <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see>.
-            </para><br />
-                <para>
-                <b>Associated projects</b><br />
-                <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see> (front-end)<br />
-                <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see> (back-end)<br />
-            </para><br />
-                <para>
-                <b>Documentation</b>
-                <br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see>
-                <br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>
-                <br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
-            </para><br />
-            </remarks>
         </member>
     </members>
 </doc>

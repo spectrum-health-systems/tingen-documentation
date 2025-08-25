@@ -81,33 +81,18 @@
                         This method is required and <i>should not be modified</i>.
                     </item>
                     <item>
-                        <see cref="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.String)">Trace Logs</see>
+                        <see cref="!:LogEvent.Trace(int, string, string, string, string, int, string)">Trace Logs</see>
                         can't go here because the logging infrastructure hasn't been initialized yet.
                     </item>
                     <item>
                         If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
-                        Service will fail, and a <see cref="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,System.String,System.String)">Critical log</see> will be created.
+                        Service will fail, and a <see cref="!:LogEvent.Critical(string, string, string)">Critical log</see> will be created.
                     </item>
                 </list>       
             </para></remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="P:Outpost31.Core.Avatar.AvtrParameter.Original">Script Parameter</see> that is sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="!:Outpost31.Core.Avatar.AvtrParameter.Original">Script Parameter</see> that is sent from Avatar.</param>
             <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the Script Parameter request.</returns>
-        </member>
-        <member name="M:TingenWebService.TingenWebService.DevelopmentOnly(System.String,System.String)">
-            <summary>
-            Executes development-specific operations for verifying runtime configurations and logging events.
-            </summary>
-            <remarks>This method is intended for development purposes only and should not be included in
-            production deployments. It performs logging and runtime configuration verification for the specified
-            system.</remarks>
-            <param name="tngnWsvcVer">The version of the Tingen Web Service being used.</param>
-            <param name="avtrSys"><para>
-                The Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSys"><i>System</i></see> is different than an
-                Avatar <see cref="P:Outpost31.Core.Avatar.AvtrSystem.AvtrSysCode"><i>System Code</i></see>.<br />
-                <br />
-
-            </para></param>
         </member>
     </members>
 </doc>
