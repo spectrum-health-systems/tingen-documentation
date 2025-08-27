@@ -19,6 +19,7 @@
                 Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't<br />
                 included in the official release, and provides a solid foundation for building additional functionality<br />
                 quickly and efficiently
+                1
             </para>
                  <para>
                 <b>Project repositories</b><br />
@@ -34,13 +35,13 @@
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
-            <summary>The entry class for the Tingen Web Service.</summary>
+            <summary>The entry class for the Tingen Web Service!.</summary>
             <remarks>
                 <para>
                 This class doesn't do much actual work, and should remain fairly static. For the most part, it just hands information to
                 <see href="https://github.com/spectrum-health-systems/outpost31"> Outpost31</see>, where the heavy lifting is done.
                 <br />
-                There are two methods in this class, both of which <i>are required</i> and <i>should not be modified</i>:
+                There are two methods in this class which <i>are required</i> and <i>should not be modified</i>:
                 <list type="bullet">
                     <item><see cref="M:TingenWebService.TingenWebService.GetVersion" /></item>
                     <item><see cref="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)" /></item>
@@ -55,8 +56,8 @@
             <summary>The executing assembly name.</summary>
             <remarks>
                 <para>
-                The name of the Executing Assembly is a required component of all log files, as it is used to identify
-                the class that is creating the log.<br />
+                The name of the Executing Assembly is a required component of most log files, as it is used to identify
+                the project that is creating the log.<br />
                 <br />
                 This is defined at the start of each class, so it can be used at any time that a log needs to be created.
             </para>
@@ -67,8 +68,7 @@
         </member>
         <member name="M:TingenWebService.TingenWebService.GetVersion">
             <summary>Get the current version of the Tingen Web Service.</summary>
-            <remarks>This method is required and <i>should not be modified</i>.</remarks>
-            <returns>The current <see cref="P:TingenWebService.TingenWebService.TngnWsvcVer">version</see> of the Tingen Web Service.</returns>
+            <returns>The current <see cref="P:TingenWebService.TingenWebService.TngnWsvcVer"/> of the Tingen Web Service.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>The entry point for the Tingen Web Service.</summary>
@@ -84,7 +84,7 @@
                     </item>
                     <item>
                         If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
-                        Service will fail, and a <see cref="!:LogEvent.Critical(string, string, string)">Critical log</see> will be created.
+                        Service will fail, and aCritical log will be created.
                     </item>
                 </list>       
             </para>
