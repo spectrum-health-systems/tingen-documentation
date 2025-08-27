@@ -17,6 +17,7 @@ The documentation here is actually intended to be modified, and since the URL wo
 * [Common abbreviations](common-abbreviation.md)
 * [Project Guidelines](project-guideline.md)
 * [Valid Script Parameters](valid-parameter.md)
+* [Modifying the Web.config file](modifying-the-web-config-file.md)
 
 <br>
 

@@ -14,7 +14,7 @@
                 <include file="AppData/XmlDoc/ProjectInfo.xml" path="ProjectInfo/Class[@name=&quot;Project&quot;]/Callback/*" />
             </para>
                 <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see> file.
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
             </para>
             </remarks>
         </member>
@@ -75,27 +75,25 @@
             <remarks>
                 <para>
                 The Tingen Web Service setting named <c>AdminMode</c>, which can be used to perform
-                several different administrative processes, including:
-                <list type="bullet">
-                    <item><b>RegressionTest</b> - Regression testing</item>
-                    <item><b>RefreshAppData</b> - Refresh the application data cache</item>
-                </list>
-                By modifying this component of the Web.config file, these processes can be performed.<br />
-                <code>
-                    {<setting name="AdminMode" serializeAs="String">}
-                        <value>RegressionTest</value>
-                    </setting>     
-                </code>           
+                several different administrative processes<br />
+                <br />
+                For more information on AdminMode and it's settings, please see the Tingen Web Service
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>        
             </para>
                 <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see> file.
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
             </para>
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Admin.AdminMode.ExeAsmName">
             <summary>The executing assembly name.</summary>
             <remarks>
-                <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
+                <para>
+                The name of the Executing Assembly is a required component of most log files, as it is used to identify
+                the project that is creating the log.<br />
+                <br />
+                This is defined at the start of each class, so it can be used at any time that a log needs to be created.
+            </para>
             </remarks>
         </member>
         <member name="T:Outpost31.Core.Logger.LogAppEvent">
@@ -105,7 +103,7 @@
                 Core.Logger.LogEvent external XML
             </para>
                 <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see> file.
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
             </para>
             </remarks>
         </member>
