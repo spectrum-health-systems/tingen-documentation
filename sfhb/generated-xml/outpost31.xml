@@ -31,17 +31,61 @@
         <member name="M:Outpost31.Core.Admin.Deploy.CopyDirectory(System.String,System.String)">
             TODO move to a utility class
         </member>
-        <member name="P:Outpost31.Core.Admin.Test.ExeAsmName">
+        <member name="T:Outpost31.Core.Admin.Testing">
+            <summary>Provides testing and debugging operations.</summary>
+            <remarks>
+                <para>
+                The Tingen Web Service Web.config file has a setting named <c>AdminMode</c>, which can be used to perform
+                several processes, including testing various components of the Tingen Web Service.
+                <include file="AppData/XmlDoc/ProjectInfo.xml" path="ProjectInfo/Class[@name=&quot;Project&quot;]/Callback/*" />
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Admin.Testing.ExeAsmName">
             <summary>The executing assembly name.</summary>
             <remarks>
-                <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
+                <para>
+                The name of the Executing Assembly is a required component of most log files, as it is used to identify
+                the project that is creating the log.<br />
+                <br />
+                This is defined at the start of each class, so it can be used at any time that a log needs to be created.
+            </para>
             </remarks>
+        </member>
+        <member name="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">
+            <summary>Runs regression tests.</summary>
+            <remarks>
+                <para>
+                Regression tests various components of the Tingen Web Service.<br />
+                <br />
+                AdminMode = <c>RegressionTest</c>
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Outpost31.Core.Admin.Testing.AppLogs(System.String,System.Int32)">
+            <summary>Generates various application logs.</summary>
+            <remarks>This method performs various logging operations, including critical, debug, error,
+            and trace logs,  to verify the functionality and behavior of the application's logging system. It is
+            intended for  internal use during regression testing or diagnostics.</remarks>
+            <param name="avtrSys">The identifier for the avatar system or application context in which the logging operations are performed.</param>
+            <param name="msec"></param>
         </member>
         <member name="T:Outpost31.Core.Admin.AdminMode">
             <summary>Tingen Web Service mode logic.</summary>
             <remarks>
                 <para>
-                Class description
+                The Tingen Web Service setting named <c>AdminMode</c>, which can be used to perform
+                several different administrative processes, including:
+                <list type="bullet">
+                    <item><b>RegressionTest</b> - Regression testing</item>
+                    <item><b>RefreshAppData</b> - Refresh the application data cache</item>
+                </list>
+                By modifying this component of the Web.config file, these processes can be performed.<br />
+                <code>
+                    {<setting name="AdminMode" serializeAs="String">}
+                        <value>RegressionTest</value>
+                    </setting>     
+                </code>           
             </para>
                 <para>
                 For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see> file.
@@ -54,7 +98,7 @@
                 <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
             </remarks>
         </member>
-        <member name="T:Outpost31.Core.Logger.LogEvent">
+        <member name="T:Outpost31.Core.Logger.LogAppEvent">
             <summary>Logs an event.</summary>
             <remarks>
                 <para>
@@ -65,23 +109,32 @@
             </para>
             </remarks>
         </member>
-        <member name="P:Outpost31.Core.Logger.LogEvent.ExeAsmName">
+        <member name="P:Outpost31.Core.Logger.LogAppEvent.ExeAsmName">
             <summary>The executing assembly name.</summary>
             <remarks>
-                <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
+                <para>
+                The name of the Executing Assembly is a required component of most log files, as it is used to identify
+                the project that is creating the log.<br />
+                <br />
+                This is defined at the start of each class, so it can be used at any time that a log needs to be created.
+            </para>
             </remarks>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Alert(System.String,System.String,System.String)">
-            <summary>Logs a critical message to a file with a timestamped name.</summary>
-            <param name="avtrSys">The name of the system or application generating the log. This value is used to determine the log file path.</param>
-            <param name="logBody">The message to include in the log. Defaults to "Critical log" if not specified.</param>
+        <member name="M:Outpost31.Core.Logger.LogAppEvent.Critical(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>Generate a critical log.</summary>
+            <remarks>
+            
+            </remarks>
+            <param name="avtrSys"></param>
+            <param name="exeAsmName"></param>
+            <param name="msec"></param>
+            <param name="logName"></param>
+            <param name="logBody"></param>
+            <param name="fromClassPath"></param>
+            <param name="fromMethod"></param>
+            <param name="fromLine"></param>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
-            <summary>Logs a critical message to a file with a timestamped name.</summary>
-            <param name="avtrSys">The name of the system or application generating the log. This value is used to determine the log file path.</param>
-            <param name="logBody">The message to include in the log. Defaults to "Critical log" if not specified.</param>
-        </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Primeval(System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogAppEvent.Primeval(System.String,System.Int32)">
             <summary>Primeval logs are used when the advanced logging infrastructure isn't available.</summary>
             <remarks>
                 <para>

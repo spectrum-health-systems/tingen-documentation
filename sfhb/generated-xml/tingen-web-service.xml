@@ -18,8 +18,7 @@
                 <br />
                 Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't<br />
                 included in the official release, and provides a solid foundation for building additional functionality<br />
-                quickly and efficiently
-                1
+                quickly and efficiently.
             </para>
                  <para>
                 <b>Project repositories</b><br />
@@ -35,7 +34,7 @@
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
-            <summary>The entry class for the Tingen Web Service!.</summary>
+            <summary>The entry class for the Tingen Web Service.</summary>
             <remarks>
                 <para>
                 This class doesn't do much actual work, and should remain fairly static. For the most part, it just hands information to
@@ -76,22 +75,26 @@
                 <para>
                 <list type="bullet">
                     <item>
-                        This method is required and <i>should not be modified</i>.
-                    </item>
-                    <item>
-                        <see cref="!:LogEvent.Trace(int, string, string, string, string, int, string)">Trace Logs</see>
-                        can't go here because the logging infrastructure hasn't been initialized yet.
-                    </item>
-                    <item>
                         If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
-                        Service will fail, and aCritical log will be created.
+                        Service will fail, and a critical log will be created.
                     </item>
-                </list>       
+                    <item>
+                        If the TngnWsvcMode must be set to <c>enabled</c>, <c>disabled</c>, or <c>passthrough</c>. Any other mode will
+                        behave as <c>disabled</c>.
+                    </item>
+                    <item>
+                        There is a special "AdminMode" that can be set in the Web.Config file, but this is only for administrative/development
+                        tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
+                    </item>
+                </list>
             </para>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
             <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the Script Parameter request.</returns>
+        </member>
+        <member name="M:TingenWebService.TingenWebService.WriteStartLog">
+            <summary>Writes a simple log file to indicate that the Tingen Web Service has started.</summary>
         </member>
     </members>
 </doc>
