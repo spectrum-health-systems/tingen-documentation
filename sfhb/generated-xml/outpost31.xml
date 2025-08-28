@@ -5,9 +5,9 @@
     </assembly>
     <members>
         <member name="T:Outpost31.Core.Avatar.AvtrEnvironment">
-            <summary>Represents the components of an Avatar Environment.</summary>
+            <summary>Logic for Avatar environment components .</summary>
             <remarks>
-              The Avatar Environment includes <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">Avatar System Code</see>.<br/>
+              The Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">Avatar System Code</see>.<br/>
               <br/>
               While both contain the word <i>system</i>, they are not the same! It is important to understand the difference between the two.<br/>
               <br/>
@@ -15,7 +15,7 @@
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">
-            <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
+            <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks>
               It is <b><i>very important</i></b> that <c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
               <br />
@@ -44,42 +44,15 @@
             <value>The default value is <c>UAT</c>.</value>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">
-            <summary>The Avatar  <i>System <b>Code</b></i> used to login to Avatar.</summary>
+            <summary>The Avatar System Code used to login to Avatar.</summary>
             <remarks>
                 The Avatar <i>System Code</i> determines (in part) what Avatar functionality a user has access to while they are logged into
                 an Avatar <i>System</i>.<br/>
                 <br/>
-                Organizations may have many different Avatar <i>System Codes</i>, but only a few Avatar <see cref="!:AvtrSystem"> <i>Systems</i></see>.<br/>
+                Organizations may have many different Avatar <i>System Codes</i>, but only a few Avatar <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys"/>.<br/>
                 <br/>
-                In addition, the Avatar System Code may be similar or the same as the Avatar System.
+                And just to make things confusing, sometimes an Avatar System Code may be similar or the same as an Avatar System.
             </remarks>
-        </member>
-        <member name="M:Outpost31.Core.Avatar.AvtrEnvironment.test">
-            <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
-            <remarks>
-              <para>
-                It is <b><i>very important</i></b> that<c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
-                <Manual>
-                <note title="How-To">
-                    <h3>Modify the AvtrSys setting</h3>
-                    <list type="number">
-                        <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
-                        <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
-                        <item>Change the value of the <c>AvtrSys</c> setting to the desired value.</item>
-                        <item>Save the changes to the <c>Web.Config</c> file.</item>
-                    </list>
-                    For example, to set the Avatar System to `LIVE`:
-                    <code>
-                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
-                            &lt;value&gt;LIVE&lt;/value&gt;
-                        &lt;/setting&gt;
-                    </code>
-                    Changes to the<c> AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
-                </note>
-            </Manual>
-              </para>
-            </remarks>
-            <value>Valid AvtrSys values: <c>LIVE</c>, <c>UAT</c>.</value>
         </member>
         <member name="P:Outpost31.Core.Admin.Deployment.ExeAsmName">
             <summary>The executing assembly name.</summary>
