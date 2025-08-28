@@ -4,7 +4,16 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <!-- Badly formed XML comment ignored for member "T:Outpost31.Core.Avatar.AvtrEnvironment" -->
+        <member name="T:Outpost31.Core.Avatar.AvtrEnvironment">
+            <summary>Represents the components of an Avatar Environment.</summary>
+            <remarks>
+              The Avatar Environment includes <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">Avatar System Code</see>.<br/>
+              <br/>
+              While both contain the word <i>system</i>, they are not the same! It is important to understand the difference between the two.<br/>
+              <br/>
+              For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
+            </remarks>
+        </member>
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">
             <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
             <remarks>
@@ -29,12 +38,10 @@
                         &lt;/setting&gt;
                     </code>
                     Changes to the<c> AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
-                    <br />
-                    ***
                 </note>
             </Manual>
             </remarks>
-            <value>Valid AvtrSys values: <c>LIVE</c>, <c>UAT</c>.</value>
+            <value>The default value is <c>UAT</c>.</value>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">
             <summary>The Avatar  <i>System <b>Code</b></i> used to login to Avatar.</summary>
@@ -68,8 +75,6 @@
                         &lt;/setting&gt;
                     </code>
                     Changes to the<c> AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
-                    <br />
-                    ***
                 </note>
             </Manual>
               </para>
