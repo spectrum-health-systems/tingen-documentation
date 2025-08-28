@@ -4,12 +4,32 @@
 <span class="keyword">property</span> <span class="identifier">String</span>^ <span class="identifier">AvtrSys</span> {
 	<span class="identifier">String</span>^ <span class="keyword">get</span> ();
 	<span class="keyword">void</span> <span class="keyword">set</span> (<span class="identifier">String</span>^ <span class="parameter">value</span>);
-}</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">member</span> <span class="identifier">AvtrSys</span> : <span class="identifier">string</span> <span class="keyword">with</span> <span class="keyword">get</span>, <span class="keyword">set</span></code></pre></div></div><h4>Property Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a><br />Valid AvtrSys values: <span class="code">LIVE</span>, <span class="code">UAT</span>.</div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDBCSection"><p>
-                It is <b><i>very important</i></b> that<span class="code">AvtrSys</span> is set correctly, otherwise lots of bad things can *and will* happen!<br /><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  About AvtrSys</p></div><div class="message-body">
-                    Keep in mind that:
-                    <ul><li>Information 1</li><li>Information 2</li><li>Information 3</li></ul>
-                    Another bit information.
-                </div></article><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important!</p></div><div class="message-body">
+}</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">member</span> <span class="identifier">AvtrSys</span> : <span class="identifier">string</span> <span class="keyword">with</span> <span class="keyword">get</span>, <span class="keyword">set</span></code></pre></div></div><h4>Property Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a><br />Valid AvtrSys values: <span class="code">LIVE</span>, <span class="code">UAT</span>.</div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDBCSection">
+              It is <b><i>very important</i></b> that <span class="code">AvtrSys</span> is set correctly, otherwise lots of bad things can *and will* happen!<br /><br />
+              Common Avatar Systems are: <span class="code">UAT</span>, <span class="code">LIVE</span>, <span class="code">SBOX</span>, and<span class="code"> BUILD</span>. However, the Tingen Web Service is only able<br />
+              to interface with the <b><span class="code">UAT</span></b> and <b><span class="code"> LIVE</span></b> Avatar Systems.<br /><br /><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Manual</p></div><div class="message-body"><h3 class="quickLinkHeader">Modifying AvtrSys</h3>
+                    To modify the AvtrSys setting:
+                    <ol><li>
+                            Open the <span class="code">Web.Config</span> file located in the root directory of the Tingen Web Service.
+                        </li><li>
+                            Locate the <span class="code">AvtrSys</span> setting within the <span class="code">applicationSettings</span> section.
+                        </li><li>
+                            Change the value of the <span class="code">AvtrSys</span> setting to the desired value.
+                        </li><li>
+                            Save the changes to the <span class="code">Web.Config</span> file.
+                        </li></ol>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
+&lt;value&gt;LIVE&lt;/value&gt;
+&lt;/setting&gt;</code></pre></div></div>
+                    Changes to the<span class="code"> AvtrSys</span> setting will be applied the next time the Tingen Web Service is executed.
+                    <br /><h4>Thing Two</h4>
+                    To do this:
+                    <ol><li>First</li><li>Second</li><li>Third</li><li>Fourth</li></ol>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
+&lt;value&gt;LIVE&lt;/value&gt;
+&lt;/setting&gt;</code></pre></div></div></div></article><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important!</p></div><div class="message-body">
                         Don't forget!
                         <ul><li>Important 1</li><li>Important 2</li><li>Important 3</li></ul>
                         This is also important.
@@ -21,19 +41,7 @@
                         Make sure that:
                         <ul><li>Security 1</li><li>Security</li><li>Security</li></ul>
                         There is also this to consider
-                    </div></article><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Manual: topic</p></div><div class="message-body"><h3 class="quickLinkHeader">Thing One</h3>
-                    To do this:
-                    <ol><li>First</li><li>Second</li><li>Third</li><li>Fourth</li></ol>
-                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
-                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
-&lt;value&gt;LIVE&lt;/value&gt;
-&lt;/setting&gt;</code></pre></div></div><br /><h4>Thing Two</h4>
-                    To do this:
-                    <ol><li>First</li><li>Second</li><li>Third</li><li>Fourth</li></ol>
-                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
-                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
-&lt;value&gt;LIVE&lt;/value&gt;
-&lt;/setting&gt;</code></pre></div></div></div></article></p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="7896e938-75cf-a4bd-89df-15894e7788b0.htm">AvtrEnvironment Class</a></div><div><a href="eae81f89-36a6-a170-a7c9-1ab22b230f7c.htm">Outpost31.Core.Avatar Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Thing One</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
+                    </div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="7896e938-75cf-a4bd-89df-15894e7788b0.htm">AvtrEnvironment Class</a></div><div><a href="eae81f89-36a6-a170-a7c9-1ab22b230f7c.htm">Outpost31.Core.Avatar Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Modifying AvtrSys</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
 Please see the <a href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</a> for more information.
 </div> 
 				</div></div></footer></div><script>$(function(){
