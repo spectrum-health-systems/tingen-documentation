@@ -57,80 +57,38 @@
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>The entry point for the Tingen Web Service.</summary>
             <remarks>
-                <para>
+              <para>
+                The <c>WriteStartLog()</c> method is only for debugging purposes.
+            
                 <list type="bullet">
-                    <item>
-                        If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
-                        Service will fail, and a critical log will be created.
-                    </item>
-                    <item>
-                        If the TngnWsvcMode must be set to <c>enabled</c>, <c>disabled</c>, or <c>passthrough</c>. Any other mode will
-                        behave as <c>disabled</c>.
-                    </item>
-                    <item>
-                        There is a special "AdminMode" that can be set in the Web.Config file, but this is only for administrative/development
-                        tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
-                    </item>
+                  <item>
+                    If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
+                    Service will fail, and a critical log will be created.
+                  </item>
+                  <item>
+                    The TngnWsvcMode must be set to<c> enabled</c>, <c>disabled</c>, or<c> passthrough</c>. Any other mode will
+                    behave as <c>disabled</c>.
+                  </item>
+                  <item>
+                    There is a special "AdminMode" that can be set in the Web.Config file, but this is only for administrative/development
+                    tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
+                  </item>
                 </list>
-            </para><para>
-                <note>
-                    This example demonstrates the handling of a <c>note</c> element with no
-                    defined type. It defaults to the "note" style.
-                </note>
-            </para><para>
-            <note type="tip">
-                A <c>tip&gt; callout</c>.
+              </para>
+              <note title="The Tingen Web Service Manual: Modifying AvtrSys"> 
+            To modify the AvtrSys setting:
+            <list type="number">
+                <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
+                <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
+                <item>Change the value of the <c>AvtrSys</c> setting to the desired value.</item>
+                <item>Save the changes to the Web.Config file.</item>
+            </list>
+                The <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.
+           <note type="information">
+                Always document your code to help others understand how it is used.
             </note>
-            </para><para>
-            <note type="tip" title="Custom title">
-                A <c>tip&gt; callout</c> with a custom title.
+                
             </note>
-                </para><para>
-                        <note type="caution">
-                            A <c>caution</c> callout.
-                        </note>
-                    </para><para>
-                        <note type="important">
-                            An <c>important</c> callout.
-                        </note>
-                    </para><para>
-            <note type="security">
-                A <c>security</c> callout.
-            </note>
-                            </para><para>
-                                <note type="C#">
-                                    A <c>C#</c> callout.
-                                </note>
-                            </para><para>
-                                <note type="implement">
-                                    For implementers.
-                                </note>
-                            </para><para>
-            <note type="caller">
-                For callers.
-            </note>
-                                        </para><para>
-                                                <note type="inherit">
-                                                    For inheritors.
-                                                </note>
-                                            </para>
-                <note title="About this class">
-                ThHIOS class doesn't do much actual work, and should remain fairly static.<br />
-                <br />
-                For the most part, it just hands information to<see href="https://github.com/spectrum-health-systems/Outpost31">Outpost31</see>, where the<br />
-                heavy lifting is done.<br />
-                <br />
-                There are two methods in this class, both of which <i>are required</i><br />
-                by Avatar:
-                <list type="bullet">
-                <item>
-                <see cref="M:TingenWebService.TingenWebService.GetVersion" />
-                </item>
-                <item>
-                <see cref="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)" />
-                </item>
-                </list>
-                </note>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
