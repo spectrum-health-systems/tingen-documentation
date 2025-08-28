@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>AdminMode.Parse Method</title><meta name="Title" content="Parse" /><meta name="Help.Id" content="M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Outpost31.Core.Admin" /><meta name="guid" content="44ac01fd-8ad1-9a4e-ced5-f846d73f000c" /><meta name="Description" content="Determines if a administrative mode should be executed." /><meta name="tocFile" content="../toc/IDCAD.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><img src="../icons/Help.png" /></div><div id="DocumentationTitle" class="level-item">Outpost31 Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Admin<wbr />Mode<span id="LST27413C19_0" data-languageSpecificText="cpp=::|nu=."></span>Parse Method</h1><div class="summary">Determines if a administrative mode should be executed.</div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="e823e26d-9d3a-c134-3251-cc8eaf6f17fa.htm">Outpost31.Core.Admin</a><br /><strong>Assembly:</strong> Outpost31 (in Outpost31.dll) Version: 25.8.0.0 (25.8.0.0)<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="identifier">Parse</span>(
+	<span class="identifier">OptionObject2015</span> <span class="parameter">origOptObj</span>,
+	<span class="identifier">string</span> <span class="parameter">origScriptParam</span>,
+	<span class="identifier">string</span> <span class="parameter">tngnWsvcVer</span>,
+	<span class="identifier">string</span> <span class="parameter">avtrSys</span>,
+	<span class="identifier">string</span> <span class="parameter">adminMode</span>
+)</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Sub</span> <span class="identifier">Parse</span> ( 
+	<span class="parameter">origOptObj</span> <span class="keyword">As</span> <span class="identifier">OptionObject2015</span>,
+	<span class="parameter">origScriptParam</span> <span class="keyword">As</span> <span class="identifier">String</span>,
+	<span class="parameter">tngnWsvcVer</span> <span class="keyword">As</span> <span class="identifier">String</span>,
+	<span class="parameter">avtrSys</span> <span class="keyword">As</span> <span class="identifier">String</span>,
+	<span class="parameter">adminMode</span> <span class="keyword">As</span> <span class="identifier">String</span>
+)</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">public</span>:
+<span class="keyword">static</span> <span class="keyword">void</span> <span class="identifier">Parse</span>(
+	<span class="identifier">OptionObject2015</span>^ <span class="parameter">origOptObj</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">origScriptParam</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">tngnWsvcVer</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">avtrSys</span>, 
+	<span class="identifier">String</span>^ <span class="parameter">adminMode</span>
+)</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">static</span> <span class="keyword">member</span> <span class="identifier">Parse</span> : 
+        <span class="parameter">origOptObj</span> : <span class="identifier">OptionObject2015</span> * 
+        <span class="parameter">origScriptParam</span> : <span class="identifier">string</span> * 
+        <span class="parameter">tngnWsvcVer</span> : <span class="identifier">string</span> * 
+        <span class="parameter">avtrSys</span> : <span class="identifier">string</span> * 
+        <span class="parameter">adminMode</span> : <span class="identifier">string</span> <span class="keyword">-&gt;</span> <span class="keyword">unit</span> </code></pre></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">origOptObj</span>  <span class="noLink">OptionObject2015</span></dt><dd>The <span class="noLink">OptionObject2015</span> sent from Avatar.</dd><dt class="has-text-weight-normal"><span class="parameter">origScriptParam</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The original Script Parameter that is sent from Avatar.</dd><dt class="has-text-weight-normal"><span class="parameter">tngnWsvcVer</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The current version of the Tingen Web Service.</dd><dt class="has-text-weight-normal"><span class="parameter">avtrSys</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The Avatar system that the Tingen Web Service will interface with.</dd><dt class="has-text-weight-normal"><span class="parameter">adminMode</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The administrative mode setting.</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDBCSection"><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  Administrative modes</p></div><div class="message-body">
+                    The following administrative modes are available:
+                    <ul><li><a href="c96f0070-2e33-ee0a-1449-4b326ef8c9db.htm">RefreshAppData</a></li><li><span class="noLink">[!:Outpost31.Core.Admin.Development.RegressionTest]</span></li></ul>
+                    Another bit information.
+                </div></article><article class="message is-info"><div class="message-header"><p><span class="icon"><i class="fa fa-info-circle"></i></span>  How-To</p></div><div class="message-body"><h3 class="quickLinkHeader">Thing One</h3>
+                    To do this:
+                    <ol><li>First</li><li>Second</li><li>Third</li><li>Fourth</li></ol>
+                    For example, to set the Avatar System to `LIVE`:
+                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
+&lt;value&gt;LIVE&lt;/value&gt;
+&lt;/setting&gt;</code></pre></div></div>
+                    Then you should be all set!
+                    <br /><h3 class="quickLinkHeader">Thing Two</h3>
+                    To do this:
+                    <ol><li>First</li><li>Second</li><li>Third</li><li>Fourth</li></ol>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">&lt;setting name="AvtrSys" serializeAs="String"&gt;
+&lt;value&gt;LIVE&lt;/value&gt;
+&lt;/setting&gt;</code></pre></div></div></div></article><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Important!</p></div><div class="message-body">
+                    Don't forget!
+                    <ul><li>Important 1</li><li>Important 2</li><li>Important 3</li></ul>
+                    This is also important.
+                </div></article><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Warning!</p></div><div class="message-body">
+                    Be aware that:
+                    <ul><li>Warning 1</li><li>Warning 2</li><li>Warning 3</li></ul>
+                    In addition to that, another warning.
+                </div></article><article class="message is-danger"><div class="message-header"><p><span class="icon"><i class="fa fa-lock"></i></span>  Security details</p></div><div class="message-body">
+                    Make sure that:
+                    <ul><li>Security 1</li><li>Security</li><li>Security</li></ul>
+                    There is also this to consider
+                </div></article></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="cb0566a4-a3a5-b2d1-8b7f-658509ba2d30.htm">AdminMode Class</a></div><div><a href="e823e26d-9d3a-c134-3251-cc8eaf6f17fa.htm">Outpost31.Core.Admin Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Thing One</a></li><li><a class="quickLink">Thing Two</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><div align="center">
+Please see the <a href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</a> for more information.
+</div> 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

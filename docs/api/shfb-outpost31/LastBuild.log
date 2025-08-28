@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="8/28/2025 12:14:17 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="8/28/2025 1:33:01 PM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -47,10 +47,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-a0c4f54f-e7bb-4258-9b47-894f7da23c11.proj]
-Build started 8/28/2025 12:14:18 PM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-00be2419-e4ce-44cf-a537-374a82a0ac0c.proj]
+Build started 8/28/2025 1:33:02 PM.
 
-Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-a0c4f54f-e7bb-4258-9b47-894f7da23c11.proj&quot; on node 1 (default targets).
+Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-00be2419-e4ce-44cf-a537-374a82a0ac0c.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -61,24 +61,24 @@ GenerateRefInfo:
   Wrote information on 6 namespaces, 8 types, and 30 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-a0c4f54f-e7bb-4258-9b47-894f7da23c11.proj&quot; (default targets).
-    Last step completed in 00:00:00.9385
+Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-00be2419-e4ce-44cf-a537-374a82a0ac0c.proj&quot; (default targets).
+    Last step completed in 00:00:00.7615
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0058
+    Last step completed in 00:00:00.0011
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0043
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0090
+    Last step completed in 00:00:00.0039
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0340
+    Last step completed in 00:00:00.0311
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -92,19 +92,19 @@ Generating conceptual topic files
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\VersionHistory.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\c07a96b6-a791-477f-8bd3-df5564dd8811.xml
     Parsing topic file &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\33565a60-9900-4a09-83af-1351427e4991.xml
-    Last step completed in 00:00:00.0127
+    Last step completed in 00:00:00.0212
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0166
+    Last step completed in 00:00:00.0069
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\icons\Help.png -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0039
+    Last step completed in 00:00:00.0038
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -113,15 +113,15 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0049
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.1280
+    Last step completed in 00:00:00.1142
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0035
+    Last step completed in 00:00:00.0029
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -129,7 +129,7 @@ C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0066
+    Last step completed in 00:00:00.0064
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -138,15 +138,16 @@ Loading TOC info and adding unique IDs to parent nodes
 </plugIn>Loading configuration...
 Processing topics...
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: SharedContentComponent: [T:Outpost31.ProjectInfo] A shared content element did not specify an item
-SHFB: Warning BE0066: SharedContentComponent: [T:Outpost31.ProjectInfo] A shared content element did not specify an item
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Admin] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;origOptObj&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;origScriptParam&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;tngnWsvcVer&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;avtrSys&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;adminMode&quot;/&gt; documentation
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+TopicTransformation: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unhandled transformation element: Information  Parent element: remarks
+TopicTransformation: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unhandled transformation element: Manual  Parent element: remarks
+TopicTransformation: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unhandled transformation element: Important  Parent element: remarks
+TopicTransformation: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unhandled transformation element: Warning  Parent element: remarks
+TopicTransformation: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unhandled transformation element: Security  Parent element: remarks
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Unknown reference link target &#39;!:Outpost31.Core.Admin.Development.RegressionTest&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)] Invalid reference link target &#39;!:Outpost31.Core.Admin.Development.RegressionTest&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Admin.Deployment] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;sourceDir&quot;/&gt; documentation
@@ -155,14 +156,16 @@ SHFB: Warning BE0066: SharedContentComponent: [P:Outpost31.Core.Admin.Deployment
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Deployment.InitializeTngnWsvc(System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Deployment.InitializeTngnWsvc(System.String)] Missing &lt;param name=&quot;avtrSys&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)] Missing &lt;param name=&quot;avtrSys&quot;/&gt; documentation
+SHFB: Warning BE0066: SharedContentComponent: [T:Outpost31.Core.Admin.Testing] A shared content element did not specify an item
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Testing.GenerateAppLogs(System.String,System.Int32)] Missing &lt;param name=&quot;msec&quot;/&gt; documentation
+SHFB: Warning BE0066: SharedContentComponent: [M:Outpost31.Core.Admin.Testing.GenerateAppLogs(System.String,System.Int32)] A shared content element did not specify an item
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] Missing &lt;param name=&quot;origOptObj&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] Missing &lt;param name=&quot;origScriptParam&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] Missing &lt;param name=&quot;tngnWsvcVer&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] Missing &lt;param name=&quot;avtrSys&quot;/&gt; documentation
+SHFB: Warning BE0066: SharedContentComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] A shared content element did not specify an item
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Avatar] Missing &lt;summary&gt; documentation
-TopicTransformation: [P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys] Unhandled transformation element: Manual  Parent element: remarks
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Du] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Du.DuJson] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Du.DuJson.ExportToFile``1(``0,System.String)] Missing &lt;summary&gt; documentation
@@ -174,6 +177,7 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Du.DuJson.ImportFr
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Du.DuJson.ImportFromFile``1(System.String)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Du.DuJson.ImportFromFile``1(System.String)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Logger] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: SharedContentComponent: [T:Outpost31.Core.Logger.LogAppEvent] A shared content element did not specify an item
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogAppEvent.Critical(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;avtrSys&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogAppEvent.Critical(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;exeAsmName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogAppEvent.Critical(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;msec&quot;/&gt; documentation
@@ -221,7 +225,7 @@ CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 o
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:02.9438
+</plugIn>    Last step completed in 00:00:03.6347
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -257,26 +261,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.1375
+    Last step completed in 00:00:00.2355
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.2064
+    Last step completed in 00:00:00.0621
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 148 files for the website content
-    Last step completed in 00:00:00.1560
+    Last step completed in 00:00:00.3040
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0491
+    Last step completed in 00:00:00.0944
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 8/28/2025 12:14:22 PM.  Total time: 00:00:05.0880
+Build completed successfully at 8/28/2025 1:33:07 PM.  Total time: 00:00:05.9600
 
 </buildStep>
 </shfbBuild>

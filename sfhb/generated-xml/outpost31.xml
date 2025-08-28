@@ -5,9 +5,9 @@
     </assembly>
     <members>
         <member name="T:Outpost31.Core.Avatar.AvtrEnvironment">
-            <summary>Logic for Avatar environment components .</summary>
+            <summary>Logic for Avatar environment components.</summary>
             <remarks>
-              The Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">Avatar System Code</see>.<br/>
+              An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">Avatar System Code</see>.<br/>
               <br/>
               While both contain the word <i>system</i>, they are not the same! It is important to understand the difference between the two.<br/>
               <br/>
@@ -17,7 +17,7 @@
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks>
-              It is <b><i>very important</i></b> that <c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
+              It is <b><i>very important</i></b> that <c>AvtrSys</c> is set correctly, otherwise lots of bad things can <i>and will</i> happen!<br />
               <br />
               Common Avatar Systems are: <c>UAT</c>, <c>LIVE</c>, <c>SBOX</c>, and<c> BUILD</c>. However, the Tingen Web Service is only<br />
               able to interface with the <b><c>UAT</c></b> and <b><c> LIVE</c></b> Avatar Systems.<br />
@@ -70,9 +70,7 @@
         <member name="T:Outpost31.Core.Admin.Testing">
             <summary>Provides testing and debugging operations.</summary>
             <remarks>
-                <para>
-                Testing.cs description
-            </para>
+                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Admin.xml" path="Core.Admin/Class[@name=&quot;Testing&quot;]/ClassDescription/*" />
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Admin.Testing.ExeAsmName">
@@ -86,9 +84,7 @@
         <member name="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">
             <summary>Runs regression tests.</summary>
             <remarks>
-                <para>
-                Regression() description.
-            </para>
+                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Admin.xml" path="Core.Admin/Class[@name=&quot;Testing&quot;]/Regression/*" />
             </remarks>
             <param name="origOptObj" />
             <param name="origScriptParam" />
@@ -98,43 +94,104 @@
         <member name="M:Outpost31.Core.Admin.Testing.GenerateAppLogs(System.String,System.Int32)">
             <summary>Generates various application logs.</summary>
             <remarks>
-                <para>
-                GenerateAppLogs() description.
-            </para>
+                <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/Core.Admin.xml" path="Core.Admin/Class[@name=&quot;Testing&quot;]/GenerateAppLogs/*" />
             </remarks>
             <param name="avtrSys">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec" />
         </member>
         <member name="T:Outpost31.Core.Admin.AdminMode">
-            <summary>Tingen Web Service mode logic.</summary>
+            <summary>Logic for administrative mode options.</summary>
             <remarks>
-                <para>
-                The Tingen Web Service setting named <c>AdminMode</c>, which can be used to perform
-                several different administrative processes<br />
-                <br />
-                For more information on AdminMode and it's settings, please see the Tingen Web Service
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see>
-            </para>
-                <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
-            </para>
+              For more information on AdminMode and it's settings, please see the Tingen Web Service Manual.<br/>
+              <br/>
+              For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Admin.AdminMode.ExeAsmName">
-            <summary>The executing assembly name.</summary>
-            <remarks>
-                <para>
-
-            </para>
-            </remarks>
+            <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Admin.AdminMode.Run(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)">
-            <summary>Run one of the AdminModes.</summary>
-            <param name="origOptObj"></param>
-            <param name="origScriptParam"></param>
-            <param name="tngnWsvcVer"></param>
-            <param name="avtrSys"></param>
-            <param name="adminMode"></param>
+        <member name="M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)">
+            <summary>Determines if a administrative mode should be executed.</summary>
+            <remarks>
+            <Information>
+                <note type="information" title="Administrative modes">
+                    The following administrative modes are available:
+                    <list type="bullet">
+                        <item><see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see></item>
+                        <item><see cref="!:Outpost31.Core.Admin.Development.RegressionTest" /></item>
+                    </list>
+                    Another bit information.
+                </note>
+            </Information><Manual>
+                <note title="How-To">
+                    <h3>Thing One</h3>
+                    To do this:
+                    <list type="number">
+                        <item>First</item>
+                        <item>Second</item>
+                        <item>Third</item>
+                        <item>Fourth</item>
+                    </list>
+                    For example, to set the Avatar System to `LIVE`:
+                    <code>
+                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
+                        &lt;value&gt;LIVE&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                    Then you should be all set!
+                    <br />
+                    <h3>Thing Two</h3>
+                    To do this:
+                    <list type="number">
+                        <item>First</item>
+                        <item>Second</item>
+                        <item>Third</item>
+                        <item>Fourth</item>
+                    </list>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <code>
+                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
+                        &lt;value&gt;LIVE&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                </note>
+            </Manual><Important>
+                <note type="important" title="Important!">
+                    Don't forget!
+                    <list type="bullet">
+                        <item>Important 1</item>
+                        <item>Important 2</item>
+                        <item>Important 3</item>
+                    </list>
+                    This is also important.
+                </note>
+            </Important><Warning>
+                <note type="warning" title="Warning!">
+                    Be aware that:
+                    <list type="bullet">
+                        <item>Warning 1</item>
+                        <item>Warning 2</item>
+                        <item>Warning 3</item>
+                    </list>
+                    In addition to that, another warning.
+                </note>
+            </Warning><Security>
+                <note type="security" title="Security details">
+                    Make sure that:
+                    <list type="bullet">
+                        <item>Security 1</item>
+                        <item>Security</item>
+                        <item>Security</item>
+                    </list>
+                    There is also this to consider
+                </note>
+            </Security>
+            </remarks>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
+            <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
+            <param name="tngnWsvcVer">The current version of the Tingen Web Service.</param>
+            <param name="avtrSys">The Avatar system that the Tingen Web Service will interface with.</param>
+            <param name="adminMode">The administrative mode setting.</param>
         </member>
         <member name="T:Outpost31.Core.Logger.LogAppEvent">
             <summary>Logs an event.</summary>
@@ -142,9 +199,7 @@
                 <para>
                 Core.Logger.LogEvent external XML
             </para>
-                <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
-            </para>
+                <!-- Failed to insert some or all of included XML --><include file="AppData/XMLDoc/ProjectInfo.xml" path="TngnOpto/Class[@name=&quot;ProjectInfo&quot;]/Callback/*" />
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Logger.LogAppEvent.ExeAsmName">
@@ -156,18 +211,18 @@
             </remarks>
         </member>
         <member name="M:Outpost31.Core.Logger.LogAppEvent.Critical(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
-             <summary>Generate a critical log.</summary>
-             <remarks>
-            
-             </remarks>
-             <param name="avtrSys"></param>
-             <param name="exeAsmName"></param>
-             <param name="msec"></param>
-             <param name="logName"></param>
-             <param name="logBody"></param>
-             <param name="fromClassPath"></param>
-             <param name="fromMethod"></param>
-             <param name="fromLine"></param>
+            <summary>Generate a critical log.</summary>
+            <remarks>
+            This is public because TngnWsvc may need to call it.
+            </remarks>
+            <param name="avtrSys"></param>
+            <param name="exeAsmName"></param>
+            <param name="msec"></param>
+            <param name="logName"></param>
+            <param name="logBody"></param>
+            <param name="fromClassPath"></param>
+            <param name="fromMethod"></param>
+            <param name="fromLine"></param>
         </member>
         <member name="M:Outpost31.Core.Logger.LogAppEvent.Primeval(System.String,System.Int32)">
             <summary>Primeval logs are used when the advanced logging infrastructure isn't available.</summary>
@@ -193,12 +248,20 @@
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
             <remarks>
-                <para>
-                <b>About Outpost31</b><br />
-                Outpost 31 is the back-end/logic for the Tingen Web Service.
-            </para>
-                <!-- Failed to insert some or all of included XML --><include file="../../tingen-web-service/src/AppData/XmlDoc/SolutionInfo.xml" path="TngnWsvc/Class[@name=&quot;SolutionInfo&quot;]/Resources/*" />
-                <!-- Failed to insert some or all of included XML --><include file="../../tingen-web-service/src/AppData/XmlDoc/SolutionInfo.xml" path="TngnWsvc/Class[@name=&quot;SolutionInfo&quot;]/Documentation/*" />
+              <para>
+                Outpost31 is the back-end logic for the Tingen Web Service.
+              </para>
+              <para>
+                <b>Project repositories</b><br/>
+                <see href = "https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br/>
+                <see href = "https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+              </para>
+              <para>
+                <b>Project documentation</b><br/>
+                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br/>
+                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br/>
+                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+              </para>
             </remarks>
         </member>
     </members>
