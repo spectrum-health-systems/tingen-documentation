@@ -72,37 +72,48 @@
                         tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
                     </item>
                 </list>
-            </para><note>
-                This example demonstrates the handling of a <c>note</c> element with no
-                defined type. It defaults to the "note" style.
-            </note><note type="tip">
-                Always document your code to help others understand how it is used.
-            </note><note type="implement">
-                Override this method in a derived class to do something useful
-            </note><note type="caller">
-                Calling this implementation will have no effect at all
-            </note><note type="inherit">
-                Types inheriting this base method will have no use for it as it does nothing
-            </note><note type="caution">
-                Use of this method is not recommended.
-            </note><note type="warning">
-                XML is case-sensitive so the note type must be entered as shown in order for
-                it to be interpreted correctly.
-            </note><note type="important">
-                Calling this method excessively will only slow down your application.
-            </note><note type="security">
-                It is always safe to call this method.
-            </note><note type="security note">
-                This method requires no special privileges
-            </note><note type="C#">
-                Use parenthesis when calling this method in C#.
-            </note><note type="VB">
-                Parenthesis are not required when calling this method in Visual Basic.
-            </note><note type="C++">
-                Use parenthesis when calling this method in C++.
-            </note><note type="J#">
-                Use parenthesis when calling this method in J#.
+            </para><para>
+                <note>
+                    This example demonstrates the handling of a <c>note</c> element with no
+                    defined type. It defaults to the "note" style.
+                </note>
+            </para><para>
+            <note type="tip">
+                A <c>tip&gt; callout</c>.
             </note>
+            </para><para>
+            <note type="tip" title="Custom title">
+                A <c>tip&gt; callout</c> with a custom title.
+            </note>
+                </para><para>
+                        <note type="caution">
+                            A <c>caution</c> callout.
+                        </note>
+                    </para><para>
+                        <note type="important">
+                            An <c>important</c> callout.
+                        </note>
+                    </para><para>
+            <note type="security">
+                A <c>security</c> callout.
+            </note>
+                            </para><para>
+                                <note type="C#">
+                                    A <c>C#</c> callout.
+                                </note>
+                            </para><para>
+                                <note type="implement">
+                                    For implementers.
+                                </note>
+                            </para><para>
+            <note type="caller">
+                For callers.
+            </note>
+                                        </para><para>
+                                                <note type="inherit">
+                                                    For inheritors.
+                                                </note>
+                                            </para>
                 <note title="About this class">
                 ThHIOS class doesn't do much actual work, and should remain fairly static.<br />
                 <br />
