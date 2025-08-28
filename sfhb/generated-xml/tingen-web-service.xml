@@ -58,36 +58,58 @@
             <summary>The entry point for the Tingen Web Service.</summary>
             <remarks>
               <para>
-                The <c>WriteStartLog()</c> method is only for debugging purposes.
+                The <c>WriteStartLog()</c> method is only for debugging purposes.<br />
+                <br />
+                If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web Service will fail, and a critical log will be created.<br />
+                <br />
+                The <c>AvtrSys</c> setting specifies which Avatar <i>System</i> the Tingen Web Service will interface with.<br />
+                It is <b><i>very important</i></b> that <c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
+                <br />
+                <!-- Failed to insert some or all of included XML --><include file="AppData/XmlDoc/Manual.xml" path="Manual/Topic[@name=&quot;AvtrSys&quot;]/Modify/*" />
             
-                <list type="bullet">
-                  <item>
-                    If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web
-                    Service will fail, and a critical log will be created.
-                  </item>
-                  <item>
+            
+            
+            
+            
+            
                     The TngnWsvcMode must be set to<c> enabled</c>, <c>disabled</c>, or<c> passthrough</c>. Any other mode will
                     behave as <c>disabled</c>.
-                  </item>
-                  <item>
+                  <br />
                     There is a special "AdminMode" that can be set in the Web.Config file, but this is only for administrative/development
                     tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
-                  </item>
-                </list>
+                  <br />
               </para>
-              <note title="The Tingen Web Service Manual: Modifying AvtrSys"> 
-            To modify the AvtrSys setting:
-            <list type="number">
-                <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
-                <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
-                <item>Change the value of the <c>AvtrSys</c> setting to the desired value.</item>
-                <item>Save the changes to the Web.Config file.</item>
-            </list>
-                The <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.
-           <note type="information">
-                Always document your code to help others understand how it is used.
-            </note>
+              <note title="The Tingen Web Service Manual: Modifying AvtrSys">
+                To modify the AvtrSys setting:
+                <list type="number">
+                    <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
+                    <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
+                    <item>Change the value of the <c>AvtrSys</c> setting to the desired value.</item>
+                    <item>Save the changes to the Web.Config file.</item>
+                </list>
+                For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                <note type="C#">
+                    <code>
+                    <setting name="AvtrSys" serializeAs="String">
+                        <value>LIVE</value>
+                    </setting>
+                    </code>
+                </note>
                 
+                
+                
+                <note type="information" title="Things">
+                    <list type="bullet">
+                        <item>The <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.</item>
+                        <item>The Tingen Web Service is able to interface with the `UAT` and `LIVE` Avatar Systems.</item>
+                        <item>
+                            Change the value of the <c>AvtrSys</c> setting to the desired value.
+                        </item>
+                        <item>Save the changes to the Web.Config file.</item>
+                    </list>
+                    
+                   
+                </note>            
             </note>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
