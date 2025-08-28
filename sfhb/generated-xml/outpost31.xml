@@ -22,7 +22,7 @@
               Common Avatar Systems are: <c>UAT</c>, <c>LIVE</c>, <c>SBOX</c>, and<c> BUILD</c>. However, the Tingen Web Service is only<br />
               able to interface with the <b><c>UAT</c></b> and <b><c> LIVE</c></b> Avatar Systems.<br />
               <br />
-              <Manual>
+              <HowTo>
                 <note type="todo" title="How-To">
                     <h3>Modify the AvtrSys setting</h3>
                     <list type="number">
@@ -37,9 +37,9 @@
                             &lt;value&gt;LIVE&lt;/value&gt;
                         &lt;/setting&gt;
                     </code>
-                    Changes to the<c> AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
+                    Changes to the <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
                 </note>
-            </Manual>
+            </HowTo>
             </remarks>
             <value>The default value is <c>UAT</c>.</value>
         </member>
@@ -114,17 +114,33 @@
             <summary>Determines if a administrative mode should be executed.</summary>
             <remarks>
             <note title="Administrative mode options">
-                    The following administrative modes are available:
-                    <list type="bullet">
-                        <item>
-                            <see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see>
-                        </item>
-                        <item>
-                            <see cref="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)" />
-                        </item>
+                The following administrative modes are available:
+                <list type="bullet">
+                    <item>
+                        <see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see>
+                    </item>
+                    <item>
+                        <see cref="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">RegressionTest</see>
+                    </item>
+                </list>
+            </note><HowTo>
+                <note type="todo" title="How-To">
+                    <h3>Modify the AdminMode setting</h3>
+                    <list type="number">
+                        <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
+                        <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
+                        <item>Change the value of the <c>AdminMode</c> setting to the desired value.</item>
+                        <item>Save the changes to the <c>Web.Config</c> file.</item>
                     </list>
-                    Another bit information.
+                    For example, to set the AdminMode to `RegressionTest`:
+                    <code>
+                        &lt;setting name="AdminMode" serializeAs="String"&gt;
+                            &lt;value&gt;RegressionTest&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                    Changes to the <c>AdminMode</c> setting will be applied the next time the Tingen Web Service is executed.<br />      
                 </note>
+            </HowTo>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>

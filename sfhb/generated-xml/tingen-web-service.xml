@@ -60,5 +60,11 @@
         <member name="M:TingenWebService.TingenWebService.WriteStartLog">
             <summary>Writes a simple log file to indicate that the Tingen Web Service has started.</summary>
         </member>
+        <member name="M:TingenWebService.TingenWebService.LogMsg(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
+            <summary>Build a message for the critical error.</summary>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
+            <returns>A message for the critical error log.</returns>
+        </member>
     </members>
 </doc>
