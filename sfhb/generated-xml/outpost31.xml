@@ -4,19 +4,7 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <member name="T:Outpost31.Core.Avatar.AvtrEnvironment">
-            <summary>Represents the components of an Avatar Environment.</summary>
-            <remarks>
-              <para>
-                The Avatar Environment represents the <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys"><i>System</i></see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode"><i>System <b>Code</b></i></see>.<br />
-                <br />
-                While both contain the word<i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
-              </para>
-              <para>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
-            </para>
-            </remarks>
-        </member>
+        <!-- Badly formed XML comment ignored for member "T:Outpost31.Core.Avatar.AvtrEnvironment" -->
         <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">
             <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
             <remarks>
