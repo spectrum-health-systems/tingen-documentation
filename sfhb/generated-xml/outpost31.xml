@@ -54,15 +54,18 @@
                 And just to make things confusing, sometimes an Avatar System Code may be similar or the same as an Avatar System.
             </remarks>
         </member>
-        <member name="P:Outpost31.Core.Admin.Deployment.ExeAsmName">
-            <summary>The executing assembly name.</summary>
+        <member name="T:Outpost31.Core.Admin.Deployment">
+            <summary>Logic for deployment processes.</summary>
             <remarks>
-                <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
+              For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
+        <member name="P:Outpost31.Core.Admin.Deployment.ExeAsmName">
+            <summary>A required log file component.</summary>
+        </member>
         <member name="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">
-            <summary>Refresh all AppData data/resources.</summary>
-            <param name="avtrSys"></param>
+            <summary>Refresh data</summary>
+            <param name="avtrSys">The <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys"/></param>
         </member>
         <member name="M:Outpost31.Core.Admin.Deployment.CopyDirectory(System.String,System.String)">
             TODO move to a utility class
@@ -74,12 +77,7 @@
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Admin.Testing.ExeAsmName">
-            <summary>The executing assembly name.</summary>
-            <remarks>
-                <para>
-
-            </para>
-            </remarks>
+            <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)">
             <summary>Runs regression tests.</summary>
@@ -195,10 +193,7 @@
             <param name="logBody">The log message, which defaults to "Primeval log." if not specified.</param>
         </member>
         <member name="P:Outpost31.Module.Admin.Development.ExeAsmName">
-            <summary>The executing assembly name.</summary>
-            <remarks>
-                <!-- Failed to insert some or all of included XML --><include file="/AppData/XmlDoc/Common.xml" path="TngnOpto/Class[@name=&quot;Common&quot;]/ExeAsmName/*" />
-            </remarks>
+            <summary>A required log file component.</summary>
         </member>
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
