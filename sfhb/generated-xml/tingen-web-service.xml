@@ -58,37 +58,15 @@
             <summary>The entry point for the Tingen Web Service.</summary>
             <remarks>
               <para>
-                The <c>WriteStartLog()</c> method is only for debugging purposes.<br />
-                <br />
-                If Avatar doesn't pass an <paramref name="origOptObj" /> or <paramref name="origScriptParam" />, the Tingen Web Service will fail, and a critical log will be created.<br />
-                <br />
-                The <c>AvtrSys</c> setting specifies which Avatar <i>System</i> the Tingen Web Service will interface with. It is <b><i>very important</i></b> that<br />
-                <c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
-                <br />
-                <note title="The Tingen Web Service Manual: Modifying AvtrSys">
-                To modify the AvtrSys setting:
-                <list type="number">
-                    <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
-                    <item>Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.</item>
-                    <item>Change the value of the <c>AvtrSys</c> setting to the desired value.</item>
-                    <item>Save the changes to the <c>Web.Config</c> file.</item>
-                </list>
-                For example, to set the Avatar System to `LIVE`, modify the setting as follows:
-                <code>
-            &lt;setting name="AvtrSys" serializeAs="String"&gt;
-                &lt;value&gt;LIVE&lt;/value&gt;
-            &lt;/setting&gt;
-                </code>
-                <br />
-                <note type="information" title="More information about AvtrSys">
-                    <list type="bullet">
-                        <item>The <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.</item>
-                        <item>The Tingen Web Service is able to interface with the `UAT` and `LIVE` Avatar Systems.</item>
-                    </list>
-                    
-                   
-                </note>            
-            </note>
+                The <c>WriteStartLog()</c> method is only for debugging purposes.<br/>
+                <br/>
+                If Avatar doesn't pass an <paramref name="origOptObj"/> or <paramref name="origScriptParam"/>, the Tingen Web Service will fail, and a critical log will be created.<br/>
+                <br/>
+                The <c>AvtrSys</c> setting specifies which Avatar <i>System</i> the Tingen Web Service will interface with. It is <b><i>very important</i></b> that<br/>
+                <c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br/>
+                <br/>
+                To modify, please see 
+                <br/>
             
             
             
@@ -97,15 +75,15 @@
             
                     The TngnWsvcMode must be set to<c> enabled</c>, <c>disabled</c>, or<c> passthrough</c>. Any other mode will
                     behave as <c>disabled</c>.
-                  <br />
+                  <br/>
                     There is a special "AdminMode" that can be set in the Web.Config file, but this is only for administrative/development
                     tasks. Additional information about this mode can be found in the Tingen Web Service Manual.
-                  <br />
+                  <br/>
               </para>
             </remarks>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
-            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the Script Parameter request.</returns>
+            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> representing the result of the Script Parameter request.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.WriteStartLog">
             <summary>Writes a simple log file to indicate that the Tingen Web Service has started.</summary>

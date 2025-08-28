@@ -7,15 +7,107 @@
         <member name="T:Outpost31.Core.Avatar.AvtrEnvironment">
             <summary>Represents the components of an Avatar Environment.</summary>
             <remarks>
-                <para>
-                The Avatar Environment represents the <see cref="!:AvtrSys"><i>System</i></see> and Avatar <see cref="!:AvtrSysCode"><i>System <b>Code</b></i></see>.<br />
+              <para>
+                The Avatar Environment represents the <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys"><i>System</i></see> and Avatar <see cref="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode"><i>System <b>Code</b></i></see>.<br />
                 <br />
-                While both contain the word <i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
-                <include file="AppData/XmlDoc/ProjectInfo.xml" path="ProjectInfo/Class[@name=&quot;Project&quot;]/Callback/*" />
-            </para>
-                <para>
+                While both contain the word<i>System</i>, they are not the same! It is important to understand the difference between the two.<br />
+              </para>
+              <para>
                 For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo">Outpost31 <b>ProjectInfo</b></see>.
             </para>
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSys">
+            <summary>The Avatar <i>System</i> that the Tingen Web Service will interface with.</summary>
+            <remarks>
+              <para>
+                It is <b><i>very important</i></b> that<c>AvtrSys</c> is set correctly, otherwise lots of bad things can *and will* happen!<br />
+                <Information>
+                <note type="information" title="About topic">
+                    Keep in mind that:
+                    <list type="bullet">
+                        <item>Information 1</item>
+                        <item>Information 2</item>
+                        <item>Information 3</item>
+                    </list>
+                    Another bit information.
+                </note>
+            </Information><Important>
+                    <note type="important" title="Important!">
+                        Don't forget!
+                        <list type="bullet">
+                            <item>Important 1</item>
+                            <item>Important 2</item>
+                            <item>Important 3</item>
+                        </list>
+                        This is also important.
+                    </note>
+            </Important><Warning>
+                    <note type="warning" title="Warning!">
+                        Be aware that:
+                        <list type="bullet">
+                            <item>Warning 1</item>
+                            <item>Warning 2</item>
+                            <item>Warning 3</item>
+                        </list>
+                        In addition to that, another warning.
+                    </note>
+            </Warning><Security>
+                    <note type="security" title="Security details">
+                        Make sure that:
+                        <list type="bullet">
+                            <item>Security 1</item>
+                            <item>Security</item>
+                            <item>Security</item>
+                        </list>
+                        There is also this to consider
+                    </note>
+            </Security><Manual>
+                <note title="Manual: topic">
+                    <h3>Thing One</h3>
+                    To do this:
+                    <list type="number">
+                        <item>First</item>
+                        <item>Second</item>
+                        <item>Third</item>
+                        <item>Fourth</item>
+                    </list>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <code>
+                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
+                        &lt;value&gt;LIVE&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                    <br />
+                    <h4>Thing Two</h4>
+                    To do this:
+                    <list type="number">
+                        <item>First</item>
+                        <item>Second</item>
+                        <item>Third</item>
+                        <item>Fourth</item>
+                    </list>
+                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
+                    <code>
+                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
+                        &lt;value&gt;LIVE&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                </note>
+            </Manual>
+              </para>
+            </remarks>
+            <value>Valid AvtrSys values: <c>LIVE</c>, <c>UAT</c>.</value>
+        </member>
+        <member name="P:Outpost31.Core.Avatar.AvtrEnvironment.AvtrSysCode">
+            <summary>The Avatar  <i>System <b>Code</b></i> used to login to Avatar.</summary>
+            <remarks>
+                The Avatar <i>System Code</i> determines (in part) what Avatar functionality a user has access to while they are logged into
+                an Avatar <i>System</i>.<br/>
+                <br/>
+                Organizations may have many different Avatar <i>System Codes</i>, but only a few Avatar <see cref="!:AvtrSystem"> <i>Systems</i></see>.<br/>
+                <br/>
+                In addition, the Avatar System Code may be similar or the same as the Avatar System.
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Admin.Deployment.ExeAsmName">
