@@ -113,79 +113,27 @@
         <member name="M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)">
             <summary>Determines if a administrative mode should be executed.</summary>
             <remarks>
-            <Information>
-                <note type="information" title="Administrative modes">
-                    The following administrative modes are available:
-                    <list type="bullet">
-                        <item><see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see></item>
-                        <item><see cref="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)" /></item>
-                    </list>
-                    Another bit information.
+            <note>
+                    A default callout.
+                </note><note type="tip">
+                    A <c>tip</c> callout.
+                </note><note type="warning">
+                    A <c>warning</c> callout.
+                </note><note type="security">
+                    A <c>security</c> callout.
+                </note><note type="important">
+                    An <c>important</c> callout.
+                </note><note type="C#">
+                    A <c>C#</c> callout.
+                </note><note type="implement">
+                    An <c>implement</c> callout.
+                </note><note type="caller">
+                    A <c>caller</c> callout.
+                </note><note type="inherit">
+                    An <c>inheri</c> callout.
+                </note><note type="todo">
+                    A <c>todo</c> callout.
                 </note>
-            </Information><Manual>
-                <note title="How-To">
-                    <h3>Thing One</h3>
-                    To do this:
-                    <list type="number">
-                        <item>First</item>
-                        <item>Second</item>
-                        <item>Third</item>
-                        <item>Fourth</item>
-                    </list>
-                    For example, to set the Avatar System to `LIVE`:
-                    <code>
-                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
-                        &lt;value&gt;LIVE&lt;/value&gt;
-                        &lt;/setting&gt;
-                    </code>
-                    Then you should be all set!
-                    <br />
-                    <h3>Thing Two</h3>
-                    To do this:
-                    <list type="number">
-                        <item>First</item>
-                        <item>Second</item>
-                        <item>Third</item>
-                        <item>Fourth</item>
-                    </list>
-                    For example, to set the Avatar System to `LIVE`, modify the setting as follows:
-                    <code>
-                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
-                        &lt;value&gt;LIVE&lt;/value&gt;
-                        &lt;/setting&gt;
-                    </code>
-                </note>
-            </Manual><Important>
-                <note type="important" title="Important!">
-                    Don't forget!
-                    <list type="bullet">
-                        <item>Important 1</item>
-                        <item>Important 2</item>
-                        <item>Important 3</item>
-                    </list>
-                    This is also important.
-                </note>
-            </Important><Warning>
-                <note type="warning" title="Warning!">
-                    Be aware that:
-                    <list type="bullet">
-                        <item>Warning 1</item>
-                        <item>Warning 2</item>
-                        <item>Warning 3</item>
-                    </list>
-                    In addition to that, another warning.
-                </note>
-            </Warning><Security>
-                <note type="security" title="Security details">
-                    Make sure that:
-                    <list type="bullet">
-                        <item>Security 1</item>
-                        <item>Security</item>
-                        <item>Security</item>
-                    </list>
-                    There is also this to consider
-                </note>
-            </Security>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
