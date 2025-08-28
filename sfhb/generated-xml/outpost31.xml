@@ -23,7 +23,7 @@
               able to interface with the <b><c>UAT</c></b> and <b><c> LIVE</c></b> Avatar Systems.<br />
               <br />
               <Manual>
-                <note title="How-To">
+                <note type="todo" title="How-To">
                     <h3>Modify the AvtrSys setting</h3>
                     <list type="number">
                         <item>Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
@@ -113,26 +113,17 @@
         <member name="M:Outpost31.Core.Admin.AdminMode.Parse(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String,System.String)">
             <summary>Determines if a administrative mode should be executed.</summary>
             <remarks>
-            <note>
-                    A default callout.
-                </note><note type="tip">
-                    A <c>tip</c> callout.
-                </note><note type="warning">
-                    A <c>warning</c> callout.
-                </note><note type="security">
-                    A <c>security</c> callout.
-                </note><note type="important">
-                    An <c>important</c> callout.
-                </note><note type="C#">
-                    A <c>C#</c> callout.
-                </note><note type="implement">
-                    An <c>implement</c> callout.
-                </note><note type="caller">
-                    A <c>caller</c> callout.
-                </note><note type="inherit">
-                    An <c>inheri</c> callout.
-                </note><note type="todo">
-                    A <c>todo</c> callout.
+            <note title="Administrative mode options">
+                    The following administrative modes are available:
+                    <list type="bullet">
+                        <item>
+                            <see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see>
+                        </item>
+                        <item>
+                            <see cref="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)" />
+                        </item>
+                    </list>
+                    Another bit information.
                 </note>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
