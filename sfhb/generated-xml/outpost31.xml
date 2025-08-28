@@ -118,7 +118,7 @@
                     The following administrative modes are available:
                     <list type="bullet">
                         <item><see cref="M:Outpost31.Core.Admin.Deployment.RefreshAppData(System.String)">RefreshAppData</see></item>
-                        <item><see cref="!:Outpost31.Core.Admin.Development.RegressionTest" /></item>
+                        <item><see cref="M:Outpost31.Core.Admin.Testing.Regression(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String,System.String)" /></item>
                     </list>
                     Another bit information.
                 </note>
