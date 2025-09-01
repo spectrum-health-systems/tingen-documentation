@@ -1,8 +1,10 @@
-<!-- u250818 -->
+<!-- u250611 -->
 
 <div align="center">
 
-  ![logo](/.github/img/logo/TngnDocProj-320x420.png)
+  ![logo](/.github/img/logo/TngnWsvc-320x420.png)
+
+  ![Release](https://img.shields.io/badge/release-25.9-teal)&nbsp;&nbsp;
 
 </div>
 

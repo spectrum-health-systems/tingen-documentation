@@ -1,4 +1,4 @@
-<!-- u250701 -->
+<!-- u250901 -->
 
 <!--
   I'm sure the Mermaid.js code here looks awful, but it was a real pain to get
@@ -167,16 +167,16 @@ flowchart TB
 
 ### Development branches
 
-Use the *development* branch of the following repositories to create a `YY.DD.##-development+final` branch:
+Use the *development* branch of the following repositories to create a `RYY.DD` branch:
 
-* Tingen-WebService
-* Outpost31
+* tingen-web-service
+* outpost31
 
 ### Main branches
 
-Use the *main* branch of the following repositories to create a `YY.DD.##-development+final` branch:
+Use the *main* branch of the following repositories to create a `RYY.DD` branch:
 
-* Tingen-Documentation
+* tingen-documentation-project
 
 <br>
 
@@ -266,6 +266,8 @@ Update the file headers for the following files:
 * Outpost31.ProjectInfo.cs
 * TingenCommander.MainWindow.xaml.cs
 
+<!-- DEPRECIATED
+
 #### The `tnBuild` value
 
 Update `tnBuild` value in `Core.ConfigRuntime.New()` to the current `YYMMDD` value.
@@ -279,6 +281,8 @@ TngnWbsvBuild = "250430",
 .
 .
 ```
+
+-->
 
 ### Update the documentation
 
