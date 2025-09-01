@@ -1,8 +1,11 @@
-<!-- u250625 -->
+<!-- u250901 -->
 
 # Deploying the Tingen Web Service
 
-1. Commit all changes for the following:
+## Development
 
-* [Tingen Web Service](https://github.com/spectrum-health-systems/tingen-web-service)
-* [Outpost31](https://github.com/spectrum-health-systems/outpost31)
+As of R25.8, deployment is done via publishing directly to the host.
+
+## Community
+
+Soon.
