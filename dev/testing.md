@@ -4,8 +4,16 @@
 
 ## The Web Services Testing form
 
-1. Open the form
-2. Click the "Admin" tab
-3. Check "Deploy", verify
-4. Check "Refrsh", verify
-5. Check "test", verify
+- [ ] Open the form
+- [ ] Click the "Admin" tab
+- [ ] Check "Deploy"
+    - [ ] Verify the framework was created
+    - [ ] Verify the session folder was created
+    - [ ] Verify that the AppData folder contains blueprints
+    - [ ] Verify that regression tests completed
+- [ ] Delete AppData folder
+- [ ] Check "Refresh", verify
+    - [ ] Verify that the AppData folder contains blueprints
+- [ ] Delete the regression test data
+- [ ] Check "test"
+    - [ ] Verify that regression tests completed

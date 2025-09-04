@@ -2,6 +2,38 @@
 
 > Internal apcp development only!
 
+## R25.9
+
+
+- [ ] Setup custom messages for OptObj error messages
+- [ ] Move logs to Sessions
+- [ ] Session logs can be simple or verbose
+- [ ] Make all session stuff internal
+- [ ] Test to see what happens when a blueprint is deleted, does it show up when the service execute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * A random number generator determines if things are done:
     * Status updates
     * Framework checks
