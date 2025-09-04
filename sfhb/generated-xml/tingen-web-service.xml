@@ -52,9 +52,20 @@
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>Determines what the Tingen Web Service will do, if anything.</summary>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <note title="A note about logging in TingenWebService.asmx.cs">
+                    This method contains a number of log commands that may be used during development, but should be commented
+                    out in production code.<br />
+                    <br />
+                    These commands are not part of the public API, since the logging infrastructure hasn't been initialized at
+                    this point, and they are all a little bit different and write to different locations.<br />
+                    <br />
+                    I want these commands to be available for developers to use as needed, but at the same time I want to 
+                    minimize the amount of clutter they create. Hence, I've attempted to keep them on a single line, including
+                    an in-line comment.
+                </note>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
             <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
-            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> representing the result of the Script Parameter request.</returns>
+            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the Script Parameter request.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.LogMsg(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>Build a message for the critical error.</summary>
