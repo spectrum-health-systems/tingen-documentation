@@ -37,9 +37,8 @@ flowchart LR
 
 ## Starting a new session
 
-@import "flowchart LR.mermaid"
-![](flowchart LR.mermaid)
 
+mermaid {% include test.mmd %}
 <!--
 ```mermaid
 flowchart LR
