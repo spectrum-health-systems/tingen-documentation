@@ -38,7 +38,9 @@ flowchart LR
 ## Starting a new session
 
 @import "flowchart LR.mmd"
+![](flowchart LR.mmd)
 
+<!--
 ```mermaid
 flowchart LR
   %% Content
@@ -64,7 +66,7 @@ flowchart LR
   ServiceMode --DISABLED--> ReturnUnmodified --> Stop_Disabled
   %% Styles 
 ```
-
+-->
 
 
 
