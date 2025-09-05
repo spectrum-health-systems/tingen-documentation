@@ -1,0 +1,23 @@
+flowchart LR
+  %% Content
+  From_TingenWebService.asmx.cs@{ shape: rect, label: "TingenWebService.asmx.cs" }
+  Outpost31.Core.Session.Instance.Start@{ shape: rounded, label: "Outpost31.Core.Session.Instance.Start()" }
+  GetVersionOrRunScript@{ shape: diam, label: "GetVersion()\nor\nRunScript()?" }
+  OutputVersion@{ shape: lean-l, label: "Output\nversion" }
+  Stop_GetVersion@{ shape: fr-circ }
+  ValidDataPassed@{ shape: diam, label: "Valid data\npassed?[1]" }
+  CriticalNoValidData@{ shape: lean-l, label: "Write\ncritical log" }
+  Stop_ValidDataNotPassed@{ shape: fr-circ }
+  ServiceMode@{ shape: diam, label: "Service\nmode" }
+  ReturnUnmodified@{ shape: rounded, label: "Return unmodified\nOptionObject" }
+  StartSession@{ shape: rounded, label: "Start new\n session" }
+  Stop_Disabled@{ shape: fr-circ }
+  %% Layout
+  Start_TingenWebService --> GetVersionOrRunScript
+  GetVersionOrRunScript --GetVersion\(\)--> OutputVersion --> Stop_GetVersion
+  GetVersionOrRunScript --RunScript\(\)--> ValidDataPassed
+  ValidDataPassed --NO--> CriticalNoValidData --> Stop_ValidDataNotPassed
+  ValidDataPassed --YES--> ServiceMode
+  ServiceMode --ENABLED--> StartSession
+  ServiceMode --DISABLED--> ReturnUnmodified --> Stop_Disabled
+  %% Styles 
