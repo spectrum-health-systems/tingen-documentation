@@ -2,7 +2,6 @@
 
 # Module.Administrative
 
-
 ## Module.Administrative.Deployment
 
 ### Module.Administrative.Deployment.Deploy()
@@ -14,6 +13,8 @@ flowchart LR
   Module.Administrative.Deployment.Deploy.RefreshAppData@{ shape: rounded, label: "Module.Administrative.Deployment.Deploy.RefreshAppData()" }
   %% Layout
   Module.Administrative.Deployment.Deploy.CreateFolderFramework --> Module.Administrative.Deployment.Deploy.RefreshAppData
+  click A "#mo" _blank
+
 ```
 
 ### Module.Administrative.Deployment.CreateFolderFramework()
@@ -33,3 +34,35 @@ flowchart LR
 Module.Administrative.Deployment.Deploy()
 Module.Administrative.Deployment.Refresh()
 Module.Administrative.Testing.Regression()
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+
+# Mo
+
+kjhgkuh
