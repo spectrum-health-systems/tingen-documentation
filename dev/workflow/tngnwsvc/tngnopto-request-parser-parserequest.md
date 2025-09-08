@@ -1,4 +1,4 @@
-<!-- u250905 -->
+<!-- u250908 -->
 
 # Outpost31.Core.Request.Parser.ParseRequest()
 
@@ -8,7 +8,7 @@ flowchart LR
   From_TingenWebService.asmx.cs@{ shape: stadium, label: "TingenWebService.asmx.cs" }
   ScriptParameterStartsWith@{ shape: diam, label: "Script Parameter\nstarts with[1]" }
   To_Outpost31.Core.Request.Parser.ParseStandardRequest@{ shape: stadium, label: "Outpost31.Core.Request.Parser.ParseStandardRequest()" }
-  To_Outpost31.Core.Request.Parser.ParseAdminRequest@{ shape: stadium, label: "Outpost31.Core.Request.Parser.ParseAdminRequest()" }
+  To_Outpost31.Core.Request.Parser.ParseAdminRequest@{ shape: stadium, label: "Outpost31.Core.Request.Administrative()" }
   To_Outpost31.Core.Request.Parser.ParsePrototypeRequest@{ shape: stadium, label: "Outpost31.Core.Request.Parser.ParsePrototypeRequest()" }
   %% Layout
   From_TingenWebService.asmx.cs --> ScriptParameterStartsWith
