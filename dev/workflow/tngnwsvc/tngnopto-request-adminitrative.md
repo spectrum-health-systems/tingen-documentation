@@ -19,3 +19,6 @@ flowchart LR
 
 ## Next
 
+Module.Administrative.Deployment.Deploy()
+Module.Administrative.Deployment.Refresh()
+Module.Administrative.Testing.Regression()
