@@ -16,11 +16,8 @@
 
 # Workflows
 
-* [Main process](workflow-daily-development.md)  
-Daily development process and procedures.
-
-* [Daily development](workflow-daily-development.md)  
-Daily development process and procedures.
+* [Main process](./workflow/workflow-main-process.md)  
+* [Daily development](./workflow/workflow-runscript.md)  
 
 # Documentation
 
