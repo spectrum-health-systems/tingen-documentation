@@ -1,24 +1,34 @@
 <!-- u250905 -->
 
-# Tingen Web Service/Outpost31 process flow
+# Tingen Web Service/Outpost31 Main Process Workflows
 
-## Overview
+<div align="center">
 
 ```mermaid
 flowchart LR
   %% Content
-  Start@{ shape: fr-circ }
-  Initialize@{ shape: rounded, label: "Initialize" }
-  CreateSession@{ shape: rounded, label: "Create session" }
-  ParseRequest@{ shape: rounded, label: "Parse request" }
-  Stop@{ shape: fr-circ }
+  Start@{ shape: circ, label: "Avatar" }
+  TingenWebService.Runscript@{ shape: rounded, label: "TingenWebService\nRunscript()" }
+  Outpost31.Core.Session.Instance.Start@{ shape: rounded, label: "Outpost31.Core.Session\nInstance.Start()" }
+  Outpost31.Core.Request.Parser.ParseRequest@{ shape: rounded, label: "Outpost31.Core.Request.Parser\nParseRequest()" }
+  ReturnOptionObject@{ shape: rounded, label: "Return OptionObject[1]" }
+  Stop@{ shape: fr-circ}
   %% Layout
-  Start --> Initialize:::FP8 --> CreateSession:::FP8 --> ParseRequest:::FP8 --> Stop
+  Start:::FP8 --> TingenWebService.Runscript:::FP8 --> Outpost31.Core.Session.Instance.Start:::FP8 -->  Outpost31.Core.Request.Parser.ParseRequest:::FP8 --> ReturnOptionObject:::FP8 -->Stop
   %% Styles
   classDef FP8 font-size:8pt
 ```
 
-## Initializing the Tingen Web Service
+</div>
+
+> NOTES:  
+> [1] The returned OptionObject *may or may not be* modified.
+
+<br>
+
+***
+
+## TingenWebService Runscript()
 
 ```mermaid
 flowchart LR
@@ -80,7 +90,6 @@ flowchart TB
 
 > NOTES:  
 > [1] Some of these use existing Web.config settings, some are set when the session starts.
-
 
 <br>
 
