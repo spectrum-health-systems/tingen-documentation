@@ -10,7 +10,7 @@
 
 The Tingen Documentation project contains:
 
-[Manuals](./man/). 
-[API Documentation](./docs/api/). 
-[Static documentation](./static/). 
-[Development documentation](./dev/). 
+[Manuals](./man/)  
+[API Documentation](./docs/api/)  
+[Static documentation](./static/)  
+[Development documentation](./dev/)  
