@@ -13,7 +13,7 @@ flowchart LR
   Module.Administrative.Deployment.Deploy.RefreshAppData@{ shape: rounded, label: "Module.Administrative.Deployment.Deploy.RefreshAppData()" }
   %% Layout
   Module.Administrative.Deployment.Deploy.CreateFolderFramework --> Module.Administrative.Deployment.Deploy.RefreshAppData
-  click A "#mo" _blank
+  click Module.Administrative.Deployment.Deploy.CreateFolderFramework "#mo" _blank
 
 ```
 
