@@ -16,7 +16,7 @@
 
 # Workflows
 
-* [Main process](./workflow/workflow-main-process.md)  
+* [The Tingen Web Service](./workflow/workflow-tngnwsvc.md)  
 * [Daily development](./workflow/workflow-runscript.md)  
 
 # Documentation

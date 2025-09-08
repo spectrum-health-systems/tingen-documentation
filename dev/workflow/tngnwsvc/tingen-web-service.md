@@ -1,6 +1,6 @@
 <!-- u250905 -->
 
-# Tingen Web Service Main Process Workflow
+# Tingen Web Service Workflow
 
 <div align="center">
 
