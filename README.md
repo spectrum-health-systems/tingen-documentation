@@ -10,6 +10,11 @@
 
 The Tingen Documentation project contains:
 
+[Manuals](./man/)
+[API Documentation](./docs/api/)
+[Static documentation](./static/)
+[Development documentation](./dev/)
+
 <div align="center">
 
   [![Tingen Manuals](/.github/img/logo/man/TngnDocProj-Man-194x254.png)](./man/)&nbsp;&nbsp;
