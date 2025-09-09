@@ -7,7 +7,7 @@
         <member name="T:TingenWebService.Configuration.RuntimeConfig">
             <summary>Runtime configuration logic.</summary>
         </member>
-        <member name="P:TingenWebService.Configuration.RuntimeConfig.ExeAsmName">
+        <member name="P:TingenWebService.Configuration.RuntimeConfig.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
@@ -49,7 +49,7 @@
             <summary>The entry class for the Tingen Web Service.</summary>
             <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:TingenWebService.TingenWebService.ExeAsmName">
+        <member name="P:TingenWebService.TingenWebService.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="P:TingenWebService.TingenWebService.Version">

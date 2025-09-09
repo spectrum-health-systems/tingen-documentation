@@ -7,14 +7,14 @@
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
             <summary>Logic for Avatar environment components.</summary>
             <remarks>
-                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">Avatar System Code</see>.<br/>
+                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSysCode">Avatar System Code</see>.<br/>
                 <br/>
                 While both contain the word<i> system</i>, they are not the same! It is important to understand the difference between the two.<br/>
                 <br/>
-                For more information about Outpost31, please see the<see cref = "T:Outpost31.ProjectInfo"/> file.
+                For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">
+        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks><note type="todo" title="How-To">
                     <h3>Modify the AvtrSys setting</h3>
@@ -42,7 +42,7 @@
                 </note></remarks>
             <value>The default value is <c>UAT</c>.</value>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">
+        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSysCode">
             <summary>The Avatar System Code used to login to Avatar.</summary>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarOptionObject">
@@ -61,7 +61,7 @@
             <summary>The finalized <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> that is returned to Avatar.</summary>
             <remarks>This is the finalized OptionObject, ready to be returned to Avatar.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.ExeAsmName">
+        <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
@@ -71,13 +71,13 @@
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.VerifyExistence(System.String)">
             <summary>Verify if a Script Parameter was sent from Avatar.</summary>
-            <param name="origParam">The original Script Parameter sent from Avatar.</param>
+            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+            <param name="origScriptParameter">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
         <member name="T:Outpost31.Core.Framework.Folders">
-            <summary>
-            Represents a set of folder paths used by the Outpost31 framework.
-            </summary>
+            <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
         <member name="P:Outpost31.Core.Framework.Folders.SystemWww">
             <summary>
@@ -119,7 +119,7 @@
             Gets or sets the path to the import folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Session">
+        <member name="P:Outpost31.Core.Framework.Folders.Current">
             <summary>
             Gets or sets the path to the session folder.
             </summary>
@@ -152,95 +152,56 @@
             <summary>Logs an application event.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Logger.LogEvent.ExeAsmName">
+        <member name="P:Outpost31.Core.Logger.LogEvent.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a critical log.</summary>
-            <remarks>This is public because TngnWsvc may need to call it.</remarks>
         </member>
         <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.Int32)">
             <summary>Generate a trace log.</summary>
-            <param name="traceLevel"></param>
-            <param name="traceLimit"></param>
-            <param name="avatarSystem"></param>
-            <param name="exeAsmName"></param>
-            <param name="msec"></param>
-            <param name="fromClassPath"></param>
-            <param name="fromMethod"></param>
-            <param name="fromLine"></param>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Debuggler(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Debuggler(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a debug log.</summary>
-            <param name="avatarSystem"></param>
-            <param name="exeAsmName"></param>
-            <param name="msec"></param>
-            <param name="logBody"></param>
-            <param name="fromClassPath"></param>
-            <param name="fromMethod"></param>
-            <param name="fromLine"></param>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate an error log.</summary>
-            <param name="avatarSystem"></param>
-            <param name="exeAsmName"></param>
-            <param name="msec"></param>
-            <param name="errorMsg"></param>
-            <param name="errorCode"></param>
-            <param name="fromClassPath"></param>
-            <param name="fromMethod"></param>
-            <param name="fromLine"></param>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Primeval(System.String,System.Int32)">
-            <summary>Primeval logs are used when the advanced logging infrastructure isn't available.</summary>
-            <remarks>
-                <para>
-                Primeval logs can be utilized prior to building the logging infrastructure.<br />
-                <br />
-                Since primeval logs may be written very quickly, there is a 1000ms delay<br />
-                before committing data.This can potentially cause performance issues.<br />
-                <br />
-                Syntax: <c>LogEvent.Primeval(avtrSys, "Optional message.");</c>
-            </para>
-            </remarks>
-            <param name="avatarSystem">The sys</param>
-            <param name="logBody">The log message, which defaults to "Primeval log." if not specified.</param>
-        </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.GetClassName(System.String)">
+        <member name="M:Outpost31.Core.Logger.LogUtility.GetClassName(System.String)">
             <summary>Get the class name from the full class path.</summary>
             <param name="fromClassPath"></param>
             <returns></returns>
         </member>
-        <member name="P:Outpost31.Core.Request.Parser.ExeAsmName">
+        <member name="P:Outpost31.Core.Request.Parser.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.Session.Instance)">
+        <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.Session.SessInstance)">
             <summary>Parse a request.</summary>
-            <param name="session"></param>
+            <param name="sess"></param>
         </member>
-        <member name="P:Outpost31.Core.Session.Instance.ExeAsmName">
+        <member name="P:Outpost31.Core.Session.SessInstance.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Session.Instance.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="M:Outpost31.Core.Session.SessInstance.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>A required log file component.</summary>
         </member>
         <member name="T:Outpost31.Module.Administration.Deployment">
             <summary>Administrative deployment functionality.</summary>
         </member>
-        <member name="P:Outpost31.Module.Administration.Deployment.ExeAsmName">
+        <member name="P:Outpost31.Module.Administration.Deployment.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)">
             <summary>Deploy the Tingen Web Service framework.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
         <member name="M:Outpost31.Module.Administration.Deployment.CreateFolderFramework(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Create the Tingen Web Service folder framework.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
         <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.Int32)">
             <summary>Refresh application data that is required by the Tingen Web Service.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
         <member name="M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)">
             TODO move to a utility class
@@ -248,7 +209,7 @@
         <member name="T:Outpost31.Module.Administration.Testing">
             <summary>Administrative testing functionality.</summary>
         </member>
-        <member name="P:Outpost31.Module.Administration.Testing.ExeAsmName">
+        <member name="P:Outpost31.Module.Administration.Testing.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Module.Administration.Testing.Regression(System.String,System.String,System.Int32)">
@@ -256,7 +217,7 @@
             <param name="sentOptionObject">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="sentScriptParameter">The original Script Parameter that is sent from Avatar.</param>
             <param name="tngnWsvcVer">The current version of the Tingen Web Service.</param>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/>Avatar system that the Tingen Web Service will interface with.</param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/>Avatar system that the Tingen Web Service will interface with.</param>
         </member>
         <member name="M:Outpost31.Module.Administration.Testing.GenerateAppLogs(System.String,System.String,System.Int32,System.Int32)">
             <summary>Generates various application logs.</summary>
