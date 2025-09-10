@@ -10,7 +10,9 @@
 - [ ] Session logs can be simple or verbose
 - [ ] Make all session stuff internal
 - [ ] Test to see what happens when a blueprint is deleted, does it show up when the service execute
+- [ ] web service appdata -> root
 
+public/private/internal
 
 
 
