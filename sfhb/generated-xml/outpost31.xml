@@ -159,7 +159,7 @@
         <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a trace log.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate an error log.</summary>
             <remarks>code after msg because sometimes no code but message</remarks>
         </member>
@@ -205,14 +205,14 @@
         <member name="P:Outpost31.Module.Administration.Testing.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.Administration.Testing.Regression(System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Runs regression tests.</summary>
             <param name="sentOptionObject">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="sentScriptParameter">The original Script Parameter that is sent from Avatar.</param>
             <param name="tngnWsvcVer">The current version of the Tingen Web Service.</param>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/>Avatar system that the Tingen Web Service will interface with.</param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Testing.GenerateAppLogs(System.String,System.String,System.Int32,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Testing.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Generates various application logs.</summary>
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
