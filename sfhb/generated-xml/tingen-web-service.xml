@@ -7,9 +7,6 @@
         <member name="T:TingenWebService.Configuration.RuntimeConfig">
             <summary>Runtime configuration logic.</summary>
         </member>
-        <member name="P:TingenWebService.Configuration.RuntimeConfig.AsmName">
-            <summary>A required log file component.</summary>
-        </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
             <summary>Loads the runtime configuration for the Tingen Web Service.</summary>
             <param name="webConfigSettings">The Web.config content.</param>
