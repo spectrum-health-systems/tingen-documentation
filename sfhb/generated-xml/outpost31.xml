@@ -79,12 +79,12 @@
             <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.SystemWww">
+        <member name="P:Outpost31.Core.Framework.Folders.BaseWww">
             <summary>
             Gets or sets the path to the system WWW folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.SystemData">
+        <member name="P:Outpost31.Core.Framework.Folders.BaseData">
             <summary>
             Gets or sets the path to the system data folder.
             </summary>
@@ -94,32 +94,27 @@
             Gets or sets the path to the application data folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Archive">
+        <member name="P:Outpost31.Core.Framework.Folders.Archives">
             <summary>
             Gets or sets the path to the archive folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Blueprint">
+        <member name="P:Outpost31.Core.Framework.Folders.Blueprints">
             <summary>
             Gets or sets the path to the blueprint folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Config">
-            <summary>
-            Gets or sets the path to the configuration folder.
-            </summary>
-        </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Export">
+        <member name="P:Outpost31.Core.Framework.Folders.Exports">
             <summary>
             Gets or sets the path to the export folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Import">
+        <member name="P:Outpost31.Core.Framework.Folders.Imports">
             <summary>
             Gets or sets the path to the import folder.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Current">
+        <member name="P:Outpost31.Core.Framework.Folders.CurrentSession">
             <summary>
             Gets or sets the path to the session folder.
             </summary>
@@ -135,7 +130,7 @@
             <param name="time">The time string.</param>
             <returns>A <see cref="T:Outpost31.Core.Framework.Folders"/> instance with initialized paths.</returns>
         </member>
-        <member name="M:Outpost31.Core.Framework.Folders.CreateFolderFramework(Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Core.Framework.Folders.CreateFolderFramework(Outpost31.Core.Framework.Folders)">
             <summary>
             Creates the folder framework by ensuring all folders exist.
             </summary>
@@ -150,7 +145,10 @@
         </member>
         <member name="T:Outpost31.Core.Logger.LogEvent">
             <summary>Logs an application event.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+            <remarks>
+                Don't put log files here.
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
+            </remarks>
         </member>
         <member name="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)">
             <summary>A required log file component.</summary>
@@ -161,7 +159,7 @@
         <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a trace log.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate an error log.</summary>
             <remarks>code after msg because sometimes no code but message</remarks>
         </member>

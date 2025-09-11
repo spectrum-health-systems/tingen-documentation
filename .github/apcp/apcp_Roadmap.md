@@ -15,7 +15,7 @@
 public/private/internal
 
 - [ ] very simple test return
-
+- [ ] test looped debugs
 
 - [ ] Remove the ISS site from Tingen_www, and add two sites to:
   - Tingen_www\UAT
