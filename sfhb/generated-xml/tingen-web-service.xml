@@ -33,6 +33,14 @@
                 quickly and efficiently.
               </para>
               <para>
+                <b>Source code comments</b><br/>
+                Notes about the source code comments here.
+              </para>
+              <para>
+                <b>Logging</b><br/>
+                Notes about logging here.
+              </para>
+              <para>
                 <b>Project repositories</b><br/>
                 <see href = "https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br/>
                 <see href = "https://github.com/spectrum-health-systems/outpost31">Outpost32</see>

@@ -152,20 +152,18 @@
             <summary>Logs an application event.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Logger.LogEvent.AsmName">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a critical log.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a trace log.</summary>
-        </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Debuggler(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32)">
-            <summary>Generate a debug log.</summary>
         </member>
         <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate an error log.</summary>
+            <remarks>code after msg because sometimes no code but message</remarks>
         </member>
         <member name="M:Outpost31.Core.Logger.LogUtility.GetClassName(System.String)">
             <summary>Get the class name from the full class path.</summary>
@@ -175,14 +173,11 @@
         <member name="P:Outpost31.Core.Request.Parser.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.Session.SessInstance)">
+        <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)">
             <summary>Parse a request.</summary>
             <param name="sess"></param>
         </member>
-        <member name="P:Outpost31.Core.Session.SessInstance.AsmName">
-            <summary>A required log file component.</summary>
-        </member>
-        <member name="M:Outpost31.Core.Session.SessInstance.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="P:Outpost31.Core.TngnWsvcSession.Instance.AsmName">
             <summary>A required log file component.</summary>
         </member>
         <member name="T:Outpost31.Module.Administration.Deployment">
@@ -191,7 +186,7 @@
         <member name="P:Outpost31.Module.Administration.Deployment.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.TngnWsvcSession.Details,Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
@@ -199,7 +194,7 @@
             <summary>Create the Tingen Web Service folder framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String,System.Int32)">
             <summary>Refresh application data that is required by the Tingen Web Service.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
@@ -230,6 +225,14 @@
               <para>
                 Outpost31 is the back-end logic for the Tingen Web Service.
               </para>
+              <para>
+                <b>Source code comments</b><br/>
+                Notes about the source code comments here.
+              </para>
+              <para>
+                <b>Logging</b><br/>
+                Notes about logging here.
+              </para> 
               <para>
                 <b>Project repositories</b><br/>
                 <see href = "https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br/>
