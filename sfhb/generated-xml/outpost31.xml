@@ -72,7 +72,7 @@
         <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.VerifyExistence(System.String)">
             <summary>Verify if a Script Parameter was sent from Avatar.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
-            <param name="origScriptParameter">The original Script Parameter sent from Avatar.</param>
+            <param name="origScriptParam">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
         <member name="T:Outpost31.Core.Framework.Folders">
@@ -150,9 +150,6 @@
                 For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)">
-            <summary>A required log file component.</summary>
-        </member>
         <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a critical log.</summary>
         </member>
@@ -165,18 +162,60 @@
         </member>
         <member name="M:Outpost31.Core.Logger.LogUtility.GetClassName(System.String)">
             <summary>Get the class name from the full class path.</summary>
-            <param name="fromClassPath"></param>
+            <param name="classPath"></param>
             <returns></returns>
         </member>
-        <member name="P:Outpost31.Core.Request.Parser.AsmName">
+        <member name="T:Outpost31.Core.Request.Parser">
+            <summary>Parses requests.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        </member>
+        <member name="P:Outpost31.Core.Request.Parser.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)">
             <summary>Parse a request.</summary>
             <param name="sess"></param>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Instance.AsmName">
-            <summary>A required log file component.</summary>
+        <member name="T:Outpost31.Core.TngnWsvcSession.Details">
+            <summary>Detailed information about the current Tingen Web Service session.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Date">
+            <summary>Current date.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Time">
+            <summary>Current time.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Version">
+            <summary>The current version of the Tingen Web Service.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Mode">
+            <summary>
+            The Tingen Web Service mode, which determines what the Tingen Web Service will do, if anything.
+            </summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSys">
+            <summary>
+            The Avatar system that the Tingen Web Service will interface with.
+            </summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName">
+            <summary>The Avatar user name that initiated the current Tingen Web Service session.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.RunningLog">
+            <summary>Log of actions taken during the current Tingen Web Service session.</summary>
+        </member>
+        <member name="M:Outpost31.Core.TngnWsvcSession.Details.Load(System.String,System.String,System.String,System.String)">
+            <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> instance with the specified parameters.</summary>
+            <param name="version">The current <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Version"/> of the Tingen Web Service.</param>
+            <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Mode"/>.</param>
+            <param name="avatarSys">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSys"/> that the Tingen Web Service will interface with.</param>
+            <param name="avatarUserName">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName"/>.</param>
+            <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> object populated with the provided parameters and the current date and time.</returns>
+        </member>
+        <member name="T:Outpost31.Core.TngnWsvcSession.Instance">
+            <summary>Manages the current Tingen Web Service session.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
         <member name="T:Outpost31.Module.Administration.Deployment">
             <summary>Administrative deployment functionality.</summary>
@@ -188,11 +227,7 @@
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.CreateFolderFramework(Outpost31.Core.Framework.Folders,System.Int32)">
-            <summary>Create the Tingen Web Service folder framework.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
-        </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String)">
             <summary>Refresh application data that is required by the Tingen Web Service.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>

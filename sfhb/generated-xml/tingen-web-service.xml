@@ -12,8 +12,7 @@
         </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
             <summary>Loads the runtime configuration for the Tingen Web Service.</summary>
-            <remarks>Most settings are from the Web.config file.</remarks>
-            <param name="webConfigSettings">The Settings.settings content</param>
+            <param name="webConfigSettings">The Web.config content.</param>
             <returns>A dictionary with the runtime configuration.</returns>
         </member>
         <member name="T:TingenWebService.ProjectInfo">
@@ -40,19 +39,23 @@
                 <b>Logging</b><br />
                 Notes about logging here.
               </para>
-              <note type="information" title="Repositories">
+              <note type="information" title="Project repositories">
                 Tingen project repositories:<br />
                 <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
                 <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+            </note><br />
+              <br />
+              <note type="information" title="Project documentation">
+                Tingen project documentation:<br />
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
+                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
             </note>
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
             <summary>The entry class for the Tingen Web Service.</summary>
             <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
-        </member>
-        <member name="P:TingenWebService.TingenWebService.AsmName">
-            <summary>A required log file component.</summary>
         </member>
         <member name="P:TingenWebService.TingenWebService.Version">
             <summary>The current version of the Tingen Web Service.</summary>
