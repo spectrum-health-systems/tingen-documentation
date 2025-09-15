@@ -69,11 +69,40 @@
             <param name="origOptObj">The original OptionObject sent from Avatar.</param>
             <returns>A string indicating if an OptionObject was sent or not.</returns>
         </member>
+        <member name="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
         <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.VerifyExistence(System.String)">
             <summary>Verify if a Script Parameter was sent from Avatar.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
             <param name="origScriptParam">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)">
+            <summary>Parse a request.</summary>
+            <param name="sess"></param>
+        </member>
+        <member name="T:Outpost31.Core.Du.DuJson">
+            <summary>Provides JSON functionality.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Du.DuJson.ExportToLocalFile``1(``0,System.String,System.Boolean)">
+            <summary>Export JSON data to an external file.</summary>
+            <typeparam name="JsonObject">The JSON object type.</typeparam>
+            <param name="jsonObject">The JSON object.</param>
+            <param name="filePath">The export file path.</param>
+            <param name="formatJson">Determines if the JSON data is formatted.</param>
+        </member>
+        <member name="M:Outpost31.Core.Du.DuJson.ConvertToString``1(``0)">
+            <summary>Convert a JSON object to a string[].</summary>
+            <typeparam name="JsonObject">The JSON object type.</typeparam>
+            <param name="jsonObject">The JSON object.</param>
+            <returns>A JSON object as a string[].</returns>
+        </member>
+        <member name="M:Outpost31.Core.Du.DuJson.ImportFromLocalFile``1(System.String)">
+            <summary>Import JSON data from an external file.</summary>
+            <typeparam name="JsonObject">The JSON object type.</typeparam>
+            <param name="filePath">The import file path.</param>
+            <returns>The contents of the file as a JSON object.</returns>
         </member>
         <member name="T:Outpost31.Core.Framework.Folders">
             <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
@@ -165,16 +194,18 @@
             <param name="classPath"></param>
             <returns></returns>
         </member>
-        <member name="T:Outpost31.Core.Request.Parser">
+        <member name="T:Outpost31.Core.Parse.Request">
+            <summary>Parses requests.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+            <summary>Parses requests.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+            <summary>Parses requests.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
             <summary>Parses requests.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Request.Parser.ExeAsm">
+        <member name="P:Outpost31.Core.Parse.Request.ExeAsm">
             <summary>A required log file component.</summary>
-        </member>
-        <member name="M:Outpost31.Core.Request.Parser.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)">
-            <summary>Parse a request.</summary>
-            <param name="sess"></param>
         </member>
         <member name="T:Outpost31.Core.TngnWsvcSession.Details">
             <summary>Detailed information about the current Tingen Web Service session.</summary>
@@ -223,7 +254,7 @@
         <member name="P:Outpost31.Module.Administration.Deployment.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.TngnWsvcSession.Details,Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.TngnWsvcSession.Instance)">
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
         </member>
@@ -251,6 +282,36 @@
             <summary>Generates various application logs.</summary>
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.Whitelist">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.Blacklist">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OriginalFullName">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.CurrentFullName">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.PersonCompletingIncidentFormFieldId">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.FormOpenMessage">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.FormOpenErrorCode">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.FormSubmitMessage">
+            <summary>TBD</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.FormSubmitErrorCode">
+            <summary>TBD</summary>
         </member>
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
