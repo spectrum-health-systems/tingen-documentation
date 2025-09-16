@@ -14,6 +14,8 @@
 
 public/private/internal
 
+- [] Verify that the automated reports are being updated
+-[ ] verify deploy is non-destructive-isg
 - [ ] very simple test return
 - [ ] test looped debugs
 

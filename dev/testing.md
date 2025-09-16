@@ -17,3 +17,22 @@
 - [ ] Delete the regression test data
 - [ ] Check "test"
     - [ ] Verify that regression tests completed
+
+
+
+## OpenIncident
+
+* [ ] Delete the OpenIncident.config file and verify it is re-created.
+
+* [ ] Set the Open Incident Module Mode to "disabled"
+  * [ ] Open an existing incident that was created by another staff member
+    * [ ] Verify messages do not appear
+
+* [ ] Set the Open Incident Module Mode to "enabled"
+  * [ ] Open a new incident
+    * [ ] Verify the form can be submitted without issue
+    * [ ] Verify the same incident can be re-opened and submitted
+
+  * [ ] Open an existing incident that was created by another staff member
+    * [ ] Verify an information message appears when the form opens
+    * [ ] Verify a hard stop appears when submitting the form

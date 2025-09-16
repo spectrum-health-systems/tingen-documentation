@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="9/15/2025 10:38:42 AM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="9/16/2025 10:13:44 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -38,18 +38,18 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0060
+    Last step completed in 00:00:00.0157
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-1ed6a9da-e9e4-4a9c-a81a-e314107528de.proj]
-Build started 9/15/2025 10:38:43 AM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-a54a4ee2-3dee-4bae-8568-87e963d02672.proj]
+Build started 9/16/2025 10:13:45 AM.
 
-Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-1ed6a9da-e9e4-4a9c-a81a-e314107528de.proj&quot; on node 1 (default targets).
+Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-a54a4ee2-3dee-4bae-8568-87e963d02672.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -57,27 +57,27 @@ GenerateRefInfo:
   c Microsoft Corporation. All rights reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 10 dependency assemblies.
-  Wrote information on 10 namespaces, 23 types, and 109 members
+  Wrote information on 10 namespaces, 24 types, and 113 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-1ed6a9da-e9e4-4a9c-a81a-e314107528de.proj&quot; (default targets).
-    Last step completed in 00:00:00.9261
+Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-a54a4ee2-3dee-4bae-8568-87e963d02672.proj&quot; (default targets).
+    Last step completed in 00:00:00.8524
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0379
+    Last step completed in 00:00:00.0681
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0113
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0060
+    Last step completed in 00:00:00.0064
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0358
+    Last step completed in 00:00:00.0309
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -97,7 +97,7 @@ Indexed 161102 members in 137 file(s).  10 file(s) to scan for &lt;inheritdoc /&
 Merging inherited documentation...
 
 Documentation merged successfully.  Merged comments were saved in &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\_InheritedDocs_.xml&#39;.
-    Last step completed in 00:00:00.5039
+    Last step completed in 00:00:00.5636
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -111,36 +111,36 @@ Generating conceptual topic files
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\VersionHistory.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\c07a96b6-a791-477f-8bd3-df5564dd8811.xml
     Parsing topic file &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\33565a60-9900-4a09-83af-1351427e4991.xml
-    Last step completed in 00:00:00.0506
+    Last step completed in 00:00:00.0320
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0157
+    Last step completed in 00:00:00.0159
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\icons\Help.png -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0064
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0036
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0185
+    Last step completed in 00:00:00.0160
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.1172
+    Last step completed in 00:00:00.1266
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0386
+    Last step completed in 00:00:00.0158
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -148,7 +148,7 @@ C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0212
+    Last step completed in 00:00:00.0200
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -159,10 +159,19 @@ Processing topics...
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Analyze] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Analyze.AvatarField] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)] Missing &lt;param name=&quot;optionObject&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)] Missing &lt;param name=&quot;fieldId&quot;/&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.IsSameValue(System.String,System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.IsSameValue(System.String,System.String)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.IsSameValue(System.String,System.String)] Missing &lt;param name=&quot;val1&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.IsSameValue(System.String,System.String)] Missing &lt;param name=&quot;val2&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Analyze.UserIdUserDescription] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.UserIdUserDescription.GetFullName(System.String)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.UserIdUserDescription.GetFullName(System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.UserIdUserDescription.GetFullName(System.String)] Missing &lt;param name=&quot;avatarUserName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Avatar] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Avatar.AvatarOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Avatar.AvatarOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
@@ -327,10 +336,15 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.Dep
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.DeployConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;configPath&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.DeployConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.DeployConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.Load] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.Load] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.OriginalAuthorIsOpening(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.OriginalAuthorIsOpening(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;path&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Module.Administration] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
@@ -347,15 +361,15 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.T
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-Processed 179 topic(s)
-191 warning(s)
+Processed 185 topic(s)
+205 warning(s)
 CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
 ResolveArtLinksComponent: Copying media files...
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:04.5434
+</plugIn>    Last step completed in 00:00:04.8407
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -391,26 +405,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.1293
+    Last step completed in 00:00:00.1266
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.1241
+    Last step completed in 00:00:00.5297
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 302 files for the website content
-    Last step completed in 00:00:00.3272
+Copied 310 files for the website content
+    Last step completed in 00:00:00.3400
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0817
+    Last step completed in 00:00:00.0923
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 9/15/2025 10:38:50 AM.  Total time: 00:00:08.1956
+Build completed successfully at 9/16/2025 10:13:52 AM.  Total time: 00:00:08.8160
 
 </buildStep>
 </shfbBuild>
