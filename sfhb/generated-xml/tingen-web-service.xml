@@ -9,7 +9,7 @@
         </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
             <summary>Loads the runtime configuration for the Tingen Web Service.</summary>
-            <param name="webConfigSettings">The Web.config content.</param>
+            <param name="webConfig">The Web.config content.</param>
             <returns>A dictionary with the runtime configuration.</returns>
         </member>
         <member name="T:TingenWebService.ProjectInfo">
@@ -27,27 +27,22 @@
                 Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't
                 included in the official release, and provides a solid foundation for building additional functionality
                 quickly and efficiently.
-              </para>
+            </para><br />
               <para>
-                <b>Source code comments</b><br />
-                Notes about the source code comments here.
-              </para>
+                <note type="information" title="Project repositories">
+                    Tingen project repositories:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
+                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+                </note>
+            </para><br />
               <para>
-                <b>Logging</b><br />
-                Notes about logging here.
-              </para>
-              <note type="information" title="Project repositories">
-                Tingen project repositories:<br />
-                <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
-                <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
-            </note><br />
-              <br />
-              <note type="information" title="Project documentation">
-                Tingen project documentation:<br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
-                <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
-            </note>
+                <note type="information" title="Project documentation">
+                    Tingen project documentation:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                </note>
+            </para><br />
             </remarks>
         </member>
         <member name="T:TingenWebService.TingenWebService">
@@ -63,14 +58,8 @@
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>Determines what the Tingen Web Service will do, if anything.</summary>
-            <remarks><note title="Development logging">
-                This method contains a number of log commands that may be used during development, but should be commented out in production code.<br />
-                <br />
-                These commands are not part of the public API, since the logging infrastructure hasn't been initialized at this point, and they are all a little bit different and write to different locations.<br />
-                <br />
-                I want these commands to be available for developers to use as needed, but at the same time I want to minimize the amount of clutter they create. Hence, I've attempted to keep them on a single line, including an in-line comment.<br />
-            </note><br /><note title="Runtime settings">
-                The runtime settings are built using values in Web.config, but since Outpost31 doesn't reference the TingenWebService project, the values are converted into a dictionary instead of a strongly-typed object. This makes it easier to pass to Outpost31.Core.TngnWsvcSession.Start(), at the expense of making the class a little uglier.<br />
+            <remarks><note title="Runtime settings">
+                The <see cref="T:TingenWebService.Configuration.RuntimeConfig" /> values stored in Web.config, but since Outpost31 doesn't reference the TingenWebService project, the values are converted into a dictionary instead of a strongly-typed object. This makes it easier to pass to <see cref="M:Outpost31.Core.TngnWsvcSession.Instance.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})" />.<br />
                 <br />
                 Care must be taken to ensure the keys in Web.config match the keys expected by the code.<br />
             </note><br /><note type="caution" title="Important!">
@@ -80,17 +69,13 @@
                     <item>origScriptParam</item>
                 </list>
                 For some reason, changing these names causes the web service to fail.
-            </note></remarks>
+            </note><para>
+                
+                
+            </para></remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
-            <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
-            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the Script Parameter request.</returns>
-        </member>
-        <member name="M:TingenWebService.TingenWebService.LogMsg(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
-            <summary>Build a message for the critical error.</summary>
-            <remarks>This is here so it won't clutter RunScript().</remarks>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
-            <param name="origScriptParam">The original Script Parameter that is sent from Avatar.</param>
-            <returns>A message for the critical error log.</returns>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter" />that is sent from Avatar.</param>
+            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter" />.</returns>
         </member>
     </members>
 </doc>

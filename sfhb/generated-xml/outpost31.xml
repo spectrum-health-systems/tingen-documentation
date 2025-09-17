@@ -4,6 +4,45 @@
         <name>Outpost31</name>
     </assembly>
     <members>
+        <member name="T:Outpost31.Core.Analyze.AvatarField">
+            <summary>Logic related to fields on Avatar forms.</summary>
+            <remarks>
+              An argument can be made that some of these methods should be part of the method that calls them, but I would
+              rather route logic through here to keep logging consistent.
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Analyze.AvatarField.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String)">
+            <summary>Determines whether the value of two fields are the same.</summary>
+            <param name="fieldIdOne">The first FieldID.</param>
+            <param name="fieldIdTwo">The second FieldID.</param>
+            <returns><see langword="true"/> if the values are the same; otherwise, <see langword="false"/>.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)">
+            <summary>Get the value of a specified field from the provided <see cref="T:ScriptLinkStandard.Objects.OptionObject"/>.</summary>
+            <param name="optObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject"/> instance.</param>
+            <param name="fieldId">The FieldID whose value is to be retrieved.</param>
+            <returns>The value of the specified field as a string, or an empty string if the field does not exist.</returns>
+        </member>
+        <member name="T:Outpost31.Core.Analyze.UserIdUserDescriptionFile">
+            <summary>Logic related to the USERID_User Description.txt file.</summary>
+            <remarks>
+                About this file.
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Analyze.UserIdUserDescriptionFile.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String)">
+            <summary>Get the full username of an Avatar Username/</summary>
+            <remarks>
+                e.g., JDOE becomes John Doe
+            </remarks>
+            <param name="avatarUserName">The username of the avatar to look up</param>
+            <returns>The full name of the user associated with the specified avatar username.</returns>
+        </member>
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
             <summary>Logic for Avatar environment components.</summary>
             <remarks>
@@ -49,6 +88,9 @@
             <summary>The AvatarOptionObject contains metadata about the Avatar environment.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
+        <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Original">
             <summary>The original <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> sent from Avatar.</summary>
             <remarks>This OptionObject is <i>never</i> modified during a Tingen Web Service session.</remarks>
@@ -61,13 +103,17 @@
             <summary>The finalized <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> that is returned to Avatar.</summary>
             <remarks>This is the finalized OptionObject, ready to be returned to Avatar.</remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.AsmName">
-            <summary>A required log file component.</summary>
-        </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
             <summary>Verify if an OptionObject was sent from Avatar.</summary>
             <param name="origOptObj">The original OptionObject sent from Avatar.</param>
             <returns>A string indicating if an OptionObject was sent or not.</returns>
+        </member>
+        <member name="T:Outpost31.Core.Avatar.AvatarScriptParameter">
+            <summary>
+            Represents a parameter sent from Avatar, providing functionality to verify its existence and parse requests.
+            </summary>
+            <remarks>This class includes methods to validate and process script parameters sent from Avatar.  It
+            also provides access to the executing assembly name through the <see cref="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm"/> property.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm">
             <summary>A required log file component.</summary>
@@ -91,12 +137,6 @@
             <param name="jsonObject">The JSON object.</param>
             <param name="filePath">The export file path.</param>
             <param name="formatJson">Determines if the JSON data is formatted.</param>
-        </member>
-        <member name="M:Outpost31.Core.Du.DuJson.ConvertToString``1(``0)">
-            <summary>Convert a JSON object to a string[].</summary>
-            <typeparam name="JsonObject">The JSON object type.</typeparam>
-            <param name="jsonObject">The JSON object.</param>
-            <returns>A JSON object as a string[].</returns>
         </member>
         <member name="M:Outpost31.Core.Du.DuJson.ImportFromLocalFile``1(System.String)">
             <summary>Import JSON data from an external file.</summary>
@@ -231,7 +271,7 @@
             </summary>
         </member>
         <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName">
-            <summary>The Avatar user name that initiated the current Tingen Web Service session.</summary>
+            <summary>The Avatar Username that initiated the current Tingen Web Service session, converted to lowercase.</summary>
         </member>
         <member name="P:Outpost31.Core.TngnWsvcSession.Details.RunningLog">
             <summary>Log of actions taken during the current Tingen Web Service session.</summary>
@@ -283,61 +323,96 @@
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
         </member>
+        <member name="T:Outpost31.Module.OpenIncident">
+            <summary>Logic related to Avatar OpenIncident functionality.</summary>
+        </member>
         <member name="P:Outpost31.Module.OpenIncident.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
+        <member name="P:Outpost31.Module.OpenIncident.Mode">
+            <summary>The OpenIncident Module mode.</summary>
+        </member>
         <member name="P:Outpost31.Module.OpenIncident.Whitelist">
-            <summary>TBD</summary>
+            <summary>List of Avatar Usernames that can always use this functionality.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.Greylist">
+            <summary>List of Avatar Usernames that will ignore this functionality.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.Blacklist">
-            <summary>TBD</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.OriginalFullName">
-            <summary>TBD</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.CurrentFullName">
-            <summary>TBD</summary>
+            <summary>List of Avatar Usernames that are restricted from using this functionality.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.PersonCompletingIncidentFormFieldId">
-            <summary>TBD</summary>
+            <summary>The FieldID containing the Avatar Username that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.FormOpenMessage">
-            <summary>TBD</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenFormMsg">
+            <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.FormOpenErrorCode">
-            <summary>TBD</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenFormErrCode">
+            <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.FormSubmitMessage">
-            <summary>TBD</summary>
+        <member name="P:Outpost31.Module.OpenIncident.SubmitFormMsg">
+            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.FormSubmitErrorCode">
-            <summary>TBD</summary>
+        <member name="P:Outpost31.Module.OpenIncident.SubmitFormErrCode">
+            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)">
+            <summary>Loads the OpenIncident Module configuration.</summary>
+            <remarks>If the specified file does not exist, a default configuration file is created.</remarks>
+            <param name="configAbsolutePath">The file path to the configuration file.</param>
+            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
+            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
+            <returns>An <see cref="T:Outpost31.Module.OpenIncident"/> object representing the loaded configuration.</returns>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.DeployConfig(System.String,System.Int32,System.String)">
+            <summary>Deploys the default OpenIncident Module configuration file.</summary>
+            <param name="configAbsolutePath">The configuration file path.</param>
+            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
+            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.Instance,Outpost31.Module.OpenIncident)">
+            <summary>Checks to see if the person opening the form is the original author.</summary>
+            <remarks>
+                Only the original author can submit changes to the form, others can only view it.
+                TODO - why we match on full name instead of Avatar username
+            </remarks>
+            <param name="sess">The <see cref="N:Outpost31.Core.TngnWsvcSession"/></param>
         </member>
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
             <remarks>
+              <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/ProjectInfo.xml" path="TngnWsvc/Class[@name=&quot;ProjectInfo&quot;]/ProjectInfo/*" /><br />
               <para>
-                Outpost31 is the back-end logic for the Tingen Web Service.
-              </para>
+                <note type="information" title="Source code comments">
+                    Tingen project source code uses the following types of comments:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                </note>
+            </para><br />
               <para>
-                <b>Source code comments</b><br/>
-                Notes about the source code comments here.
-              </para>
+                <note type="information" title="Source code comments">
+                    Tingen project source code uses the following types of comments:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                </note>
+            </para><br />
               <para>
-                <b>Logging</b><br/>
-                Notes about logging here.
-              </para> 
+                <note type="information" title="Project repositories">
+                    Tingen project repositories:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
+                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+                </note>
+            </para><br />
               <para>
-                <b>Project repositories</b><br/>
-                <see href = "https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br/>
-                <see href = "https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
-              </para>
-              <para>
-                <b>Project documentation</b><br/>
-                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br/>
-                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br/>
-                <see href = "https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
-              </para>
+                <note type="information" title="Project documentation">
+                    Tingen project documentation:<br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                </note>
+            </para><br />
             </remarks>
         </member>
     </members>
