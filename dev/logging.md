@@ -355,21 +355,6 @@ Assuming the *TraceLevel* is <= to the *TraceLogLimit*, a trace log will be crea
 
 Trace logs do not have content.
 
-```text
-===== ERROR LOG ======================================== 05/12/25-12:01:33 =====
-
-E###
-
-Unknown error.
-
---------------------------------------------------------------------------------
-
-[ASSEMBLY] Outpost31
-   [CLASS] Testing
-  [METHOD] GenerateAppLogs
-    [LINE] 103
-
-```
 ***
 
 <br>
