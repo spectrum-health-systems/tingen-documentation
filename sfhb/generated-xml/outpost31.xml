@@ -14,13 +14,13 @@
         <member name="P:Outpost31.Core.Analyze.AvatarField.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String)">
+        <member name="M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)">
             <summary>Determines whether the value of two fields are the same.</summary>
             <param name="fieldIdOne">The first FieldID.</param>
             <param name="fieldIdTwo">The second FieldID.</param>
-            <returns><see langword="true"/> if the values are the same; otherwise, <see langword="false"/>.</returns>
+            <returns><see langword="true"/>if the values are the same; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String)">
+        <member name="M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)">
             <summary>Get the value of a specified field from the provided <see cref="T:ScriptLinkStandard.Objects.OptionObject"/>.</summary>
             <param name="optObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject"/> instance.</param>
             <param name="fieldId">The FieldID whose value is to be retrieved.</param>
@@ -35,7 +35,7 @@
         <member name="P:Outpost31.Core.Analyze.UserIdUserDescriptionFile.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String)">
+        <member name="M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)">
             <summary>Get the full username of an Avatar Username/</summary>
             <remarks>
                 e.g., JDOE becomes John Doe
@@ -112,15 +112,19 @@
             <summary>
             Represents a parameter sent from Avatar, providing functionality to verify its existence and parse requests.
             </summary>
-            <remarks>This class includes methods to validate and process script parameters sent from Avatar.  It
-            also provides access to the executing assembly name through the <see cref="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm"/> property.</remarks>
+            <remarks>
+                This class includes methods to validate and process script parameters sent from Avatar.  It
+                also provides access to the executing assembly name through the <see cref="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm"/> property.<br>
+                </br>
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
+            </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarScriptParameter.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.VerifyExistence(System.String)">
             <summary>Verify if a Script Parameter was sent from Avatar.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+            <remarks>No logging done here because the logging functionality isn't setup yet.</remarks>
             <param name="origScriptParam">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
@@ -130,6 +134,7 @@
         </member>
         <member name="T:Outpost31.Core.Du.DuJson">
             <summary>Provides JSON functionality.</summary>
+            <remarks>No loging done here.</remarks>
         </member>
         <member name="M:Outpost31.Core.Du.DuJson.ExportToLocalFile``1(``0,System.String,System.Boolean)">
             <summary>Export JSON data to an external file.</summary>
@@ -381,7 +386,10 @@
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>
             <remarks>
-              <!-- No matching elements were found for the following include tag --><include file="AppData/XmlDoc/ProjectInfo.xml" path="TngnWsvc/Class[@name=&quot;ProjectInfo&quot;]/ProjectInfo/*" /><br />
+              <para>
+                <b>About Outpost31</b><br />
+                Outpost31 is the back-end logic for the Tingen Web Service.
+            </para><br />
               <para>
                 <note type="information" title="Source code comments">
                     Tingen project source code uses the following types of comments:<br />

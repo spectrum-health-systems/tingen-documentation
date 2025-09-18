@@ -330,6 +330,8 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 
 ## Where to put trace logs
 
+<!-- This needs to be more specific about what goes where. -->
+
 | `TraceLevel` | Description |
 |:------------:|-----|
 | `0` |  All trace logs are disabled |
