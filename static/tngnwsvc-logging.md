@@ -1,10 +1,13 @@
 <!-- u250917 -->
 
-<div>
+<div align="center">
 
-  <h1>DEVNOTES: LOGGING</h1>
+  <h1>
+    TINGEN DOCUMENTATION PROJECT<br>
+    Tingen Web Service Logging
+  </h1>
 
-  Internal apcp development only!
+  This document is a work in progress.
 
 </div>
 
