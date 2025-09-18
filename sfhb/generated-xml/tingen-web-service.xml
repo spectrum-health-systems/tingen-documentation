@@ -5,15 +5,15 @@
     </assembly>
     <members>
         <member name="T:TingenWebService.Configuration.RuntimeConfig">
-            <summary>Runtime configuration logic.</summary>
+            <summary>Handles the runtime configuration logic.</summary>
             <remarks>
-                This class handles the runtime configuration settings for the Tingen Web Service, which are stored in the Web.config file.<br/>
+                This class <br/>
                 <br/>
                 For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.
             </remarks>
         </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
-            <summary>Loads the runtime configuration for the Tingen Web Service.</summary>
+            <summary>Loads the runtime configuration from the Web.config file.</summary>
             <remarks>
                 <para>
                     Since the Tingen Web Service is not directly referenced by Outpost31, the settings are read into a dictionary instead of a strongly-typed object.<br/>
