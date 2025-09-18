@@ -6,11 +6,7 @@
     <members>
         <member name="T:TingenWebService.Configuration.RuntimeConfig">
             <summary>Handles the runtime configuration logic.</summary>
-            <remarks>
-                This class <br/>
-                <br/>
-                For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.
-            </remarks>
+            <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
         </member>
         <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
             <summary>Loads the runtime configuration from the Web.config file.</summary>
@@ -26,6 +22,7 @@
                 </para>
             </remarks>
             <param name="webConfig">The Web.config content.</param>
+            <param name="tngnWsvcVersion">The current version of the Tingen Web Service.</param>
             <returns>A dictionary with the runtime <see cref="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)"/>configuration settings.</returns>
         </member>
         <member name="T:TingenWebService.ProjectInfo">
