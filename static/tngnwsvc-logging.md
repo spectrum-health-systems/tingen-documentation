@@ -1,11 +1,11 @@
-<!-- u250917 -->
-
 <div align="center">
 
   <h1>
     TINGEN DOCUMENTATION PROJECT<br>
     Tingen Web Service Logging
   </h1>
+
+  Last updated: 9/18/25 for R25.9
 
   This document is a work in progress.
 
@@ -16,11 +16,8 @@
 * [Critical logs](#critical-logs)
 * [Debug logs](#debug-logs)
 * [Error logs](#error-logs)
-* [Debug logs](#debug-logs)
-* [Debug logs](#debug-logs)
-* [Debug logs](#debug-logs)
-* [Debug logs](#debug-logs)
-* [Debug logs](#debug-logs)
+* [Trace logs](#trace-logs)
+* [Session logs](#session-logs)
 
 ***
 
