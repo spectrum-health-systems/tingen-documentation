@@ -18,12 +18,12 @@
                     <br/>
                     <b>IMPORTANT!</b> Care must be taken to ensure the keys in Web.config match the keys expected by the code.<br/>
                     <br/>
-                    <b>Please note:</b> Since the logging functionality isn't setup yet, use <see cref="!:Outpost31.Core.Logging.LogEvent.Debug()"/>.
+                    <b>Please note:</b> Since the logging functionality isn't setup yet, use <see cref="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)">LogEvent.Debug()</see>.
                 </para>
             </remarks>
             <param name="webConfig">The Web.config content.</param>
             <param name="tngnWsvcVersion">The current version of the Tingen Web Service.</param>
-            <returns>A dictionary with the runtime <see cref="M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)"/>configuration settings.</returns>
+            <returns>A dictionary with the runtime configuration settings.</returns>
         </member>
         <member name="T:TingenWebService.ProjectInfo">
             <summary>Provides additional information about the Tingen Web Service.</summary>
