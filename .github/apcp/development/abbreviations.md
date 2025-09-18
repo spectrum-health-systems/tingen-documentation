@@ -2,7 +2,7 @@
 
 <div>
 
-  <h1>DEVNOTES: ABREVIATIONS</h1>
+  <h1>DEVNOTES: Abreviations</h1>
 
   Internal apcp development only!
 

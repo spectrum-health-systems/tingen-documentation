@@ -15,7 +15,7 @@
                     Since the Tingen Web Service is not directly referenced by Outpost31, the settings are read into a
                     dictionary instead of a strongly-typed object.<br/>
                     <br/>
-                    When a new setting is added to the Web.config file, it must also be added to the<c> RuntimeConfig</c> class.<br/>
+                    When a new setting is added to the Web.config file, it must also be added to this class.<br/>
                     <br/>
                     <b>IMPORTANT!</b> Care must be taken to ensure the keys in Web.config match the keys expected by the code.<br/>
                     <br/>
@@ -38,9 +38,9 @@
                 functionality via Netsmart's Avatar™ Web Services, and/or custom web services that are written by other
                 Avatar™ users.<br />
                 <br />
-                Tingen is one such custom web service which includes various tools and utilities for Avatar™ that aren't
-                included in the official release, and provides a solid foundation for building additional functionality
-                quickly and efficiently.
+                The Tingen Web Service is one such custom web service which includes various tools and utilities for
+                Avatar™ that aren't included in the official release, and provides a solid foundation for building
+                additional functionality quickly and efficiently.
             </para>
               <para>
                 <note type="information" title="Project repositories">
@@ -63,33 +63,34 @@
             <summary>The entry class for the Tingen Web Service.</summary>
             <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:TingenWebService.TingenWebService.TngnwsvcVersion">
+        <member name="P:TingenWebService.TingenWebService.TngnWsvcVersion">
             <summary>The current version of the Tingen Web Service.</summary>
         </member>
         <member name="M:TingenWebService.TingenWebService.GetVersion">
             <summary>Get the current version of the Tingen Web Service.</summary>
-            <returns>The current <see cref="P:TingenWebService.TingenWebService.TngnwsvcVersion"/> of the Tingen Web Service.</returns>
+            <returns>The current <see cref="P:TingenWebService.TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
-            <summary>Determines what the Tingen Web Service will do.</summary>
-            <remarks><note title="Runtime settings">
-                The <see cref="T:TingenWebService.Configuration.RuntimeConfig" /> values stored in Web.config, but since Outpost31 doesn't reference the TingenWebService project, the values are converted into a dictionary instead of a strongly-typed object. This makes it easier to pass to <see cref="M:Outpost31.Core.TngnWsvcSession.Instance.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})" />.<br />
-                <br />
-                Care must be taken to ensure the keys in Web.config match the keys expected by the code.<br />
-            </note><br /><note type="caution" title="Important!">
-                Do not change the names of the following parameters:
+            <summary>Determines what the Tingen Web Service will do, if anything.</summary>
+            <remarks>This method should remain pretty static, since the heavy lifting is done in <see cref="N:Outpost31"/>.</remarks>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>that is sent from Avatar.</param>
+            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> representing the result of the <see cref="!:.AvatarScriptParameter"/>.</returns>
+        </member>
+        <member name="M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)">
+            <summary>Check for critical errors.</summary>
+            <remarks>
+                The following are considered critical errors:
                 <list type="bullet">
-                    <item>origOptObj</item>
-                    <item>origScriptParam</item>
+                    <item>The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> and/or <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> is not passed from Avatar.</item>
+                    <item>The Tingen Web Service is disabled.</item>
+                    <item>The Tingen Web Service is in an unknown state.</item>
                 </list>
-                For some reason, changing these names causes the web service to fail.
-            </note><para>
-                
-                
-            </para></remarks>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter" />that is sent from Avatar.</param>
-            <returns>An <see cref="T:ScriptLinkStandard.Objects.OptionObject2015" /> representing the result of the <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter" />.</returns>
+            </remarks>
+            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>that is sent from Avatar.</param>
+            <param name="tngnWsvcMode">The Tingen Web Service mode.</param>
+            <returns>If a critical error occurred, true; otherwise, false.</returns>
         </member>
     </members>
 </doc>

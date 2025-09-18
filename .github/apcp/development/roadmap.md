@@ -2,7 +2,7 @@
 
 <div>
 
-  <h1>DEVNOTES: ROADMAP</h1>
+  <h1>DEVNOTES: Tingen Projects Roadmap</h1>
 
   Internal apcp development only!
 
@@ -48,6 +48,9 @@ TBD
 - [ ] Email functionality
 - [ ] Fix issue with deploying taking multiple deployments
 - [X] Update blueprints to match documentation
+- [ ] New critical error: the Avatar Systems don't match
+- [ ] Email critical errors
+- [ ] Trace logs where they need to be
 
 # IIS
 

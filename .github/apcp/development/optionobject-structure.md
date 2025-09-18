@@ -1,4 +1,14 @@
-# SENT
+<!-- u250918 -->
+
+<div>
+
+  <h1>DEVNOTES: OptionObject Structure</h1>
+
+  Internal apcp development only!
+
+</div>
+
+# Original
 
 {
   "EntityID": null,
@@ -51,10 +61,7 @@
   "SessionToken": "SCRIPT:694C5810-271F-11EF-BE32-005056983298"
 }
 
-
-# WORK
-
-## RETURN
+## ToReturn
 
 {
   "EntityID": null,
@@ -107,7 +114,7 @@
   "SessionToken": "SCRIPT:59BF2F28-272C-11EF-BD75-005056983298"
 }
 
-## RETURN (formatted)
+## ToReturn (formatted)
 
 {
   "EntityID": null,

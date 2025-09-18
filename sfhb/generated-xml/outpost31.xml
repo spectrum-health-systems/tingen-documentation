@@ -4,38 +4,40 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <member name="T:Outpost31.Core.Analyze.AvatarField">
-            <summary>Logic related to fields on Avatar forms.</summary>
-            <remarks>
-              An argument can be made that some of these methods should be part of the method that calls them, but I would
-              rather route logic through here to keep logging consistent.
-            </remarks>
+        <member name="T:Outpost31.Core.Operation.AvatarField">
+            <summary>Avatar form field operations.</summary>
         </member>
-        <member name="P:Outpost31.Core.Analyze.AvatarField.ExeAsm">
+        <member name="P:Outpost31.Core.Operation.AvatarField.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)">
-            <summary>Determines whether the value of two fields are the same.</summary>
-            <param name="fieldIdOne">The first FieldID.</param>
-            <param name="fieldIdTwo">The second FieldID.</param>
+        <member name="M:Outpost31.Core.Operation.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)">
+            <summary>Determines whether the value of two fields containing strings are the same.</summary>
+            <param name="field01">The first FieldID.</param>
+            <param name="field02">The second FieldID.</param>
             <returns><see langword="true"/>if the values are the same; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Operation.AvatarField.AreEqual(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>Determines whether the value of two fields containing integers are the same.</summary>
+            <param name="field01">The first FieldID.</param>
+            <param name="field02">The second FieldID.</param>
+            <returns><see langword="true"/>if the values are the same; otherwise, <see langword="false"/>.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)">
             <summary>Get the value of a specified field from the provided <see cref="T:ScriptLinkStandard.Objects.OptionObject"/>.</summary>
             <param name="optObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject"/> instance.</param>
             <param name="fieldId">The FieldID whose value is to be retrieved.</param>
             <returns>The value of the specified field as a string, or an empty string if the field does not exist.</returns>
         </member>
-        <member name="T:Outpost31.Core.Analyze.UserIdUserDescriptionFile">
+        <member name="T:Outpost31.Core.Operation.UserIdUserDescriptionFile">
             <summary>Logic related to the USERID_User Description.txt file.</summary>
             <remarks>
                 About this file.
             </remarks>
         </member>
-        <member name="P:Outpost31.Core.Analyze.UserIdUserDescriptionFile.ExeAsm">
+        <member name="P:Outpost31.Core.Operation.UserIdUserDescriptionFile.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)">
             <summary>Get the full username of an Avatar Username/</summary>
             <remarks>
                 e.g., JDOE becomes John Doe
