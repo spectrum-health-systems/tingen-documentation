@@ -5,8 +5,8 @@
 # Outpost31.TngnWsvcSession
 
 ### CONTENTS
-[Outpost31.TngnWsvcSession.](#tingenwebserviceasmxcs)
-[TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)
+[Outpost31.TngnWsvcSession.](#tingenwebserviceasmxcs)  
+[TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)  
 
 ***
 

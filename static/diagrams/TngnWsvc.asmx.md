@@ -5,8 +5,8 @@
 # TingenWebService
 
 ### CONTENTS
-[TingenWebService.asmx.cs](#tingenwebserviceasmxcs)
-[TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)
+[TingenWebService.asmx.cs](#tingenwebserviceasmxcs)  
+[TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)  
 
 ***
 
