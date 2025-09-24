@@ -11,7 +11,7 @@
   * [Instance Start()](#instancestart)  
 * Detail.cs  
   * [Detail.Load()](#detailload)
-  
+
 ***
 
 # Instance.cs
@@ -50,8 +50,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Details.Load] --> B[Get current date (yyMMdd)]
-    B --> C[Get current time (HHmmss)]
+    A[Details.Load] --> B[Get current date ]
+    B --> C[Get current time]
     C --> D[Set Version]
     D --> E[Set Mode]
     E --> F[Set AvatarSystem]
