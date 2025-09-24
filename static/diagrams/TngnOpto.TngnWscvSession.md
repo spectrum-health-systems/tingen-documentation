@@ -6,11 +6,12 @@
 
 ### CONTENTS
 
-Instance.cs  
-  [Instance.Load()](#instanceload)  
-  [Instance Start()](#tingenwebserviceconfigurationruntimeconfigcs)  
-Detail.cs  
-  [Detail.Load()]
+* Instance.cs  
+  * [Instance.Load()](#instanceload)  
+  * [Instance Start()](#instancestart)  
+* Detail.cs  
+  * [Detail.Load()](#detailload)
+  
 ***
 
 # Instance.cs
