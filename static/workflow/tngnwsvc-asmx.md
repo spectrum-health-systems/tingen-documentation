@@ -5,20 +5,19 @@
 ```mermaid
 flowchart TB
     %% Components
-    TingenWebService.RunScript@{shape: rect, label: "TingenWebService.RunScript()"}
-    EmptyOptionObjectOrScriptParameter@{shape: diam, label: "Is the OptionObject and/or\nScriptParameter null or empty?}
-    DebugLoge@{shape: lean-l, label: "Write debug log"}
+    RunScript@{shape: rect, label: "TingenWebService.RunScript()"}
+    MissingData@{shape: diam, label: "Is the OptionObject and/or\nScriptParameter null or empty?}
     CurrentMode@{shape: diam, label: "Current\nmode"}
     ReturnTrue@{shape: rounded, label: "Return True"}
     ReturnFalse@{shape: rounded, label: "Return False"}
     %% Layout
-    TingenWebService.RunScript --> EmptyOptionObjectOrScriptParameter
-    EmptyOptionObjectOrScriptParameter --True--> ReturnFalse
-    EmptyOptionObjectOrScriptParameter --False--> CurrentMode
+    RunScript --> EmptyOptionObjectOrScriptParameter
+    MissingData --True--> ReturnFalse
+    MissingData --False--> CurrentMode
     CurrentMode --Enabled--> ReturnFalse
     CurrentMode --Passthrough--> ReturnFalse
     CurrentMode --Disabled--> ReturnTrue
-    %%CurrentMode --unknown--> ReturnTrue
+    CurrentMode --unknown--> ReturnTrue
     %% Styles
 ```
 
