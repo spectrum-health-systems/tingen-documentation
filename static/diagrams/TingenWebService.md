@@ -23,16 +23,16 @@
 
 ```mermaid
 flowchart TD
-    A((RunScript)) --> B[RuntimeConfig.Load]
-    B --> C{TingenWebService.CriticalFailureOccurred}
-    C -- True --> D[Return origOptObj.ToReturnOptionObject]
-    C -- False --> E{Mode}
-    E -- enabled --> F[Instance.Start]
-    E -- passthrough --> F
-    E -- other --> J[Return origOptObj.ToReturnOptionObject]
-    F --> G[AvatarScriptParameter.ParseParameter]
-    G --> H[LogEvent.Session]
-    H --> I[Return sess.OptObj.Completed]
+    Start@{shape: sm-circ, label: ""} --> RuntimeConfig_Load@{shape: fr-rect, label: "RuntimeConfig.Load()"}
+    RuntimeConfig_Load --> CriticalFailureOccurred@{shape: rounded, label: "CriticalFailureOccurred()"}
+    CriticalFailureOccurred -- True --> ReturnOriginalOptionObject@{shape: dbl-circ, label: "Return original\nOptionObject"}
+    CriticalFailureOccurred -- False --> Mode@{shape: diam, label: "Mode"}
+    Mode -- enabled --> Instance.Start@{shape: fr-rect, label: "Instance.Start()"}
+    Mode -- passthrough --> Instance.Start
+    Mode -- other --> ReturnOriginalOptionObject
+    Instance.Start --> ParseParameter@{shape: fr-rect, label: "AvatarScriptParameter.ParseParameter()"}
+    ParseParameter --> LogSession@{shape: fr-rect, label: "LogEvent.Session()"}
+    LogSession --> ReturnUpdatedOptionObject@{shape: dbl-circ, label: "Return updated\nOptionObject"}
 ```
 
 ## CriticalFailureOccurred()
