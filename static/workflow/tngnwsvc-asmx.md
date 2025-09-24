@@ -44,3 +44,58 @@ flowchart TB
     ReturnOptionObject -->  Stop
     %% Styles
 ```
+
+```mermaid
+classDiagram
+    class TingenWebService {
+        +string TngnWsvcVersion
+        +string GetVersion()
+        +OptionObject2015 RunScript(OptionObject2015 origOptObj, string origScriptParam)
+        +static bool CriticalFailureOccurred(OptionObject2015 origOptObj, string origScriptParam, string tngnWsvcMode)
+    }
+    class OptionObject2015 {
+        +string EntityID
+        +double EpisodeNumber
+        +double ErrorCode
+        +string ErrorMesg
+        +string Facility
+        +List~FormObject~ Forms
+        +string NamespaceName
+        +string OptionId
+        +string OptionStaffId
+        +string OptionUserId
+        +string ParentNamespace
+        +string ServerName
+        +string SystemCode
+        +string SessionToken
+        +OptionObject2015 ToReturnOptionObject(int errorCode, string errorMessage)
+    }
+    class AvatarScriptParameter {
+        <<static>>
+        +void ParseParameter(Instance sess)
+    }
+    class Instance {
+        <<static>>
+        +Instance Start(OptionObject2015 origOptObj, string origScriptParam, Dictionary~string,string~ runtimeConfig)
+        +OptionObject2015 OptObj
+    }
+    class LogEvent {
+        <<static>>
+        +void Debug(string message)
+        +void Session(Instance sess)
+    }
+    class RuntimeConfig {
+        <<static>>
+        +Dictionary~string,string~ Load(Settings webConfig, string tngnWsvcVer)
+    }
+    class Settings {
+        <<external>>
+    }
+    TingenWebService ..> OptionObject2015 : uses
+    TingenWebService ..> AvatarScriptParameter : uses
+    TingenWebService ..> Instance : uses
+    TingenWebService ..> LogEvent : uses
+    TingenWebService ..> RuntimeConfig : uses
+    RuntimeConfig ..> Settings : uses
+    OptionObject2015 o-- "0..*" FormObject : Forms
+```
