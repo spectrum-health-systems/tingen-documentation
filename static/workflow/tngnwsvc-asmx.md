@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-    A[RunScript called] --> B[Load runtimeConfig]
+    A[RunScript()] --> B[Load runtimeConfig]
     B --> C{CriticalFailureOccurred?}
     C -- Yes --> D[Return origOptObj.ToReturnOptionObject]
     C -- No --> E{Mode?}
