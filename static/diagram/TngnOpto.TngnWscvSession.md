@@ -2,13 +2,25 @@
 
 [[🏠︎](../../README.md)] ❬ [Static documentation](../README.md) ❬ [Diagrams](README.md)
 
-# TingenWebService
+# Outpost31.TngnWsvcSession
 
 ### CONTENTS
-[TingenWebService.asmx.cs](#tingenwebserviceasmxcs)
+[Outpost31.TngnWsvcSession.](#tingenwebserviceasmxcs)
 [TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)
 
 ***
+
+```mermaid
+flowchart TD
+    A[Instance.Load] --> B[Call Details.Load]
+    B --> C[Call Folders.Load]
+    C --> D[Call LogSettings.Load]
+    D --> E[Create AvatarOptionObject]
+    E --> F[Create AvatarScriptParameter ]
+    F --> G[Return new Instance]
+```
+
+
 
 ## TingenWebService.asmx.cs
 
