@@ -6,7 +6,7 @@
 flowchart TB
     %% Components
     RunScript@{shape: rect, label: "TingenWebService.RunScript()"}
-    MissingData@{shape: diam, label: "Is the OptionObject and<br>or\nScriptParameter null or empty?"}
+    MissingData@{shape: diam, label: "Is the OptionObject\nand/or\nScriptParameter null or empty?"}
     CurrentMode@{shape: diam, label: "Current\nmode"}
     ReturnTrue@{shape: rounded, label: "Return True"}
     ReturnFalse@{shape: rounded, label: "Return False"}
@@ -15,7 +15,7 @@ flowchart TB
     MissingData --True--> ReturnFalse
     MissingData --False--> CurrentMode
     CurrentMode --Enabled<br>or<br>Passthrough--> ReturnFalse
-    CurrentMode --Disabled\nor\nunkown--> ReturnTrue
+    CurrentMode --Disabled<br>or<br>unknown--> ReturnTrue
     %% Styles
 ```
 
