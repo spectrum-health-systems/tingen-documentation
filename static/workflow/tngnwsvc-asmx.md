@@ -105,11 +105,11 @@ classDiagram
 flowchart TD
     A[RunScript called] --> B[Load runtimeConfig]
     B --> C{CriticalFailureOccurred?}
-    C -- Yes --> D[Return origOptObj.ToReturnOptionObject(0, "")]
+    C -- Yes --> D[Return origOptObj.ToReturnOptionObject]
     C -- No --> E{Mode == "enabled" or "passthrough"?}
-    E -- Yes --> F[Instance.Start(origOptObj, origScriptParam, runtimeConfig)]
-    F --> G[AvatarScriptParameter.ParseParameter(sess)]
-    G --> H[LogEvent.Session(sess)]
+    E -- Yes --> F[Instance.Start]
+    F --> G[AvatarScriptParameter.ParseParameter]
+    G --> H[LogEvent.Session]
     H --> I[Return sess.OptObj.Completed]
-    E -- No --> J[Return origOptObj.ToReturnOptionObject(3, "There was a web service error...")]
+    E -- No --> J[Return origOptObj.ToReturnOptionObject]
 ```
