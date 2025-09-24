@@ -21,6 +21,8 @@
 
 > Last updated 9/24/25
 
+<div align="center">
+
 ```mermaid
 flowchart TD
     %% Components
@@ -41,11 +43,13 @@ flowchart TD
     Mode -- passthrough --> Instance.Start
     Mode -- other --> ReturnOriginalOptionObject
     Instance.Start --> ParseParameter
-    ParseParameter --> LogSessio
+    ParseParameter --> LogSession
     LogSession --> ReturnUpdatedOptionObject
     %%
     click RuntimeConfig_Load "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.Configuration.md#tingenwebserviceconfigurationruntimeconfigcs"
 ```
+
+</div>
 
 ## CriticalFailureOccurred()
 
