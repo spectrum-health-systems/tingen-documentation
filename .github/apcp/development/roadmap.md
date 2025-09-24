@@ -60,6 +60,7 @@ TBD
 - [ ] Remove the ISS site from Tingen_www, and add two sites to:
   - Tingen_www\UAT
   - Tingen_www\LIVE
+  - Tingen_www\SBOX
 
 # Documentation
 
