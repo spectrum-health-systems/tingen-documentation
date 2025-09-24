@@ -1,3 +1,7 @@
+<!-- u250924 -->
+
+[[🏠︎](../../../README.md)] ❬ [Static](../../README.md) ❬ [Diagram](../README.md)
+
 # TingenWebService.asmx.cs
 
 ## CriticalErrorOccurred()
@@ -6,8 +10,8 @@
 flowchart TD
     A[TingenWebService.RunScript] --> B[RuntimeConfig.Load]
     B --> C{TingenWebService.CriticalFailureOccurred}
-    C -- Yes --> D[Return origOptObj.ToReturnOptionObject]
-    C -- No --> E{Mode?}
+    C -- True --> D[Return origOptObj.ToReturnOptionObject]
+    C -- False --> E{Mode}
     E -- enabled --> F[Instance.Start]
     E -- passthrough --> F
     E -- other --> J[Return origOptObj.ToReturnOptionObject]
