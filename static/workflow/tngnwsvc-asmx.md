@@ -43,7 +43,7 @@ flowchart TB
     CurrentMode --Passthrough--> Instance.Start
     Instance.Start --> ParseParameter
     ParseParameter --> ReturnOptionObject
-    CurrentMode --unknown --> ReturnOptionObject
+    CurrentMode --unknown--> ReturnOptionObject
     ReturnOptionObject -->  Stop
     %% Styles
 ```
