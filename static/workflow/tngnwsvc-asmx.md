@@ -11,10 +11,10 @@ flowchart TB
     ReturnTrue@{shape: rounded, label: "Return True"}
     ReturnFalse@{shape: rounded, label: "Return False"}
     %% Layout
-    RunScript --> EmptyOptionObjectOrScriptParameter
+    RunScript --> MissingData
     MissingData --True--> ReturnFalse
     MissingData --False--> CurrentMode
-    CurrentMode --Enabled--> ReturnFalse
+    CurrentMode --Enabled or Passthrough--> ReturnFalse
     CurrentMode --Passthrough--> ReturnFalse
     CurrentMode --Disabled--> ReturnTrue
     CurrentMode --unknown--> ReturnTrue
