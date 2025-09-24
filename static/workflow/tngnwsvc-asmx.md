@@ -103,15 +103,13 @@ classDiagram
 
 ```mermaid
 flowchart TD
-    A[Start Web Service] --> B[LogEvent.Debug("Web service started.")]
-    B --> C[Load RuntimeConfig]
-    C --> D[LogEvent.Debug("Runtime settings loaded.")]
-    D --> E{CriticalFailureOccurred?}
-    E -- Yes --> F[Return origOptObj.ToReturnOptionObject(0, "")]
-    E -- No --> G{Mode == "enabled" or "passthrough"?}
-    G -- Yes --> H[Instance.Start(...)]
-    H --> I[AvatarScriptParameter.ParseParameter(sess)]
-    I --> J[LogEvent.Session(sess)]
-    J --> K[Return sess.OptObj.Completed]
-    G -- No --> L[Return origOptObj.ToReturnOptionObject(3, "There was a web service error...")]
+    A[RunScript called] --> B[Load runtimeConfig]
+    B --> C{CriticalFailureOccurred?}
+    C -- Yes --> D[Return origOptObj.ToReturnOptionObject(0, "")]
+    C -- No --> E{Mode == "enabled" or "passthrough"?}
+    E -- Yes --> F[Instance.Start(origOptObj, origScriptParam, runtimeConfig)]
+    F --> G[AvatarScriptParameter.ParseParameter(sess)]
+    G --> H[LogEvent.Session(sess)]
+    H --> I[Return sess.OptObj.Completed]
+    E -- No --> J[Return origOptObj.ToReturnOptionObject(3, "There was a web service error...")]
 ```
