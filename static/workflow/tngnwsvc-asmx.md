@@ -99,3 +99,19 @@ classDiagram
     RuntimeConfig ..> Settings : uses
     OptionObject2015 o-- "0..*" FormObject : Forms
 ```
+
+
+```mermaid
+flowchart TD
+    A[Start Web Service] --> B[LogEvent.Debug("Web service started.")]
+    B --> C[Load RuntimeConfig]
+    C --> D[LogEvent.Debug("Runtime settings loaded.")]
+    D --> E{CriticalFailureOccurred?}
+    E -- Yes --> F[Return origOptObj.ToReturnOptionObject(0, "")]
+    E -- No --> G{Mode == "enabled" or "passthrough"?}
+    G -- Yes --> H[Instance.Start(...)]
+    H --> I[AvatarScriptParameter.ParseParameter(sess)]
+    I --> J[LogEvent.Session(sess)]
+    J --> K[Return sess.OptObj.Completed]
+    G -- No --> L[Return origOptObj.ToReturnOptionObject(3, "There was a web service error...")]
+```
