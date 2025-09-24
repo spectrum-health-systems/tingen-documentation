@@ -23,7 +23,7 @@
 
 ```mermaid
 flowchart TD
-    A(()) --> B[RuntimeConfig.Load]
+    A((RunScript)) --> B[RuntimeConfig.Load]
     B --> C{TingenWebService.CriticalFailureOccurred}
     C -- True --> D[Return origOptObj.ToReturnOptionObject]
     C -- False --> E{Mode}
