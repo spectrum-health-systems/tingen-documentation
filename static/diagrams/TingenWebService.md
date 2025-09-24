@@ -39,11 +39,11 @@ flowchart TD
     Start --> RuntimeConfig_Load:::E3_ --> CriticalFailureOccurred:::E3_
     CriticalFailureOccurred -- True --> ReturnOriginalOptionObject:::E3_
     CriticalFailureOccurred -- False --> Mode:::E3_
-    Mode -- enabled --> Instance.Start
+    Mode -- enabled --> Instance.Start:::U3_
     Mode -- passthrough --> Instance.Start
     Mode -- other --> ReturnOriginalOptionObject
-    Instance.Start --> ParseParameter
-    ParseParameter --> LogSession
+    Instance.Start --> ParseParameter:::U3_
+    ParseParameter --> LogSession:::U3_
     LogSession --> ReturnUpdatedOptionObject:::E3_
     %% Styles
     classDef E3_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
