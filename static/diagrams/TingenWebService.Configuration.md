@@ -7,24 +7,20 @@
 ### CONTENTS
 
 * asmx.cs
-    * [GetVersion()](#)
+    * [GetVersion()]()
     * [RunScript()]()
+* Configuration
+    * [TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)  
 
 ***
 
-## GetVersion()
-
-> Last updated 9/24/25
-
-
-
-## RunScript()
+## TingenWebService.asmx.cs
 
 > Last updated 9/24/25
 
 ```mermaid
 flowchart TD
-    A[RunScript] --> B[RuntimeConfig.Load]
+    A[TingenWebService.RunScript] --> B[RuntimeConfig.Load]
     B --> C{TingenWebService.CriticalFailureOccurred}
     C -- True --> D[Return origOptObj.ToReturnOptionObject]
     C -- False --> E{Mode}
@@ -36,21 +32,22 @@ flowchart TD
     H --> I[Return sess.OptObj.Completed]
 ```
 
-## CriticalFailureOccurred()
+## TingenWebService.Configuration.RuntimeConfig.cs
 
 > Last updated 9/24/25
 
 ```mermaid
 flowchart TD
-    A[CriticalFailureOccurred] --> B{origOptObj is null or origScriptParam is null/empty?}
-    B -- Yes --> C[LogEvent.Debug]
-    C --> D[Return true]
-    B -- No --> E{tngnWsvcMode value}
-    E -- "enabled" or "passthrough" --> F[Return false]
-    E -- "disabled" --> G[LogEvent.Debug]
-    G --> H[Return true]
-    E -- default/unknown --> I[LogEvent.Debug]
-    I --> J[Return true]
+    A[RuntimeConfig.Load] --> B[Receive webConfig and tngnWsvcVer]
+    B --> C[Create new Dictionary]
+    C --> D[Add Version]
+    D --> E[Add BuildNumber]
+    E --> F[Add AvatarSys]
+    F --> G[Add Mode]
+    G --> H[Add BaseWww]
+    H --> I[Add BaseData]
+    I --> J[Add TraceLogLimit]
+    J --> K[Return Dictionary]
 ```
 
 ***
