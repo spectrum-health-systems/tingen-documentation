@@ -51,6 +51,9 @@ TBD
 - [ ] New critical error: the Avatar Systems don't match
 - [ ] Email critical errors
 - [ ] Trace logs where they need to be
+- [ ] Auto-generated data copied from deployment folder
+- [ ] Fallback for name conversion (Sebastian's idea)
+- [ ] Disable Scripts For Error (what is this?)
 
 # IIS
 
