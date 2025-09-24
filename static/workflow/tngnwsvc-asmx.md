@@ -14,7 +14,7 @@ flowchart TB
     RunScript --> MissingData
     MissingData --True--> ReturnFalse
     MissingData --False--> CurrentMode
-    CurrentMode --Enabled\nor\nPassthrough--> ReturnFalse
+    CurrentMode --Enabled<br>or<br>Passthrough--> ReturnFalse
     CurrentMode --Disabled\nor\nunkown--> ReturnTrue
     %% Styles
 ```
