@@ -5,10 +5,14 @@
 # Outpost31.TngnWsvcSession
 
 ### CONTENTS
-[Outpost31.TngnWsvcSession.](#tingenwebserviceasmxcs)  
+[Outpost31.TngnWsvcSession.Instance.Load](#instanceload)  
 [TingenWebService.Configuration.RuntimeConfig.cs](#tingenwebserviceconfigurationruntimeconfigcs)  
 
 ***
+
+# Instance.Load()
+
+> Last updated 250924
 
 ```mermaid
 flowchart TD
@@ -19,6 +23,25 @@ flowchart TD
     E --> F[Create AvatarScriptParameter ]
     F --> G[Return new Instance]
 ```
+
+# Instance.Load()
+
+> Last updated 250924
+
+```mermaid
+flowchart TD
+    A[Instance.Start] --> B[Instance.Load]
+    B --> C[Instance created]
+    C --> D[Folders.CreateSessionFolder]
+    D --> E[Return session]
+```
+
+
+
+
+
+
+
 
 
 
