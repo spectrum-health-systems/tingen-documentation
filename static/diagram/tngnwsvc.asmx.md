@@ -1,6 +1,6 @@
 <!-- u250924 -->
 
-[[🏠︎](../../../README.md)] ❬ [Static](../../README.md) ❬ [Diagram](../README.md)
+[[🏠︎](../../README.md)] ❬ [Static](../README.md) ❬ [Diagram](README.md)
 
 # TingenWebService.asmx.cs
 
