@@ -36,16 +36,18 @@ flowchart TD
     LogSession@{shape: fr-rect, label: "LogEvent.Session()"}
     ReturnUpdatedOptionObject@{shape: dbl-circ, label: "Return updated\nOptionObject"}
     %% Layout
-    Start --> RuntimeConfig_Load --> CriticalFailureOccurred
-    CriticalFailureOccurred -- True --> ReturnOriginalOptionObject
-    CriticalFailureOccurred -- False --> Mode
+    Start --> RuntimeConfig_Load:::E3_ --> CriticalFailureOccurred:::E3_
+    CriticalFailureOccurred -- True --> ReturnOriginalOptionObject:::E3_
+    CriticalFailureOccurred -- False --> Mode:::E3_
     Mode -- enabled --> Instance.Start
     Mode -- passthrough --> Instance.Start
     Mode -- other --> ReturnOriginalOptionObject
     Instance.Start --> ParseParameter
     ParseParameter --> LogSession
-    LogSession --> ReturnUpdatedOptionObject
+    LogSession --> ReturnUpdatedOptionObject:::E3_
     %% Styles
+    classDef E3_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
+    classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
     %% Links
     click RuntimeConfig_Load "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.Configuration.md#tingenwebserviceconfigurationruntimeconfigcs"
     click CriticalFailureOccurred "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.md#criticalfailureoccurred"
