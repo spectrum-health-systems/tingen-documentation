@@ -34,7 +34,7 @@ flowchart TD
     ParseParameter --> LogSession@{shape: fr-rect, label: "LogEvent.Session()"}
     LogSession --> ReturnUpdatedOptionObject@{shape: dbl-circ, label: "Return updated\nOptionObject"}
     %%
-    click RuntimeConfig_Load "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.Configuration.md"
+    click RuntimeConfig_Load "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.Configuration.md#tingenwebserviceconfigurationruntimeconfigcs"
 ```
 
 ## CriticalFailureOccurred()
