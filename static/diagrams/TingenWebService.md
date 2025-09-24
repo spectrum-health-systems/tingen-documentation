@@ -7,16 +7,15 @@
 ### CONTENTS
 
 * asmx.cs
-    * [GetVersion()](#)
-    * [RunScript()]()
+    * [GetVersion()](#getversion)
+    * [RunScript()](#runscript)
+    * [CriticalFailureOccurred()](#criticalfailureoccurred)
 
 ***
 
 ## GetVersion()
 
 > Last updated 9/24/25
-
-
 
 ## RunScript()
 
@@ -46,8 +45,8 @@ flowchart TD
     B -- Yes --> C[LogEvent.Debug]
     C --> D[Return true]
     B -- No --> E{tngnWsvcMode value}
-    E -- "enabled" or "passthrough" --> F[Return false]
-    E -- "disabled" --> G[LogEvent.Debug]
+    E -- enabled or passthrough --> F[Return false]
+    E -- disabled --> G[LogEvent.Debug]
     G --> H[Return true]
     E -- default/unknown --> I[LogEvent.Debug]
     I --> J[Return true]
