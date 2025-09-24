@@ -1,10 +1,14 @@
 <!-- u250924 -->
 
-[[🏠︎](../../README.md)] ❬ [Static](../README.md) ❬ [Diagram](README.md)
+[[🏠︎](../../README.md)] ❬ [Static documentation](../README.md) ❬ [Diagrams](README.md)
 
-# TingenWebService.asmx.cs
+# TingenWebService
 
-## CriticalErrorOccurred()
+### CONTENTS
+[TingenWebService.asmx.cs](#tingenwebserviceasmxcs)
+[]()
+
+## TingenWebService.asmx.cs
 
 ```mermaid
 flowchart TD
@@ -18,4 +22,20 @@ flowchart TD
     F --> G[AvatarScriptParameter.ParseParameter]
     G --> H[LogEvent.Session]
     H --> I[Return sess.OptObj.Completed]
+```
+
+## TingenWebService.Configuration.RuntimeConfig.cs
+
+```mermaid
+flowchart TD
+    A[Start: Load called] --> B[Receive webConfig and tngnWsvcVer]
+    B --> C[Create new Dictionary]
+    C --> D[Add Version]
+    D --> E[Add BuildNumber]
+    E --> F[Add AvatarSys]
+    F --> G[Add Mode]
+    G --> H[Add BaseWww]
+    H --> I[Add BaseData]
+    I --> J[Add TraceLogLimit]
+    J --> K[Return Dictionary]
 ```
