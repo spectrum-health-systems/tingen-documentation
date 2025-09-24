@@ -18,7 +18,7 @@ flowchart TB
     CurrentMode --Enabled--> ReturnFalse
     CurrentMode --Passthrough--> ReturnFalse
     CurrentMode --Disabled--> ReturnTrue
-    CurrentMode --unknown--> ReturnTrue
+    %%CurrentMode --unknown--> ReturnTrue
     %% Styles
 ```
 
