@@ -46,8 +46,8 @@ flowchart TD
     ParseParameter --> LogSession:::U3_
     LogSession --> ReturnUpdatedOptionObject:::E3_
     %% Styles
-    classDef E3_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
-    classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
+    classDef E3_ stroke:#fdf2e9,stroke-width:2px,fill:#ca6f1e,color:#fdf2e9
+    classDef U3_ stroke:#eaf2f8,stroke-width:2px,fill:#2471a3,color:#eaf2f8
     %% Links
     click RuntimeConfig_Load "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.Configuration.md#tingenwebserviceconfigurationruntimeconfigcs"
     click CriticalFailureOccurred "https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/diagrams/TingenWebService.md#criticalfailureoccurred"
@@ -79,7 +79,7 @@ flowchart TD
     Mode -- default --> WriteTrueLog
     WriteTrueLog --> ReturnTrue
     %% Styles
-    classDef E3_ stroke:#fdf2e9,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
+    classDef E3_ stroke:#fdf2e9,stroke-width:2px,fill:#ca6f1e,color:#fdf2e9
 ```
 
 ***
