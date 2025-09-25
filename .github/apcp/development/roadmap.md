@@ -1,12 +1,21 @@
-<!-- u250917 -->
+<!-- u250925 -->
 
-<div>
+<div align="center">
 
-  <h1>DEVNOTES: Tingen Projects Roadmap</h1>
-
-  Internal apcp development only!
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnproj-dark-400x63.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnproj-light-400x63.png">
+    <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnproj-light-400x63.png">
+  </picture>
+  <h1>
+    TINGEN ROADMAPS
+  </h1>
 
 </div>
+
+> This is also the roadmap for the [Tingen Web Service](https://github.com/spectrum-health-systems/tingen-web-service.).
+
+***
 
 * [Release](#release)
 * [IIS](#iis)

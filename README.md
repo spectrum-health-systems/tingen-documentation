@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![logo](/.github/img/logo/TngnDocProj-320x420.png)
+  ![logo](/.logos/tngnprojpng)
 
   ![Release](https://img.shields.io/badge/release-25.9-teal)&nbsp;&nbsp;
 
