@@ -63,14 +63,15 @@ flowchart TD
 flowchart TD
     %% Content
     Start@{shape: sm-circ, label: ""}
-    InvalidAvatarData@{shape: diam, label: "Invalid data\nfrom Avatar?"}
-    WriteTrueLog@{shape: rounded, label: "Write log"}
+    InvalidAvatarData:::E3_@{shape: diam, label: "Invalid data\nfrom Avatar?"}
     Mode:::E3_@{shape: diam, label: "Mode"}
-    ReturnTrue@{shape: rect, label: "Return true"}
-    ReturnFalse@{shape: rect, label: "Return false"}
+    WriteTrueLog:::E3_@{shape: rect, label: "Write log"}
+    WriteFalseLog:::E3_@{shape: rect, label: "Write log"}
+    ReturnTrue:::E3_@{shape: rounded, label: "Return true"}
+    ReturnFalse:::E3_@{shape: rounded, label: "Return false"}
     %% Layout
-    Start --> InvalidAvatarData:::E3_
-    InvalidAvatarData -- Yes --> WriteFalseLog:::E3_ --> ReturnTrue
+    Start --> InvalidAvatarData
+    InvalidAvatarData -- Yes --> WriteFalseLog--> ReturnTrue
     InvalidAvatarData -- No --> Mode
     Mode -- enabled --> ReturnFalse
     Mode -- passthrough --> ReturnFalse
