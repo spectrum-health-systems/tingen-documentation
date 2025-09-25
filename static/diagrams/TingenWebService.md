@@ -65,7 +65,7 @@ flowchart TD
     Start@{shape: sm-circ, label: ""}
     InvalidAvatarData@{shape: diam, label: "Invalid data\nfrom Avatar?"}
     WriteTrueLog@{shape: rounded, label: "Write log"}
-    Mode@{shape: diam, label: "Mode"}:::E3_
+    Mode:::E3_@{shape: diam, label: "Mode"}
     ReturnTrue@{shape: rect, label: "Return true"}
     ReturnFalse@{shape: rect, label: "Return false"}
     %% Layout
