@@ -65,9 +65,8 @@ flowchart TD
     Start@{shape: sm-circ, label: ""}
     InvalidAvatarData@{shape: diam, label: "Invalid data\nfrom Avatar"}
     WriteTrueLog@{shape: rounded, label: "Write log"}
-    ReturnTrue@{shape: rect, label: "Return true"}
-    InvalidAvatarData
     Mode@{shape: diam, label: "Mode"}
+    ReturnTrue@{shape: rect, label: "Return true"}
     ReturnFalse@{shape: rect, label: "Return false"}
     %% Layout
     Start --> InvalidAvatarData
@@ -76,9 +75,7 @@ flowchart TD
     Mode -- enabled --> ReturnFalse
     Mode -- passthrough --> ReturnFalse
     Mode -- disabled --> WriteTrueLog
-    WriteTrueLog --> ReturnTrue
     Mode -- default --> WriteTrueLog
-    Mode -- unknown --> WriteTrueLog
     WriteTrueLog --> ReturnTrue
 ```
 
