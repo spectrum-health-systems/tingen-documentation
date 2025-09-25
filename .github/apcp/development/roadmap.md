@@ -8,7 +8,7 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnproj-light-400x63.png">
   </picture>
   <h1>
-    TINGEN ROADMAPS
+    ROADMAPS
   </h1>
 
 </div>
