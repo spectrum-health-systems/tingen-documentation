@@ -37,7 +37,7 @@
         <member name="P:Outpost31.Core.Operation.UserIdUserDescriptionFile.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String)">
             <summary>Get the full username of an Avatar Username/</summary>
             <remarks>
                 e.g., JDOE becomes John Doe
@@ -48,14 +48,14 @@
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
             <summary>Logic for Avatar environment components.</summary>
             <remarks>
-                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSysCode">Avatar System Code</see>.<br/>
+                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">Avatar System Code</see>.<br/>
                 <br/>
                 While both contain the word<i> system</i>, they are not the same! It is important to understand the difference between the two.<br/>
                 <br/>
                 For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys">
+        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks><note type="todo" title="How-To">
                     <h3>Modify the AvtrSys setting</h3>
@@ -83,7 +83,7 @@
                 </note></remarks>
             <value>The default value is <c>UAT</c>.</value>
         </member>
-        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSysCode">
+        <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">
             <summary>The Avatar System Code used to login to Avatar.</summary>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarOptionObject">
@@ -107,6 +107,7 @@
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
             <summary>Verify if an OptionObject was sent from Avatar.</summary>
+            <remarks>No logging done here because the logging functionality isn't setup yet.</remarks>
             <param name="origOptObj">The original OptionObject sent from Avatar.</param>
             <returns>A string indicating if an OptionObject was sent or not.</returns>
         </member>
@@ -130,7 +131,7 @@
             <param name="origScriptParam">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)">
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseParameter(Outpost31.Core.TngnWsvcSession.Instance)">
             <summary>Parse a request.</summary>
             <param name="sess"></param>
         </member>
@@ -155,69 +156,101 @@
             <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
+        <member name="P:Outpost31.Core.Framework.Folders.AvatarGeneratedData">
+            <summary>Path to the Tingen_Data\WebService\AvatarGeneratedData folder.</summary>
+        </member>
         <member name="P:Outpost31.Core.Framework.Folders.BaseWww">
-            <summary>
-            Gets or sets the path to the system WWW folder.
-            </summary>
+            <summary>Path to the system Tingen_www folder.</summary>
         </member>
         <member name="P:Outpost31.Core.Framework.Folders.BaseData">
-            <summary>
-            Gets or sets the path to the system data folder.
-            </summary>
+            <summary>Path to the Tingen_Data folder. </summary>
         </member>
         <member name="P:Outpost31.Core.Framework.Folders.AppData">
-            <summary>
-            Gets or sets the path to the application data folder.
-            </summary>
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData folder.</summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Archives">
-            <summary>
-            Gets or sets the path to the archive folder.
-            </summary>
+        <member name="P:Outpost31.Core.Framework.Folders.Log">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\Log.</summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Blueprints">
-            <summary>
-            Gets or sets the path to the blueprint folder.
-            </summary>
+        <member name="P:Outpost31.Core.Framework.Folders.Config">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\Config folder.</summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Exports">
-            <summary>
-            Gets or sets the path to the export folder.
-            </summary>
+        <member name="P:Outpost31.Core.Framework.Folders.Archive">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\Archive folder.</summary>
         </member>
-        <member name="P:Outpost31.Core.Framework.Folders.Imports">
-            <summary>
-            Gets or sets the path to the import folder.
-            </summary>
+        <member name="P:Outpost31.Core.Framework.Folders.Blueprint">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\www\Blueprint folder.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Framework.Folders.TranslationTable">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\www\TranslationTable folder.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Framework.Folders.Export">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\Export folder.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Framework.Folders.Import">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\Import folder.</summary>
+        </member>
+        <member name="P:Outpost31.Core.Framework.Folders.Www">
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\AppData\www folder.</summary>
         </member>
         <member name="P:Outpost31.Core.Framework.Folders.CurrentSession">
-            <summary>
-            Gets or sets the path to the session folder.
-            </summary>
+            <summary>Path to the Tingen_Data\WebService\{AvatarSystem}\Session\{YYMMDD}\{AvatarUserName}\{HHMMSS} folder.</summary>
         </member>
-        <member name="M:Outpost31.Core.Framework.Folders.Load(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Loads folder paths based on provided parameters.
-            </summary>
-            <param name="systemDataFolder">The system data folder path.</param>
-            <param name="systemWwwFolder">The system WWW folder path.</param>
+        <member name="M:Outpost31.Core.Framework.Folders.Load(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Creates the folder framework object</summary>
+            <param name="systemDataFolder">The Tingen_Data path.</param>
+            <param name="systemWwwFolder">The Tingen_www path.</param>
             <param name="avatarUser">The avatar user name.</param>
             <param name="date">The date string.</param>
             <param name="time">The time string.</param>
             <returns>A <see cref="T:Outpost31.Core.Framework.Folders"/> instance with initialized paths.</returns>
         </member>
-        <member name="M:Outpost31.Core.Framework.Folders.CreateFolderFramework(Outpost31.Core.Framework.Folders)">
-            <summary>
-            Creates the folder framework by ensuring all folders exist.
-            </summary>
+        <member name="M:Outpost31.Core.Framework.Folders.CreateFolderFramework(Outpost31.Core.Framework.Folders,System.String)">
+            <summary>Creates the folder framework.</summary>
             <param name="folders">The <see cref="T:Outpost31.Core.Framework.Folders"/> instance containing folder paths.</param>
-            <param name="traceLogLimit">The trace log limit.</param>
         </member>
         <member name="M:Outpost31.Core.Framework.Folders.CreateSessionFolder(System.String)">
             <summary>
             Creates the session folder if it does not exist.
             </summary>
             <param name="sessionFolder">The session folder path.</param>
+        </member>
+        <member name="T:Outpost31.Core.Logger.CriticalLog">
+            <summary>Critical log logic.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)">
+            <summary>Generate a critical log file.</summary>
+            <remarks>
+                Critical logs are written to both the current session folder and the permanent log folder.
+            </remarks>
+            <param name="logTitle">The log title.</param>
+            <param name="logMsg">The log Message.</param>
+            <param name="avatarUserName">The Avatar username.</param>
+            <param name="tngnWsvcFolder">The Tingen Web Service folder framework.</param>
+            <param name="exeAsm">The executing assembly that caused the error.</param>
+            <param name="classPath">The path to the class that caused the error.</param>
+            <param name="methodName">The method that caused the error.</param>
+            <param name="lineNumber">The line of code that caused the error.</param>
+        </member>
+        <member name="M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>Build the log content.</summary>
+            <param name="logBlueprint">The log template.</param>
+            <param name="logMsg">The log Message.</param>
+            <param name="exeAsm">The executing assembly that caused the error.</param>
+            <param name="classPath">The path to the class that caused the error.</param>
+            <param name="methodName">The method that caused the error.</param>
+            <param name="lineNumber">The line of code that caused the error.</param>
+            <returns>The completed log content.</returns>
+        </member>
+        <member name="T:Outpost31.Core.Logger.DebugLog">
+            <summary>Debug log logic.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)">
+            <summary>Generate a debug log file.</summary>
+            <remarks></remarks>
+            <param name="logMsg">The log Message.</param>
+            <param name="classPath">The path to the class that caused the error.</param>
+            <param name="methodName">The method that caused the error.</param>
+            <param name="lineNumber">The line of code that caused the error.</param>
         </member>
         <member name="T:Outpost31.Core.Logger.LogEvent">
             <summary>Logs an application event.</summary>
@@ -272,7 +305,7 @@
             The Tingen Web Service mode, which determines what the Tingen Web Service will do, if anything.
             </summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSys">
+        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSystem">
             <summary>
             The Avatar system that the Tingen Web Service will interface with.
             </summary>
@@ -287,7 +320,7 @@
             <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> instance with the specified parameters.</summary>
             <param name="version">The current <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Version"/> of the Tingen Web Service.</param>
             <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Mode"/>.</param>
-            <param name="avatarSys">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSys"/> that the Tingen Web Service will interface with.</param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
             <param name="avatarUserName">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName"/>.</param>
             <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> object populated with the provided parameters and the current date and time.</returns>
         </member>
@@ -295,37 +328,31 @@
             <summary>Manages the current Tingen Web Service session.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="T:Outpost31.Module.Administration.Deployment">
+        <member name="T:Outpost31.Module.TngnWsvc">
             <summary>Administrative deployment functionality.</summary>
         </member>
-        <member name="P:Outpost31.Module.Administration.Deployment.AsmName">
+        <member name="P:Outpost31.Module.TngnWsvc.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.TngnWsvcSession.Instance)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deploy(Outpost31.Core.TngnWsvcSession.Instance)">
             <summary>Deploy the Tingen Web Service framework.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String)">
+        <member name="M:Outpost31.Module.TngnWsvc.RefreshAppData(System.String,System.String,System.String)">
             <summary>Refresh application data that is required by the Tingen Web Service.</summary>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/></param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)">
+        <member name="M:Outpost31.Module.TngnWsvc.CopyDirectory(System.String,System.String)">
             TODO move to a utility class
         </member>
-        <member name="T:Outpost31.Module.Administration.Testing">
-            <summary>Administrative testing functionality.</summary>
-        </member>
-        <member name="P:Outpost31.Module.Administration.Testing.AsmName">
-            <summary>A required log file component.</summary>
-        </member>
-        <member name="M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Module.TngnWsvc.Test(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Runs regression tests.</summary>
-            <param name="sentOptionObject">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="sentOptionObject">The <see cref="!:OptionObject2015"/> sent from Avatar.</param>
             <param name="sentScriptParameter">The original Script Parameter that is sent from Avatar.</param>
             <param name="tngnWsvcVer">The current version of the Tingen Web Service.</param>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSys"/>Avatar system that the Tingen Web Service will interface with.</param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/>Avatar system that the Tingen Web Service will interface with.</param>
         </member>
-        <member name="M:Outpost31.Module.Administration.Testing.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Module.TngnWsvc.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Generates various application logs.</summary>
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
@@ -389,20 +416,28 @@
             <summary>Provides additional information about Outpost31.</summary>
             <remarks>
               <para>
-                <b>About Outpost31</b><br />
+                <b>
+                    <u>About the Tingen Web Service</u>
+                </b><br />
+                Netsmart's Avatar™ is a behavioral health EHR that offers a recovery-focused suite of solutions that
+                leverage real-time analytics and clinical decision support to drive value-based care.<br />
+                <br />
+                While Avatar™ is a robust platform, it isn't perfect. The good news is that you can extend myAvatar™
+                functionality via Netsmart's Avatar™ Web Services, and/or custom web services that are written by other
+                Avatar™ users.<br />
+                <br />
+                The Tingen Web Service is one such custom web service which includes various tools and utilities for
+                Avatar™ that aren't included in the official release, and provides a solid foundation for building
+                additional functionality quickly and efficiently.<br />
+                <br />
+                <b>
+                    <u>About Outpost31</u>
+                </b><br />
                 Outpost31 is the back-end logic for the Tingen Web Service.
             </para><br />
               <para>
-                <note type="information" title="Source code comments">
-                    Tingen project source code uses the following types of comments:<br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
-                </note>
-            </para><br />
-              <para>
-                <note type="information" title="Source code comments">
-                    Tingen project source code uses the following types of comments:<br />
+                <note type="information" title="Project documentation">
+                    Tingen project documentation:<br />
                     <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
                     <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
                     <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
@@ -416,11 +451,13 @@
                 </note>
             </para><br />
               <para>
-                <note type="information" title="Project documentation">
-                    Tingen project documentation:<br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                <note type="information" title="Logging">
+                    Logging information:<br />
+                </note>
+            </para><br />
+              <para>
+                <note type="information" title="Source code comments">
+                    Source code comments:<br />
                 </note>
             </para><br />
             </remarks>
