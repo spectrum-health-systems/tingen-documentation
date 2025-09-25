@@ -68,7 +68,7 @@ flowchart TD
     ReturnTrue@{shape: rect, label: "Return true"}
     InvalidAvatarData
     Mode@{shape: diam, label: "Mode"}
-    ReturnFalse{shape: rect, label: "Return false"}
+    ReturnFalse@{shape: rect, label: "Return false"}
     %% Layout
     Start --> InvalidAvatarData
     InvalidAvatarData -- Yes --> WriteFalseLog --> ReturnTrue
