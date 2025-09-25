@@ -61,24 +61,24 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start[CriticalFailureOccurred] --> InvalidAvatarData{origOptObj is null or origScriptParam is null/empty?}
-    InvalidAvatarData -- Yes --> WriteTrueLog[LogEvent.Debug]
-    WriteTrueLog --> ReturnTrue[Return true]
-    InvalidAvatarData -- No --> Mode{tngnWsvcMode value}
-    Mode -- enabled or passthrough --> ReturnFalse[Return false]
-    Mode -- disabled --> WriteTrueLog[LogEvent.Debug]
-    WriteTrueLog --> ReturnTrue[Return true]
-    Mode -- default/unknown --> WriteTrueLog
+    %% Content
+    Start@{shape: sm-circ, label: ""}
+    InvalidAvatarData@{shape: diam, label: "Invalid data\nfrom Avatar"}
+    WriteTrueLog@{shape: rounded, label: "Write log"}
+    ReturnTrue{shape: rect, label: "Return true"}
+    InvalidAvatarData
+    Mode@{shape: diam, label: "Mode"}
+    ReturnFalse{shape: rect, label: "Return false"}
+    %% Layout
+    Start --> InvalidAvatarData
+    InvalidAvatarData -- Yes --> WriteFalseLog --> ReturnTrue
+    InvalidAvatarData -- No --> Mode
+    Mode -- enabled --> ReturnFalse
+    Mode -- passthrough --> ReturnFalse
+    Mode -- disabled --> WriteTrueLog
     WriteTrueLog --> ReturnTrue
-
-    Start[CriticalFailureOccurred] --> InvalidAvatarData{origOptObj is null or origScriptParam is null/empty?}
-    InvalidAvatarData -- Yes --> WriteFalseLog[LogEvent.Debug]
-    WriteFalseLog --> ReturnTrue[Return true]
-    InvalidAvatarData -- No --> Mode{tngnWsvcMode value}
-    Mode -- enabled or passthrough --> ReturnFalse[Return false]
-    Mode -- disabled --> WriteTrueLog[LogEvent.Debug]
-    WriteTrueLog --> ReturnTrue[Return true]
-    Mode -- default/unknown --> WriteTrueLog
+    Mode -- default --> WriteTrueLog
+    Mode -- unknown --> WriteTrueLog
     WriteTrueLog --> ReturnTrue
 ```
 
