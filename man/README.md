@@ -13,9 +13,4 @@
 
 </div>
 
-The Tingen Documentation project contains:
-
-[Manuals](./man/)  
-[API Documentation](./docs/api/)  
-[Static documentation](./static/)  
-[Development documentation](./dev/)  
+Nothing here yet.
