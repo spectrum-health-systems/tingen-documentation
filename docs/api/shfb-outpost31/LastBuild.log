@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="9/18/2025 10:03:40 AM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\shfb-outpost31.shfbproj" started="9/29/2025 11:13:55 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -42,14 +42,14 @@ Generating shared content files (en-US, English (United States))...
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0155
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-fa8a33d0-822d-4e38-bf93-a3aeb3acf0c4.proj]
-Build started 9/18/2025 10:03:41 AM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-be6de928-eaa4-4b79-a5d0-1a470f8c0fb2.proj]
+Build started 9/29/2025 11:13:56 AM.
 
-Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-fa8a33d0-822d-4e38-bf93-a3aeb3acf0c4.proj&quot; on node 1 (default targets).
+Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-be6de928-eaa4-4b79-a5d0-1a470f8c0fb2.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -57,27 +57,27 @@ GenerateRefInfo:
   c Microsoft Corporation. All rights reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 10 dependency assemblies.
-  Wrote information on 10 namespaces, 22 types, and 114 members
+  Wrote information on 9 namespaces, 22 types, and 116 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-fa8a33d0-822d-4e38-bf93-a3aeb3acf0c4.proj&quot; (default targets).
-    Last step completed in 00:00:01.1706
+Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\GenerateRefInfo-be6de928-eaa4-4b79-a5d0-1a470f8c0fb2.proj&quot; (default targets).
+    Last step completed in 00:00:01.0959
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0077
+    Last step completed in 00:00:00.0580
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0099
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0061
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0305
+    Last step completed in 00:00:00.0528
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -93,11 +93,11 @@ Indexing C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shf
 Indexing C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\System.Buffers.xml
 Indexing C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Microsoft.Bcl.AsyncInterfaces.xml
 Indexing C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\outpost31.xml
-Indexed 161113 members in 137 file(s).  10 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 161121 members in 137 file(s).  10 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 Documentation merged successfully.  Merged comments were saved in &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\_InheritedDocs_.xml&#39;.
-    Last step completed in 00:00:00.6300
+    Last step completed in 00:00:00.6325
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -111,36 +111,36 @@ Generating conceptual topic files
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\VersionHistory.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\c07a96b6-a791-477f-8bd3-df5564dd8811.xml
     Parsing topic file &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\ddueXml\33565a60-9900-4a09-83af-1351427e4991.xml
-    Last step completed in 00:00:00.1756
+    Last step completed in 00:00:00.0545
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0078
+    Last step completed in 00:00:00.0464
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\IT\csb\dev\github\spectrum\tingen-documentation-project\sfhb\shfb-outpost31\icons\Help.png -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0068
+    Last step completed in 00:00:00.0115
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0083
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0117
+    Last step completed in 00:00:00.0319
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.1564
+    Last step completed in 00:00:00.1431
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0225
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -148,7 +148,7 @@ C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0081
+    Last step completed in 00:00:00.0318
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -157,18 +157,6 @@ Loading TOC info and adding unique IDs to parent nodes
 </plugIn>Loading configuration...
 Processing topics...
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Analyze] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Analyze.AvatarField] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [Methods.T:Outpost31.Core.Analyze.AvatarField] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Analyze.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Analyze.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Avatar] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Avatar.AvatarOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Avatar.AvatarOptionObject] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
@@ -188,45 +176,17 @@ SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Avatar.A
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Outpost31.Core.Avatar.AvatarOptionObject.Worker] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [P:Outpost31.Core.Avatar.AvatarOptionObject.Worker] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.Avatar.AvatarScriptParameter.OriginalParameter] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseRequest(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseParameter(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Du] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Framework] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.Framework.Folders.Config] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.Framework.Folders.Logs] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.Framework.Folders.Www] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Framework.Folders.CreateFolderFramework(Outpost31.Core.Framework.Folders,System.String)] Missing &lt;param name=&quot;AvatarSystem&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Framework.Folders.Load(System.String,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;AvatarSystem&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Logger] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Logger.CriticalLog] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logTitle&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logMsg&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;avatarUserName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;exeAsm&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;classPath&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.Create(System.String,System.String,System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logBlueprint&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logMsg&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;asmName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;classPath&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.CriticalLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Logger.DebugLog] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logMsg&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;classPath&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.Create(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.LogContent(System.String)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.LogContent(System.String)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.DebugLog.LogContent(System.String)] Missing &lt;param name=&quot;logMsg&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Logger.ErrorLog] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;avatarUserName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;asmName&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;tngnWsvcFolder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;exeAsm&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;errCode&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;errMsg&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Create(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;classPath&quot;/&gt; documentation
@@ -242,7 +202,7 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.Lo
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.ErrorLog.LogContent(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;avatarUserName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;tngnWsvcFolder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;exeAsm&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logTitle&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;logMsg&quot;/&gt; documentation
@@ -255,7 +215,7 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.De
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;avatarUserName&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;tngnWsvcFolder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;exeAsm&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;errCode&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;errMsg&quot;/&gt; documentation
@@ -284,6 +244,9 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogUtility.
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogUtility.WriteLocal(System.String,System.String)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.LogUtility.WriteLocal(System.String,System.String)] Missing &lt;param name=&quot;fileContent&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Logger.SessionLog] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.AddToRunningLog(Outpost31.Core.TngnWsvcSession.Instance,System.String)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.AddToRunningLog(Outpost31.Core.TngnWsvcSession.Instance,System.String)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.AddToRunningLog(Outpost31.Core.TngnWsvcSession.Instance,System.String)] Missing &lt;param name=&quot;entry&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.Create(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.Create(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.SessionLog.LogContent(System.String,Outpost31.Core.TngnWsvcSession.Details,System.String)] Missing &lt;summary&gt; documentation
@@ -300,13 +263,31 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.TraceLog.Cr
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.TraceLog.Create(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;classPath&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.TraceLog.Create(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;methodName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Logger.TraceLog.Create(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;lineNumber&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Operation] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [T:Outpost31.Core.Operation.AvatarField] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [Methods.T:Outpost31.Core.Operation.AvatarField] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.AreEqual(System.Int32,System.Int32,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.AreEqual(System.Int32,System.Int32,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.AreEqual(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:Outpost31.Core.Operation.AvatarField.GetValue(ScriptLinkStandard.Objects.OptionObject,System.String,System.Int32,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject&#39;.
+SHFB: Warning BE0066: ShowMissingComponent: [T:Outpost31.Core.Operation.FormIdToFormNameTranslation] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.FormIdToFormNameTranslation.FormTranslation(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.FormIdToFormNameTranslation.FormTranslation(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;fileCheck&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String)] Missing &lt;param name=&quot;currentSessionFolder&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.Parse] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.Administrative(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.Administrative(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.OpenIncident(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.OpenIncident(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.Prototype(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.Prototype(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.TngnWsvc(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Core.Parse.Request.TngnWsvc(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Core.TngnWsvcSession] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.TngnWsvcSession.Instance.Detail] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [P:Outpost31.Core.TngnWsvcSession.Instance.Folder] Missing &lt;summary&gt; documentation
@@ -330,30 +311,29 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsO
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.Instance,Outpost31.Module.OpenIncident)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.Instance,Outpost31.Module.OpenIncident)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.OpenIncident.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.Instance,Outpost31.Module.OpenIncident)] Missing &lt;param name=&quot;openIncidentConfig&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [N:Outpost31.Module.Administration] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;target&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.Deploy(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;baseWww&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;baseData&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;currentFolder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Deployment.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.Administration.Testing.Regression(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
-Processed 184 topic(s)
-189 warning(s)
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.CopyDirectory(System.String,System.String)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.CopyDirectory(System.String,System.String)] Missing &lt;param name=&quot;target&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.Deploy(Outpost31.Core.TngnWsvcSession.Instance)] Missing &lt;param name=&quot;sess&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;baseWww&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;baseData&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshAppData(System.String,System.String,System.String)] Missing &lt;param name=&quot;currentFolder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.RefreshData(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.Test(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;folder&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:Outpost31.Module.TngnWsvc.Test(Outpost31.Core.Framework.Folders,System.Int32)] Missing &lt;param name=&quot;traceLogLimit&quot;/&gt; documentation
+Processed 185 topic(s)
+169 warning(s)
 CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
 ResolveArtLinksComponent: Copying media files...
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:03.6869
+</plugIn>    Last step completed in 00:00:04.1208
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -389,26 +369,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation-project\docs\api\shfb-outpost31\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.1365
+    Last step completed in 00:00:00.1591
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0863
+    Last step completed in 00:00:00.1463
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 309 files for the website content
-    Last step completed in 00:00:00.4385
+Copied 311 files for the website content
+    Last step completed in 00:00:00.3959
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.1600
+    Last step completed in 00:00:00.1025
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 9/18/2025 10:03:47 AM.  Total time: 00:00:07.2699
+Build completed successfully at 9/29/2025 11:14:03 AM.  Total time: 00:00:08.2582
 
 </buildStep>
 </shfbBuild>

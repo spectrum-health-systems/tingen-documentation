@@ -25,7 +25,6 @@ API documentation is generated using a project's **development** branch, so:
 
 # API documentation
 
-* [Tingen Lieutenant](https://spectrum-health-systems.github.io/tingen-documentation-project/api/shfb-tingen-lieutenant/)
 * [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation-project/api/shfb-outpost31/)
 * [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation-project/api/shfb-tingen-web-service/)
 <!--* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation-project/api/shfb-tingen-commander/)-->
