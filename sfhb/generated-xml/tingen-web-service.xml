@@ -30,9 +30,7 @@
             <summary>Provides additional information about the Tingen Web Service.</summary>
             <remarks>
               <para>
-                <b>
-                    <u>About the Tingen Web Service</u>
-                </b><br />
+                <b><u>About the Tingen Web Service</u></b><br />
                 Netsmart's Avatar™ is a behavioral health EHR that offers a recovery-focused suite of solutions that
                 leverage real-time analytics and clinical decision support to drive value-based care.<br />
                 <br />
@@ -44,9 +42,7 @@
                 Avatar™ that aren't included in the official release, and provides a solid foundation for building
                 additional functionality quickly and efficiently.<br />
                 <br />
-                <b>
-                    <u>About Outpost31</u>
-                </b><br />
+                <b><u>About Outpost31</u></b><br />
                 Outpost31 is the back-end logic for the Tingen Web Service.
             </para><br />
               <para>
