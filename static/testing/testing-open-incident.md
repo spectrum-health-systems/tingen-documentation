@@ -2,7 +2,6 @@
 
 [[🏠︎](../../README.md)] ❬ [Static documentation](../README.md) ❬ [Diagrams](README.md)
 
-
 <div align="center">
 
   <picture>
