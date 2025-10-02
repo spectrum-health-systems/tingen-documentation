@@ -21,32 +21,26 @@
 * [IIS](#iis)
 * [Documentation](#documentation)
 
-# Release
+# Next release
 
-## R25.10
+- [ ] Fix admin module (deploy, etc.)
+- [ ] Fix session log missing data
 
-TBD
-
-## R25.9
+<!-- QUEUE
 
 - [ ] Setup custom messages for OptObj error messages
-- [X] Move trace logs to Sessions
 - [ ] Session logs can be simple or verbose
 - [ ] Make all session stuff internal (?)
-- [X] Test to see what happens when a blueprint is deleted, does it show up when the service execute
-- [X] Web service appdata -> root NOTE: Don't do this.
 - [ ] Verify classes/methods are public/private/internal
 - [ ] Verify that the automated reports are being updated
 - [ ] Verify deploy is non-destructive-isg
-- [ ] Very simple test return
-- [X] Test looped debugs to make sure they are created with a 1ms delay
+- [ ] Very simple test return (?)
 - [ ] Functionality: Dosing
 - [ ] Functionality: Form access
 - [ ] Functionality: TeleHealth
 - [ ] Whitelists
 - [ ] Greylists
 - [ ] Blacklists
-- [ ] Parameters that start with "_" use the calling form to parse requests.
 - [ ] Autmatically create status logs every day
 - [ ] Re-enable trace logs for each method
 - [ ] Build a trace log package for easier trace logging
@@ -56,13 +50,27 @@ TBD
 - [ ] Performance considerations - Runaway processes - Out of disk space - IIS worker threads
 - [ ] Email functionality
 - [ ] Fix issue with deploying taking multiple deployments
-- [X] Update blueprints to match documentation
 - [ ] New critical error: the Avatar Systems don't match
 - [ ] Email critical errors
 - [ ] Trace logs where they need to be
 - [ ] Auto-generated data copied from deployment folder
 - [ ] Fallback for name conversion (Sebastian's idea)
 - [ ] Disable Scripts For Error (what is this?)
+
+-->
+
+<!-- PREVIOUS RELEASES
+
+## R25.9
+
+- [X] Move trace logs to Sessions
+- [X] Test to see what happens when a blueprint is deleted, does it show up when the service execute
+- [X] Web service appdata -> root NOTE: Don't do this.
+- [X] Test looped debugs to make sure they are created with a 1ms delay
+- [X] Parameters that start with "_" use the calling form to parse requests.
+- [X] Update blueprints to match documentation
+
+-->
 
 # IIS
 
