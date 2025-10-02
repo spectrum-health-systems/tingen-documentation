@@ -15,7 +15,7 @@
 
 </div>
 
-# Namespace
+## Namespace
 
 * [TingenWebService](TingenWebService.md)
 * [TingenWebService.Configuration](TingenWebService.Configuration.md)
