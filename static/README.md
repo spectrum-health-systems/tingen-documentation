@@ -13,5 +13,15 @@
 
 </div>
 
-* [Tingen Web Service Logging](tngnwsvc-logging.md)
-* [Script Parameter](tngnwsvc-script-parameter.md)
+# Diagrams
+
+* [The Tingen Web Service Configuration](diagrams/TingenWebService.Configuration.md)
+* [The Tingen Web Service](diagrams/TingenWebService.md)
+* [The Tingen Web Service Session](./diagrams/TngnOpto.TngnWscvSession.md)
+
+# Testing
+
+* [OpenIncident Module](testing/testing-open-incident.md)
+
+
+
