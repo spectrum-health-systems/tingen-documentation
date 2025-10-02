@@ -8,10 +8,9 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
   <h2>
-    Static documentation
+    Testing documentation
   </h2>
 
 </div>
 
-* [Diagrams](diagrams/README.md)
-* [Testing](testing/README.md)
+* [OpenIncident Module](testing/testing-open-incident.md)
