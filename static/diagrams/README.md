@@ -15,7 +15,7 @@
 
 </div>
 
-# Namespace process diagrams
+# Namespace
 
 * [TingenWebService](TingenWebService.md)
 * [TingenWebService.Configuration](TingenWebService.Configuration.md)
