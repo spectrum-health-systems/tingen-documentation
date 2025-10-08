@@ -12,14 +12,12 @@
 
 </div>
 
-# About
-
-The **Script Parameter** is the **request** that Avatar sends to the Tingen Web Service.
-
 > [!TIP]
 > Tingen projects use the terms *Script Parameter* and *request* interchangeably.
 
-## Details
+The **Script Parameter** is the **request** that Avatar sends to the Tingen Web Service.
+
+# Details
 
 * The maximum length of a request is 48 characters
 * For readability, it is recommended that you use camelCase in the Script Parameter field of an Avatar form (for example: `ThisIsARequest` instead of `thisisarequest`)
@@ -28,7 +26,7 @@ The **Script Parameter** is the **request** that Avatar sends to the Tingen Web 
 
 > As of R25.9
 
-* _VerifyOriginalAuthorIsOpening
-* _VerifyOriginalAuthorIsSubmitting
-* TngnWsvcDeploy
-* TngnWsvcTest
+* `_VerifyOriginalAuthorIsOpening`
+* `_VerifyOriginalAuthorIsSubmitting`
+* `TngnWsvcDeploy`
+* `TngnWsvcTest`
