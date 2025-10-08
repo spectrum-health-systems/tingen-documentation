@@ -34,10 +34,9 @@
   </tr>
   <tr>
    <td align="top" >
-
-     (Changelog)[Changelog.md]
-     Roadmap
-
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/changelogs/README.md">Changelog</a>
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/release-notes/README.md/">Release notes</a>
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/roadmaps/README.md/">Roadmaps</a>
    </td>
       <td align="top">
      Changelog
