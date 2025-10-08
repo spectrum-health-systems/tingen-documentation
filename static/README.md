@@ -13,5 +13,9 @@
 
 </div>
 
+# The Tingen Web Service
+
+* [The Script Parameter](tngnwsvc/tngnwsvc-script-parameter.md)
+
 * [Diagrams](diagrams/README.md)
 * [Testing](testing/README.md)
