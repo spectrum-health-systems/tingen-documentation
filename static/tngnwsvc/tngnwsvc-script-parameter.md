@@ -8,9 +8,8 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
 
-  <h1>
-  <h4>stsat</h4>The Script Parameter
-  </h1>
+  <h4>Tingen Web Service</h4>
+  <h1>The Script Parameter</h1>
 
 </div>
 
