@@ -26,26 +26,22 @@
   </tr>
   <tr>
    <td align="center">
-    The Tingen <b>front end</b>
+    Documentation
    </td>
   <td align="center">
-    The Tingen <b>back end</b>
+    Documentation
    </td>
   </tr>
   <tr>
    <td align="top" >
-    <ul>
-     <li>Accepts request data from Avatar</li>
-     <li>Verifies the request data</li>
-     <li>Sets up runtime settings</li>
-     <li>Returns finalzied data to Avatar</li>
-    </ul>
+
+     Changelog
+     Roadmap
+
    </td>
       <td align="top">
-    <ul>
-     <li>Does all of the work</li>
-     <li>Creates logs and reports</li>
-    </ul>
+     Changelog
+     Roadmap
    </td>
   </tr>
  </table>
