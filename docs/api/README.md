@@ -1,6 +1,6 @@
 <!-- u251008-->
 
-[[🏠︎](/README.md)]
+[[🏠︎](/)]
 
 <div align="center">
 
@@ -15,7 +15,13 @@
 
 </div>
 
-**DO NOT MODIFY ANYTHING IN THIS FOLDER**
+* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-outpost31/)
+* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-web-service/)
+<!--* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-commander/)-->
+<br>
+
+> [!WARNING]
+> Be cautious of this critical issue
 
 This folder contains generated documentation.
 
@@ -33,11 +39,8 @@ API documentation is generated using a project's **development** branch, so:
 
 # API documentation
 
-* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-outpost31/)
-* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-web-service/)
-<!--* [Tingen Commander](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-commander/)-->
-<br>
+
 
 ***
 
-[[🏠︎](/README.md)]
+[[🏠︎](/)]
