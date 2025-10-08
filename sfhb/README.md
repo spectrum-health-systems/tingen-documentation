@@ -1,23 +1,12 @@
-<!-- u250812-->
+<!-- u251008-->
 
-[[🏠︎](/README.md)]
+[[🏠︎](../)]
 
-<div align="center">
+<br/>
 
-  ![logo](/.github/img/logo/warn/TngnDocProj-Warning-320x420.png)
+This is not what your're looking for, you should [go back](../).
 
-# THIS IS A SPECIAL DIRECTORY! DON'T TOUCH!
+<br/>
 
-</div>
+[[🏠︎](../)]
 
-**DO NOT MODIFY ANYTHING IN THIS FOLDER!**
-
-This folder contains the Visual Studio 2022 projects for creating documentation using [Sandcastle File Help Builder](https://github.com/EWSoftware/SHFB).
-
-***DO NOT MODIFY ANYTHING IN THIS FOLDER!!!***
-
-<br>
-
-***
-
-[[🏠︎](/README.md)]
