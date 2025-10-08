@@ -15,7 +15,7 @@
 ### Contents
 
 [About](#about)  
-[Valid commands](#valid-commands)  
+[Valid requests](#valid-requests)  
 
 # About
 
@@ -29,3 +29,5 @@ The Script Parameter is the **request** that Avatar sends to the Tingen Web Serv
 * The maximum length of a script parameter is 48 characters.
 * For readability, it is recommended that you use camelCase in the Script Parameter field of an Avatar form.  
   For example: "ThisIsARequest" instead of "thisisarequest".
+
+# Valid requests
