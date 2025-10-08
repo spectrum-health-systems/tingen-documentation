@@ -10,6 +10,9 @@
 
 </div>
 
+[API documentation](https://github.com/spectrum-health-systems/tingen-documentation/tree/main/docs/api) is generated using a project’s development branch, so it may be incomplete and/or different than the stable release.
+
+
 ## API documentaion
 
 API documentation is generated using a project’s development branch, so it may be incomplete and/or different than the stable release.
