@@ -390,6 +390,12 @@
         <member name="P:Outpost31.Module.OpenIncident.SubmitFormErrCode">
             <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
         </member>
+        <member name="P:Outpost31.Module.OpenIncident.UsernameMissing">
+            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.UsernameMissingErrCode">
+            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
         <member name="M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)">
             <summary>Loads the OpenIncident Module configuration.</summary>
             <remarks>If the specified file does not exist, a default configuration file is created.</remarks>
