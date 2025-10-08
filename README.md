@@ -10,6 +10,8 @@
 
 </div>
 
+<br/>
+
 [API documentation](/docs/api/)  
 [Development documentation](/dev/)  
 [Static documentation](/static/)  
