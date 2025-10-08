@@ -1,7 +1,5 @@
 <!-- u251008-->
 
-![image](https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-dark-400x63.png)
-
 * [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-outpost31/)
 * [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-web-service/)
 
