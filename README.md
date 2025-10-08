@@ -12,10 +12,14 @@
 
 ## Contents
 
+
+
 [API documentation](/docs/api/)  
-[Changelogs](changelogs/)  
 [Development documentation](/dev/)  
-[Manuals](/man/)  
+[Static documentation](/static/)  
+
+[Manuals](/man/)
+
+[Changelogs](changelogs/)  
 [Release notes](/release-notes/)  
 [Roadmap](/roadmaps/)  
-[Static documentation](/static/)  
