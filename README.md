@@ -12,8 +12,10 @@
 
 ## API documentaion
 
-* [Tingen Web Service]()
-* [Outpost31]
+API documentation is generated using a project’s development branch, so it may be incomplete and/or different than the stable release.
+
+* [Tingen Web Service](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-tingen-web-service/html/82a31265-4fa5-4761-b2aa-a7ff62431767.htm)
+* [Outpost31](https://spectrum-health-systems.github.io/tingen-documentation/api/shfb-outpost31/html/ffe49fad-6cb2-4f4b-a8af-9ba9a7d06fc1.htm)
 
 ## Development documentation
 
