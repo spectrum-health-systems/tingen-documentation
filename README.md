@@ -13,6 +13,9 @@
 ## Contents
 
 [API documentation](/docs/api/)  
+[Changelogs](changelogs/)
 [Development documentation](/dev/)  
 [Manuals](/man/)  
+[Release notes](/release-notes/)  
+[Roadmap](/roadmaps/)
 [Static documentation](/static/)  
