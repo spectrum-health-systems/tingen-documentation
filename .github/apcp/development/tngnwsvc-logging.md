@@ -1,0 +1,366 @@
+<div align="center">
+
+  <h1>
+    TINGEN DOCUMENTATION PROJECT<br>
+    Tingen Web Service Logging
+  </h1>
+
+  Last updated: 9/18/25 for R25.9
+
+  This document is a work in progress.
+
+</div>
+
+***
+
+* [Critical logs](#critical-logs)
+* [Debug logs](#debug-logs)
+* [Error logs](#error-logs)
+* [Trace logs](#trace-logs)
+* [Session logs](#session-logs)
+
+***
+
+<br>
+
+# Critical logs
+
+**Critical logs** are used to alert users of a critical error or catastrophic failure, and cannot be used until the logging functionality has been initialized.
+
+> If you need to log something before the logging functionality is available, use a [debug log](#debug-logs).
+
+Critical logs have a filename of `{LogTitle}-{AvatarUserName}.critical`, and are written to both the *Session* folder, and the *AppData\Logs\\* folder:
+
+* `C:\Tingen_Data\WebService\{AvatarSystem}\Session\{YYMMDD}\{AvatarUserName}\{HHMMSS}`
+* `C:\Tingen_Data\WebService\{AvatarSystem}\AppData\Log`
+
+For example:
+* `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`
+* `C:\Tingen_Data\WebService\LIVE\AppData\Log\Data does not exist-JSMITH.critical`
+
+## The log blueprint
+
+Critical logs are built using a *blueprint* located at `C:\Tingen_Data\WebService\LIVE\AppData\www\Blueprint\Log\critical.blueprint`, which looks like this:
+
+```text
+===== CRITICAL LOG =================================== ~SESSION~DATE~TIME~ =====
+
+~LOG~MESSAGE~
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] ~ASSEMBLY~
+   [CLASS] ~CLASS~
+  [METHOD] ~METHOD~
+    [LINE] ~LINE~
+
+```
+
+You can modify the layout of blueprint, as long as you use the `~PLACEHOLDER~NAMES~`.
+
+## Basic version
+
+To create a basic critical log:
+
+```csharp
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Unknown-JSMITH.critical`, and the contents would look like this:
+
+```text
+===== CRITICAL LOG ===================================== 05/12/25-12:01:33 =====
+
+Unknown
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] Outpost31
+   [CLASS] Testing
+  [METHOD] GenerateAppLogs
+    [LINE] 87
+
+```
+
+## Specifying a logTitle
+
+To specify a logTitle:
+
+```csharp
+string logTitle = "Data does not exist";
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm, logTitle);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`, which will have the same contents as the basic logfile above.
+
+## Specifying a logMessage
+
+> **Please note:** If you specify a logMessage, you must also specify a logTitle.
+
+To specify a logMessage:
+
+```csharp
+string logTitle   = "Data does not exist";
+string logMessage = "We can't find the data!" +
+                    Environment.Newline +
+                    "Oh no!"
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm, logTitle, logMessage);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`
+
+And the file contents would look like this:
+
+```text
+===== CRITICAL LOG ===================================== 05/12/25-12:01:33 =====
+
+We can't find the data!
+Oh no!
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] Outpost31
+   [CLASS] Testing
+  [METHOD] GenerateAppLogs
+    [LINE] 87
+
+```
+
+***
+
+<br>
+
+# Debug logs
+
+> In order to ensure all debug logs are created, there is a 1ms delay before writing each file. Therefore, many debug logs may have a negative impact on performance.
+
+**Debug logs** are simple logs intended for temporary debugging, and can be placed anywhere in the source code.
+
+They are always written to `C:\Tingen_Data\.development\debug\` with a file name of `{ssfffffff}-{ClassPath}-{MethodName}-{LineNumber}.debug`.
+
+For example: `C:\Tingen_Data\.development\debug\095958028-DuJson-ExportToLocalFile-31.debug`
+
+To create a basic debug log:
+
+```csharp
+LogEvent.Debug()
+```
+
+You can also add a text message to the log content:
+
+```csharp
+LogEvent.Debug("This is a debug log.")
+```
+
+The log file will look like this:
+
+```text
+Tingen Web Service Debug Log
+MM/DD/YYYY-HH:MM:SS
+{message}
+```
+
+***
+
+<br>
+
+# Error logs
+
+**Error logs** are used to alert users of a any errors that occur, and cannot be used until the logging functionality has been initialized.
+
+> If you need to log something before the logging functionality is available, use a [debug log](#debug-logs).
+
+Error logs have a filename of `{ErrorCode}-{AvatarUserName}.error`, and are written to both the *Session* folder, and the *AppData\Logs\\* folder:
+
+* `C:\Tingen_Data\WebService\{AvatarSystem}\Session\{YYMMDD}\{AvatarUserName}\{HHMMSS}`
+* `C:\Tingen_Data\WebService\{AvatarSystem}\AppData\Log`
+
+For example:
+* `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\E1234-JSMITH.critical`
+* `C:\Tingen_Data\WebService\LIVE\AppData\Log\E1234-JSMITH.critical`
+
+## The log blueprint
+
+Error logs are built using a *blueprint* located at `C:\Tingen_Data\WebService\LIVE\AppData\www\Blueprint\Log\error.blueprint`, which looks like this:
+
+```text
+===== ERROR LOG ====================================== ~SESSION~DATE~TIME~ =====
+
+~ERROR~CODE~
+
+~ERROR~MESSAGE~
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] ~ASSEMBLY~
+   [CLASS] ~CLASS~
+  [METHOD] ~METHOD~
+    [LINE] ~LINE~
+
+```
+
+You can modify the layout of blueprint, as long as you use the `~PLACEHOLDER~NAMES~`.
+
+## Basic version
+
+To create a basic critical log:
+
+```csharp
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\E###-JSMITH.error`, and the contents would look like this:
+
+```text
+===== ERROR LOG ======================================== 05/12/25-12:01:33 =====
+
+E###
+
+Unknown error.
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] Outpost31
+   [CLASS] Testing
+  [METHOD] GenerateAppLogs
+    [LINE] 103
+
+```
+
+## Specifying a ErrorCode
+
+To specify a ErrorCode:
+
+```csharp
+string errorCode = "E1234";
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm, logTitle);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\E1234-JSMITH.error`, and the contents would look like this:
+
+```text
+===== ERROR LOG ======================================== 05/12/25-12:01:33 =====
+
+E1234
+
+Unknown error.
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] Outpost31
+   [CLASS] Testing
+  [METHOD] GenerateAppLogs
+    [LINE] 103
+
+```
+
+## Specifying an ErrorMessage
+
+> **Please note:** If you specify a ErrorMessage, you must also specify a ErrorCode.
+
+To specify a logMessage:
+
+```csharp
+string errorCode    = "E1234";
+string errorMessage = "There has been an error!" +
+                      Environment.Newline +
+                      "Oh no!"
+LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm, logTitle, logMessage);
+```
+
+This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\E1234-JSMITH.error`
+
+And the file contents would look like this:
+
+```text
+===== CRITICAL LOG ===================================== 05/12/25-12:01:33 =====
+
+E1234
+
+There has been an error!
+Oh no!
+
+--------------------------------------------------------------------------------
+
+[ASSEMBLY] Outpost31
+   [CLASS] Testing
+  [METHOD] GenerateAppLogs
+    [LINE] 87
+
+```
+
+***
+
+<br>
+
+# Trace logs
+
+**Trace logs** are a specialized type of log, generally used during development, and cannot be used until the logging functionality has been initialized.
+
+> If you need to log something before the logging functionality is available, use a [debug log](#debug-logs).
+>
+> Also, in order to ensure all trace logs are created, there is a 1ms delay before writing each file. Depending on what TraceLogLimit is set to, performance may be impacted.
+
+Trace logs essentially create "breadcrumbs" in the form of log files, which let you know the flow of logic when the Tingen Web Service is used.
+
+They are always written to `C:\Tingen_Data\WebService\{AvatarSystem}\Session\{YYMMDD}\{AvatarUserName}\{HHMMSS}` with a file name of `{ssfffffff}-{ExeAsm}-{ClassPath}-{MethodName}-{LineNumber}.debug`.
+
+For example: `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\004453498-Outpost31-AvatarScriptParameter-ParseRequest-43.trace`
+
+## TraceLevel and TraceLogLimit
+
+Each trace log statement contains a *TraceLevel* between `1` and `9`.
+
+```csharp
+LogEvent.Trace(0, traceLogLimit, sessionFolder, ExeAsm);
+               ^
+           TraceLevel
+```
+
+The Web.config file contains the TraceLogLimit, which is between `0` and `9`. The default value is `0`.
+
+While every `LogEvent.Trace()` command is executed, only those whose *TraceLevel* is less than or equal to the *TraceLogLimit* are written.
+
+For example, if the *TraceLogLimit* is set to `2`:
+
+* `LogEvent.Trace(1, traceLogLimit, sessionFolder, ExeAsm)` will be written
+* `LogEvent.Trace(5, traceLogLimit, sessionFolder, ExeAsm)` will not
+
+Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLevel* cannot (or, really, *should* not) be `0`.
+
+## Where to put trace logs
+
+<!-- This needs to be more specific about what goes where. -->
+
+| `TraceLevel` | Description |
+|:------------:|-----|
+| `0` |  All trace logs are disabled |
+| `1` |  At the top of each Method |
+| `2` |  At the top of conditional statements that do not call another method |
+| `3` |     |
+| `4` |     |
+| `5` |     |
+| `6` |     |
+| `7` |     |
+| `8` |     |
+| `9` |     |
+
+## Creating a trace log
+
+To create a trace log file:
+
+```csharp
+LogEvent.Trace(TraceLevel, TraceLogLimit, SessionFolder, ExeAsm);
+```
+
+Assuming the *TraceLevel* is <= to the *TraceLogLimit*, a trace log will be created with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\E###-JSMITH.error`.
+
+Trace logs do not have content.
+
+***
+
+<br>
+
+# Session logs
+
+TBD
