@@ -12,7 +12,7 @@
 
 What you will find here:
 
-[API Documentation](./docs/api/)  
-[Development documentation](./docs/dev/)  
-[Manuals](./docs/man/)  
-[Static documentation](./docs/static/)  
+[API Documentation](/docs/api/)  
+[Development documentation](/dev/)  
+[Manuals](/man/)  
+[Static documentation](/static/)  
