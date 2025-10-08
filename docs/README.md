@@ -34,9 +34,9 @@
   </tr>
   <tr>
    <td align="top" >
-    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/changelogs/README.md">Changelog</a>
-    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/release-notes/README.md/">Release notes</a>
-    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/roadmaps/README.md/">Roadmaps</a>
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/changelogs/README.md">Changelog</a><br/>
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/release-notes/README.md/">Release notes</a><br/>
+    <a href="https://github.com/spectrum-health-systems/tingen-documentation/blob/main/docs/roadmaps/README.md/">Roadmaps</a><br/>
    </td>
       <td align="top">
      Changelog
