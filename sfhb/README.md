@@ -2,13 +2,6 @@
 
 [[🏠︎](/)]
 
-***
-
-> [!IMPORTANT]
-> This is not what your're looking for. Start at the [main page](/).
-
-***
-
 This folder contains the Sandcastle Help File Builder projects for:
 
 * [Outpost31](https://github.com/spectrum-health-systems/outpost31)
