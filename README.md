@@ -10,7 +10,9 @@
 
 </div>
 
-What you will find here:
+<br/>
+
+## Contents
 
 [API Documentation](/docs/api/)  
 [Development documentation](/dev/)  
