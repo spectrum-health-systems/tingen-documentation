@@ -10,11 +10,9 @@
 
 </div>
 
-<br/>
-
 ## Contents
 
-[API Documentation](/docs/api/)  
+[API documentation](/docs/api/)  
 [Development documentation](/dev/)  
 [Manuals](/man/)  
 [Static documentation](/static/)  
