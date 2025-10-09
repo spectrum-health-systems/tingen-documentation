@@ -16,6 +16,7 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnwsvc-light-200x31.png">
   </picture>
   <picture>
+    <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnopto-dark-200x31.png">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnoptos-light-200x31.png">
