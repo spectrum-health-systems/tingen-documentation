@@ -17,6 +17,7 @@
   </picture>
   <picture>
     <br/>
+    <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnopto-dark-200x31.png">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnoptos-light-200x31.png">
