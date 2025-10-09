@@ -8,6 +8,11 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
 
+  <br/>
+  <br/>
+
+  ![Release](https://img.shields.io/badge/release-25.10-teal)
+
 </div>
 
 <br/>
