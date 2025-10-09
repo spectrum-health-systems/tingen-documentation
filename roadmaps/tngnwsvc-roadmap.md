@@ -8,7 +8,7 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
   <br/>
-  FOR
+  <h4>FOR</h4>
   <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnwsvc-dark-200x31.png">
