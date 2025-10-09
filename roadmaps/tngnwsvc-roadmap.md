@@ -1,6 +1,6 @@
 <!-- u251009 -->
 
-<div align="center">
+<div align="center" style="font-size: 40px;">
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-dark-400x63.png">
@@ -8,7 +8,7 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
   <br/>
-  For
+  &#8659;
   <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngnwsvc-dark-200x31.png">
