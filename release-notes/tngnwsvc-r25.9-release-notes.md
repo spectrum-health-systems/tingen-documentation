@@ -46,7 +46,4 @@
 * `REMOVED` AdminMode (functionality has been moved to the Administration Module)
 * `REMOVED` The popup that appears when the Tingen Web Service is disabled.
 
-
 ***
-
-, and write the appropriate LogEvent.Debug() file.

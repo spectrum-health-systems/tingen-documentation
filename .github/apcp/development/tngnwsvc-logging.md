@@ -365,6 +365,7 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 ### TraceLevel `4`
 
 * To test return statements in conditional statements
+* To test operations like file deletion/creation in conditional statements
 
 #### Notes/exceptions
 

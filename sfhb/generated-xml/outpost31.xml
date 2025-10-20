@@ -28,33 +28,6 @@
             <param name="fieldId">The FieldID whose value is to be retrieved.</param>
             <returns>The value of the specified field as a string, or an empty string if the field does not exist.</returns>
         </member>
-        <member name="T:Outpost31.Core.Operation.UserIdUserDescriptionFile">
-            <summary>Logic related to the USERID_User Description.txt file.</summary>
-            <remarks>
-                About this file.
-            </remarks>
-        </member>
-        <member name="P:Outpost31.Core.Operation.UserIdUserDescriptionFile.ExeAsm">
-            <summary>A required log file component.</summary>
-        </member>
-        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String,System.String)">
-            <summary>Get the full username of an Avatar Username/</summary>
-            <remarks>
-                e.g., JDOE becomes John Doe
-            </remarks>
-            <param name="avatarUserName">The username of the avatar to look up</param>
-            <returns>The full name of the user associated with the specified avatar username.</returns>
-        </member>
-        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.CreateTranslationFile(System.String,System.String,System.Int32,System.String)">
-            <summary>
-            Creates a translation file by reading and processing the contents of the specified original file.
-            </summary>
-            <remarks>This method reads all non-empty lines from the original file, trims any leading or
-            trailing whitespace, and writes the processed content to a new file named "user_id-user_description.trans"
-            in the specified directory.</remarks>
-            <param name="originalFilePath">The full path to the original file to be read and processed. Cannot be null or empty.</param>
-            <param name="translationPath">The directory path where the translation file will be created. Cannot be null or empty.</param>
-        </member>
         <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionError.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
@@ -120,6 +93,33 @@
             <param name="currentSessionFolder">The folder associated with the current session, used for logging purposes.</param>
             <param name="traceLogLimit">The maximum number of trace log entries to retain.</param>
             <returns>The name of the form if found in the translation file; otherwise, the default value "WSVC2491".</returns>
+        </member>
+        <member name="T:Outpost31.Core.Translation.UserId">
+            <summary>Logic related to the USERID_User Description.txt file.</summary>
+            <remarks>
+                About this file.
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Translation.UserId.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Translation.UserId.GetUserDescription(System.String,System.Int32,System.String,System.String)">
+            <summary>Get the full username of an Avatar Username/</summary>
+            <remarks>
+                e.g., JDOE becomes John Doe
+            </remarks>
+            <param name="avatarUserName">The username of the avatar to look up</param>
+            <returns>The full name of the user associated with the specified avatar username.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Translation.UserId.CreateTranslationFile(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Creates a translation file by reading and processing the contents of the specified original file.
+            </summary>
+            <remarks>This method reads all non-empty lines from the original file, trims any leading or
+            trailing whitespace, and writes the processed content to a new file named "user_id-user_description.trans"
+            in the specified directory.</remarks>
+            <param name="originalFilePath">The full path to the original file to be read and processed. Cannot be null or empty.</param>
+            <param name="translationPath">The directory path where the translation file will be created. Cannot be null or empty.</param>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
             <summary>Logic for Avatar environment components.</summary>
@@ -359,6 +359,9 @@
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
         <member name="P:Outpost31.Core.Parse.Request.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="P:Outpost31.Maintenance.DailyMaintenance.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentRequest.ExeAsm">

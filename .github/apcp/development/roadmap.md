@@ -23,12 +23,14 @@
 
 # Next release
 
-- [ ] Fix admin module (deploy, etc.)
-- [ ] Fix session log missing data
-
 <!-- QUEUE
 
-- [ ] Fix slow creation of userId translation table.
+- [ ] Fix admin module (deploy, etc.)
+- [ ] Fix session log missing data
+- [ ] Point changelog/roadmap to release notes
+- [ ] Make R25.9 release notes look like R25.10 release notes
+- [ ] Rename .trans ->.translation/.trantable/.trtb
+- [ ] OptionObject message titles?
 - [ ] Setup custom messages for OptObj error messages
 - [ ] Session logs can be simple or verbose
 - [ ] Make all session stuff internal (?)
@@ -62,6 +64,10 @@
 
 <!-- PREVIOUS RELEASES
 
+## R25.10
+
+-->
+
 ## R25.9
 
 - [X] Move trace logs to Sessions
@@ -71,7 +77,7 @@
 - [X] Parameters that start with "_" use the calling form to parse requests.
 - [X] Update blueprints to match documentation
 
--->
+
 
 # IIS
 
