@@ -37,13 +37,89 @@
         <member name="P:Outpost31.Core.Operation.UserIdUserDescriptionFile.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.GetFullAvatarUserName(System.String,System.String,System.Int32,System.String,System.String)">
             <summary>Get the full username of an Avatar Username/</summary>
             <remarks>
                 e.g., JDOE becomes John Doe
             </remarks>
             <param name="avatarUserName">The username of the avatar to look up</param>
             <returns>The full name of the user associated with the specified avatar username.</returns>
+        </member>
+        <member name="M:Outpost31.Core.Operation.UserIdUserDescriptionFile.CreateTranslationFile(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Creates a translation file by reading and processing the contents of the specified original file.
+            </summary>
+            <remarks>This method reads all non-empty lines from the original file, trims any leading or
+            trailing whitespace, and writes the processed content to a new file named "user_id-user_description.trans"
+            in the specified directory.</remarks>
+            <param name="originalFilePath">The full path to the original file to be read and processed. Cannot be null or empty.</param>
+            <param name="translationPath">The directory path where the translation file will be created. Cannot be null or empty.</param>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionError.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails">
+            <summary>Detailed information about the current Tingen Web Service session.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Date">
+            <summary>Current date.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Time">
+            <summary>Current time.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Version">
+            <summary>The current version of the Tingen Web Service.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Mode">
+            <summary>
+            The Tingen Web Service mode, which determines what the Tingen Web Service will do, if anything.
+            </summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarSystem">
+            <summary>
+            The Avatar system that the Tingen Web Service will interface with.
+            </summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarUserName">
+            <summary>The Avatar Username that initiated the current Tingen Web Service session, converted to lowercase.</summary>
+        </member>
+        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.RunningLog">
+            <summary>Log of actions taken during the current Tingen Web Service session.</summary>
+        </member>
+        <member name="M:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Load(System.String,System.String,System.String,System.String)">
+            <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails"/> instance with the specified parameters.</summary>
+            <param name="version">The current <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Version"/> of the Tingen Web Service.</param>
+            <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Mode"/>.</param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
+            <param name="avatarUserName">The <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarUserName"/>.</param>
+            <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails"/> object populated with the provided parameters and the current date and time.</returns>
+        </member>
+        <member name="T:Outpost31.Core.TngnWsvcSession.WsvcSession">
+            <summary>Manages the current Tingen Web Service session.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        </member>
+        <member name="T:Outpost31.Core.Translation.FormId">
+            <summary>Provides functionality for retrieving form names based on form IDs and managing related metadata.</summary>
+            <remarks>This class includes methods and properties for working with form identifiers and their
+            associated names. It is designed for internal use and relies on a translation file to map form IDs to form
+            names.</remarks>
+        </member>
+        <member name="P:Outpost31.Core.Translation.FormId.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Core.Translation.FormId.GetFormName(System.String,System.String,System.String,System.Int32)">
+            <summary>Retrieves the name of a form based on its identifier from a translation file.</summary>
+            <remarks>The method reads a translation file named "form_id-form_name.trans" located in the
+            specified <paramref name="translationPath"/> directory. Each line in the file is expected to have the format
+            "formId=formName". If the specified <paramref name="formId"/> matches the left-hand side of a line, the
+            corresponding form name is returned. If no match is found, the default value "WSVC2491" is
+            returned.</remarks>
+            <param name="formId">The unique identifier of the form to look up.</param>
+            <param name="translationPath">The directory path where the translation file is located.</param>
+            <param name="currentSessionFolder">The folder associated with the current session, used for logging purposes.</param>
+            <param name="traceLogLimit">The maximum number of trace log entries to retain.</param>
+            <returns>The name of the form if found in the translation file; otherwise, the default value "WSVC2491".</returns>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
             <summary>Logic for Avatar environment components.</summary>
@@ -131,9 +207,9 @@
             <param name="origScriptParam">The original Script Parameter sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseParameter(Outpost31.Core.TngnWsvcSession.Instance)">
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.Parse(Outpost31.Core.TngnWsvcSession.WsvcSession)">
             <summary>Parse a request.</summary>
-            <param name="sess"></param>
+            <param name="wsvcSession"></param>
         </member>
         <member name="T:Outpost31.Core.Du.DuJson">
             <summary>Provides JSON functionality.</summary>
@@ -281,52 +357,73 @@
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
             <summary>Parses requests.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
-            <summary>Parses requests.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
         <member name="P:Outpost31.Core.Parse.Request.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="T:Outpost31.Core.TngnWsvcSession.Details">
-            <summary>Detailed information about the current Tingen Web Service session.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentRequest.ExeAsm">
+            <summary>A required log file component.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Date">
-            <summary>Current date.</summary>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+            <summary>Checks to see if the person opening the form is the original author.</summary>
+            <remarks>
+                Only the original author can submit changes to the form, others can only view it.
+                TODO - why we match on full name instead of Avatar username
+            </remarks>
+            <param name="wsvcSession">The <see cref="N:Outpost31.Core.TngnWsvcSession"/></param>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Time">
-            <summary>Current time.</summary>
+        <member name="T:Outpost31.Module.OpenIncident.OpenIncidentConfig">
+            <summary>Logic related to Avatar OpenIncident functionality.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Version">
-            <summary>The current version of the Tingen Web Service.</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.ExeAsm">
+            <summary>A required log file component.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.Mode">
-            <summary>
-            The Tingen Web Service mode, which determines what the Tingen Web Service will do, if anything.
-            </summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Mode">
+            <summary>The OpenIncident Module mode.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSystem">
-            <summary>
-            The Avatar system that the Tingen Web Service will interface with.
-            </summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Whitelist">
+            <summary>List of Avatar Usernames that can always use this functionality.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName">
-            <summary>The Avatar Username that initiated the current Tingen Web Service session, converted to lowercase.</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Greylist">
+            <summary>List of Avatar Usernames that will ignore this functionality.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.Details.RunningLog">
-            <summary>Log of actions taken during the current Tingen Web Service session.</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Blacklist">
+            <summary>List of Avatar Usernames that are restricted from using this functionality.</summary>
         </member>
-        <member name="M:Outpost31.Core.TngnWsvcSession.Details.Load(System.String,System.String,System.String,System.String)">
-            <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> instance with the specified parameters.</summary>
-            <param name="version">The current <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Version"/> of the Tingen Web Service.</param>
-            <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TngnWsvcSession.Details.Mode"/>.</param>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
-            <param name="avatarUserName">The <see cref="P:Outpost31.Core.TngnWsvcSession.Details.AvatarUserName"/>.</param>
-            <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.Details"/> object populated with the provided parameters and the current date and time.</returns>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.PersonCompletingIncidentFormFieldId">
+            <summary>The FieldID containing the Avatar Username that originally completed the form.</summary>
         </member>
-        <member name="T:Outpost31.Core.TngnWsvcSession.Instance">
-            <summary>Manages the current Tingen Web Service session.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.OpenFormMsg">
+            <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.OpenFormErrCode">
+            <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.SubmitFormMsg">
+            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.SubmitFormErrCode">
+            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UsernameMissing">
+            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UsernameMissingErrCode">
+            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentConfig.Load(System.String,System.Int32,System.String)">
+            <summary>Loads the OpenIncident Module configuration.</summary>
+            <remarks>If the specified file does not exist, a default configuration file is created.</remarks>
+            <param name="configAbsolutePath">The file path to the configuration file.</param>
+            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
+            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
+            <returns>An <see cref="T:Outpost31.Module.OpenIncident.OpenIncidentConfig"/> object representing the loaded configuration.</returns>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentConfig.New(System.String,System.Int32,System.String)">
+            <summary>Deploys the default OpenIncident Module configuration file.</summary>
+            <param name="configAbsolutePath">The configuration file path.</param>
+            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
+            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
         </member>
         <member name="T:Outpost31.Module.TngnWsvc">
             <summary>Administrative deployment functionality.</summary>
@@ -334,7 +431,7 @@
         <member name="P:Outpost31.Module.TngnWsvc.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.Deploy(Outpost31.Core.TngnWsvcSession.Instance)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deploy(Outpost31.Core.TngnWsvcSession.WsvcSession)">
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
@@ -356,67 +453,6 @@
             <summary>Generates various application logs.</summary>
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
-        </member>
-        <member name="T:Outpost31.Module.OpenIncident">
-            <summary>Logic related to Avatar OpenIncident functionality.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.ExeAsm">
-            <summary>A required log file component.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.Mode">
-            <summary>The OpenIncident Module mode.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.Whitelist">
-            <summary>List of Avatar Usernames that can always use this functionality.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.Greylist">
-            <summary>List of Avatar Usernames that will ignore this functionality.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.Blacklist">
-            <summary>List of Avatar Usernames that are restricted from using this functionality.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.PersonCompletingIncidentFormFieldId">
-            <summary>The FieldID containing the Avatar Username that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenFormMsg">
-            <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenFormErrCode">
-            <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.SubmitFormMsg">
-            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.SubmitFormErrCode">
-            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.UsernameMissing">
-            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="P:Outpost31.Module.OpenIncident.UsernameMissingErrCode">
-            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
-        </member>
-        <member name="M:Outpost31.Module.OpenIncident.LoadConfig(System.String,System.Int32,System.String)">
-            <summary>Loads the OpenIncident Module configuration.</summary>
-            <remarks>If the specified file does not exist, a default configuration file is created.</remarks>
-            <param name="configAbsolutePath">The file path to the configuration file.</param>
-            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
-            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
-            <returns>An <see cref="T:Outpost31.Module.OpenIncident"/> object representing the loaded configuration.</returns>
-        </member>
-        <member name="M:Outpost31.Module.OpenIncident.DeployConfig(System.String,System.Int32,System.String)">
-            <summary>Deploys the default OpenIncident Module configuration file.</summary>
-            <param name="configAbsolutePath">The configuration file path.</param>
-            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
-            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
-        </member>
-        <member name="M:Outpost31.Module.OpenIncident.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.Instance,Outpost31.Module.OpenIncident)">
-            <summary>Checks to see if the person opening the form is the original author.</summary>
-            <remarks>
-                Only the original author can submit changes to the form, others can only view it.
-                TODO - why we match on full name instead of Avatar username
-            </remarks>
-            <param name="sess">The <see cref="N:Outpost31.Core.TngnWsvcSession"/></param>
         </member>
         <member name="T:Outpost31.ProjectInfo">
             <summary>Provides additional information about Outpost31.</summary>

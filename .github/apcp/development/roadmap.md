@@ -28,6 +28,7 @@
 
 <!-- QUEUE
 
+- [ ] Fix slow creation of userId translation table.
 - [ ] Setup custom messages for OptObj error messages
 - [ ] Session logs can be simple or verbose
 - [ ] Make all session stuff internal (?)

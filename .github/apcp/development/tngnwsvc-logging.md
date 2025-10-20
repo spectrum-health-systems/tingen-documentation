@@ -332,6 +332,87 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 
 <!-- This needs to be more specific about what goes where. -->
 
+### TraceLevel `0`
+
+* All trace logs are disabled
+
+### TraceLevel `1`
+
+* At the top of all methods
+
+#### Notes/exceptions
+
+* Expression-body methods  
+  If it makes sense to have a trace log in an expression-body method, convert it to a block-body method.
+
+### TraceLevel `2`
+
+* At the top of conditional statements that **do not** directly call another method.
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `3`
+
+* At the top of conditional statements that *do* directly call another method.
+
+#### Notes/exceptions
+
+* Examples:
+  - At the top of switch case statements
+
+### TraceLevel `4`
+
+* To test return statements in conditional statements
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `5`
+
+* TBD
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `6`
+
+* TBD
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `7`
+
+* TBD
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `8`
+
+* TBD
+
+#### Notes/exceptions
+
+* TBD
+
+### TraceLevel `9`
+
+* All trace logs are written
+
+#### Notes/exceptions
+
+* TBD
+
+
+
+
 | `TraceLevel` | Description |
 |:------------:|-----|
 | `0` |  All trace logs are disabled |
@@ -344,6 +425,9 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 | `7` |     |
 | `8` |     |
 | `9` |     |
+
+
+
 
 ## Creating a trace log
 
