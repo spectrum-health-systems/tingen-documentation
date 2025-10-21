@@ -26,7 +26,7 @@
 
 ## Core.Logger
 
-* `NEW` **TraceLogLimit**  
+* **❲NEW❳** `**TraceLogLimit**`  
 Trace logs now have an individual **traceLevel** and a global **traceLogLimit**, which allows you to specify which trace logs are created.
   * The *traceLevel* is defined on a per-log basis, and the *traceLogLimit* is defined in Web.config
   * A trace log will be created if it has a *traceLevel* that is less than the *traceLogLimit*
