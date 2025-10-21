@@ -12,6 +12,12 @@
 
 ***
 
+##### Content
+
+* [LogEvent](#logevent)
+
+
+
 * [Critical logs](#critical-logs)
 * [Debug logs](#debug-logs)
 * [Error logs](#error-logs)
@@ -19,6 +25,8 @@
 * [Session logs](#session-logs)
 
 ***
+
+## LogEvent
 
 ```mermaid
   flowchart LR
