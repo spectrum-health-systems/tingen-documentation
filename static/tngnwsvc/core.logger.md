@@ -15,14 +15,12 @@
 ##### Content
 
 * [LogEvent](#logevent)
+  * [Debug logs](#debug-logs)
+  * [Session logs](#session-logs)
+  * [Critical logs](#critical-logs)
+  * [Error logs](#error-logs)
+  * [Trace logs](#trace-logs)
 
-
-
-* [Critical logs](#critical-logs)
-* [Debug logs](#debug-logs)
-* [Error logs](#error-logs)
-* [Trace logs](#trace-logs)
-* [Session logs](#session-logs)
 
 ***
 
