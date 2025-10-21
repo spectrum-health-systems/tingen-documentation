@@ -428,7 +428,11 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 | `9` |     |
 
 
-
+* The **TraceLevel** is defined on a per-log basis, and the **TraceLogLimit** is defined in Web.config
+* A trace log will be created if it has a *TraceLevel* that is less than the *TraceLogLimit*
+* The traceLevel/traceLevelLimit is a number from **`1`** (default) to `9`
+* Setting the TraceLogLimit to "0" will disable all trace logs
+* Setting the TraceLogLimit to "9" will enable all trace logs
 
 ## Creating a trace log
 
