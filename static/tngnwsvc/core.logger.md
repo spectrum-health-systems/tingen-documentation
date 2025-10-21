@@ -22,9 +22,20 @@
 
 ```mermaid
   flowchart LR
-    test --> test1
-
-
+    %% Content
+   LogEvent@{shape: fr-rect, label: "LogEvent"}
+   LogEventDebug@{shape: fr-rect, label: "Debug()"}
+   LogEventSession@{shape: fr-rect, label: "Session()"}
+   LogEventCritical@{shape: fr-rect, label: "Critical()"}
+   LogEventTrace@{shape: fr-rect, label: "Trace()"}
+   LogEventError@{shape: fr-rect, label: "Error()"}
+  %% Layout
+  LogEvent --> LogEventDebug
+  LogEvent --> LogEventSession
+  LogEvent --> LogEventCritical
+  LogEvent --> LogEventTrace
+  LogEvent --> LogEventError
+  %% Style
 ```
 
 
