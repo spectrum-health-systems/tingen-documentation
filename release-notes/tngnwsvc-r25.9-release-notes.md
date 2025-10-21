@@ -13,6 +13,15 @@
 
 </div>
 
+##### CONTENTS
+
+* Core functionality
+  * [Core.Logger](#corelogger)
+  * [Web.config file](#webconfig-file)
+* Module functionality
+  * [Module.OpenIncident](#moduleopenincident)
+* [Miscellaneous](#miscellaneous)
+
 # Core
 
 ## Core.Logger
@@ -35,7 +44,7 @@
 * `NEW` BaseData
 * `NEW` BuildNumber
 
-# Modules
+# Module functionality
 
 ## Module.OpenIncident
 
@@ -47,7 +56,7 @@
 
 
 
-## Misc notes
+## Miscellaneous
 
 * Web service can now be used in the SBOX, UAT, and LIVE system codes
 * Session data now includes the current day/time, the Avatar UserName, and framework details
