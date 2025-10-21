@@ -7,8 +7,9 @@
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
-  <h1>The Script Parameter</h1>
   <h4>Updated for R25.10</h4>
+  <h1>Core.Logger</h1>
+
 
 </div>
 
