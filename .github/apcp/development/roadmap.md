@@ -25,6 +25,9 @@
 
 <!-- QUEUE
 
+- [ ] UserId translation table only has active users
+- [ ] UserId translation tables by user role
+- [ ] Use the UserId translation tables directly (again)
 - [ ] Fix admin module (deploy, etc.)
 - [ ] Fix session log missing data
 - [ ] Point changelog/roadmap to release notes
