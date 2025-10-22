@@ -15,16 +15,17 @@
 ##### Content
 
 * [LogEvent](#logevent)
-  * [Debug logs](#debug-logs)
-  * [Session logs](#session-logs)
-  * [Critical logs](#critical-logs)
-  * [Error logs](#error-logs)
-  * [Trace logs](#trace-logs)
-
+  * [Debug](#logeventdebug)
+  * [Session](#logeventsession)
+  * [Critical](logeventcritical)
+  * [Error](#error-logs)
+  * [Trace](#trace-logs)
 
 ***
 
 ## LogEvent
+
+Most log types start in the `LogEvent` class.
 
 ```mermaid
   flowchart LR
@@ -44,39 +45,73 @@
   %% Style
 ```
 
+## LogEvent.Debug()
 
+Debug logs:
 
+* Are simple logs intended for temporary debugging
+* Can be placed anywhere in the source code
+* Are written to `C:\Tingen_Data\.development\debug\`
+* Have a file name of `{ssff-fffff}-{ClassPath}-{MethodName}-{LineNumber}.debug`
 
+Example:
 
+```text
+C:\Tingen_Data\.development\debug.1234-56789-DuJson-SerializeFile-42.debug
+```
 
+**Important!**  
+ In order to ensure all debug logs are created, there is a 1ms delay before writing each file. Therefore, many debug logs may have a negative impact on performance.
 
+### Syntax
 
+To create a basic debug log:
 
+```csharp
+LogEvent.Debug()
+```
 
+You can also add a text message to the log content:
 
+```csharp
+LogEvent.Debug("This is a debug log.")
+```
 
+The log file will look like this:
 
+```text
+Tingen Web Service Debug Log
+MM/DD/YYYY-HH:MM:SS
+{message}
+```
 
+***
 
+## LogEvent.Session()
 
-<br>
+TBD
 
-# Critical logs
+***
 
-**Critical logs** are used to alert users of a critical error or catastrophic failure, and cannot be used until the logging functionality has been initialized.
+## LogEvent.Critical()
 
-> If you need to log something before the logging functionality is available, use a [debug log](#debug-logs).
+Critical logs:
 
-Critical logs have a filename of `{LogTitle}-{AvatarUserName}.critical`, and are written to both the *Session* folder, and the *AppData\Logs\\* folder:
+* Are used to alert users of a critical error or catastrophic failure
+* Cannot be used until the logging functionality has been initialized
+* Critical logs have a filename of `{LogTitle}-{AvatarUserName}.critical`
+* Are written to both the *Session* folder, and the *AppData\Logs\Critical\* folder
 
-* `C:\Tingen_Data\WebService\{AvatarSystem}\Session\{YYMMDD}\{AvatarUserName}\{HHMMSS}`
-* `C:\Tingen_Data\WebService\{AvatarSystem}\AppData\Log`
+Examples:
 
-For example:
-* `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`
-* `C:\Tingen_Data\WebService\LIVE\AppData\Log\Data does not exist-JSMITH.critical`
+```text
+`C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`
+`C:\Tingen_Data\WebService\LIVE\AppData\Log\Data does not exist-JSMITH.critical`
+```
+**Important!**  
+If you need to log something before the logging functionality is available, use a [debug log](#logeventdebug).
 
-## The log blueprint
+### Blueprints
 
 Critical logs are built using a *blueprint* located at `C:\Tingen_Data\WebService\LIVE\AppData\www\Blueprint\Log\critical.blueprint`, which looks like this:
 
@@ -96,7 +131,7 @@ Critical logs are built using a *blueprint* located at `C:\Tingen_Data\WebServic
 
 You can modify the layout of blueprint, as long as you use the `~PLACEHOLDER~NAMES~`.
 
-## Basic version
+### Syntax
 
 To create a basic critical log:
 
@@ -120,7 +155,7 @@ Unknown
 
 ```
 
-## Specifying a logTitle
+#### Specifying a logTitle
 
 To specify a logTitle:
 
@@ -131,9 +166,10 @@ LogEvent.Critical(avatarUserName, sessionFolder, ExeAsm, logTitle);
 
 This will create a critical log with the name `C:\Tingen_Data\WebService\LIVE\Session\250512\JSMITH\120133\Data does not exist-JSMITH.critical`, which will have the same contents as the basic logfile above.
 
-## Specifying a logMessage
+#### Specifying a logMessage
 
-> **Please note:** If you specify a logMessage, you must also specify a logTitle.
+**IMPORTANT**  
+If you specify a logMessage, you must also specify a logTitle.
 
 To specify a logMessage:
 
@@ -168,39 +204,23 @@ Oh no!
 
 <br>
 
-# Debug logs
-
-> In order to ensure all debug logs are created, there is a 1ms delay before writing each file. Therefore, many debug logs may have a negative impact on performance.
-
-**Debug logs** are simple logs intended for temporary debugging, and can be placed anywhere in the source code.
-
-They are always written to `C:\Tingen_Data\.development\debug\` with a file name of `{ssfffffff}-{ClassPath}-{MethodName}-{LineNumber}.debug`.
-
-For example: `C:\Tingen_Data\.development\debug\095958028-DuJson-ExportToLocalFile-31.debug`
-
-To create a basic debug log:
-
-```csharp
-LogEvent.Debug()
-```
-
-You can also add a text message to the log content:
-
-```csharp
-LogEvent.Debug("This is a debug log.")
-```
-
-The log file will look like this:
-
-```text
-Tingen Web Service Debug Log
-MM/DD/YYYY-HH:MM:SS
-{message}
-```
-
-***
-
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 # Error logs
 
@@ -488,6 +508,3 @@ Trace logs do not have content.
 
 <br>
 
-# Session logs
-
-TBD
