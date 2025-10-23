@@ -17,6 +17,9 @@
 
 <br/>
 
+This documentation is a work in progress, and will be released with R25.12 in December of 2025.
+
+<!--
 [API documentation](/docs/api/)  
 [Development documentation](/dev/)  
 [Static documentation](/static/)  
@@ -26,3 +29,5 @@
 [Changelogs](changelogs/)  
 [Release notes](/release-notes/)  
 [Roadmaps](/roadmaps/)  
+
+-->
