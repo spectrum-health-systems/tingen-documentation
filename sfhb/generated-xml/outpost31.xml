@@ -211,6 +211,15 @@
             <summary>Parse a request.</summary>
             <param name="wsvcSession"></param>
         </member>
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseUnderscore(System.String,Outpost31.Core.TngnWsvcSession.WsvcSession)">
+            <summary>Parses the specified form name and performs the corresponding action based on its value.</summary>
+            <remarks>If the <paramref name="formName"/> is "WSVC2491", a hard error is logged indicating
+            that the form ID was not found in the translation table. For "OpenIncident", the method delegates to the
+            <c>OpenIncidentRequest.Parse</c> method to handle the request. For other form names, a trace log entry is
+            created without additional actions.</remarks>
+            <param name="formName">The name of the form to parse. This determines the action to be performed.</param>
+            <param name="wsvcSession">The current session context, which provides logging settings and session-specific data.</param>
+        </member>
         <member name="T:Outpost31.Core.Du.DuJson">
             <summary>Provides JSON functionality.</summary>
             <remarks>No loging done here.</remarks>
@@ -338,12 +347,12 @@
         <member name="M:Outpost31.Core.Logger.LogEvent.Critical(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate a critical log.</summary>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
-            <summary>Generate a trace log.</summary>
-        </member>
         <member name="M:Outpost31.Core.Logger.LogEvent.Error(System.String,Outpost31.Core.Framework.Folders,System.String,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>Generate an error log.</summary>
             <remarks>code after msg because sometimes no code but message</remarks>
+        </member>
+        <member name="M:Outpost31.Core.Logger.LogEvent.Trace(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>Generate a trace log.</summary>
         </member>
         <member name="M:Outpost31.Core.Logger.LogUtility.GetClassName(System.String)">
             <summary>Get the class name from the full class path.</summary>
@@ -396,16 +405,16 @@
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.PersonCompletingIncidentFormFieldId">
             <summary>The FieldID containing the Avatar Username that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.OpenFormMsg">
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorOpenMsg">
             <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.OpenFormErrCode">
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorOpenErrCode">
             <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.SubmitFormMsg">
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorSubmitMsg">
             <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.SubmitFormErrCode">
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorSubmitErrCode">
             <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UsernameMissing">
@@ -428,31 +437,31 @@
             <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
             <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
         </member>
-        <member name="T:Outpost31.Module.TngnWsvc">
+        <member name="T:Outpost31.Module.TngnWsvc.Deployer">
             <summary>Administrative deployment functionality.</summary>
         </member>
-        <member name="P:Outpost31.Module.TngnWsvc.AsmName">
+        <member name="P:Outpost31.Module.TngnWsvc.Deployer.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.Deploy(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.Deploy(Outpost31.Core.TngnWsvcSession.WsvcSession)">
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.RefreshAppData(System.String,System.String,System.String)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.RefreshAppData(System.String,System.String,System.String)">
             <summary>Refresh application data that is required by the Tingen Web Service.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.CopyDirectory(System.String,System.String)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.CopyDirectory(System.String,System.String)">
             TODO move to a utility class
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.Test(Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.Test(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Runs regression tests.</summary>
-            <param name="sentOptionObject">The <see cref="!:OptionObject2015"/> sent from Avatar.</param>
+            <param name="sentOptionObject">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="sentScriptParameter">The original Script Parameter that is sent from Avatar.</param>
             <param name="tngnWsvcVer">The current version of the Tingen Web Service.</param>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/>Avatar system that the Tingen Web Service will interface with.</param>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.GenerateAppLogs(Outpost31.Core.Framework.Folders,System.Int32)">
             <summary>Generates various application logs.</summary>
             <param name="avatarSystem">The identifier for the avatar system or application context in which the logging operations are performed.</param>
             <param name="msec">Pause, in milliseconds.</param>
