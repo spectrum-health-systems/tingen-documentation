@@ -11,7 +11,7 @@
   <br/>
   <br/>
 
-  ![Release](https://img.shields.io/badge/release-25.10-teal)
+  ![Release](https://img.shields.io/badge/release-25.11-teal)
 
 </div>
 
