@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"editor.fontFamily": "Cascadia Mono",
+		"workbench.colorTheme": "Solarized Dark",
+		"editor.formatOnPaste": true
+	}
+}
