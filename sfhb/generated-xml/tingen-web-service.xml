@@ -90,7 +90,7 @@
             <summary>Determines what the Tingen Web Service will do, if anything.</summary>
             <remarks>This method should remain pretty static, since the heavy lifting is done in <see cref="N:Outpost31"/>.<br/></remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> that is sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
             <returns>A completed <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/>.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)">
@@ -105,7 +105,7 @@
                 </list>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>that is sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
             <param name="tngnWsvcMode">The Tingen Web Service mode.</param>
             <returns>If a critical error occurred, true; otherwise, false.</returns>
         </member>

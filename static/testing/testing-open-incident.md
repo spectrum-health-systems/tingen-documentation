@@ -1,4 +1,4 @@
-<!-- u251002 -->
+<!-- u251106 -->
 
 [[🏠︎](../../README.md)] ❬ [Static documentation](../README.md) ❬ [Diagrams](README.md)
 
@@ -14,6 +14,120 @@
   </h1>
 
 </div>
+
+> Last updated: November 8, 2025
+
+# Testing Open Incident form functionality
+
+
+
+
+All testing is done while logged into Avatar as the "TESTUSER" user.
+
+REMVOE CONFIG
+
+
+## The ***Program of Incident*** field
+
+Staff should not be able to submit a new incident without choosing a value for the **Program of Incident** field.
+
+Currently the title of the field is red, but is not technically required.
+
+### Expected outcome
+
+The web service should display a message informing the user they cannot submit the form until the *Program of Incident* field is completed.
+
+### Testing procedure
+
+1. Opened the `Open Incident` form
+
+2. Typed "40" in the search bar
+
+3. Clicked the `New Incident` button
+
+A new, blank Open Incident form opened.
+
+4. Completed the following required fields:
+
+* Brief Incident Description:
+* Date Incident Occured
+* Date Incident Reported
+* Time Completed
+ 
+5. Clicked the `Submit` button
+
+The "Program of Incident is not valid" message appears.
+
+6. Completed the *Program of Incident* field
+
+7. Clicked the `Submit` button
+
+The incident was submitted, and the form closed.
+
+## The original author opens an incident
+
+Staff should be able to open any incidents they are the original creators of.
+
+### Expected outcome
+
+Nothing should happen!
+
+### Testing procedure
+
+1. Opened the previously created incident
+
+The incident opened as expected.
+
+2. Added text to the Incident Description
+
+3. Clicked the `Submit` button
+
+The incident was submitted, and the form closed.
+
+## Opening an incident created by another user
+
+Only staff that are members of the authorized list of Avatar User Roles should be able to open incident reports they have not created, but cannot save any changes they make.
+
+Staff that are not members of the authorized list of Avatar User Roles cannot open incidents they did not create.
+
+### Expected outcomes
+
+When opening an incident report they did not create, authorized staff members should receive a message letting them know any changes they make will not be saved. If the user attempts to submit changes,they will receive a message letting them know they are not able to submit the form.
+
+Unauthorized staff members should not be able to open any incident report they did not create.
+
+### Testing procedures
+
+1. Verified the TESTUSER account does not have an authorized user role.
+
+2. Opened an Open Incident report created by another user.
+
+Received the "You are not authorized to view" message, and sent to the home screen.
+
+3. Add the TESTUSER user role to the OpenIncident.config file
+
+4. Opened an Open Incident report created by another user.
+
+Received the "Not original author" message, and the form opens.
+
+5. Click the Submit button
+
+Received the "Can't submit" message, and returned to the form.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Verify the `_VerifyOriginalAuthorIsOpening` command
 

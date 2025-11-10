@@ -1,0 +1,76 @@
+// u251106_code
+// u251106_documentation
+
+```csharp
+
+
+/// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
+/// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/>sent from Avatar.</param>
+
+/// <param name="runtimeConfig">A dictionary containing runtime configuration settings for the session.</param>
+
+/// <param name="tngnWsvcMode">The Tingen Web Service mode.</param>
+
+/// <param name="wsvcSession">The object that contains all the information for this session.</param>
+
+/// <param name="openIncidentConfig">The Open Incident module confituration.</param>
+/// <param name="errCode">The OptionObject error code.</param>
+/// <param name="errMsg">The OptionObject error message.</param>
+
+/// <param name="errCode">The error code identifying the type of error.</param>
+/// <param name="errMsg">The error message providing details about the error.</param>
+
+/// <param name="logTitle">The log title.</param>
+/// <param name="logMsg">The log Message.</param>
+/// <param name="avatarUserName">The <see cref="AvatarUserName"/> username.</param>
+/// <param name="tngnWsvcFolder">The Tingen Web Service folder framework.</param>
+/// <param name="exeAsm">The executing assembly that caused the error.</param>
+/// <param name="classPath">The path to the class that caused the error.</param>
+/// <param name="methodName">The method that caused the error.</param>
+/// <param name="lineNumber">The line of code that caused the error.</param>
+
+/// <param name="logBlueprint">A string containing placeholders to be replaced with log details.</param>
+
+/// <param name="traceLevel">The trace level of the requested log.</param>
+
+/// <param name="traceLogLimit">The global trace log limit.</param>
+
+/// <param name="sessionFolder">The current session folder.</param>
+
+/// <param name="sessionDetail">Current session details.</param>
+/// <param name="sessionScriptParameter">Current session ScriptParameter.</param>
+/// <param name="newEntry">The new entry to add to the session running log.</param>
+
+/// <param name="version">The current <see cref="Version"/> of the Tingen Web Service.</param>
+
+/// <param name="mode">The Tingen Web Service <see cref="Mode"/>.</param>
+
+/// <param name="generatedDataPath">The path to the directory containing the generated data files.</param>
+/// 
+/// <param name="translationPath">The path to the directory where translation files are stored.</param>
+
+/// <param name="avatarSystem">The <see cref="AvatarSystem"/> that the Tingen Web Service will interface with.</param>
+
+/// <param name="avatarUserName">The <see cref="AvatarUserName"/>.</param>
+
+/// <param name="ntstWsvcUserName">The Avatar UserName that will be used to authenticate with Netsmart web services.</param>
+
+/// <param name="ntstWsvcUserPass">The password for the Avatar UserName that will be used to authenticate with Netsmart web services.</param>
+
+/// <param name="dailyLogPath">The path to the daily logs.</param>
+
+```
+
+```csharp
+/* For more information about Tingen Web Service logging, please see:
+ * https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/logger.md
+ */
+
+/// <remarks>For more information about Outpost31, please see the <see cref="ProjectInfo"/> file.</remarks>
+
+```
+
+
+
+
+

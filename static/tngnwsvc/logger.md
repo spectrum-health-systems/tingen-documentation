@@ -1,5 +1,16 @@
 <!-- u251020 -->
 
+<!--
+
+Use this in class code:
+
+/* For more information about Tingen Web Service logging, please see:
+ * https://github.com/spectrum-health-systems/tingen-documentation-project/blob/main/static/logger.md
+ */
+-->
+
+
+
 <div align="center">
 
   <picture>
@@ -409,7 +420,7 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 
 #### Notes/exceptions
 
-* TBD
+* System calls (e.g., "File.Create()") are fine.
 
 ### TraceLevel `3`
 
@@ -439,15 +450,15 @@ Setting the *TraceLogLimit* to `0` disables all trace logs, since the *TraceLeve
 
 ### TraceLevel `6`
 
-* TBD
+* TraceLogs that have a corresponding "Error" log that is written at the same time.
 
 #### Notes/exceptions
 
-* TBD
+* TraceLogs that have a corresponding "Alert" log that is written at the same time
 
 ### TraceLevel `7`
 
-* TBD
+* TraceLogs that have a corresponding email that is sent at the same time.
 
 #### Notes/exceptions
 
