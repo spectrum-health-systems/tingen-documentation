@@ -26,6 +26,8 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 ```csharp
 
+/// <param name="tngnWsvcVersion">The current <see cref="TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</param>
+
 /// <param name="origOptObj">The original <see cref="AvatarOptionObject"/> sent from Avatar.</param>
 
 /// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/> sent from Avatar.</param>
@@ -36,11 +38,12 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 /// <param name="avatarSystemCode">The <see cref="AvatarSystemCode"/> Used to login to Avatar.</param>
 
+/// <param name="wsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
 
+/// <param name="errCode">The OptionObject <see cref="ErrorCode"/>.</param>
 
+/// <param name="errMsg">The OptionObject Error Message that is displayed to the user.</param>
 
-
- /// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
 
 
 
