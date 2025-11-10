@@ -16,6 +16,8 @@
 
 > [!IMPORTANT]
 > Many of the entries in this changelog are specific to [Outpost31](https://github.com/spectrum-health-systems/outpost31), but are documented here for organizational purposes.
+>
+> This documentation may be superceded by later releases.
 
 ## AdminMode
 
