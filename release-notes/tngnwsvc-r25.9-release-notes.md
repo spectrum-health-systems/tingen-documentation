@@ -1,4 +1,4 @@
-<!-- u251001 -->
+<!-- u251110 -->
 
 <div align="center">
 
@@ -70,10 +70,3 @@ The Avatar *System* that the Tingen Web Service will interface with.
 * `REMOVED` The popup that appears when the Tingen Web Service is disabled.
 
 ***
-
-* [X] Move trace logs to Sessions
-* [X] Test to see what happens when a blueprint is deleted, does it show up when the service execute
-* [X] Web service appdata -> root NOTE: Don't do this.
-* [X] Test looped debugs to make sure they are created with a 1ms delay
-* [X] Parameters that start with "_" use the calling form to parse requests.
-* [X] Update blueprints to match documentation
