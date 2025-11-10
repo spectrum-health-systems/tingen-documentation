@@ -74,23 +74,26 @@
         </member>
         <member name="T:TingenWebService.TingenWebService">
             <summary>The entry class for the Tingen Web Service.</summary>
-            <remarks>
-                For more information about the Tingen Web Service and Outpost 31 projects, including documentation,
-                development notes, and other resources, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.<br/>
-            </remarks>
+            <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
         </member>
         <member name="P:TingenWebService.TingenWebService.TngnWsvcVersion">
             <summary>The current version of the Tingen Web Service.</summary>
+            <remarks>To update the version number, modify the AssemblyInfo.cs file.</remarks>
         </member>
         <member name="M:TingenWebService.TingenWebService.GetVersion">
             <summary>Get the current version of the Tingen Web Service.</summary>
+            <remarks>This method is required by Avatar.</remarks>
             <returns>The current <see cref="P:TingenWebService.TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>Determines what the Tingen Web Service will do, if anything.</summary>
-            <remarks>This method should remain pretty static, since the heavy lifting is done in <see cref="N:Outpost31"/>.<br/></remarks>
+            <remarks>
+                This method is required by Avatar.<br/>
+                <br/>
+                This method should remain pretty static, since the heavy lifting is done in <see cref="T:Outpost31.ProjectInfo"> Outpost31</see>.
+             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> sent from Avatar.</param>
             <returns>A completed <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/>.</returns>
         </member>
         <member name="M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)">
@@ -100,14 +103,14 @@
                 <list type="bullet">
                     <item>The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> is not passed from Avatar.</item>
                     <item>The <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> is not passed from Avatar.</item>
-                    <item>The Tingen Web Service mode is set to disabled.</item>
-                    <item>The Tingen Web Service is set to an unknown state.</item>
+                    <item>The Tingen Web Service <c>Mode</c> is set to <i>disabled</i>.</item>
+                    <item>The Tingen Web Service <c>Mode</c> is set to an <i>unknown state</i>.</item>
                 </list>
             </remarks>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
-            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
-            <param name="tngnWsvcMode">The Tingen Web Service mode.</param>
-            <returns>If a critical error occurred, true; otherwise, false.</returns>
+            <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> sent from Avatar.</param>
+            <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
+            <returns><c>true</c> if a critical error occurred; otherwise, <c>false</c>.</returns>
         </member>
     </members>
 </doc>

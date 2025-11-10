@@ -1,7 +1,62 @@
-// u251106_code
-// u251106_documentation
+# Common source code stuff
+
+## File headers
 
 ```csharp
+// https://github.com/spectrum-health-systems/outpost31
+// u251110_code
+// u251110_documentation
+```
+
+## Class headers
+
+```csharp
+/// <summary>Description</summary>
+/// <remarks>For more information about Outpost31, please see the <see cref="ProjectInfo"/> file.</remarks>
+```
+
+
+
+
+## Parameter XML
+
+```csharp
+
+ExeAsm:
+/// <summary>Required for logging functionality.</summary>
+
+
+/// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
+
+/// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/> sent from Avatar.</param>
+
+/// <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
+
+/// <param name="avatarSystem">The <see cref="AvatarSystem"/> that the Tingen Web Service will interface with.</param>
+
+/// <param name="avatarSystemCode">The <see cref="AvatarSystemCode"/> Used to login to Avatar.</param>
+
+
+
+
+
+
+ /// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
@@ -69,6 +124,11 @@
 /// <remarks>For more information about Outpost31, please see the <see cref="ProjectInfo"/> file.</remarks>
 
 ```
+
+// <https://github.com/spectrum-health-systems/tingen-web-service>
+// u251106_code
+// u251106_documentation
+
 
 
 

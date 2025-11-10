@@ -35,13 +35,13 @@
             <param name="sessionFolder">The current session folder.</param>
             <returns>The value of the specified field as a string, or an empty string if the field does not exist.</returns>
         </member>
-        <member name="T:Outpost31.Core.TngnWsvcSession.WsvcSessionError">
+        <member name="T:Outpost31.Core.TingenWsvcSession.WsvcSessionError">
             <summary>Handles errors that occur during a Tingen Web Service session.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionError.ExeAsm">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionError.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Core.TngnWsvcSession.WsvcSessionError.HardError(Outpost31.Core.TngnWsvcSession.WsvcSession,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.TingenWsvcSession.WsvcSessionError.HardError(Outpost31.Core.TingenWsvcSession.WsvcSession,System.Int32,System.String)">
             <summary>Logs a hard error, updates the session log, and sends an error response to the client.</summary>
             <remarks>
                 This method performs the following actions: <list type="bullet"> <item>Logs the error details using the
@@ -54,52 +54,52 @@
             <param name="errCode">The OptionObject error code.</param>
             <param name="errMsg">The OptionObject error message.</param>
         </member>
-        <member name="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails">
+        <member name="T:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime">
             <summary>Detailed information about the current Tingen Web Service session.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Date">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Date">
             <summary>Current date.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Time">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Time">
             <summary>Current time.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Version">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Version">
             <summary>The current version of the Tingen Web Service.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Mode">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Mode">
             <summary>The Tingen Web Service mode, which determines what the Tingen Web Service will do, if anything.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarSystem">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.AvatarSystem">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarUserName">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.AvatarUserName">
             <summary>The Avatar UserName that initiated the current Tingen Web Service session, converted to lowercase.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.NtstWsvcUserName">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.NtstWsvcUserName">
             <summary>The Avatar UserName that will be used to authenticate with Netsmart web services.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.NtstWsvcUserPass">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.NtstWsvcUserPass">
             <summary>The password for the Avatar UserName that will be used to authenticate with Netsmart web services.</summary>
         </member>
-        <member name="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.RunningLog">
+        <member name="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.RunningLog">
             <summary>Log of actions taken during the current Tingen Web Service session.</summary>
         </member>
-        <member name="M:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Load(System.String,System.String,System.String,System.String,System.String,System.String)">
-            <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails"/> instance with the specified parameters.</summary>
-            <param name="version">The current <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Version"/> of the Tingen Web Service.</param>
-            <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.Mode"/>.</param>
-            <param name="avatarSystem">The <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
-            <param name="avatarUserName">The <see cref="P:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails.AvatarUserName"/>.</param>
+        <member name="M:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Load(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Creates and initializes a new <see cref="T:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime"/> instance with the specified parameters.</summary>
+            <param name="version">The current <see cref="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Version"/> of the Tingen Web Service.</param>
+            <param name="mode">The Tingen Web Service <see cref="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.Mode"/>.</param>
+            <param name="avatarSystem">The <see cref="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
+            <param name="avatarUserName">The <see cref="P:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime.AvatarUserName"/>.</param>
             <param name="ntstWsvcUserName">The Avatar UserName that will be used to authenticate with Netsmart web services.</param>
             <param name="ntstWsvcUserPass">The password for the Avatar UserName that will be used to authenticate with Netsmart web services.</param>
-            <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.WsvcSessionDetails"/> object populated with the provided parameters and the current date and time.</returns>
+            <returns>A <see cref="T:Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime"/> object populated with the provided parameters and the current date and time.</returns>
         </member>
-        <member name="T:Outpost31.Core.TngnWsvcSession.WsvcSession">
+        <member name="T:Outpost31.Core.TingenWsvcSession.WsvcSession">
             <summary>Manages the current Tingen Web Service session.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="M:Outpost31.Core.TngnWsvcSession.WsvcSession.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="M:Outpost31.Core.TingenWsvcSession.WsvcSession.Start(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>Initializes and starts a new session.</summary>
             <remarks>
                 This method performs session initialization, creates the necessary session folder, and applies daily
@@ -108,9 +108,9 @@
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
             <param name="runtimeConfig">A dictionary containing runtime configuration settings for the session.</param>
-            <returns>A <see cref="T:Outpost31.Core.TngnWsvcSession.WsvcSession"/> object representing the initialized session.</returns>
+            <returns>A <see cref="T:Outpost31.Core.TingenWsvcSession.WsvcSession"/> object representing the initialized session.</returns>
         </member>
-        <member name="M:Outpost31.Core.TngnWsvcSession.WsvcSession.Load(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="M:Outpost31.Core.TingenWsvcSession.WsvcSession.Load(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>Loads all necessary information for a new session.</summary>
             <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
@@ -167,63 +167,149 @@
             <param name="translationPath">The directory path where the translation file will be created. Cannot be null or empty.</param>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarEnvironment">
-            <summary>Logic for Avatar environment components.</summary>
+            <summary>Avatar environment logic.</summary>
             <remarks>
-                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">Avatar System</see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">Avatar System Code</see>.<br/>
+                An Avatar environment consists of two components: the <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">Avatar <i>System</i></see> and <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">Avatar <i>System Code</i></see>.<br/>
                 <br/>
-                While both contain the word<i> system</i>, they are not the same! It is important to understand the difference between the two.<br/>
+                While both contain the word <i>system</i>, they are not the same, and it is <i><b>extremely important</b></i> to understand the difference between the two.<br/>
                 <br/>
-                For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
-            <remarks><note type="todo" title="How-To">
-                    <h3>Modify the AvtrSys setting</h3>
+            <remarks>
+                Common Avatar Systems include <c>SBOX</c>, <c>UAT</c>, and <c>LIVE</c>.<br />
+                <br />
+                <note type="tip" title="How-To Modify the AvatarSystem setting">
+                    <h3>To modify the AvatarSystem that the Tingen Web Service will interface with:</h3>
                     <list type="number">
                         <item>
                             Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.
                         </item>
                         <item>
-                            Locate the <c>AvtrSys</c> setting within the <c>applicationSettings</c> section.
+                            Locate the <c>AvatarSystem</c> setting within the <c>applicationSettings</c> section.
                         </item>
                         <item>
-                            Change the value of the <c>AvtrSys</c> setting to the desired value.
+                            Change the value of <c>AvatarSystem</c> setting to the desired value.
                         </item>
                         <item>
                             Save the changes to the <c>Web.Config</c> file.
                         </item>
                     </list>
                     For example, to set the Avatar System to `LIVE`:
-                    <code>
-                        &lt;setting name="AvtrSys" serializeAs="String"&gt;
-                            &lt;value&gt;LIVE&lt;/value&gt;
-                        &lt;/setting&gt;
-                    </code>
-                    Changes to the <c>AvtrSys</c> setting will be applied the next time the Tingen Web Service is executed.<br />
-                </note></remarks>
-            <value>The default value is <c>UAT</c>.</value>
+<code>
+    &lt;setting name="AvatarSystem" serializeAs="String"&gt;
+        &lt;value&gt;LIVE&lt;/value&gt;
+    &lt;/setting&gt;
+</code>
+                    Changes to the <c>AvatarSystem</c> setting will be applied the next time the Tingen Web Service is executed.<br />
+                </note>
+            </remarks>
+            <value>The default value is <c>SBOX</c>.</value>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystemCode">
             <summary>The Avatar System Code used to login to Avatar.</summary>
+            <remarks>
+                Avatar System Codes are specific to each organization and environment, and often mirror that organization's <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/>.<br/>
+                <br/>
+                Common Avatar Systems include <c>SBOX</c>, <c>UAT</c>, and <c>LIVE</c>.<br/>
+            </remarks>
         </member>
         <member name="T:Outpost31.Core.Avatar.AvatarOptionObject">
-            <summary>The AvatarOptionObject contains metadata about the Avatar environment.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+            <summary>Avatar OptionObject logic.</summary>
+            <remarks>
+                The Avatar <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> holds all of the content of and metadata describing the calling myAvatar form.<br />
+                <br />
+                <note type="tip" title="About the Avatar OptionObject">
+                The Avatar OptionObject contains:
+                <list type="bullet">
+                    <item>
+                        The Avatar System in use (SBOX, LIVE, etc.)
+                    </item>
+                    <item>
+                        The Avatar user name that is logged in.
+                    </item>
+                    <item>
+                        The form fields, and their values
+                    </item>
+                    <item>
+                        And more!
+                    </item>
+                </list>
+            </note><br /><see href="https://scriptlink.rarelysimple.com/" /><br />
+                <note type="tip" title="Types of OptionObjects">
+                The Tingen Web Service uses three types of OptionObjects:
+                <list type="table">
+                    <listheader>
+                        <term>Type</term>
+                        <description>Description</description>
+                    </listheader>
+                    <item>
+                        <term>Original</term>
+                        <description>
+                            The original OptionObject sent from Avatar, which is <i>never</i> modified by the Tingen Web Service.
+                        </description>
+                    </item>
+                    <item>
+                        <term>Worker</term>
+                        <description>
+                            The OptionObject where work is done, which is <i>potentially</i> modified during a Tingen Web Service session.
+                        </description>
+                    </item>
+                    <item>
+                        <term>Completed</term>
+                        <description>
+                            The OptionObject that is returned to Avatar at the end of the Tingen Web Service session. Typically the <i>Return</i> OptionObject is the same as the <i>Worker</i> OptionObject, but required components have been verified.
+                        </description>
+                    </item>
+                </list>
+            </note><br />
+                <br />
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo" /> file.
+            </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.ExeAsm">
-            <summary>A required log file component.</summary>
+            <summary>Required for logging functionality.</summary>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Original">
-            <summary>The original <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> sent from Avatar.</summary>
-            <remarks>This OptionObject is <i>never</i> modified during a Tingen Web Service session.</remarks>
+            <summary>The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> sent from Avatar.</summary>
+            <remarks>The original OptionObject is <i>never</i> modified by the Tingen Web Service.
+            
+            </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Worker">
-            <summary>The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> where work is done.</summary>
-            <remarks>This OptionObject is <i>potentially</i> modified during a Tingen Web Service session.</remarks>
+            <summary>The <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> where work is done.</summary>
+            <remarks><note type="tip" title="Types of OptionObjects">
+                The Tingen Web Service uses three types of OptionObjects:
+                <list type="table">
+                    <listheader>
+                        <term>Type</term>
+                        <description>Description</description>
+                    </listheader>
+                    <item>
+                        <term>Original</term>
+                        <description>
+                            The original OptionObject sent from Avatar, which is <i>never</i> modified by the Tingen Web Service.
+                        </description>
+                    </item>
+                    <item>
+                        <term>Worker</term>
+                        <description>
+                            The OptionObject where work is done, which is <i>potentially</i> modified during a Tingen Web Service session.
+                        </description>
+                    </item>
+                    <item>
+                        <term>Completed</term>
+                        <description>
+                            The OptionObject that is returned to Avatar at the end of the Tingen Web Service session. Typically the <i>Return</i> OptionObject is the same as the <i>Worker</i> OptionObject, but required components have been verified.
+                        </description>
+                    </item>
+                </list>
+            </note></remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Completed">
-            <summary>The finalized <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> that is returned to Avatar.</summary>
+            <summary>The finalized <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> that is returned to Avatar.</summary>
             <remarks>This is the finalized OptionObject, ready to be returned to Avatar.</remarks>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
@@ -232,7 +318,7 @@
             <param name="origOptObj">The original OptionObject sent from Avatar.</param>
             <returns>A string indicating if an OptionObject was sent or not.</returns>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.ToReturn(Outpost31.Core.TngnWsvcSession.WsvcSession,System.Int32,System.String)">
+        <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.ToReturn(Outpost31.Core.TingenWsvcSession.WsvcSession,System.Int32,System.String)">
             <summary>Completes an OptionObject in preparation to be returned to Avatar.</summary>
             <remarks>
                 This method logs the operation's progress and updates the session's completion state based on the
@@ -266,11 +352,11 @@
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/>sent from Avatar.</param>
             <returns>A string indicating if an Script Parameter was sent or not.</returns>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.Parse(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.Parse(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Parse a request.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseUnderscore(System.String,Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseUnderscore(System.String,Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Parses the specified form name and performs the corresponding action based on its value.</summary>
             <remarks>
                 If the <paramref name="formName"/> is "WSVC2491", a hard error is logged indicating that the form ID was not found in the translation table.
@@ -279,7 +365,7 @@
             <param name="formName">The name of the form to parse. This determines the action to be performed.</param>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
-        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseStatic(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Avatar.AvatarScriptParameter.ParseStatic(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Parses static Script Parameter requests.</summary>
             <remarks>
                 A "static" request is one that does not change based on the form being used.<br>
@@ -455,7 +541,7 @@
             <param name="methodName">The method that caused the error.</param>
             <param name="lineNumber">The line of code that caused the error.</param>
         </member>
-        <member name="M:Outpost31.Core.Logger.LogEvent.Session(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Logger.LogEvent.Session(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Logs session details.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
@@ -526,18 +612,18 @@
             <summary>Session log logic.</summary>
             <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="M:Outpost31.Core.Logger.SessionLog.Create(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Logger.SessionLog.Create(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Create a session log.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
-        <member name="M:Outpost31.Core.Logger.SessionLog.LogContent(System.String,Outpost31.Core.TngnWsvcSession.WsvcSessionDetails,System.String)">
+        <member name="M:Outpost31.Core.Logger.SessionLog.LogContent(System.String,Outpost31.Core.TingenWsvcSession.WsvcSessionRuntime,System.String)">
             <summary>Generate the session log content.</summary>
             <param name="logBlueprint">A string containing placeholders to be replaced with log details.</param>
             <param name="sessionDetail">Current session details.</param>
             <param name="sessionScriptParameter">Current session ScriptParameter.</param>
             <returns></returns>
         </member>
-        <member name="M:Outpost31.Core.Logger.SessionLog.AddToRunningLog(Outpost31.Core.TngnWsvcSession.WsvcSession,System.String)">
+        <member name="M:Outpost31.Core.Logger.SessionLog.AddToRunningLog(Outpost31.Core.TingenWsvcSession.WsvcSession,System.String)">
             <summary>Adds an entry to the session running log. </summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
             <param name="newEntry">The new entry to add to the session running log.</param>
@@ -565,11 +651,11 @@
             <summary>Parses requests.</summary>
             <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="M:Outpost31.Core.Parse.Request.TngnWsvc(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Parse.Request.TngnWsvc(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Parses TngnWsvc requests.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
-        <member name="M:Outpost31.Core.Parse.Request.Prototype(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Core.Parse.Request.Prototype(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Parses prototype requests.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
@@ -582,7 +668,7 @@
         <member name="P:Outpost31.Maintenance.DailyMaintenance.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Maintenance.DailyMaintenance.Updater(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Maintenance.DailyMaintenance.Updater(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Daily updates.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
@@ -616,63 +702,101 @@
             <param name="traceLogLimit">The global trace log limit.</param>
             <param name="sessionFolder">The current session folder.</param>
         </member>
-        <member name="T:Outpost31.Module.OpenIncident.OpenIncidentRequest">
-            <summary>Open Indicent request logic.</summary>
+        <member name="T:Outpost31.Module.OpenIncident.OpenIncidentEvent">
+            <summary>Handles OpenIncident Module events.</summary>
+            <remarks>For more information about Outpost31, please see the <see cref = "T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentRequest.ExeAsm">
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentEvent.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.Parse(Outpost31.Core.TngnWsvcSession.WsvcSession)">
-            <summary>Parse and Open Incident request.</summary>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentEvent.Parse(Outpost31.Core.TingenWsvcSession.WsvcSession)">
+            <summary>Parse an OpenIncident Module event.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.FormLoadEvent(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentEvent.FormLoad(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
             <summary>The Form Load event for the Open Incident form.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
             <param name="openIncidentConfig">The Open Incident module configuration.</param>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.PreFileEvent(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentEvent.PreFile(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
             <summary>The Pre-File event for the Open Incident form.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
             <param name="openIncidentConfig">The Open Incident module configuration.</param>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.PostFileEvent(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
-            <summary>The Post-File event for the Open Incident form.</summary>
-            <param name="wsvcSession">The object that contains all the information for this session.</param>
-            <param name="openIncidentConfig">The Open Incident module configuration.</param>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentLogic.ExeAsm">
+            <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.IsProgramOfIncidentValid(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
-            <summary>Verify the Program of Incident field has been completed.</summary>
-            <param name="wsvcSession">The object that contains all the information for this session.</param>
-            <param name="openIncidentConfig">The Open Incident module configuration.</param>
-        </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.IsMemberOfAuthorizedUserRole(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentLogic.IsMemberOfAuthorizedUserRole(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
             <summary>Checks to see if the person opening the form is a member of an authorized user role.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
-            <param name="openIncidentConfig">The Open Incident module configuration.</param>
+            <param name="openIncidentConfig">The Open Incident Module configuration.</param>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.IsOriginalAuthorOpening(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentLogic.IsOriginalAuthor(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
             <summary>Checks to see if the person opening the form is the original author.</summary>
-            <remarks>
-                Only the original author can submit changes to the form, others can only view it.
-                TODO - why we match on full name instead of Avatar username
-            </remarks>
+            <remarks>Only the original author can submit changes to the form, others can only view it.</remarks>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
-            <param name="openIncidentConfig">The Open Incident module configuration.</param>
+            <param name="openIncidentConfig">The Open Incident Module configuration.</param>
         </member>
-        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.IsOriginalAuthorSubmitting(Outpost31.Core.TngnWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentLogic.IsOriginalAuthorSubmitting(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
             <summary>Checks to see if the person submitting the form is the original author.</summary>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
             <param name="openIncidentConfig">The Open Incident module configuration.</param>
         </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentLogic.IsProgramOfIncidentValid(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+            <summary>Verify the Program of Incident field has been completed.</summary>
+            <param name="wsvcSession">The object that contains all the information for this session.</param>
+            <param name="openIncidentConfig">The Open Incident module configuration.</param>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentQuery.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentQuery.GetCurrentUserRoles(Outpost31.Core.TingenWsvcSession.WsvcSession)">
+            <summary>Executes a query to retrieve the authorized user role/</summary>
+            <remarks>
+                The query execution is determined by the environment specified in the <paramref name="wsvcSession"/>. Supported environments include "LIVE",
+                "UAT", and "SBOX". Each environment uses a specific query implementation. If the environment is not recognized, an error message is
+                returned.
+            </remarks>
+            <param name="wsvcSession">The object that contains all the information for this session.</param>
+            <returns>A string containing the result of the query execution.</returns>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentQuery.UserDescription(Outpost31.Core.TingenWsvcSession.WsvcSession)">
+            <summary>Executes a query to get the User Description of an Avatar UserID</summary>
+            <remarks>
+                The query execution is determined by the environment specified in the <paramref name="wsvcSession"/>. Supported environments include "LIVE",
+                "UAT", and "SBOX". Each environment uses a specific query implementation. If the environment is not recognized, an error message is
+                returned.
+            </remarks>
+            <param name="wsvcSession">The object that contains all the information for this session.</param>
+            <returns>A string containing the result of the query execution.</returns>
+        </member>
+        <member name="T:Outpost31.Module.OpenIncident.OpenIncidentRequest">
+            <summary>OpenIncident Module request logic.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentRequest.ExeAsm">
+            <summary>A required log file component.</summary>
+        </member>
+        <member name="M:Outpost31.Module.OpenIncident.OpenIncidentRequest.PostFileEvent(Outpost31.Core.TingenWsvcSession.WsvcSession,Outpost31.Module.OpenIncident.OpenIncidentConfig)">
+            <summary>The Post-File event for the Open Incident form.</summary>
+            <param name="wsvcSession">The object that contains all the information for this session.</param>
+            <param name="openIncidentConfig">The Open Incident module configuration.</param>
+        </member>
         <member name="T:Outpost31.Module.OpenIncident.OpenIncidentConfig">
-            <summary>Logic related to Avatar OpenIncident functionality.</summary>
+            <summary>OpenIncident Module configuration logic.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.ExeAsm">
             <summary>A required log file component.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Mode">
             <summary>The OpenIncident Module mode.</summary>
+            <remarks>
+                The following modes are supported:
+                <list type="bullet">
+                    <item><c>Enabled</c>: All OpenIncident Module functionality is available.</item>
+                    <item><c>Disabled</c>: None of the OpenIncident Module functionality is available.</item>
+                </list>
+            </remarks>
+            <value>Default: <c>Enabled</c>c></value>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Whitelist">
             <summary>List of Avatar Usernames that can always use this functionality.</summary>
@@ -683,46 +807,79 @@
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.Blacklist">
             <summary>List of Avatar Usernames that are restricted from using this functionality.</summary>
         </member>
+        <!-- Badly formed XML comment ignored for member "P:Outpost31.Module.OpenIncident.OpenIncidentConfig.AuthorizedUserRoles" -->
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.BriefIncidentDescriptionFieldId">
+            <summary>The FieldID containing the brief description of the incident.</summary>
+            <remarks>
+                This field is used to determine if the incident report is a new report or an existing report being modified.<br/>
+                <br/>
+                New reports will have this field empty, while existing reports will have this field populated.
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.ProgramOfIncidentFieldId">
+            <summary>The FieldID containing the Program of Incident.</summary>
+        </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.PersonCompletingIncidentFormFieldId">
             <summary>The FieldID containing the Avatar Username that originally completed the form.</summary>
+            <remarks>
+                The value in this field matches the "User Description" field in the Avatar User Definition form.<br/>
+                <br/>
+                Since the OptionObject that is passed to the Tingen Web Service only contains the Avatar User ID (OptionObject.OptionUserId), we need to 
+                translate the Avatar User ID (e.g., "UNAME") to the Avatar User Description (e.g., "User Name").<br/>
+            </remarks>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotMemberOfAuthorizedUserRoleMsg">
-            <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
+            <summary>The message to display when the form is opened by a user that is not a member of an AuthorizedUserRole.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotMemberOfAuthorizedUserRoleErrCode">
-            <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
+            <summary>Error Code to return when the form is opened by a user that is not a member of an AuthorizedUserRole..</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorOpenMsg">
-            <summary>Message to display when the form is opened by somebody other than the person that originally completed the form.</summary>
+            <summary>Message to display when the form is opened by a user that did not originally complete the form.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorOpenErrCode">
-            <summary>Error Code to return when the form is opened by somebody other than the person that originally completed the form.</summary>
+            <summary>Error Code to return when the form is opened by a user that did not originally complete the form.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorSubmitMsg">
-            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
+            <summary>Message to display when the form is opened by a user that did not originally complete the form.</summary>
         </member>
         <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.NotOriginalAuthorSubmitErrCode">
-            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+            <summary>Error Code to return when the form is submitted by a user that did not originally complete the form.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UsernameMissing">
-            <summary>Message to display when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.InvalidProgramOfIncidentMsg">
+            <summary>Message to display when the Program of Incident specified is not valid.</summary>
         </member>
-        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UsernameMissingErrCode">
-            <summary>Error Code to return when the form is submitted by somebody other than the person that originally completed the form.</summary>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.InvalidProgramOfIncidentErrCode">
+            <summary>Error Code to return when the Program of Incident specified is not valid.</summary>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UnknownUserDescriptionMsg">
+            <summary>Message to display when value of the PersonCompletingIncidentForm field cannot be found in Avatar.</summary>
+            <remarks>
+                Since the OptionObject that is passed to the Tingen Web Service only contains the Avatar User ID (OptionObject.OptionUserId), we need to 
+                translate the Avatar User ID (e.g., "UNAME") to the Avatar User Description (e.g., "User Name").<br/>
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Module.OpenIncident.OpenIncidentConfig.UnknownUserDescriptionErrCode">
+            <summary>Error code to return when value of the PersonCompletingIncidentForm field cannot be found in Avatar.</summary>
+            <remarks>
+                Since the OptionObject that is passed to the Tingen Web Service only contains the Avatar User ID (OptionObject.OptionUserId), we need to 
+                translate the Avatar User ID (e.g., "UNAME") to the Avatar User Description (e.g., "User Name").<br/>
+            </remarks>
         </member>
         <member name="M:Outpost31.Module.OpenIncident.OpenIncidentConfig.Load(System.String,System.Int32,System.String)">
             <summary>Loads the OpenIncident Module configuration.</summary>
             <remarks>If the specified file does not exist, a default configuration file is created.</remarks>
-            <param name="configAbsolutePath">The file path to the configuration file.</param>
-            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
-            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
+            <param name="configPath">The file path to the OpenIncident Module configuration file.</param>
+            <param name="traceLogLimit">The global trace log limit.</param>
+            <param name="sessionFolder">The current session folder.</param>
             <returns>An <see cref="T:Outpost31.Module.OpenIncident.OpenIncidentConfig"/> object representing the loaded configuration.</returns>
         </member>
         <member name="M:Outpost31.Module.OpenIncident.OpenIncidentConfig.New(System.String,System.Int32,System.String)">
             <summary>Deploys the default OpenIncident Module configuration file.</summary>
-            <param name="configAbsolutePath">The configuration file path.</param>
-            <param name="traceLogLimit">The <see cref="P:Outpost31.Core.Logger.LogSettings.TraceLogLimit"/></param>
-            <param name="currentSessionFolder">The folder path for the current session, used for logging trace information.</param>
+            <remarks>User Role names are case sensitive.</remarks>
+            <param name="configPath">The file path to the OpenIncident Module configuration file.</param>
+            <param name="traceLogLimit">The global trace log limit.</param>
+            <param name="sessionFolder">The current session folder.</param>
         </member>
         <member name="T:Outpost31.Module.TngnWsvc.Deployer">
             <summary>Administrative deployment functionality.</summary>
@@ -730,7 +887,7 @@
         <member name="P:Outpost31.Module.TngnWsvc.Deployer.AsmName">
             <summary>A required log file component.</summary>
         </member>
-        <member name="M:Outpost31.Module.TngnWsvc.Deployer.Deploy(Outpost31.Core.TngnWsvcSession.WsvcSession)">
+        <member name="M:Outpost31.Module.TngnWsvc.Deployer.Deploy(Outpost31.Core.TingenWsvcSession.WsvcSession)">
             <summary>Deploy the Tingen Web Service framework.</summary>
             <param name="avatarSystem">The <see cref="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem"/></param>
         </member>
