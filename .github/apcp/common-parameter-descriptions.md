@@ -15,18 +15,18 @@
 /// <remarks>For more information about Outpost31, please see the <see cref="ProjectInfo"/> file.</remarks>
 ```
 
+## Executing assembly
 
-
+```csharp
+/// <summary>Required for logging functionality.</summary>
+public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+```
 
 ## Parameter XML
 
 ```csharp
 
-ExeAsm:
-/// <summary>Required for logging functionality.</summary>
-
-
-/// <param name="origOptObj">The <see cref="OptionObject2015"/> sent from Avatar.</param>
+/// <param name="origOptObj">The original <see cref="AvatarOptionObject"/> sent from Avatar.</param>
 
 /// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/> sent from Avatar.</param>
 
@@ -35,7 +35,6 @@ ExeAsm:
 /// <param name="avatarSystem">The <see cref="AvatarSystem"/> that the Tingen Web Service will interface with.</param>
 
 /// <param name="avatarSystemCode">The <see cref="AvatarSystemCode"/> Used to login to Avatar.</param>
-
 
 
 

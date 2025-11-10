@@ -179,31 +179,23 @@
         <member name="P:Outpost31.Core.Avatar.AvatarEnvironment.AvatarSystem">
             <summary>The Avatar System that the Tingen Web Service will interface with.</summary>
             <remarks>
-                Common Avatar Systems include <c>SBOX</c>, <c>UAT</c>, and <c>LIVE</c>.<br />
-                <br />
+                Common Avatar Systems include <c>SBOX</c>, <c>UAT</c>, and <c>LIVE</c>.<br/>
+                <br/>
                 <note type="tip" title="How-To Modify the AvatarSystem setting">
-                    <h3>To modify the AvatarSystem that the Tingen Web Service will interface with:</h3>
+                <h3>To modify the AvatarSystem that the Tingen Web Service will interface with :</h3>
                     <list type="number">
-                        <item>
-                            Open the <c>Web.Config</c> file located in the root directory of the Tingen Web Service.
-                        </item>
-                        <item>
-                            Locate the <c>AvatarSystem</c> setting within the <c>applicationSettings</c> section.
-                        </item>
-                        <item>
-                            Change the value of <c>AvatarSystem</c> setting to the desired value.
-                        </item>
-                        <item>
-                            Save the changes to the <c>Web.Config</c> file.
-                        </item>
+                        <item>Open the<c>Web.Config</c> file located in the root directory of the Tingen Web Service.</item>
+                        <item>Locate the <c>AvatarSystem</c> setting within the <c>applicationSettings</c> section.</item>
+                        <item>Change the value of <c>AvatarSystem</c> setting to the desired value.</item>
+                        <item>Save the changes to the<c> Web.Config</c> file.</item>
                     </list>
                     For example, to set the Avatar System to `LIVE`:
-<code>
-    &lt;setting name="AvatarSystem" serializeAs="String"&gt;
-        &lt;value&gt;LIVE&lt;/value&gt;
-    &lt;/setting&gt;
-</code>
-                    Changes to the <c>AvatarSystem</c> setting will be applied the next time the Tingen Web Service is executed.<br />
+                    <code>
+                        &lt; setting name="AvatarSystem" serializeAs="String"&gt;
+                        &lt;value&gt;LIVE&lt;/value&gt;
+                        &lt;/setting&gt;
+                    </code>
+                    Changes to the<c> AvatarSystem</c> setting will be applied the next time the Tingen Web Service is executed.
                 </note>
             </remarks>
             <value>The default value is <c>SBOX</c>.</value>
@@ -219,26 +211,15 @@
         <member name="T:Outpost31.Core.Avatar.AvatarOptionObject">
             <summary>Avatar OptionObject logic.</summary>
             <remarks>
-                The Avatar <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> holds all of the content of and metadata describing the calling myAvatar form.<br />
-                <br />
-                <note type="tip" title="About the Avatar OptionObject">
-                The Avatar OptionObject contains:
-                <list type="bullet">
-                    <item>
-                        The Avatar System in use (SBOX, LIVE, etc.)
-                    </item>
-                    <item>
-                        The Avatar user name that is logged in.
-                    </item>
-                    <item>
-                        The form fields, and their values
-                    </item>
-                    <item>
-                        And more!
-                    </item>
+                The Avatar <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> holds all of the content of and metadata describing the calling myAvatar form.<br/>
+                <br/>
+                 The Avatar OptionObject contains:
+                 <list type="bullet">
+                    <item>The Avatar System in use(SBOX, LIVE, etc.)</item>
+                    <item>The Avatar user name that is logged in.</item>
+                    <item>The form fields, and their values</item>
+                    <item>And more!</item>
                 </list>
-            </note><br /><see href="https://scriptlink.rarelysimple.com/" /><br />
-                <note type="tip" title="Types of OptionObjects">
                 The Tingen Web Service uses three types of OptionObjects:
                 <list type="table">
                     <listheader>
@@ -247,26 +228,21 @@
                     </listheader>
                     <item>
                         <term>Original</term>
-                        <description>
-                            The original OptionObject sent from Avatar, which is <i>never</i> modified by the Tingen Web Service.
-                        </description>
+                        <description>The original OptionObject sent from Avatar, which is <i>never</i> modified by the Tingen Web Service.</description>
                     </item>
                     <item>
                         <term>Worker</term>
-                        <description>
-                            The OptionObject where work is done, which is <i>potentially</i> modified during a Tingen Web Service session.
-                        </description>
+                        <description>The OptionObject where work is done, which is <i>potentially</i> modified during a Tingen Web Service session.</description>
                     </item>
                     <item>
                         <term>Completed</term>
-                        <description>
-                            The OptionObject that is returned to Avatar at the end of the Tingen Web Service session. Typically the <i>Return</i> OptionObject is the same as the <i>Worker</i> OptionObject, but required components have been verified.
-                        </description>
+                        <description>The OptionObject that is returned to Avatar at the end of the Tingen Web Service session. Typically the <i>Return</i> OptionObject is the same as the<i> Worker</i> OptionObject, but required components have been verified.</description>
                     </item>
                 </list>
-            </note><br />
-                <br />
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo" /> file.
+                <br/>
+                For more information about Avatar OptionObjects, please see <see href="https://scriptlink.rarelysimple.com"/><br/>
+                <br/>
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.ExeAsm">
@@ -274,43 +250,15 @@
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Original">
             <summary>The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> sent from Avatar.</summary>
-            <remarks>The original OptionObject is <i>never</i> modified by the Tingen Web Service.
-            
-            </remarks>
+            <remarks>The original OptionObject is <i>never</i> modified by the Tingen Web Service.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Worker">
             <summary>The <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> where work is done.</summary>
-            <remarks><note type="tip" title="Types of OptionObjects">
-                The Tingen Web Service uses three types of OptionObjects:
-                <list type="table">
-                    <listheader>
-                        <term>Type</term>
-                        <description>Description</description>
-                    </listheader>
-                    <item>
-                        <term>Original</term>
-                        <description>
-                            The original OptionObject sent from Avatar, which is <i>never</i> modified by the Tingen Web Service.
-                        </description>
-                    </item>
-                    <item>
-                        <term>Worker</term>
-                        <description>
-                            The OptionObject where work is done, which is <i>potentially</i> modified during a Tingen Web Service session.
-                        </description>
-                    </item>
-                    <item>
-                        <term>Completed</term>
-                        <description>
-                            The OptionObject that is returned to Avatar at the end of the Tingen Web Service session. Typically the <i>Return</i> OptionObject is the same as the <i>Worker</i> OptionObject, but required components have been verified.
-                        </description>
-                    </item>
-                </list>
-            </note></remarks>
+            <remarks>The worker OptionObject is <i>potentially</i> modified by the Tingen Web Service.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Completed">
             <summary>The finalized <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> that is returned to Avatar.</summary>
-            <remarks>This is the finalized OptionObject, ready to be returned to Avatar.</remarks>
+            <remarks>The completed OptionObject is a copy of the worker OptionObject that has been prepared for returning to Avatar.</remarks>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
             <summary>Verify if an OptionObject was sent from Avatar.</summary>
@@ -321,10 +269,65 @@
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.ToReturn(Outpost31.Core.TingenWsvcSession.WsvcSession,System.Int32,System.String)">
             <summary>Completes an OptionObject in preparation to be returned to Avatar.</summary>
             <remarks>
-                This method logs the operation's progress and updates the session's completion state based on the
-                specified error code. The <paramref name="errCode"/> determines the specific handling and logging behavior
-                for the operation result.
-            </remarks>
+                In order to successfully return an OptionObject to Avatar:
+                <list type="number">
+                    <item>
+                        The OptionObject <i>Error Code</i> must be set.<br/>
+                        <br/>
+                        <note type="tip" title="OptionObject Error Codes">
+                            <h3>Valid OptionObject Error Codes:</h3>
+                            <list type="table">
+                                <listheader>
+                                    <term>Error Code</term>
+                                    <description>Description</description>
+                                </listheader>
+                            <item>
+                                <term>0</term>
+                                <description>No action taken.</description>
+                            </item>
+                            <item>
+                                <term>1</term>
+                                <description>Returns an Error Message with an "Ok" button, and stops further processing of scripts.</description>
+                            </item>
+                            <item>
+                                <term>2</term>
+                                <description>Returns an Error Message with "OK" and "Cancel" buttons, and stops further scripts if the user clicks "Cancel".</description>
+                            </item>
+                            <item>
+                                <term>3</term>
+                                <description>Returns an Error Message with "Ok" button.</description>
+                            </item>
+                            <item>
+                                <term>4</term>
+                                <description>Returns an Error Message with "Yes" and "No" buttons and stops further scripts if the user clicks "No".</description>
+                            </item>
+                            <item>
+                                <term>5</term>
+                                <description>Returns a URL to be opened in a new browser.</description>
+                            </item>
+                            <item>
+                                <term>6</term>
+                                <description>Returns a form to be opened in Avatar.</description>
+                            </item>
+                        </list>
+                        The most common error codes are:
+                        <list>
+                            <item>1 - Used when you don't want the user to take an action, such as submitting a form.</item>
+                            <item>3 - Used when you would like to notify the user of something.</item>
+                            <item>4 - Used when you want warn the user they may want to make changes, and give them the option to stop further processing,or continuing.</item>
+                            </list>
+                        </note>
+                    </item>
+                    <item>
+                        The OptionObject <i>Error Message</i> must be set.<br/>
+                        The Error Message will be displayed to the user in Avatar, so it should be clear and concise.        
+                    </item>
+                    <item>
+                        All OptionObject components must be <i>validated and formatted correctly</i>.<br/>
+                        This is done via <see cref="M:ScriptLinkStandard.Objects.OptionObject2015.ToReturnOptionObject(System.Int32,System.String)"/>.
+                     </item>
+                </list>  
+             </remarks>
             <param name="wsvcSession">The object that contains all the information for this session.</param>
             <param name="errCode">The OptionObject error code.</param>
             <param name="errMsg">The OptionObject error message.</param>

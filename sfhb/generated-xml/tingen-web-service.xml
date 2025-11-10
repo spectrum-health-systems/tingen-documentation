@@ -92,7 +92,7 @@
                 <br/>
                 This method should remain pretty static, since the heavy lifting is done in <see cref="T:Outpost31.ProjectInfo"> Outpost31</see>.
              </remarks>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="origOptObj">The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject"/> sent from Avatar.</param>
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> sent from Avatar.</param>
             <returns>A completed <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/>.</returns>
         </member>
@@ -107,7 +107,7 @@
                     <item>The Tingen Web Service <c>Mode</c> is set to an <i>unknown state</i>.</item>
                 </list>
             </remarks>
-            <param name="origOptObj">The <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/> sent from Avatar.</param>
+            <param name="origOptObj">The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject"/> sent from Avatar.</param>
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> sent from Avatar.</param>
             <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
             <returns><c>true</c> if a critical error occurred; otherwise, <c>false</c>.</returns>
