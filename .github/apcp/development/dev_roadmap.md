@@ -25,6 +25,7 @@
 
 <!-- QUEUE
 
+- [ ] Special chars in names (e.g., "O'Brien") break log files
 - [ ] UserId translation table only has active users
 - [ ] UserId translation tables by user role
 - [ ] Use the UserId translation tables directly (again)

@@ -8,7 +8,20 @@
             <summary>Tingen Web Service runtime configuration logic.</summary>
             <remarks>For more information about the Tingen Web Service, please see the <see cref="T:TingenWebService.ProjectInfo"/> file.</remarks>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)" -->
+        <member name="M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)">
+            <summary>Loads the runtime configuration from the Web.config file.</summary>
+            <remarks>
+                <para>
+                    Since the Tingen Web Service is not directly referenced by Outpost31, the settings are read into a dictionary instead of a<br/>
+                    strongly-typed object.<br/>
+                    <br/>
+                    When a new setting is added to the Web.config file, it must also be added to this class.
+                </para>
+            </remarks>
+            <param name="webConfig">The contents of the Web.config file.</param>
+            <param name="tngnWsvcVersion">The current <see cref="P:TingenWebService.TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</param>
+            <returns>A dictionary with the runtime configuration settings.</returns>
+        </member>
         <member name="T:TingenWebService.ProjectInfo">
             <summary>Provides additional information about the Tingen Web Service.</summary>
             <remarks>

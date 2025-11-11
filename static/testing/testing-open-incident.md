@@ -1,4 +1,4 @@
-<!-- u251106 -->
+<!-- u251111 -->
 
 [[🏠︎](../../README.md)] ❬ [Static documentation](../README.md) ❬ [Diagrams](README.md)
 
@@ -15,19 +15,34 @@
 
 </div>
 
-> Last updated: November 8, 2025
+> Last updated: November 11, 2025
 
 # Testing Open Incident form functionality
 
+## Preparation - Avatar users
 
+You will need two users to perform these tests:
 
+**TESTWSVCA**  
+User ID: TESTWSVCA
+User Description: Test WebserviceA
+User Role: SuperUsers
 
-All testing is done while logged into Avatar as the "TESTUSER" user.
+**UserB**
+User ID: TESTWSVCB
+User Description: Test Web'service-B
+User Role: NXOPNURSE
 
-REMVOE CONFIG
+## Preparation - Translation table
 
+You will also need to add the following to the beginning of "USERID_UserDescription_Active.translation":
 
-## The ***Program of Incident*** field
+```text
+TESTWSVCA^Test WebserviceA
+TESTWSVCB^Test Web'service-B
+```
+
+## Testing the ***Program of Incident*** field
 
 Staff should not be able to submit a new incident without choosing a value for the **Program of Incident** field.
 
@@ -39,34 +54,46 @@ The web service should display a message informing the user they cannot submit t
 
 ### Testing procedure
 
-1. Opened the `Open Incident` form
+1. Login to Avatar with `TESTWSVCB`
 
-2. Typed "40" in the search bar
+2. Open the `Open Incident` form
 
-3. Clicked the `New Incident` button
+3. Type "40" in the search bar
 
-A new, blank Open Incident form opened.
+4. Click the `New Incident` button
 
-4. Completed the following required fields:
+A new, blank Open Incident form should open
 
-* Brief Incident Description:
+5. Complete the following required fields:
+
+* Brief Incident Description: "web-service-test-YYMMDD-HHMMSS"
 * Date Incident Occured
 * Date Incident Reported
+* Incident Description: \[YYMMDD-HHMMSS\] Test.
 * Time Completed
  
-5. Clicked the `Submit` button
+6. Click the `Submit` button
 
-The "Program of Incident is not valid" message appears.
+Since you did not complete the "Program of Incident" field, the "Program of Incident is not valid" message should appear.
 
-6. Completed the *Program of Incident* field
+Clicking "OK" should bring you back to the form.
 
-7. Clicked the `Submit` button
+> A log file should have been written noting that:
+> ?
 
-The incident was submitted, and the form closed.
+7. Complete the *Program of Incident* field
+
+8. Click the `Submit` button
+
+The incident was should submit, and you should be back at the homepage.
+
+> A log file should have been written noting that:
+> 1. Invalid Program of Incident
+> 2. Original author/current user match in the translation table
 
 ## The original author opens an incident
 
-Staff should be able to open any incidents they are the original creators of.
+Staff should be able to open/submit any incidents they are the original creators of.
 
 ### Expected outcome
 
@@ -74,13 +101,19 @@ Nothing should happen!
 
 ### Testing procedure
 
-1. Opened the previously created incident
+Using the TESTWSVCB user:
 
-The incident opened as expected.
+1. Open the `Open Incident` form
 
-2. Added text to the Incident Description
+2. Type "40" in the search bar
 
-3. Clicked the `Submit` button
+3. Search for the incident you created
+
+4. Open the incident
+
+5. Add text to the "Incident Description" field.
+
+6. Click the Submit button
 
 The incident was submitted, and the form closed.
 
@@ -98,7 +131,19 @@ Unauthorized staff members should not be able to open any incident report they d
 
 ### Testing procedures
 
-1. Verified the TESTUSER account does not have an authorized user role.
+1. Login to Avatar as a user with the "SuperUser" role
+
+2. Open the incident
+
+Since you are a member of the "SuperUser" role, you should get the "You are not the original author" message. Clicking "OK" should open the form.
+
+5. Add text to the "Incident Description" field.
+
+6. Click the Submit button
+
+Since you are not the original author of this incident, you should get the "You cannot submit" message. Click OK, and you should be returned to the form. Click "Discard", and you should be returned to the homepage.
+
+2. Verified the TESTUSER account does not have an authorized user role.
 
 2. Opened an Open Incident report created by another user.
 
