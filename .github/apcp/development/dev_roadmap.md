@@ -25,6 +25,8 @@
 
 <!-- QUEUE
 
+- [ ] Get the TraceLogLimit next to ExeAsm to make the calls shorter.
+
 - [ ] Update Project.xml so it is relevent
 
 - [ ] Session Maintenance
