@@ -12,8 +12,8 @@
             <summary>Loads the runtime configuration from the Web.config file.</summary>
             <remarks>
                 <para>
-                    Since the Tingen Web Service is not directly referenced by Outpost31, the settings are read into a dictionary instead of a<br/>
-                    strongly-typed object.<br/>
+                    Since the Tingen Web Service is not directly referenced by Outpost31, the settings are read into a
+                    dictionary instead of a strongly-typed object.<br/>
                     <br/>
                     When a new setting is added to the Web.config file, it must also be added to this class.
                 </para>
@@ -45,15 +45,15 @@
                 <note type="information" title="Project documentation">
                     Tingen project documentation:<br />
                     <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/man">Tingen project manuals Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/dev">Tingen project development documentation</see>
                 </note>
             </para><br />
               <para>
                 <note type="information" title="Project repositories">
                     Tingen project repositories:<br />
                     <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
-                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost31</see>
                 </note>
             </para><br />
               <para>
@@ -83,11 +83,7 @@
         </member>
         <member name="M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
             <summary>Determines what the Tingen Web Service will do, if anything.</summary>
-            <remarks>
-                This method is required by Avatar.<br/>
-                <br/>
-                This method should remain pretty static, since the heavy lifting is done in <see cref="T:Outpost31.ProjectInfo"> Outpost31</see>.
-             </remarks>
+            <remarks>This method is required by Avatar.</remarks>
             <param name="origOptObj">The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject"/> sent from Avatar.</param>
             <param name="origScriptParam">The original <see cref="T:Outpost31.Core.Avatar.AvatarScriptParameter"/> sent from Avatar.</param>
             <returns>A completed <see cref="T:ScriptLinkStandard.Objects.OptionObject2015"/>.</returns>

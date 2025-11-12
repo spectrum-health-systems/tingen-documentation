@@ -5,8 +5,8 @@
 ```csharp
 // =============================================================================
 // https://github.com/spectrum-health-systems/outpost31
-// u251111_code
-// u251111_documentation
+// u251112_code
+// u251112_documentation
 // =============================================================================
 ```
 
@@ -16,6 +16,10 @@
 /// <summary>Description</summary>
 /// <remarks>For more information about Outpost31, please see the <see cref="ProjectInfo"/> file.</remarks>
 ```
+
+
+
+
 
 ## Executing assembly
 
@@ -28,24 +32,35 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 ```csharp
 
-/// <param name="tngnWsvcVersion">The current <see cref="TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</param>
+/// <param name="avatarSystem">The <see cref="Core.Avatar.AvatarEnvironment.AvatarSystem"/> that the Tingen Web Service will interface with.</param>
 
-/// <param name="origOptObj">The original <see cref="AvatarOptionObject"/> sent from Avatar.</param>
-
-/// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/> sent from Avatar.</param>
-
-/// <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
-
-/// <param name="avatarSystem">The <see cref="AvatarSystem"/> that the Tingen Web Service will interface with.</param>
-
-/// <param name="avatarSystemCode">The <see cref="AvatarSystemCode"/> Used to login to Avatar.</param>
-
-/// <param name="wsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
+/// <param name="avatarSystemCode">The <see cref="Core.Avatar.AvatarEnvironment.AvatarSystemCode"/> Used to login to Avatar.</param>
 
 /// <param name="errCode">The OptionObject <see cref="ErrorCode"/>.</param>
 
 /// <param name="errMsg">The OptionObject Error Message that is displayed to the user.</param>
 
+/// <param name="optionId">The Avatar username that is interfacing with the Tingen Web Service.</param>
+
+/// <param name="origOptObj">The original <see cref="AvatarOptionObject"/> sent from Avatar.</param>
+
+/// <param name="origScriptParam">The original <see cref="AvatarScriptParameter"/> sent from Avatar.</param>
+
+/// <param name="serverDataPath">The path to the server data folder.</param>
+
+/// <param name="serverWwwPath">The path to the server www folder.</param>
+
+/// <param name="sessionDate">The date of the current session.</param>
+
+/// <param name="sessionStartTime">The start time of the session.</param>
+
+/// <param name="tngnWsvcFramework">The Tingen Web Service Framework object.</param>
+
+/// <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
+/// 
+/// <param name="tngnWsvcVersion">The current <see cref="TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</param>
+
+/// <param name="traceLogLimit">The global <see cref="Core.Logger.LogSettings.TraceLogLimit"/>.</param>
 
 
 
@@ -57,6 +72,34 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 
 
+/// <param name="wsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Signature order
+
+tngnWsvcSession
+    tngnWsvcSessionRuntime
+    TngnWsvcFramework
+    LogSettings
+    AvatarOptionObject
+    AvatarScriptParameter
+
+traceLogLimit
+avatarSystem
+optionId
+sessionDate
+sessionStartTime
 
 
 
@@ -92,7 +135,7 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 /// <param name="traceLevel">The trace level of the requested log.</param>
 
-/// <param name="traceLogLimit">The global trace log limit.</param>
+
 
 /// <param name="sessionFolder">The current session folder.</param>
 

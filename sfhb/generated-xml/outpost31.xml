@@ -4,9 +4,13 @@
         <name>Outpost31</name>
     </assembly>
     <members>
-        <member name="T:Outpost31.Core.Framework.AppDataFolders">
-            <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+        <member name="T:Outpost31.Core.Catalog.msg_TngnWscv">
+            <summary>Prebuilt messages for the Tingen Web Service.</summary>
+            <remarks>
+                This class is public, since it is called from TingenWebService.asmx.cs.<br/>
+                <br/>
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
+            </remarks>
         </member>
         <member name="T:Outpost31.Core.Framework.TngnWsvcWwwFolders">
             <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
@@ -28,7 +32,7 @@
             <summary>Creates the folder framework object</summary>
             <param name="baseWwwPath">The Tingen_Data path.</param>
             <param name="avatarSystem"></param>
-            <returns>A <see cref="T:Outpost31.Core.Framework.Folders"/> instance with initialized paths.</returns>
+            <returns>A <see cref="!:Folders"/> instance with initialized paths.</returns>
         </member>
         <member name="T:Outpost31.Core.Framework.TngnWsvcDataFolders">
             <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
@@ -71,18 +75,52 @@
             <summary>Creates the folder framework object</summary>
             <param name="baseDataPath">The Tingen_Data path.</param>
             <param name="avatarSystem"></param>
-            <returns>A <see cref="T:Outpost31.Core.Framework.Folders"/> instance with initialized paths.</returns>
+            <returns>A <see cref="!:Folders"/> instance with initialized paths.</returns>
+        </member>
+        <member name="T:Outpost31.Core.Framework.TngnWsvcFramework">
+            <summary>High-level logic and common methods for the Tingen Web Service framework</summary>
+            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
         </member>
         <member name="P:Outpost31.Core.Framework.TngnWsvcFramework.ExeAsm">
             <summary>Required for logging functionality.</summary>
         </member>
+        <member name="P:Outpost31.Core.Framework.TngnWsvcFramework.TngnWsvcDataFolder">
+            <summary>The <c>Tingen_Data</c> folder object.</summary>
+            <remarks>
+                This folder is located on the hosting server, typically on the root of the <c>C-drive</c> and contains
+                all the data/resources necessary for the Tingen Web Service to operate, including:
+                <list type="bullet">
+                    <item>Session logs</item>
+                    <item>Blueprints and translation tables.</item>
+                    <item>Log files.</item>
+                </list>
+                Each Avatar System that the Tingen Web Service interfaces with has it's own sub-folder, and the data in 
+                these folders are typically not directly available to users and/or Avatar.
+            </remarks>
+        </member>
+        <member name="P:Outpost31.Core.Framework.TngnWsvcFramework.TngnWsvcWwwFolder">
+            <summary>The <c>Tingen_www</c> folder object.</summary>
+            <remarks>
+                This folder is located on the hosting server, typically on the root of the <c>C-drive</c> and contains
+                the Tingen Web Service. Each Avatar System that the Tingen Web Service interfaces with has it's own
+                sub-folder, which is directly available to Avatar.<br/>
+                <br/>
+                In general, users should not need to directly access this folder.
+            </remarks>
+        </member>
+        <member name="M:Outpost31.Core.Framework.TngnWsvcFramework.Load(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Loads the framework object.</summary>
+            <param name="serverDataPath">The path to the server data folder.</param>
+            <param name="serverWwwPath">The path to the server www folder.</param>
+            <param name="avatarSystem">The <see cref="!:AvatarSystem"/> that the Tingen Web Service will interface with.</param>
+            <param name="sessionDate">The date of the session.</param>
+            <param name="avatarUser">The user name of the avatar.</param>
+            <param name="sessionStartTime">The start time of the session.</param>
+            <returns></returns>
+        </member>
         <member name="M:Outpost31.Core.Framework.TngnWsvcFramework.Verify(System.Int32,Outpost31.Core.Framework.TngnWsvcFramework,System.String,System.String)">
             <summary>Creates the folder framework.</summary>
-            <param name="folders">The <see cref="T:Outpost31.Core.Framework.Folders"/> instance containing folder paths.</param>
-        </member>
-        <member name="T:Outpost31.Core.Framework.Folders">
-            <summary>Represents a set of folder paths used by the Outpost31 framework.</summary>
-            <remarks>For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.</remarks>
+            <param name="folders">The <see cref="!:Folders"/> instance containing folder paths.</param>
         </member>
         <member name="T:Outpost31.Core.Logger.HistoryLog">
             <summary>Error log logic.</summary>
@@ -919,15 +957,15 @@
                 <note type="information" title="Project documentation">
                     Tingen project documentation:<br />
                     <see href="https://github.com/spectrum-health-systems/tingen-documentation-project">Tingen Documentation Project</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/manuals/tngnsrvc">Tingen Web Service Manual</see><br />
-                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/development">Development Documentation</see>
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/man">Tingen project manuals Manual</see><br />
+                    <see href="https://github.com/spectrum-health-systems/tingen-documentation-project/tree/main/dev">Tingen project development documentation</see>
                 </note>
             </para><br />
               <para>
                 <note type="information" title="Project repositories">
                     Tingen project repositories:<br />
                     <see href="https://github.com/spectrum-health-systems/tingen-web-service">Tingen Web Service</see><br />
-                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost32</see>
+                    <see href="https://github.com/spectrum-health-systems/outpost31">Outpost31</see>
                 </note>
             </para><br />
               <para>

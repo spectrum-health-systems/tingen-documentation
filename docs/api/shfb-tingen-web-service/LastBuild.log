@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation\sfhb\shfb-tingen-web-service\shfb-tingen-web-service.shfbproj" started="11/10/2025 9:29:03 AM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2025.3.22.0" projectFile="C:\IT\csb\dev\github\spectrum\tingen-documentation\sfhb\shfb-tingen-web-service\shfb-tingen-web-service.shfbproj" started="11/12/2025 11:13:19 AM">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -11,9 +11,6 @@ Using presentation style &#39;Default2022&#39; located in &#39;C:\Program Files 
 Loading and initializing plug-ins...
 Website Table of Contents Generator Version 2025.3.22.0
 Copyright &#169; 2006-2025, Eric Woodruff, All Rights Reserved
-</buildStep>
-<buildStep step="ClearWorkFolder">
-Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
 </buildStep>
@@ -33,7 +30,7 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0056
+    Last step completed in 00:00:00.0018
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
@@ -41,10 +38,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-7667965f-bd19-4392-aeec-0704c396e65c.proj]
-Build started 11/10/2025 9:29:04 AM.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-6d2d7ee5-0767-463a-b32e-1368a4bab353.proj]
+Build started 11/12/2025 11:13:19 AM.
 
-Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\GenerateRefInfo-7667965f-bd19-4392-aeec-0704c396e65c.proj&quot; on node 1 (default targets).
+Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\GenerateRefInfo-6d2d7ee5-0767-463a-b32e-1368a4bab353.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -59,24 +56,24 @@ GenerateRefInfo:
   Wrote information on 2 namespaces, 3 types, and 9 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\GenerateRefInfo-7667965f-bd19-4392-aeec-0704c396e65c.proj&quot; (default targets).
-    Last step completed in 00:00:00.7828
+Done Building Project &quot;C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\GenerateRefInfo-6d2d7ee5-0767-463a-b32e-1368a4bab353.proj&quot; (default targets).
+    Last step completed in 00:00:01.0338
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0034
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0100
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0055
+    Last step completed in 00:00:00.0092
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -86,19 +83,19 @@ Copying images and creating the media map file...
 Generating conceptual topic files
     Parsing topic file &#39;C:\IT\csb\dev\github\spectrum\tingen-documentation\sfhb\shfb-tingen-web-service\Content\Welcome.aml&#39;
     C:\IT\csb\dev\github\spectrum\tingen-documentation\sfhb\shfb-tingen-web-service\Content\Welcome.aml -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\ddueXml\82a31265-4fa5-4761-b2aa-a7ff62431767.xml
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0125
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0036
+    Last step completed in 00:00:00.0039
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\IT\csb\dev\github\spectrum\tingen-documentation\sfhb\shfb-tingen-web-service\icons\Help.png -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0056
+    Last step completed in 00:00:00.0089
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -107,15 +104,15 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0065
+    Last step completed in 00:00:00.0047
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.1433
+    Last step completed in 00:00:00.1701
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0012
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -123,7 +120,7 @@ C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-serv
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0049
+    Last step completed in 00:00:00.0034
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -133,28 +130,26 @@ Loading TOC info and adding unique IDs to parent nodes
 Processing topics...
 SHFB: Warning BE0066: ShowMissingComponent: [N:TingenWebService] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:Outpost31.Core.Avatar.AvatarOptionObject&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:Outpost31.Core.Avatar.AvatarScriptParameter&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.CriticalFailureOccurred(ScriptLinkStandard.Objects.OptionObject2015,System.String,System.String)] Unknown reference link target &#39;T:Outpost31.Core.Avatar.AvatarScriptParameter&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
+SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:Outpost31.Core.Avatar.AvatarOptionObject&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:Outpost31.Core.Avatar.AvatarScriptParameter&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:ScriptLinkStandard.Objects.OptionObject2015&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.TingenWebService.RunScript(ScriptLinkStandard.Objects.OptionObject2015,System.String)] Unknown reference link target &#39;T:Outpost31.ProjectInfo&#39;.
 SHFB: Warning BE0066: ShowMissingComponent: [N:TingenWebService.Configuration] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)] Unknown reference link target &#39;T:TingenWebService.Properties.Settings&#39;.
-SHFB: Warning BE0066: ResolveReferenceLinksComponent: [M:TingenWebService.Configuration.RuntimeConfig.Load(TingenWebService.Properties.Settings,System.String)] Unknown reference link target &#39;M:Outpost31.Core.Logger.LogEvent.Debug(System.String,System.String,System.String,System.Int32)&#39;.
 Processed 20 topic(s)
-15 warning(s)
+13 warning(s)
 CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
 ResolveArtLinksComponent: Copying media files...
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 4 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:05.0502
+</plugIn>    Last step completed in 00:00:04.5065
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -190,26 +185,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\IT\csb\dev\github\spectrum\tingen-documentation\docs\api\shfb-tingen-web-service\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.2952
+    Last step completed in 00:00:00.1614
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0659
+    Last step completed in 00:00:00.0450
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 88 files for the website content
-    Last step completed in 00:00:00.2295
+Copied 87 files for the website content
+    Last step completed in 00:00:00.1624
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0533
+    Last step completed in 00:00:00.0386
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 11/10/2025 9:29:10 AM.  Total time: 00:00:07.1262
+Build completed successfully at 11/12/2025 11:13:25 AM.  Total time: 00:00:06.8413
 
 </buildStep>
 </shfbBuild>

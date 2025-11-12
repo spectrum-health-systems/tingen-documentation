@@ -25,6 +25,30 @@
 
 <!-- QUEUE
 
+- [ ] Update Project.xml so it is relevent
+
+- [ ] Session Maintenance
+  - [ ] Verify that the current session folder exists
+
+- [ ] Daily Maintenance
+  - [ ] Verification process
+  - [ ] Refreshment process
+
+- [ ] Monthly Maintenance
+  - [ ] Archive all session logs
+
+- [ ] Verification process 
+  - [ ] Verify the .history file exists 
+  - [ ] Verify all required folders exist (.history records)
+
+- [ ] Refreshment process
+  - [ ] Verify all blueprints exist and are up-to-date (.history records) 
+  - [ ] Verify all Translation Tables exist are and up-to-date (.history records)
+
+- [ ] Reset process
+  - [ ] Reset everything to default states
+
+- [ ] Session log set limit
 - [ ] Special chars in names (e.g., "O'Brien") break log files
 - [ ] UserId translation table only has active users
 - [ ] UserId translation tables by user role
