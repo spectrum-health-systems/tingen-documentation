@@ -28,6 +28,8 @@
 - [ ] Get the TraceLogLimit next to ExeAsm to make the calls shorter.
 
 - [ ] Update Project.xml so it is relevent
+- [ ] FormId tranlation table gets a .translation extension
+- [ ] Query for form ids, don't use a translation table
 
 - [ ] Session Maintenance
   - [ ] Verify that the current session folder exists

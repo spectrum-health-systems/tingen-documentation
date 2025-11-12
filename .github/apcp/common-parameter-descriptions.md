@@ -57,7 +57,9 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 /// <param name="tngnWsvcFramework">The Tingen Web Service Framework object.</param>
 
 /// <param name="tngnWsvcMode">The Tingen Web Service <c>Mode</c>.</param>
-/// 
+
+/// <param name="tngnWsvcSession">The <see cref="TngnWsvcSession"/> that contains all the information for this session.</param>
+
 /// <param name="tngnWsvcVersion">The current <see cref="TingenWebService.TngnWsvcVersion"/> of the Tingen Web Service.</param>
 
 /// <param name="traceLogLimit">The global <see cref="Core.Logger.LogSettings.TraceLogLimit"/>.</param>
@@ -72,7 +74,7 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 
 
-/// <param name="wsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
+/// <param name="tngnWsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
 
 
 
