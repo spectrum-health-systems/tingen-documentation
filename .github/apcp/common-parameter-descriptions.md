@@ -40,7 +40,7 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 /// <param name="errMsg">The OptionObject Error Message that is displayed to the user.</param>
 
-/// <param name="optionId">The Avatar username that is interfacing with the Tingen Web Service.</param>
+/// <param name="avatarUserId">The Avatar username that is interfacing with the Tingen Web Service.</param>
 
 /// <param name="origOptObj">The original <see cref="AvatarOptionObject"/> sent from Avatar.</param>
 
@@ -51,6 +51,8 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 /// <param name="serverWwwPath">The path to the server www folder.</param>
 
 /// <param name="sessionDate">The date of the current session.</param>
+
+/// <param name="sessionFolder">The current session folder.</param>
 
 /// <param name="sessionStartTime">The start time of the session.</param>
 
@@ -70,11 +72,6 @@ public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetN
 
 
 
-
-
-
-
-/// <param name="tngnWsvcSession">The <see cref="WsvcSession"/> that contains all the information for this session.</param>
 
 
 
@@ -115,8 +112,6 @@ sessionStartTime
 
 /// <param name="tngnWsvcMode">The Tingen Web Service mode.</param>
 
-/// <param name="wsvcSession">The object that contains all the information for this session.</param>
-
 /// <param name="openIncidentConfig">The Open Incident module confituration.</param>
 /// <param name="errCode">The OptionObject error code.</param>
 /// <param name="errMsg">The OptionObject error message.</param>
@@ -139,7 +134,7 @@ sessionStartTime
 
 
 
-/// <param name="sessionFolder">The current session folder.</param>
+
 
 /// <param name="sessionDetail">Current session details.</param>
 /// <param name="sessionScriptParameter">Current session ScriptParameter.</param>

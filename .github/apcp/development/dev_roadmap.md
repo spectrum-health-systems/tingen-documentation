@@ -52,6 +52,9 @@
 - [ ] Reset process
   - [ ] Reset everything to default states
 
+
+- [ ] If an OptionId is not found in the translation table, fallback to a database query.
+- [ ] exported optobj pretty .json
 - [ ] Session log set limit
 - [ ] Special chars in names (e.g., "O'Brien") break log files
 - [ ] UserId translation table only has active users
