@@ -1,6 +1,6 @@
 <!-- u251117 -->
 
-[[🏠︎](README.md)]
+[[🏠︎](../README.md)]
 
 <div align="center">
 
