@@ -17,7 +17,9 @@
 
 <br/>
 
-This documentation is a work in progress, and will be released with R25.12 in December of 2025.
+> [!IMPORTANT]  
+> The Tingen Documentation Project is updated and maintained as codebases change.  
+> Documentation for specific releases can be found [here](https://github.com/spectrum-health-systems/tingen-documentation/branches/all).
 
 <!--
 [API documentation](/docs/api/)  
