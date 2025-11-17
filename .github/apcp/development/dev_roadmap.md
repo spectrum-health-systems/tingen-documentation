@@ -27,6 +27,8 @@
 
 - [ ] Get the TraceLogLimit next to ExeAsm to make the calls shorter.
 
+- [ ] Move tngnwsvc debug logs to development/tngnwsvc/debug
+
 - [ ] Update Project.xml so it is relevent
 - [ ] FormId tranlation table gets a .translation extension
 - [ ] Query for form ids, don't use a translation table
