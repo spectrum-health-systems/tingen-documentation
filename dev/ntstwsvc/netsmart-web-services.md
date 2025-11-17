@@ -1,6 +1,6 @@
 <!-- u251117 -->
 
-[[🏠︎](../../README.md)] ❬ (Development documentation: Netsmart web services)[../README.md]
+[[🏠︎](../../README.md)] ❬ [Development documentation](../README.md)
 
 <div align="center">
 
