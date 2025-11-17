@@ -71,13 +71,8 @@ To add a Netsmart Web Service:
 7. Click the arrow icon to the right of the URL. The Web Service should be found.
 
 8. In the *Web reference name* field, give the web service a name that your project will use to reference the Web Service using the following syntax:  
-
-```
-NtstWscv{AvatarSystem}{NetsmartWebServiceName}
-```
-
-for example:
-
-  `NtstWscvSboxUserManagement`
+`NtstWscv{AvatarSystem}{NetsmartWebServiceName}`  
+  for example:  
+`NtstWscvSboxUserManagement`
 
 9. Click **Add Reference**.
