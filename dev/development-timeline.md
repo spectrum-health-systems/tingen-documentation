@@ -33,9 +33,9 @@ flowchart LR
     November@{shape: rounded, label: "RYY.11"}
     December@{shape: rounded, label: "RYY.12"}
     %% Layout
-    January --> February --> March --> April --> May --> June --> July --> August --> October --> November --> December
+    January:::aa --> February --> March --> April --> May --> June --> July --> August --> --> September --> October --> November --> December
     %% Styles
-    classDef E8_ stroke:#784212,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
+    classDef aa_ font-size:10pt
     classDef Y8_ stroke:#7d6608,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
     classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
     classDef P3_ stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8
