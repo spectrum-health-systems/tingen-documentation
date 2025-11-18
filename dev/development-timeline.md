@@ -15,6 +15,7 @@
 
 </div>
 
+```mermaid
 timeline
     title Tingen Web Service releases
     section 2025
@@ -35,7 +36,7 @@ timeline
             : Bennings (11/15)
             : Norris (11/22)
             : Palmer (11/27)
-
+```
 
 
 
