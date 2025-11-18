@@ -15,7 +15,9 @@
 
 </div>
 
-Nothing here yet.
+# Miscellaneous
+
+* [Netsmart web services](./ntstwsvc/netsmart-web-services.md)
 
 ***
 
