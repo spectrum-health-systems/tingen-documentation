@@ -10,10 +10,12 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
   <h1>
-    Development timeline
+    Monthly development cycle
   </h1>
 
 </div>
+
+# Weekly release
 
 ```mermaid
 flowchart LR
@@ -25,7 +27,7 @@ flowchart LR
     Blair@{shape: rounded, label: "RYY.MM-Blair"}
     Release@{shape: rounded, label: "RYY.MM"}
     %% Layout
-    Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3
+    Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3_
     %% Styles
     classDef E8_ stroke:#784212,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
     classDef Y8_ stroke:#7d6608,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
