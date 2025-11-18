@@ -21,9 +21,9 @@ flowchart LR
     Jed@{shape: rounded, label: "RYY.MM-Jed"}
     Bennings@{shape: rounded, label: "RYY.MM-Bennings"}
     Norris@{shape: rounded, label: "RYY.MM-Norris"}
-    Palmer@{shape: fr-circ, label: "RYY.MM-Palmer"}
-    Blair@{shape: fr-circ, label: "RYY.MM-Blair"}
-    Release@{shape: circle, label: "RYY.MM"}
+    Palmer@{shape: rounded, label: "RYY.MM-Palmer"}
+    Blair@{shape: rounded, label: "RYY.MM-Blair"}
+    Release@{shape: rounded, label: "RYY.MM"}
     %% Layout
     Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3
     %% Styles
