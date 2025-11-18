@@ -16,6 +16,28 @@
 </div>
 
 ```mermaid
+flowchart LR
+    %% Components
+    Jed@{shape: rounded, label: "RYY.MM-Jed"}
+    Bennings@{shape: rounded, label: "RYY.MM-Bennings"}
+    Norris@{shape: rounded, label: "RYY.MM-Norris"}
+    Palmer@{shape: fr-circ, label: "RYY.MM-Palmer"}
+    Blair@{shape: fr-circ, label: "RYY.MM-Blair"}
+    Release@{shape: circle, label: "RYY.MM"}
+    %% Layout
+    Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3
+    %% Styles
+    classDef E8_ stroke:#784212,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
+    classDef Y8_ stroke:#7d6608,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
+    classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
+    classDef P3_ stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8
+    classDef G3_ stroke:#e9f7ef,stroke-width:3px,fill:#1d8348,color:#e9f7ef
+    classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
+```
+
+
+
+```mermaid
 timeline
     title Tingen Web Service releases
     section 2025
@@ -55,29 +77,23 @@ timeline
 ```
 
 ```mermaid
+---
+config:
+  gitGraph:
+    showBranches: true
+    showCommitLabel: true
+    mainBranchName: 'R25.1'
+---
 gitGraph
-       branch "25.11"
-       commit id: "1"
-       commit id: "2"
-       branch nice_feature
-       checkout nice_feature
-       commit id: "3"
-       checkout main
-       commit id: "4"
-       checkout nice_feature
-       branch very_nice_feature
-       checkout very_nice_feature
-       commit id: "5"
-       checkout main
-       commit id: "6"
-       checkout nice_feature
-       commit id: "7"
-       checkout main
-       merge nice_feature id: "customID" tag: "customTag" type: REVERSE
-       checkout very_nice_feature
-       commit id: "8"
-       checkout main
-       commit id: "9"
+        commit id:"Jed"
+        commit id:"Bennings"
+        commit id:"Norris"
+        commit id:"Palmer"
+        commit type: HIGHLIGHT id:"R25.1" tag:"25.1"
+        branch R25.2
+        commit id:"LosAngeles"
+        commit id:"Chicago"
+        commit id:"Houston"
 ```
 
 
