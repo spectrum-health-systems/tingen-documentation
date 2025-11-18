@@ -10,12 +10,41 @@
     <img alt="Fallback image description" src="https://github.com/spectrum-health-systems/tingen-projects/blob/main/logos/tngndocs-light-400x63.png">
   </picture>
   <h1>
-    Monthly development cycle
+    Development cycle
   </h1>
 
 </div>
 
-# Weekly release
+# Overview
+
+```mermaid
+flowchart LR
+    %% Components
+    January@{shape: rounded, label: "RYY.1"}
+    February@{shape: rounded, label: "RYY.2"}
+    March@{shape: rounded, label: "RYY.3"}
+    April@{shape: rounded, label: "RYY.4"}
+    May@{shape: rounded, label: "RYY.5"}
+    June@{shape: rounded, label: "RYY.6"}
+    July@{shape: rounded, label: "RYY.7"}
+    August@{shape: rounded, label: "RYY.8"}
+    September@{shape: rounded, label: "RYY.9"}
+    October@{shape: rounded, label: "RYY.10"}
+    November@{shape: rounded, label: "RYY.11"}
+    December@{shape: rounded, label: "RYY.12"}
+    %% Layout
+    Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3_
+    %% Styles
+    classDef E8_ stroke:#784212,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
+    classDef Y8_ stroke:#7d6608,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
+    classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
+    classDef P3_ stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8
+    classDef G3_ stroke:#e9f7ef,stroke-width:3px,fill:#1d8348,color:#e9f7ef
+    classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
+```
+
+
+# Weekly
 
 ```mermaid
 flowchart LR
