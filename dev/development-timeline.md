@@ -33,7 +33,7 @@ flowchart LR
     November@{shape: rounded, label: "RYY.11"}
     December@{shape: rounded, label: "RYY.12"}
     %% Layout
-    Jed:::E8_ --> Bennings:::Y8_ --> Norris:::U3_ --> Palmer:::P3_ -.-> Blair:::B8_ --> Release:::G3_
+    January --> February --> March --> April --> May --> June --> July --> August --> October --> November --> December
     %% Styles
     classDef E8_ stroke:#784212,stroke-width:3px,fill:#ca6f1e,color:#fdf2e9
     classDef Y8_ stroke:#7d6608,stroke-width:3px,fill:#d4ac0d,color:#fef9e7
