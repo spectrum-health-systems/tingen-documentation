@@ -640,10 +640,10 @@
             <summary>Avatar OptionObject logic.</summary>
             <remarks>
                 The Avatar <see cref="T:ScriptLinkStandard.Objects.OptionObject2015">OptionObject</see> holds all of the content of and metadata
-                describing the calling myAvatar form.<br/>
-                <br/>
-                 The Avatar OptionObject contains:
-                 <list type="bullet">
+                describing the calling myAvatar form.<br />
+                <br />
+                The Avatar OptionObject contains:
+                <list type="bullet">
                     <item>The Avatar System in use(SBOX, LIVE, etc.)</item>
                     <item>The Avatar user name that is logged in.</item>
                     <item>The form fields, and their values</item>
@@ -656,26 +656,38 @@
                         <description>Description</description>
                     </listheader>
                     <item>
-                        <term><b>Original</b></term>
-                        <description>The original OptionObject sent from Avatar, which is <i>never</i> modified by the
-                        Tingen Web Service.</description>
+                        <term>
+                            <b>Original</b>
+                        </term>
+                        <description>
+                            The original OptionObject sent from Avatar, which is <i>never</i> modified by the
+                            Tingen Web Service.
+                        </description>
                     </item>
                     <item>
-                        <term><b>Worker</b></term>
-                        <description>The OptionObject where work is done, which is <i>potentially</i> modified during a
-                        Tingen Web Service session.</description>
+                        <term>
+                            <b>Worker</b>
+                        </term>
+                        <description>
+                            The OptionObject where work is done, which is <i>potentially</i> modified during a
+                            Tingen Web Service session.
+                        </description>
                     </item>
                     <item>
-                        <term><b>Completed</b></term>
-                        <description>The OptionObject that is returned to Avatar at the end of the Tingen Web Service session.
-                        Typically the <i>Return</i> OptionObject is the same as the<i> Worker</i> OptionObject, but required
-                        components have been verified.</description>
+                        <term>
+                            <b>Completed</b>
+                        </term>
+                        <description>
+                            The OptionObject that is returned to Avatar at the end of the Tingen Web Service session.
+                            Typically the <i>Return</i> OptionObject is the same as the<i> Worker</i> OptionObject, but required
+                            components have been verified.
+                        </description>
                     </item>
                 </list>
-                <br/>
-                For more information about Avatar OptionObjects, please see <see href="https://scriptlink.rarelysimple.com"/><br/>
-                <br/>
-                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo"/> file.
+                <br />
+                For more information about Avatar OptionObjects, please see <see href="https://scriptlink.rarelysimple.com" /><br />
+                <br />
+                For more information about Outpost31, please see the <see cref="T:Outpost31.ProjectInfo" /> file.
             </remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.ExeAsm">
@@ -683,19 +695,15 @@
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Original">
             <summary>The original <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> sent from Avatar.</summary>
-            <remarks>The original OptionObject is <i>never</i> modified by the Tingen Web Service.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Worker">
             <summary>The <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> where work is done.</summary>
-            <remarks>The worker OptionObject is <i>potentially</i> modified by the Tingen Web Service.</remarks>
         </member>
         <member name="P:Outpost31.Core.Avatar.AvatarOptionObject.Completed">
             <summary>The finalized <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> that is returned to Avatar.</summary>
-            <remarks>The completed OptionObject is a copy of the worker OptionObject that has been prepared for returning to Avatar.</remarks>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.VerifyExistence(ScriptLinkStandard.Objects.OptionObject2015)">
             <summary>Verify if an <see cref="T:Outpost31.Core.Avatar.AvatarOptionObject">OptionObject</see> was sent from Avatar.</summary>
-            <remarks>No logging done here because the logging functionality isn't setup yet.</remarks>
             <param name="origOptObj">The original OptionObject sent from Avatar.</param>
             <returns>A string indicating if an OptionObject was sent or not.</returns>
         </member>
@@ -705,7 +713,9 @@
                 In order to successfully return an OptionObject to Avatar:
                 <list type="number">
                     <item>
-                        <b>The OptionObject <see cref="T:ScriptLinkStandard.Objects.ErrorCode"/> must be set.</b><br/>
+                        <b>
+                            The OptionObject <see cref="T:ScriptLinkStandard.Objects.ErrorCode" /> must be set.
+                        </b><br />
                         The most common error codes are:
                         <list>
                             <item>1 - Used when you don't want the user to take an action, such as submitting a form.</item>
@@ -717,17 +727,21 @@
                         </list>
                     </item>
                     <item>
-                        <b>The OptionObject <i>Error Message</i> must be set.</b><br/>
+                        <b>
+                            The OptionObject <i>Error Message</i> must be set.
+                        </b><br />
                         The message that is displayed to the user.
                     </item>
                     <item>
-                        <b>All OptionObject components must be <i>validated and formatted correctly</i>.</b><br/>
-                        This is done via <see cref="M:ScriptLinkStandard.Objects.OptionObject2015.ToReturnOptionObject(System.Int32,System.String)"/>.
-                     </item>
+                        <b>
+                            All OptionObject components must be <i>validated and formatted correctly</i>.
+                        </b><br />
+                        This is done via <see cref="M:ScriptLinkStandard.Objects.OptionObject2015.ToReturnOptionObject(System.Int32,System.String)" />.
+                    </item>
                 </list>
-             </remarks>
-            <param name="wsvcSession">The <see cref="T:Outpost31.Core.TingenWsvcSession.WsvcSession"/> that contains all the information for this session.</param>
-            <param name="errCode">The OptionObject <see cref="T:ScriptLinkStandard.Objects.ErrorCode"/>.</param>
+            </remarks>
+            <param name="wsvcSession">The <see cref="T:Outpost31.Core.TingenWsvcSession.WsvcSession" /> that contains all the information for this session.</param>
+            <param name="errCode">The OptionObject <see cref="T:ScriptLinkStandard.Objects.ErrorCode" />.</param>
             <param name="errMsg">The OptionObject Error Message that is displayed to the user.</param>
         </member>
         <member name="M:Outpost31.Core.Avatar.AvatarOptionObject.ExportOptObj(ScriptLinkStandard.Objects.OptionObject2015,System.String)">
