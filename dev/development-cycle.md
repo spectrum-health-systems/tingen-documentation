@@ -20,6 +20,20 @@
 ```mermaid
 flowchart LR
     %% Components
+    January@{shape: rounded, label: "RYY.1"}
+    February@{shape: rounded, label: "RYY.2"}
+    March@{shape: rounded, label: "RYY.3"}
+    April@{shape: rounded, label: "RYY.4"}
+    May@{shape: rounded, label: "RYY.5"}
+    HiddenA@{shape: rounded}
+    %% Layout
+    January --> February --> March --> April --> May --> June -.-> HiddenA:::Hidden
+    %% Styles
+```
+
+```mermaid
+flowchart LR
+    %% Components
     R25.1@{shape: rounded, label: "R25.1"}
     R25.2@{shape: rounded, label: "R25.2"}
     R25.3@{shape: rounded, label: "R25.3"}
