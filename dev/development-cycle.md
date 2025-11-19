@@ -21,7 +21,7 @@
 flowchart LR
     %% Components
     R25.1@{shape: rounded, label: "R25.1"}
-    R25.2@{shape: rounded, label: "R25.1"}
+    R25.2@{shape: rounded, label: "R25.2"}
     R25.3@{shape: rounded, label: "R25.3"}
 
     subgraph WeeklyRelease [" "]
@@ -38,7 +38,7 @@ flowchart LR
     end
 
     %% Layout
-    R25.1 --> WeeklyRelease --> R25.1 --> R25.3
+    R25.1 --> WeeklyRelease --> R25.2 --> R25.3
     %% Styles
 ```
 
