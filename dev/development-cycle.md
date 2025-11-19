@@ -17,6 +17,37 @@
 
 # Overview
 
+flowchart LR
+    %% Components
+    R25.1@{shape: rounded, label: "R25.1"}
+    R25.2@{shape: rounded, label: "R25.1"}
+    R25.3@{shape: rounded, label: "R25.3"}
+
+    subgraph WeeklyRelease
+        direction TB
+        %% Components
+        Jed@{shape: rounded, label: "Jed"}
+        Bennings@{shape: rounded, label: "Bennings"}
+        Norris@{shape: rounded, label: "Norris"}
+        Palmer@{shape: rounded, label: "Palmer"}
+        Blair@{shape: rounded, label: "Blair"}
+        %% Layout
+        Jed --> Bennings --> Norris --> Palmer --> Blair
+        %% Styles
+    end
+
+    %% Layout
+    R25.1 --> R25.1 --> R25.3
+    %% Styles
+
+```
+
+
+
+
+
+
+
 ```mermaid
 flowchart LR
     %% Components
@@ -40,7 +71,7 @@ flowchart LR
     classDef U3_ stroke:#eaf2f8,stroke-width:3px,fill:#2471a3,color:#eaf2f8
     classDef P3_ stroke:#f5eef8,stroke-width:3px,fill:#884ea0,color:#f5eef8
     classDef G3_ stroke:#e9f7ef,stroke-width:3px,fill:#1d8348,color:#e9f7ef
-    classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567 
+    classDef B8_ stroke:#626567,stroke-width:3px,fill:#000000,color:#626567
 ```
 
 
