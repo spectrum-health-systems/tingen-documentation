@@ -25,7 +25,7 @@ flowchart LR
     R25.3@{shape: rounded, label: "R25.3"}
 
     subgraph WeeklyRelease [" "]
-        direction TB
+        direction LR
         %% Components
         Jed@{shape: rounded, label: "Jed"}
         Bennings@{shape: rounded, label: "Bennings"}
@@ -33,13 +33,14 @@ flowchart LR
         Palmer@{shape: rounded, label: "Palmer"}
         Blair@{shape: rounded, label: "Blair"}
         %% Layout
-        Jed --> Bennings --> Norris --> Palmer --> Blair
+        Jed:::f10_ --> Bennings:::f10_ --> Norris:::f10_ --> Palmer:::f10_ --> Blair:::f10_
         %% Styles
     end
 
     %% Layout
     R25.1 --> WeeklyRelease --> R25.2 --> R25.3
     %% Styles
+    classDef f10_ font-size:10pt
 ```
 
 
