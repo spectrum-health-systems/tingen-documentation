@@ -17,14 +17,22 @@
 
 # Overview
 
+New versions of the Tingen Web Service are called **Releases**.
+
+The release naming convention is: `RYY.MM`, where `YY` is the *year* of release (e.g., `26`) and `MM` is the *month* of release (e.g., `1`, `2`...`11`, `12`).
+
+In general, releases are made available the first Monday of every month. For example, `R26.6` will be released on 
+
+
+
 ```mermaid
 flowchart LR
     %% Components
-    R25.1@{shape: rounded, label: "R25.1"}
-    R25.2@{shape: rounded, label: "R25.2"}
-    R25.3@{shape: rounded, label: "R25.3"}
+    R26.1@{shape: rounded, label: "R26.1"}
+    R26.2@{shape: rounded, label: "R26.2"}
+    R26.3@{shape: rounded, label: "R26.3"}
     %% Layout
-    R25.1:::U2_ --> R25.2:::U2_ --> R25.3:::U2_ -.-> HiddenA:::Hidden
+    R26.1:::U2_ --> R26.2:::U2_ --> R26.3:::U2_ -.-> HiddenA:::Hidden
     %% Styles
     classDef Hidden display: none;
     classDef U2_ stroke:#eaf2f8,stroke-width:2px,fill:#5499c7,color:#eaf2f8
