@@ -20,13 +20,14 @@
 ```mermaid
 flowchart LR
     %% Components
-    R25.1@{shape: rounded, label: "25.1"}
+    R25.1@{shape: rounded, label: "R25.1"}
     R25.2@{shape: rounded, label: "R25.2"}
     R25.3@{shape: rounded, label: "R25.3"}
     %% Layout
-    R25.1 --> R25.2 --> R25.3 -.-> HiddenA:::Hidden
+    R25.1:::U2_ --> R25.2:::U2_ --> R25.3:::U2_ -.-> HiddenA:::Hidden
     %% Styles
- classDef Hidden display: none;
+    classDef Hidden display: none;
+    classDef U2_ stroke:#eaf2f8,stroke-width:2px,fill:#5499c7,color:#eaf2f8
 ```
 
 ```mermaid
