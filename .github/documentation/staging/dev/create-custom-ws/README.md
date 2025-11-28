@@ -569,6 +569,4 @@ namespace CustomAvatarWebService
 }
 ```
 
-# Next steps
-
-TBD
+***That's it!***

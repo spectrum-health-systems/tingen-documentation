@@ -1,6 +1,6 @@
 <!-- u251119 -->
 
-[[🏠︎](../README.md)]
+[[🏠︎](../../README.md)]
 
 <div align="center">
 
@@ -72,4 +72,4 @@ https://spectrumcsp.netsmartcloud.com/csp/spectrumbuild/avpm/WEBSVC.Query.CLS?WS
 
 ***
 
-[[🏠︎](../README.md)]
+[[🏠︎](../../README.md)]
