@@ -7,7 +7,7 @@
 	"settings": {
 		"files.autoSave": "afterDelay",
 		"editor.fontFamily": "Cascadia Mono",
-		"workbench.colorTheme": "Solarized Dark",
+		"workbench.colorTheme": "Kimbie Dark",
 		"editor.formatOnPaste": true
 	}
 }
